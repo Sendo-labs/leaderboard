@@ -1,0 +1,35 @@
+{
+  "interval": {
+    "intervalStart": "2025-09-28T00:00:00.000Z",
+    "intervalEnd": "2025-10-05T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/leaderboard",
+  "overview": "From 2025-09-28 to 2025-10-05, Sendo-labs/leaderboard had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 7
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 20.204,
+      "prScore": 20.204,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "standujar: This week, standujar initialized the contributor tracking system by merging PR #1 in Sendo-labs/elizaos.github.io. Their broader activity included 10 commits modifying 8 files, with code changes primarily focused on other work and feature development."
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}
