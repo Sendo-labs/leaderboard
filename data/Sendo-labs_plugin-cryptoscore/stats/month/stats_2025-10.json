@@ -1,0 +1,35 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-01T00:00:00.000Z",
+    "intervalEnd": "2025-11-01T00:00:00.000Z",
+    "intervalType": "month"
+  },
+  "repository": "Sendo-labs/plugin-cryptoscore",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/plugin-cryptoscore had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 6
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 20.204,
+      "prScore": 20.204,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}
