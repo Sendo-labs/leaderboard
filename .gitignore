@@ -1,0 +1,8 @@
+# Ignore everything except data directory
+/*
+!data/
+!.gitignore
+!README.md
+
+# Exclude database file
+data/db.sqlite
