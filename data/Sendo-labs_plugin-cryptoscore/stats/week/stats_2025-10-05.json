@@ -5,19 +5,76 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/plugin-cryptoscore",
-  "overview": "From 2025-10-05 to 2025-10-12, Sendo-labs/plugin-cryptoscore had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-05 to 2025-10-12, Sendo-labs/plugin-cryptoscore had 1 new PRs (1 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOP9-6-M6tEpb8",
+      "title": "feat: Initial plugin implementation",
+      "author": "standujar",
+      "number": 1,
+      "body": "## Summary\n- Initial implementation of the CryptoScore plugin for ElizaOS\n- Token score retrieval functionality\n- Wallet scores analysis\n- Service integration with CryptoScore API\n\n## Features\n- Get token scores by address or symbol\n- Get wallet scores and analysis\n- LLM-friendly response formatting",
+      "repository": "Sendo-labs/plugin-cryptoscore",
+      "createdAt": "2025-10-10T11:50:03Z",
+      "mergedAt": "2025-10-10T11:50:17Z",
+      "additions": 2531,
+      "deletions": 0
+    }
+  ],
   "codeChanges": {
-    "additions": 0,
+    "additions": 2531,
     "deletions": 0,
-    "files": 0,
-    "commitCount": 6
+    "files": 24,
+    "commitCount": 14
   },
-  "completedItems": [],
-  "topContributors": [],
-  "newPRs": 0,
-  "mergedPRs": 0,
+  "completedItems": [
+    {
+      "title": "feat: Initial plugin implementation",
+      "prNumber": 1,
+      "type": "feature",
+      "body": "## Summary\n- Initial implementation of the CryptoScore plugin for ElizaOS\n- Token score retrieval functionality\n- Wallet scores analysis\n- Service integration with CryptoScore API\n\n## Features\n- Get token scores by address or symbol\n- Get w",
+      "files": [
+        ".gitignore",
+        "README.md",
+        "bun.lock",
+        "package.json",
+        "src/actions/getTokenScore.ts",
+        "src/actions/getWalletScores.ts",
+        "src/actions/index.ts",
+        "src/config/defaults.ts",
+        "src/config/index.ts",
+        "src/index.ts",
+        "src/services/cryptoScoreService.ts",
+        "src/templates/extractToken.ts",
+        "src/templates/index.ts",
+        "src/templates/tokenScoreResponse.ts",
+        "src/templates/walletScoresResponse.ts",
+        "src/types/api.ts",
+        "src/types/index.ts",
+        "src/types/llm.ts",
+        "src/utils/formatter.ts",
+        "src/utils/index.ts",
+        "src/utils/llmResponse.ts",
+        "src/utils/serviceHelpers.ts",
+        "tsconfig.json",
+        "tsup.config.ts"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 50.4437738965761,
+      "prScore": 50.4437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "standujar: Pushed 9 commits this week, adding over 2500 lines of code across 32 files. This work was primarily focused on a combination of feature development and bugfixes."
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 1,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 1

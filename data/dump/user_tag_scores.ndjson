@@ -1,2 +1,5 @@
-["standujar_architect", "standujar", "architect", 2.5, 1, 0.0625, 37.5, "2025-10-08 13:42:46"]
-["standujar_feature-dev", "standujar", "feature-dev", 2.0, 1, 0.05, 38.0, "2025-10-08 13:42:46"]
+["standujar_architect", "standujar", "architect", 5.0, 1, 0.125, 35.0, "2025-10-08 13:42:46"]
+["standujar_feature-dev", "standujar", "feature-dev", 4.0, 1, 0.1, 36.0, "2025-10-08 13:42:46"]
+["standujar_docs", "standujar", "docs", 3.0, 1, 0.075, 37.0, "2025-10-10 23:08:03"]
+["standujar_typescript", "standujar", "typescript", 30.0, 1, 0.75, 10.0, "2025-10-10 23:08:03"]
+["standujar_api", "standujar", "api", 1.6, 1, 0.04, 38.4, "2025-10-10 23:08:03"]

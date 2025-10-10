@@ -1,18 +1,18 @@
 {
   "interval": {
-    "intervalStart": "2025-10-05T00:00:00.000Z",
-    "intervalEnd": "2025-10-12T00:00:00.000Z",
-    "intervalType": "week"
+    "intervalStart": "2025-10-10T00:00:00.000Z",
+    "intervalEnd": "2025-10-11T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/leaderboard",
-  "overview": "From 2025-10-05 to 2025-10-12, Sendo-labs/leaderboard had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-10 to 2025-10-11, Sendo-labs/leaderboard had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
   "topIssues": [],
   "topPRs": [],
   "codeChanges": {
     "additions": 0,
     "deletions": 0,
     "files": 0,
-    "commitCount": 3
+    "commitCount": 0
   },
   "completedItems": [],
   "topContributors": [
@@ -24,12 +24,12 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "standujar: Pushed 9 commits this week, adding over 2500 lines of code across 32 files. This work was primarily focused on a combination of feature development and bugfixes."
+      "summary": null
     }
   ],
   "newPRs": 0,
   "mergedPRs": 0,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 0
 }

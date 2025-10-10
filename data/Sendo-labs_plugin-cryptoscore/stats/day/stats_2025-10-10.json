@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2025-10-01T00:00:00.000Z",
-    "intervalEnd": "2025-11-01T00:00:00.000Z",
-    "intervalType": "month"
+    "intervalStart": "2025-10-10T00:00:00.000Z",
+    "intervalEnd": "2025-10-11T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/plugin-cryptoscore",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/plugin-cryptoscore had 1 new PRs (1 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-10 to 2025-10-11, Sendo-labs/plugin-cryptoscore had 1 new PRs (1 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -25,7 +25,7 @@
     "additions": 2531,
     "deletions": 0,
     "files": 24,
-    "commitCount": 14
+    "commitCount": 8
   },
   "completedItems": [
     {
@@ -65,12 +65,12 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 70.6477738965761,
-      "prScore": 70.6477738965761,
+      "totalScore": 50.4437738965761,
+      "prScore": 50.4437738965761,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "standujar: This month, standujar's work spanned feature development, bug fixes, and other maintenance tasks. They established a foundational component by merging the initial contributor tracking system in Sendo-labs/leaderboard (#1). Across 26 commits, they made significant code changes, modifying 51 files with over 2,600 new lines added. This activity reflects a primary focus on other work, followed by bug fixes and feature implementation."
+      "summary": null
     }
   ],
   "newPRs": 1,
