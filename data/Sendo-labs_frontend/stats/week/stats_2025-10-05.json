@@ -1,0 +1,129 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-05T00:00:00.000Z",
+    "intervalEnd": "2025-10-12T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/frontend",
+  "overview": "From 2025-10-05 to 2025-10-12, Sendo-labs/frontend had 2 new PRs (1 merged), 0 new issues, and 2 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOP_5i5c6tFWXK",
+      "title": "Initial commit from sendo-81f5a5a3",
+      "author": "0xCanet",
+      "number": 1,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-10T12:47:27Z",
+      "mergedAt": "2025-10-10T12:47:38Z",
+      "additions": 9235,
+      "deletions": 0
+    },
+    {
+      "id": "PR_kwDOP_5i5c6tJR7b",
+      "title": "feat: Add initial project setup with Eliza integration",
+      "author": "standujar",
+      "number": 2,
+      "body": "- Created .env.example for server configuration.\n- Introduced CLAUDE.md for development guidance.\n- Modified package.json to include Eliza API dependencies.\n- Developed hooks for Eliza agent and chat management.\n- Created UI components for chat interface and markdown rendering.\n- Refactored Agent page to utilize Eliza agent data.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-10T17:43:37Z",
+      "mergedAt": "2025-10-12T11:46:36Z",
+      "additions": 2814,
+      "deletions": 176
+    }
+  ],
+  "codeChanges": {
+    "additions": 3184,
+    "deletions": 0,
+    "files": 50,
+    "commitCount": 4
+  },
+  "completedItems": [
+    {
+      "title": "Initial commit from sendo-81f5a5a3",
+      "prNumber": 1,
+      "type": "other",
+      "body": "",
+      "files": [
+        ".gitignore",
+        "README.md",
+        "components.json",
+        "eslint.config.js",
+        "index.html",
+        "jsconfig.json",
+        "package.json",
+        "postcss.config.js",
+        "src/App.css",
+        "src/App.jsx",
+        "src/api/base44Client.js",
+        "src/api/entities.js",
+        "src/api/integrations.js",
+        "src/components/BetaDisclaimer.jsx",
+        "src/components/agent-card.jsx",
+        "src/components/agent-creator.jsx",
+        "src/components/agent-settings.jsx",
+        "src/components/agent/AgentSidebar.jsx",
+        "src/components/agent/ChatInterface.jsx",
+        "src/components/agent/WalletAnalysisModal.jsx",
+        "src/components/agents/agent-detail.jsx",
+        "src/components/agents/agent-list.jsx",
+        "src/components/agents/agent-settings.jsx",
+        "src/components/agents/character-detail.jsx",
+        "src/components/agents/character-form.jsx",
+        "src/components/agents/character-list.jsx",
+        "src/components/agents/chat.jsx",
+        "src/components/agents/createAgent.jsx",
+        "src/components/agents/group-new.jsx",
+        "src/components/agents/group.jsx",
+        "src/components/agents/home.jsx",
+        "src/components/agents/not-found.jsx",
+        "src/components/chat.jsx",
+        "src/components/group-card.jsx",
+        "src/components/group-panel.jsx",
+        "src/components/home/ContactSection.jsx",
+        "src/components/home/HeroSection.jsx",
+        "src/components/home/HowItWorksSection.jsx",
+        "src/components/home/JapaneseBackground.jsx",
+        "src/components/home/ResultsModal.jsx",
+        "src/components/home/StatisticsSection.jsx",
+        "src/components/home/TeamSection.jsx",
+        "src/components/marketplace/AgentCard.jsx",
+        "src/components/marketplace/CategorySection.jsx",
+        "src/components/marketplace/SponsoredSlot.jsx",
+        "src/components/profile-overlay.jsx",
+        "src/components/ui/accordion.jsx",
+        "src/components/ui/alert-dialog.jsx",
+        "src/components/ui/alert.jsx",
+        "src/components/ui/aspect-ratio.jsx"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 50.4437738965761,
+      "prScore": 50.4437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "standujar: Pushed 9 commits this week, adding over 2500 lines of code across 32 files. This work was primarily focused on a combination of feature development and bugfixes."
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 2,
+  "mergedPRs": 1,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 2
+}

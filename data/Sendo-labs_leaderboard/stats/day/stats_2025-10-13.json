@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2025-10-12T00:00:00.000Z",
-    "intervalEnd": "2025-10-19T00:00:00.000Z",
-    "intervalType": "week"
+    "intervalStart": "2025-10-13T00:00:00.000Z",
+    "intervalEnd": "2025-10-14T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/leaderboard",
-  "overview": "From 2025-10-12 to 2025-10-19, Sendo-labs/leaderboard had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-13 to 2025-10-14, Sendo-labs/leaderboard had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [],
   "codeChanges": {

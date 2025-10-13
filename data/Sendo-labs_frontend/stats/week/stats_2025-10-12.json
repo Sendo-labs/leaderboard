@@ -1,0 +1,63 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-12T00:00:00.000Z",
+    "intervalEnd": "2025-10-19T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/frontend",
+  "overview": "From 2025-10-12 to 2025-10-19, Sendo-labs/frontend had 0 new PRs (1 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOP_5i5c6tJR7b",
+      "title": "feat: Add initial project setup with Eliza integration",
+      "author": "standujar",
+      "number": 2,
+      "body": "- Created .env.example for server configuration.\n- Introduced CLAUDE.md for development guidance.\n- Modified package.json to include Eliza API dependencies.\n- Developed hooks for Eliza agent and chat management.\n- Created UI components for chat interface and markdown rendering.\n- Refactored Agent page to utilize Eliza agent data.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-10T17:43:37Z",
+      "mergedAt": "2025-10-12T11:46:36Z",
+      "additions": 2814,
+      "deletions": 176
+    }
+  ],
+  "codeChanges": {
+    "additions": 2814,
+    "deletions": 176,
+    "files": 17,
+    "commitCount": 1
+  },
+  "completedItems": [
+    {
+      "title": "feat: Add initial project setup with Eliza integration",
+      "prNumber": 2,
+      "type": "feature",
+      "body": "- Created .env.example for server configuration.\n- Introduced CLAUDE.md for development guidance.\n- Modified package.json to include Eliza API dependencies.\n- Developed hooks for Eliza agent and chat management.\n- Created UI components for ",
+      "files": [
+        ".env.example",
+        "CLAUDE.md",
+        "README.md",
+        "bun.lock",
+        "index.html",
+        "package.json",
+        "src/api/base44Client.js",
+        "src/components/agent/AgentSidebar.jsx",
+        "src/components/agent/ChatInterface.jsx",
+        "src/components/ui/AnimatedMarkdown.jsx",
+        "src/components/ui/Markdown.jsx",
+        "src/components/ui/Tool.jsx",
+        "src/hooks/useElizaAgent.js",
+        "src/hooks/useElizaChat.js",
+        "src/lib/elizaClient.js",
+        "src/pages/Agent.jsx",
+        "src/pages/Layout.jsx"
+      ]
+    }
+  ],
+  "topContributors": [],
+  "newPRs": 0,
+  "mergedPRs": 1,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

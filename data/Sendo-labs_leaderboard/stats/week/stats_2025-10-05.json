@@ -25,6 +25,16 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "standujar: Pushed 9 commits this week, adding over 2500 lines of code across 32 files. This work was primarily focused on a combination of feature development and bugfixes."
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
     }
   ],
   "newPRs": 0,

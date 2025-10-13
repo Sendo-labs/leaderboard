@@ -71,6 +71,16 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "standujar: This month, standujar's work spanned feature development, bug fixes, and other maintenance tasks. They established a foundational component by merging the initial contributor tracking system in Sendo-labs/leaderboard (#1). Across 26 commits, they made significant code changes, modifying 51 files with over 2,600 new lines added. This activity reflects a primary focus on other work, followed by bug fixes and feature implementation."
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
     }
   ],
   "newPRs": 1,
