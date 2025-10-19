@@ -1,0 +1,173 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-19T00:00:00.000Z",
+    "intervalEnd": "2025-10-26T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/frontend",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/frontend had 2 new PRs (2 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQEvmTc6ubkFj",
+      "title": "refactor:  Project structure and update configurations. Moved from react to Nextjs",
+      "author": "Neysixx",
+      "number": 1,
+      "body": "This pull request migrates the project from a Vite+React app to a Next.js 15 application with Bun as the package manager, introduces Biome for linting and formatting, and updates the overall project structure and configuration files. It also removes legacy files and dependencies related to the previous stack. The changes modernize the codebase, improve developer experience, and set up new conventions for code quality and workflow.\r\nFrom React / TailwindV3 / Javascript to Nextjs / TailwindV4 / Typescript.\r\n\r\n**Migration to Next.js and Bun:**\r\n\r\n* Migrated from Vite+React to Next.js 15, updating `package.json` scripts, dependencies, and project name to `sendo`, and switched to Bun as the package manager. Legacy dependencies and scripts were removed.\r\n* Added `next.config.ts` for Next.js configuration and updated the project entry points accordingly.\r\n* Updated `README.md` to Next.js boilerplate and added `CLAUDE.md` for project guidance, architecture, and workflow documentation. [[1]](diffhunk://#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5L1-R36) [[2]](diffhunk://#diff-6ebdb617a8104a7756d0cf36578ab01103dc9f07e4dc6feb751296b9c402faf7R1-R173)\r\n\r\n**Linting, Formatting, and Code Quality:**\r\n\r\n* Introduced Biome for linting and formatting with a comprehensive `biome.json` configuration, replacing ESLint and Prettier. ESLint config and related dependencies were removed. [[1]](diffhunk://#diff-2bc8a1f5e9380d5a187a4e90f11b4dd36c3abad6aea44c84be354a4f44cdec55R1-R70) [[2]](diffhunk://#diff-a32a0887ed9d1d707bbb3b845b7df7fd40e673c47e7b60a3ebd896b68d3b8839L1-L38)\r\n* Added a Husky pre-commit hook to automatically format code using Biome before each commit.\r\n\r\n**Project Structure and Configuration:**\r\n\r\n* Updated `components.json` for shadcn/ui registry, enabling RSC and TSX support, and set up Tailwind CSS 4 integration.\r\n* Migrated postcss configuration to `postcss.config.mjs` for Tailwind CSS 4 compatibility.\r\n* Removed legacy configuration files: `jsconfig.json`, `postcss.config.js`. [[1]](diffhunk://#diff-7fe0ab2d61296b5df4add971654584ba7ee8082cc5b79ffa3b60da0ed9f0b3ebL1-L10) [[2]](diffhunk://#diff-05ed1c7f99e45b485708115502a1e0f28c8547e9a9a29c1b8664f79103cf7873L1-L6)\r\n\r\n**Removal of Legacy and Unused Files:**\r\n\r\n* Deleted legacy Vite/React files and Base44 SDK integrations: `index.html`, `src/App.jsx`, `src/api/base44Client.js`, `src/api/entities.js`, `src/api/functions.js`, `src/api/integrations.js`. [[1]](diffhunk://#diff-0eb547304658805aad788d320f10bf1f292797b5e6d745a3bf617584da017051L1-L13) [[2]](diffhunk://#diff-d274a54187c91ba0f532df2a9e194e27ab50e988f5e4c33f5a7893918320c661L1-L14) [[3]](diffhunk://#diff-4b22c2630841e851e970815e1fb90a121b7165c7e36fc6420f68304f6f33b16fL1-L8) [[4]](diffhunk://#diff-cd055a0eba7b6c82d81e037992e9f2676bc3013ec97bd37ca68a721b92616b76L1-L7) [[5]](diffhunk://#diff-049ece780362020de9333f238c2de10cbf2457449ea61f36a02d75126cea9b98L1-L9) [[6]](diffhunk://#diff-1e1b94e4a7cb3d5571cef08910343d507084b36191f99c957514278cbe6f8545L1-L26)\r\n\r\n**Documentation and Guidance:**\r\n\r\n* Added detailed project guidance and architecture overview in `CLAUDE.md`, including development commands, environment variables, and technology stack.\r\n* Updated `README.md` to reflect Next.js usage and deployment instructions.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-18T09:36:31Z",
+      "mergedAt": "2025-10-19T09:59:44Z",
+      "additions": 10846,
+      "deletions": 11567
+    },
+    {
+      "id": "PR_kwDOQEvmTc6ugOVG",
+      "title": "feat: improve pages structure in order to anticipate a better data recovery strategy",
+      "author": "Neysixx",
+      "number": 3,
+      "body": "Refactor pages structure to fit with Nextjs best practice. For the moment, we just display mocked data, but in the next PRs, we are going to use real fetched user data from the agent. With Nextjs, the data fetching must be done on serverside and passed as props to client components (+ security and + fast)",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-19T10:26:17Z",
+      "mergedAt": "2025-10-19T10:26:38Z",
+      "additions": 2024,
+      "deletions": 1796
+    },
+    {
+      "id": "PR_kwDOQEvmTc6ugDSE",
+      "title": "feat: worker implementation",
+      "author": "Neysixx",
+      "number": 2,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-19T09:35:30Z",
+      "mergedAt": null,
+      "additions": 1641,
+      "deletions": 61
+    }
+  ],
+  "codeChanges": {
+    "additions": 5722,
+    "deletions": 4055,
+    "files": 57,
+    "commitCount": 8
+  },
+  "completedItems": [
+    {
+      "title": "feat: improve pages structure in order to anticipate a better data recovery strategy",
+      "prNumber": 3,
+      "type": "feature",
+      "body": "Refactor pages structure to fit with Nextjs best practice. For the moment, we just display mocked data, but in the next PRs, we are going to use real fetched user data from the agent. With Nextjs, the data fetching must be done on serversid",
+      "files": [
+        "bun.lock",
+        "package.json",
+        "src/app/analyzer/client.tsx",
+        "src/app/analyzer/page.tsx",
+        "src/app/client.tsx",
+        "src/app/leaderboard/client.tsx",
+        "src/app/leaderboard/page.tsx",
+        "src/app/marketplace/client.tsx",
+        "src/app/marketplace/page.tsx",
+        "src/app/page.tsx",
+        "src/app/worker/client.tsx",
+        "src/app/worker/page.tsx",
+        "src/components/shared/loader.tsx",
+        "src/components/shared/query-boundary.tsx"
+      ]
+    },
+    {
+      "title": "refactor:  Project structure and update configurations. Moved from react to Nextjs",
+      "prNumber": 1,
+      "type": "refactor",
+      "body": "This pull request migrates the project from a Vite+React app to a Next.js 15 application with Bun as the package manager, introduces Biome for linting and formatting, and updates the overall project structure and configuration files. It als",
+      "files": [
+        ".gitignore",
+        ".husky/pre-commit",
+        "CLAUDE.md",
+        "README.md",
+        "biome.json",
+        "bun.lock",
+        "components.json",
+        "eslint.config.js",
+        "index.html",
+        "jsconfig.json",
+        "next.config.ts",
+        "package.json",
+        "postcss.config.js",
+        "postcss.config.mjs",
+        "src/App.css",
+        "src/App.jsx",
+        "src/api/base44Client.js",
+        "src/api/entities.js",
+        "src/api/functions.js",
+        "src/api/integrations.js",
+        "src/app/analyzer/page.tsx",
+        "src/app/favicon.ico",
+        "src/app/globals.css",
+        "src/app/layout.tsx",
+        "src/app/leaderboard/page.tsx",
+        "src/app/marketplace/page.tsx",
+        "src/app/page.tsx",
+        "src/app/worker/page.tsx",
+        "src/components/AgentPanel.jsx",
+        "src/components/agent-panel.tsx",
+        "src/components/analyzer/BadgeCard.jsx",
+        "src/components/analyzer/BestWorstPerformers.jsx",
+        "src/components/analyzer/CTAActivateWorker.jsx",
+        "src/components/analyzer/MiniChartATH.jsx",
+        "src/components/analyzer/PerformanceMetrics.jsx",
+        "src/components/analyzer/ResultCard.jsx",
+        "src/components/analyzer/ResultHeroCard.jsx",
+        "src/components/analyzer/ShareButtons.jsx",
+        "src/components/analyzer/TokenDetailsList.jsx",
+        "src/components/analyzer/TokenDistribution.jsx",
+        "src/components/analyzer/WalletInput.jsx",
+        "src/components/analyzer/WalletStatsGrid.jsx",
+        "src/components/analyzer/badge-card.tsx",
+        "src/components/analyzer/best-worst-performers.tsx",
+        "src/components/analyzer/cta-activate-worker.tsx",
+        "src/components/analyzer/mini-chart-ath.tsx",
+        "src/components/analyzer/performance-metrics.tsx",
+        "src/components/analyzer/result-card.tsx",
+        "src/components/analyzer/result-hero-card.tsx",
+        "src/components/analyzer/share-buttons.tsx"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 84.0055477931522,
+      "prScore": 84.0055477931522,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 21.38629436111989,
+      "prScore": 21.38629436111989,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "tionebDotsamapha",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16654460?u=de9d9ffada915d875d292de1fc6230610ce9eb11&v=4",
+      "totalScore": 11.891422315129953,
+      "prScore": 11.691422315129953,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "summary": null
+    }
+  ],
+  "newPRs": 2,
+  "mergedPRs": 2,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

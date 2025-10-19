@@ -1,0 +1,78 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-19T00:00:00.000Z",
+    "intervalEnd": "2025-10-26T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/leaderboard",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/leaderboard had 1 new PRs (1 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOP7jpj86uf95Q",
+      "title": "chore: add some repo in tracker",
+      "author": "standujar",
+      "number": 2,
+      "body": "",
+      "repository": "Sendo-labs/leaderboard",
+      "createdAt": "2025-10-19T09:19:38Z",
+      "mergedAt": "2025-10-19T09:20:03Z",
+      "additions": 15,
+      "deletions": 0
+    }
+  ],
+  "codeChanges": {
+    "additions": 15,
+    "deletions": 0,
+    "files": 1,
+    "commitCount": 2
+  },
+  "completedItems": [
+    {
+      "title": "chore: add some repo in tracker",
+      "prNumber": 2,
+      "type": "other",
+      "body": "",
+      "files": [
+        "config/pipeline.config.ts"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 84.0055477931522,
+      "prScore": 84.0055477931522,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 21.38629436111989,
+      "prScore": 21.38629436111989,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "tionebDotsamapha",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16654460?u=de9d9ffada915d875d292de1fc6230610ce9eb11&v=4",
+      "totalScore": 11.891422315129953,
+      "prScore": 11.691422315129953,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 1,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

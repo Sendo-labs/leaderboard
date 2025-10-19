@@ -12,10 +12,21 @@
     "additions": 0,
     "deletions": 0,
     "files": 0,
-    "commitCount": 0
+    "commitCount": 1
   },
   "completedItems": [],
-  "topContributors": [],
+  "topContributors": [
+    {
+      "username": "0domart",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
+      "totalScore": 35.3857738965761,
+      "prScore": 35.3857738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
   "newPRs": 0,
   "mergedPRs": 0,
   "newIssues": 0,

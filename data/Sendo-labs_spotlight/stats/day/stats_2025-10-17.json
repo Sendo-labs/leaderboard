@@ -1,0 +1,48 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-17T00:00:00.000Z",
+    "intervalEnd": "2025-10-18T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/spotlight",
+  "overview": "From 2025-10-17 to 2025-10-18, Sendo-labs/spotlight had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQDrCWs6uTj-P",
+      "title": "Complete SOL transfer logic and unit tests",
+      "author": "0domart",
+      "number": 1,
+      "body": "This PR includes:\n\n- Fixed SOL transfer logic using proper CPI for user→vault transfers and direct lamport manipulation for vault→recipients\n- Added admin verification (only the creator can settle auctions)\n- Added time validation (auctions must end before settling)\n- Implemented comprehensive unit tests\n- Updated README with quick start instructions\n- All tests passing ✅\n\nKey changes:\n- Replaced problematic `try_borrow_mut_lamports()` with proper Anchor CPI patterns\n- Added `admin` field to `SpotState` for proper access control\n- Fixed account space calculations\n- Added proper error handling and validation",
+      "repository": "Sendo-labs/spotlight",
+      "createdAt": "2025-10-17T12:48:02Z",
+      "mergedAt": null,
+      "additions": 1527,
+      "deletions": 617
+    }
+  ],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 1
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "0domart",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
+      "totalScore": 35.3857738965761,
+      "prScore": 35.3857738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

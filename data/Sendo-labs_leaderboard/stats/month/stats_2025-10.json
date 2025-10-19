@@ -5,9 +5,21 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/leaderboard",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/leaderboard had 1 new PRs (1 merged), 0 new issues, and 2 active contributors.",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/leaderboard had 2 new PRs (2 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [
+    {
+      "id": "PR_kwDOP7jpj86uf95Q",
+      "title": "chore: add some repo in tracker",
+      "author": "standujar",
+      "number": 2,
+      "body": "",
+      "repository": "Sendo-labs/leaderboard",
+      "createdAt": "2025-10-19T09:19:38Z",
+      "mergedAt": "2025-10-19T09:20:03Z",
+      "additions": 15,
+      "deletions": 0
+    },
     {
       "id": "PR_kwDOP7jpj86r8XF7",
       "title": "feat: initialize contributor tracking system",
@@ -22,10 +34,10 @@
     }
   ],
   "codeChanges": {
-    "additions": 0,
+    "additions": 15,
     "deletions": 0,
-    "files": 0,
-    "commitCount": 22
+    "files": 1,
+    "commitCount": 24
   },
   "completedItems": [
     {
@@ -34,18 +46,47 @@
       "type": "feature",
       "body": "Initialize the contributor tracking system for Sendo-labs analytics.",
       "files": []
+    },
+    {
+      "title": "chore: add some repo in tracker",
+      "prNumber": 2,
+      "type": "other",
+      "body": "",
+      "files": [
+        "config/pipeline.config.ts"
+      ]
     }
   ],
   "topContributors": [
     {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 143.4313216897283,
+      "prScore": 143.4313216897283,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 70.6477738965761,
-      "prScore": 70.6477738965761,
+      "totalScore": 142.5708421542721,
+      "prScore": 142.5708421542721,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "standujar: This month, standujar's work spanned feature development, bug fixes, and other maintenance tasks. They established a foundational component by merging the initial contributor tracking system in Sendo-labs/leaderboard (#1). Across 26 commits, they made significant code changes, modifying 51 files with over 2,600 new lines added. This activity reflects a primary focus on other work, followed by bug fixes and feature implementation."
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
     },
     {
       "username": "0xCanet",
@@ -56,10 +97,40 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": null
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 40.40848035748714,
+      "prScore": 40.40848035748714,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "0domart",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
+      "totalScore": 35.3857738965761,
+      "prScore": 35.3857738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "tionebDotsamapha",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16654460?u=de9d9ffada915d875d292de1fc6230610ce9eb11&v=4",
+      "totalScore": 11.891422315129953,
+      "prScore": 11.691422315129953,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "summary": null
     }
   ],
-  "newPRs": 1,
-  "mergedPRs": 1,
+  "newPRs": 2,
+  "mergedPRs": 2,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 2

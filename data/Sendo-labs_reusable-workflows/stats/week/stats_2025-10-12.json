@@ -1,0 +1,78 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-12T00:00:00.000Z",
+    "intervalEnd": "2025-10-19T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/reusable-workflows",
+  "overview": "From 2025-10-12 to 2025-10-19, Sendo-labs/reusable-workflows had 1 new PRs (0 merged), 0 new issues, and 2 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQEy4EM6ucw6y",
+      "title": "feat(workflows): setup wanted workflow and release management.",
+      "author": "M4XGO",
+      "number": 1,
+      "body": "## Why\r\nThis PR addresses [this issue](https://github.com/Sendo-labs/demo-repository/issues/25).\r\n@standujar requested reusable workflow management. I’ve set up two different workflows: releasing for general projects and npm-publish specifically for plugins.\r\nAdditionally, I’ve added a CONTRIBUTING.md to guide contributors on how to contribute to this public repository.\r\n\r\n## How\r\n- Added reusable workflows in .github/workflows/.\r\n- Created a release workflow to manage different workflow versions.\r\n- Added documentation in each workflow folder, explaining the purpose of each reusable workflow and how to use it.\r\n- Included a minimal configuration for release-please.",
+      "repository": "Sendo-labs/reusable-workflows",
+      "createdAt": "2025-10-18T13:00:38Z",
+      "mergedAt": null,
+      "additions": 968,
+      "deletions": 1
+    }
+  ],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 3
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 59.42577389657609,
+      "prScore": 59.42577389657609,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 40.40848035748714,
+      "prScore": 40.40848035748714,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "0domart",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
+      "totalScore": 35.3857738965761,
+      "prScore": 35.3857738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 2
+}

@@ -1,0 +1,172 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-01T00:00:00.000Z",
+    "intervalEnd": "2025-11-01T00:00:00.000Z",
+    "intervalType": "month"
+  },
+  "repository": "Sendo-labs/sendo-api",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/sendo-api had 2 new PRs (1 merged), 0 new issues, and 2 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQE5fGM6ueDFL",
+      "title": "init",
+      "author": "xdrkush",
+      "number": 1,
+      "body": "",
+      "repository": "Sendo-labs/sendo-api",
+      "createdAt": "2025-10-18T21:31:41Z",
+      "mergedAt": "2025-10-18T21:32:00Z",
+      "additions": 21007,
+      "deletions": 2
+    },
+    {
+      "id": "PR_kwDOQE5fGM6ufDUe",
+      "title": "Update README.md to En",
+      "author": "tionebDotsamapha",
+      "number": 2,
+      "body": "@xdrkush i traslated your readme in english if you want to merge it.\r\n",
+      "repository": "Sendo-labs/sendo-api",
+      "createdAt": "2025-10-19T05:42:47Z",
+      "mergedAt": null,
+      "additions": 71,
+      "deletions": 71
+    }
+  ],
+  "codeChanges": {
+    "additions": 21007,
+    "deletions": 2,
+    "files": 43,
+    "commitCount": 5
+  },
+  "completedItems": [
+    {
+      "title": "init",
+      "prNumber": 1,
+      "type": "other",
+      "body": "",
+      "files": [
+        ".vscode/settings.json",
+        "README.md",
+        "env-sample",
+        "package-lock.json",
+        "package.json",
+        "src/config/idl/jupiter.ts",
+        "src/config/idl/pumpamm.idl.json",
+        "src/config/idl/pumpfees.idl.json",
+        "src/config/idl/pumpfun.idl.json",
+        "src/config/index.ts",
+        "src/controllers/global.ts",
+        "src/controllers/nfts.ts",
+        "src/controllers/signatures.ts",
+        "src/controllers/tokens.ts",
+        "src/controllers/trades.ts",
+        "src/controllers/transactions.ts",
+        "src/index.ts",
+        "src/routes/index.ts",
+        "src/services/birdeyes.ts",
+        "src/services/helius.ts",
+        "src/utils/decoder/computeBudget/index.ts",
+        "src/utils/decoder/computeBudget/schema.ts",
+        "src/utils/decoder/extractBalances.ts",
+        "src/utils/decoder/index.ts",
+        "src/utils/decoder/jupiter/index.ts",
+        "src/utils/decoder/jupiter/schema.ts",
+        "src/utils/decoder/jupiter/swapType.ts",
+        "src/utils/decoder/meteora/index.ts",
+        "src/utils/decoder/meteora/schema.ts",
+        "src/utils/decoder/orca/index.ts",
+        "src/utils/decoder/orca/schema.ts",
+        "src/utils/decoder/pumpfun/index.ts",
+        "src/utils/decoder/pumpfun/schema.ts",
+        "src/utils/decoder/pumpswap/index.ts",
+        "src/utils/decoder/pumpswap/schema.ts",
+        "src/utils/decoder/raydium/index.ts",
+        "src/utils/decoder/raydium/schema.ts",
+        "src/utils/decoder/tradingUtils.ts",
+        "src/utils/decoder/whirlpool/index.ts",
+        "src/utils/decoder/whirlpool/schema.ts",
+        "tests/birdeyeTest.ts",
+        "tests/decodeTx.ts",
+        "tsconfig.json"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 143.4313216897283,
+      "prScore": 143.4313216897283,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 142.5708421542721,
+      "prScore": 142.5708421542721,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "standujar: This month, standujar's work spanned feature development, bug fixes, and other maintenance tasks. They established a foundational component by merging the initial contributor tracking system in Sendo-labs/leaderboard (#1). Across 26 commits, they made significant code changes, modifying 51 files with over 2,600 new lines added. This activity reflects a primary focus on other work, followed by bug fixes and feature implementation."
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 40.40848035748714,
+      "prScore": 40.40848035748714,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "0domart",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
+      "totalScore": 35.3857738965761,
+      "prScore": 35.3857738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "tionebDotsamapha",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16654460?u=de9d9ffada915d875d292de1fc6230610ce9eb11&v=4",
+      "totalScore": 11.891422315129953,
+      "prScore": 11.691422315129953,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "summary": null
+    }
+  ],
+  "newPRs": 2,
+  "mergedPRs": 1,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 2
+}
