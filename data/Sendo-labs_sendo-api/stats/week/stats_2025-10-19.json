@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/sendo-api",
-  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/sendo-api had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/sendo-api had 1 new PRs (1 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -16,18 +16,28 @@
       "body": "@xdrkush i traslated your readme in english if you want to merge it.\r\n",
       "repository": "Sendo-labs/sendo-api",
       "createdAt": "2025-10-19T05:42:47Z",
-      "mergedAt": null,
+      "mergedAt": "2025-10-19T17:49:45Z",
       "additions": 71,
       "deletions": 71
     }
   ],
   "codeChanges": {
-    "additions": 0,
-    "deletions": 0,
-    "files": 0,
-    "commitCount": 1
+    "additions": 71,
+    "deletions": 71,
+    "files": 1,
+    "commitCount": 2
   },
-  "completedItems": [],
+  "completedItems": [
+    {
+      "title": "Update README.md to En",
+      "prNumber": 2,
+      "type": "other",
+      "body": "@xdrkush i traslated your readme in english if you want to merge it.\r\n",
+      "files": [
+        "README.md"
+      ]
+    }
+  ],
   "topContributors": [
     {
       "username": "Neysixx",
@@ -37,7 +47,17 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "Neysixx: Focused on a significant structural refactor within the Sendo-labs/frontend repository, merging a large pull request to improve the page structure (#3) which involved changes to over 3800 lines of code. They also have ongoing work to implement a new worker feature in an open pull request (#2). This activity shows a primary focus on refactoring and new feature development."
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 29.347774539791274,
+      "prScore": 29.347774539791274,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "M4XGO: No activity this week."
     },
     {
       "username": "standujar",
@@ -47,7 +67,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "standujar: This week, standujar focused on repository configuration, expanding the project's tracking scope by merging a PR in Sendo-labs/leaderboard (#2). Their work consisted entirely of modifications to configuration files."
     },
     {
       "username": "tionebDotsamapha",
@@ -57,12 +77,12 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
-      "summary": null
+      "summary": "tionebDotsamapha: Focused on documentation this week, opening a pull request to update the README file in the Sendo-labs/sendo-api repository (PR #2)."
     }
   ],
   "newPRs": 1,
-  "mergedPRs": 0,
+  "mergedPRs": 1,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 2
 }

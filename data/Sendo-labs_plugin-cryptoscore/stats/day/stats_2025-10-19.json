@@ -5,16 +5,144 @@
     "intervalType": "day"
   },
   "repository": "Sendo-labs/plugin-cryptoscore",
-  "overview": "From 2025-10-19 to 2025-10-20, Sendo-labs/plugin-cryptoscore had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "overview": "From 2025-10-19 to 2025-10-20, Sendo-labs/plugin-cryptoscore had 7 new PRs (6 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOP9-6-M6ugdvN",
+      "title": "feat(workflows): add release management and NPM publishing workflows",
+      "author": "M4XGO",
+      "number": 2,
+      "body": "- Created .release-please-manifest.json to define the release version.\r\n- Added release-please-config.json for release type and changelog configuration.\r\n- Implemented GitHub Actions workflows for automated NPM publishing and release management.\r\n\r\n\r\n## How : \r\nUsing : https://github.com/Sendo-labs/reusable-workflows/pull/1 to test",
+      "repository": "Sendo-labs/plugin-cryptoscore",
+      "createdAt": "2025-10-19T12:13:15Z",
+      "mergedAt": "2025-10-19T12:35:05Z",
+      "additions": 64,
+      "deletions": 0
+    },
+    {
+      "id": "PR_kwDOP9-6-M6ugg-_",
+      "title": "chore(main): release 1.0.0",
+      "author": "github-actions",
+      "number": 4,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-10-19)\n\n\n### Features\n\n* Initial plugin implementation ([baa0c36](https://github.com/Sendo-labs/plugin-cryptoscore/commit/baa0c36bd5b7914f5e14abc9bc770d6f982b95c1))\n* **workflows:** add release management and NPM publishing workflows ([#2](https://github.com/Sendo-labs/plugin-cryptoscore/issues/2)) ([e41931b](https://github.com/Sendo-labs/plugin-cryptoscore/commit/e41931be9ba95def82574929dc24d8a16943d85a))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/plugin-cryptoscore",
+      "createdAt": "2025-10-19T12:35:22Z",
+      "mergedAt": "2025-10-19T12:35:41Z",
+      "additions": 10,
+      "deletions": 1
+    },
+    {
+      "id": "PR_kwDOP9-6-M6ugmm1",
+      "title": "chore(main): release 1.1.3",
+      "author": "github-actions",
+      "number": 8,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.1.3](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.2...v1.1.3) (2025-10-19)\n\n\n### Bug Fixes\n\n* **package:** remove unused publish script from package.json ([d826622](https://github.com/Sendo-labs/plugin-cryptoscore/commit/d8266222dce35f123d4664347398d7a92a6089de))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/plugin-cryptoscore",
+      "createdAt": "2025-10-19T13:11:54Z",
+      "mergedAt": "2025-10-19T13:14:22Z",
+      "additions": 9,
+      "deletions": 2
+    },
+    {
+      "id": "PR_kwDOP9-6-M6uglup",
+      "title": "chore(main): release 1.1.2",
+      "author": "github-actions",
+      "number": 7,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.1.2](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.1...v1.1.2) (2025-10-19)\n\n\n### Bug Fixes\n\n* **package:** update plugin scope to [@sendo-labs](https://github.com/sendo-labs) ([caf5eca](https://github.com/Sendo-labs/plugin-cryptoscore/commit/caf5ecaedd07ce1b813d4d95e8ca561f3026b24e))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/plugin-cryptoscore",
+      "createdAt": "2025-10-19T13:06:27Z",
+      "mergedAt": "2025-10-19T13:08:31Z",
+      "additions": 9,
+      "deletions": 2
+    },
+    {
+      "id": "PR_kwDOP9-6-M6uglIC",
+      "title": "chore(main): release 1.1.1",
+      "author": "github-actions",
+      "number": 6,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.1.1](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.0...v1.1.1) (2025-10-19)\n\n\n### Bug Fixes\n\n* **workflows:** update NPM publishing trigger to pull request merges ([d635dcd](https://github.com/Sendo-labs/plugin-cryptoscore/commit/d635dcd87024fc5d97d916d8b8a8b77a83b973bd))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/plugin-cryptoscore",
+      "createdAt": "2025-10-19T13:03:00Z",
+      "mergedAt": "2025-10-19T13:04:07Z",
+      "additions": 9,
+      "deletions": 2
+    }
+  ],
   "codeChanges": {
-    "additions": 0,
-    "deletions": 0,
-    "files": 0,
-    "commitCount": 0
+    "additions": 110,
+    "deletions": 9,
+    "files": 6,
+    "commitCount": 20
   },
-  "completedItems": [],
+  "completedItems": [
+    {
+      "title": "chore(main): release 1.1.3",
+      "prNumber": 8,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.1.3](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.2...v1.1.3) (2025-10-19)\n\n\n### Bug Fixes\n\n* **package:** remove unused publish script from package.json ([d826622]",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    },
+    {
+      "title": "chore(main): release 1.1.2",
+      "prNumber": 7,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.1.2](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.1...v1.1.2) (2025-10-19)\n\n\n### Bug Fixes\n\n* **package:** update plugin scope to [@sendo-labs](https://github.com/s",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    },
+    {
+      "title": "chore(main): release 1.1.1",
+      "prNumber": 6,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.1.1](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.1.0...v1.1.1) (2025-10-19)\n\n\n### Bug Fixes\n\n* **workflows:** update NPM publishing trigger to pull request merges ([",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    },
+    {
+      "title": "chore(main): release 1.1.0",
+      "prNumber": 5,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.1.0](https://github.com/Sendo-labs/plugin-cryptoscore/compare/v1.0.0...v1.1.0) (2025-10-19)\n\n\n### Features\n\n* **workflows:** update reusable workflow references for NPM publishing a",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    },
+    {
+      "title": "chore(main): release 1.0.0",
+      "prNumber": 4,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-10-19)\n\n\n### Features\n\n* Initial plugin implementation ([baa0c36](https://github.com/Sendo-labs/plugin-cryptoscore/commit/baa0c36bd5b7914f5e14abc9bc770d6f982b95c1))\n* **wor",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md"
+      ]
+    },
+    {
+      "title": "feat(workflows): add release management and NPM publishing workflows",
+      "prNumber": 2,
+      "type": "feature",
+      "body": "- Created .release-please-manifest.json to define the release version.\r\n- Added release-please-config.json for release type and changelog configuration.\r\n- Implemented GitHub Actions workflows for automated NPM publishing and release manage",
+      "files": [
+        ".github/workflows/publish-npm.yaml",
+        ".github/workflows/release.yml",
+        ".release-please-manifest.json",
+        "release-please-config.json"
+      ]
+    }
+  ],
   "topContributors": [
     {
       "username": "Neysixx",
@@ -24,7 +152,17 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "Neysixx: Focused on significant feature development and refactoring within the Sendo-labs/frontend repository, successfully merging PR #3 which involved substantial changes (+2024/-1796 lines) to improve page structure, and also opened PR #2 for a new worker implementation. Their primary focus areas were refactoring (38%) and feature work (25%), predominantly on code files."
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 29.347774539791274,
+      "prScore": 29.347774539791274,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "M4XGO: No activity today."
     },
     {
       "username": "standujar",
@@ -34,7 +172,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "standujar: Focused on configuration updates, merging a pull request in Sendo-labs/leaderboard (#2) to add a repository to the tracker, primarily modifying config files."
     },
     {
       "username": "tionebDotsamapha",
@@ -44,12 +182,12 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
-      "summary": null
+      "summary": "tionebDotsamapha: Focused on documentation improvements, opening PR Sendo-labs/sendo-api#2 to update the README.md, which involved modifying 71 lines of documentation."
     }
   ],
-  "newPRs": 0,
-  "mergedPRs": 0,
+  "newPRs": 7,
+  "mergedPRs": 6,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 0
+  "activeContributors": 1
 }

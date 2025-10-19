@@ -5,16 +5,95 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/reusable-workflows",
-  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/reusable-workflows had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/reusable-workflows had 2 new PRs (3 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQEy4EM6ucw6y",
+      "title": "feat(workflows): setup wanted workflow and release management.",
+      "author": "M4XGO",
+      "number": 1,
+      "body": "## Why\r\nThis PR addresses [this issue](https://github.com/Sendo-labs/demo-repository/issues/25).\r\n@standujar requested reusable workflow management. I’ve set up two different workflows: releasing for general projects and npm-publish specifically for plugins.\r\nAdditionally, I’ve added a CONTRIBUTING.md to guide contributors on how to contribute to this public repository.\r\n\r\n## How\r\n- Added reusable workflows in .github/workflows/.\r\n- Created a release workflow to manage different workflow versions.\r\n- Added documentation in each workflow folder, explaining the purpose of each reusable workflow and how to use it.\r\n- Included a minimal configuration for release-please.",
+      "repository": "Sendo-labs/reusable-workflows",
+      "createdAt": "2025-10-18T13:00:38Z",
+      "mergedAt": "2025-10-19T12:19:13Z",
+      "additions": 968,
+      "deletions": 1
+    },
+    {
+      "id": "PR_kwDOQEy4EM6ugkCT",
+      "title": "chore: release main",
+      "author": "github-actions",
+      "number": 3,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n<details><summary>release-workflow: 1.0.0</summary>\n\n## 1.0.0 (2025-10-19)\n\n\n### ✨ Features\n\n* **workflows:** setup wanted workflow and release management. ([c90d37d](https://github.com/Sendo-labs/reusable-workflows/commit/c90d37dea0fd85db2eb51f37dd2a589869b7971b))\n</details>\n\n<details><summary>npm-publish-workflow: 1.0.0</summary>\n\n## 1.0.0 (2025-10-19)\n\n\n### ✨ Features\n\n* **workflows:** setup wanted workflow and release management. ([c90d37d](https://github.com/Sendo-labs/reusable-workflows/commit/c90d37dea0fd85db2eb51f37dd2a589869b7971b))\n</details>\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/reusable-workflows",
+      "createdAt": "2025-10-19T12:56:01Z",
+      "mergedAt": "2025-10-19T12:56:45Z",
+      "additions": 30,
+      "deletions": 10
+    },
+    {
+      "id": "PR_kwDOQEy4EM6ugfv_",
+      "title": "chore(main): release 1.0.0",
+      "author": "github-actions",
+      "number": 2,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-10-19)\n\n\n### Features\n\n* **workflows:** setup wanted workflow and release management. ([c90d37d](https://github.com/Sendo-labs/reusable-workflows/commit/c90d37dea0fd85db2eb51f37dd2a589869b7971b))\n\n\n### Bug Fixes\n\n* **workflows:** trigger workflows ([25e0f82](https://github.com/Sendo-labs/reusable-workflows/commit/25e0f822c8aaa328fd887f26f8030de9d42029d6))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/reusable-workflows",
+      "createdAt": "2025-10-19T12:27:07Z",
+      "mergedAt": "2025-10-19T12:27:30Z",
+      "additions": 13,
+      "deletions": 1
+    }
+  ],
   "codeChanges": {
-    "additions": 0,
-    "deletions": 0,
-    "files": 0,
-    "commitCount": 3
+    "additions": 1011,
+    "deletions": 12,
+    "files": 12,
+    "commitCount": 11
   },
-  "completedItems": [],
+  "completedItems": [
+    {
+      "title": "feat(workflows): setup wanted workflow and release management.",
+      "prNumber": 1,
+      "type": "feature",
+      "body": "## Why\r\nThis PR addresses [this issue](https://github.com/Sendo-labs/demo-repository/issues/25).\r\n@standujar requested reusable workflow management. I’ve set up two different workflows: releasing for general projects and npm-publish specifi",
+      "files": [
+        ".github/workflows/npm-publish.yml",
+        ".github/workflows/release.yml",
+        ".github/workflows/rws-versioning.yml",
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "CONTRIBUTING.md",
+        "README.md",
+        "npm-publish/README.md",
+        "release-please-config.json",
+        "release/README.md"
+      ]
+    },
+    {
+      "title": "chore: release main",
+      "prNumber": 3,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n<details><summary>release-workflow: 1.0.0</summary>\n\n## 1.0.0 (2025-10-19)\n\n\n### ✨ Features\n\n* **workflows:** setup wanted workflow and release management. ([c90d37d](https://github.com/S",
+      "files": [
+        ".release-please-manifest.json",
+        "npm-publish/CHANGELOG.md",
+        "npm-publish/README.md",
+        "release/CHANGELOG.md",
+        "release/README.md"
+      ]
+    },
+    {
+      "title": "chore(main): release 1.0.0",
+      "prNumber": 2,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-10-19)\n\n\n### Features\n\n* **workflows:** setup wanted workflow and release management. ([c90d37d](https://github.com/Sendo-labs/reusable-workflows/commit/c90d37dea0fd85db2eb",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md"
+      ]
+    }
+  ],
   "topContributors": [
     {
       "username": "Neysixx",
@@ -24,7 +103,17 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "Neysixx: Focused on a significant structural refactor within the Sendo-labs/frontend repository, merging a large pull request to improve the page structure (#3) which involved changes to over 3800 lines of code. They also have ongoing work to implement a new worker feature in an open pull request (#2). This activity shows a primary focus on refactoring and new feature development."
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 29.347774539791274,
+      "prScore": 29.347774539791274,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "M4XGO: No activity this week."
     },
     {
       "username": "standujar",
@@ -34,7 +123,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "standujar: This week, standujar focused on repository configuration, expanding the project's tracking scope by merging a PR in Sendo-labs/leaderboard (#2). Their work consisted entirely of modifications to configuration files."
     },
     {
       "username": "tionebDotsamapha",
@@ -44,11 +133,11 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
-      "summary": null
+      "summary": "tionebDotsamapha: Focused on documentation this week, opening a pull request to update the README file in the Sendo-labs/sendo-api repository (PR #2)."
     }
   ],
-  "newPRs": 0,
-  "mergedPRs": 0,
+  "newPRs": 2,
+  "mergedPRs": 3,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 1

@@ -37,7 +37,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "0domart: Focused on developing core transfer logic and unit tests, as evidenced by the open PR Sendo-labs/spotlight#1, which involved substantial code changes across 12 files (+1527/-617 lines) in a single commit, primarily dedicated to tests."
     }
   ],
   "newPRs": 1,
