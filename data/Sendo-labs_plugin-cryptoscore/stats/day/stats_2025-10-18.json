@@ -24,7 +24,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "Neysixx: Focused on a significant refactor of the Sendo-labs/frontend project, merging a large PR (#1) that involved substantial changes across 370 files (+17867/-16129 lines) to restructure the project and update configurations, demonstrating a primary focus on refactor and feature work."
+      "summary": "Neysixx: Focused on a significant refactor of the Sendo-labs/frontend project, successfully merging PR #1 which involved substantial changes across 370 files (+17867/-16129 lines) to restructure the project and update configurations, demonstrating a primary focus on refactor and feature work."
     },
     {
       "username": "xdrkush",
@@ -34,7 +34,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "xdrkush: Initiated significant foundational work by merging a large pull request, Sendo-labs/sendo-api#1, which introduced over 21,000 lines of code, indicating a primary focus on new feature development or substantial refactoring within the codebase. This effort involved modifying 89 files, primarily consisting of code and configuration changes."
+      "summary": "xdrkush: Focused on foundational work, initiating the `sendo-api` repository with a substantial PR (#1) that introduced over 21,000 lines of code, primarily contributing to new code and configuration files."
     },
     {
       "username": "M4XGO",
@@ -44,7 +44,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "M4XGO: Initiated a new feature by opening PR Sendo-labs/reusable-workflows#1 to set up a wanted workflow and release management, demonstrating a focus on documentation and configuration with 1003 additions across 12 files."
+      "summary": "M4XGO: Significantly contributed to workflow and release management by merging a substantial PR in Sendo-labs/reusable-workflows#1 (+1005/-38 lines), demonstrating a focus on documentation and configuration."
     }
   ],
   "newPRs": 0,
