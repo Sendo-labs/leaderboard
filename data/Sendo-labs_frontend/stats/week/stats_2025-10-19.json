@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/frontend had 2 new PRs (2 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/frontend had 4 new PRs (4 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -43,13 +43,37 @@
       "mergedAt": "2025-10-19T10:26:38Z",
       "additions": 2024,
       "deletions": 1796
+    },
+    {
+      "id": "PR_kwDOQEvmTc6u4Ay-",
+      "title": "chore: update .gitignore to include specific environment files and create an env sample",
+      "author": "Neysixx",
+      "number": 4,
+      "body": "- Added specific environment files (.env.local, .env.development.local, .env.test.local, .env.production.local) to .gitignore for better management of local configurations.\r\n- Ensured that the base .env file is still ignored to prevent sensitive information from being committed.\r\nThis pull request adds example environment variables for configuring the Eliza server. These additions help developers understand which variables are needed to connect to the Eliza server in local development.\r\n\r\n* Added `NEXT_PUBLIC_ELIZA_SERVER_URL` and `NEXT_PUBLIC_ELIZA_SERVER_AUTH_TOKEN` to `.env.example` to document required Eliza server configuration variables.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-21T15:48:48Z",
+      "mergedAt": "2025-10-21T15:49:48Z",
+      "additions": 8,
+      "deletions": 1
+    },
+    {
+      "id": "PR_kwDOQEvmTc6u4H7w",
+      "title": "critical: add missing deps to avoid build issues",
+      "author": "Neysixx",
+      "number": 5,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-21T15:57:32Z",
+      "mergedAt": "2025-10-21T15:57:47Z",
+      "additions": 6,
+      "deletions": 0
     }
   ],
   "codeChanges": {
-    "additions": 5722,
-    "deletions": 4055,
-    "files": 57,
-    "commitCount": 14
+    "additions": 5736,
+    "deletions": 4056,
+    "files": 58,
+    "commitCount": 18
   },
   "completedItems": [
     {
@@ -131,18 +155,48 @@
         "src/components/analyzer/result-hero-card.tsx",
         "src/components/analyzer/share-buttons.tsx"
       ]
+    },
+    {
+      "title": "critical: add missing deps to avoid build issues",
+      "prNumber": 5,
+      "type": "other",
+      "body": "",
+      "files": [
+        "bun.lock",
+        "package.json"
+      ]
+    },
+    {
+      "title": "chore: update .gitignore to include specific environment files and create an env sample",
+      "prNumber": 4,
+      "type": "other",
+      "body": "- Added specific environment files (.env.local, .env.development.local, .env.test.local, .env.production.local) to .gitignore for better management of local configurations.\r\n- Ensured that the base .env file is still ignored to prevent sens",
+      "files": [
+        ".env.example",
+        ".gitignore"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 84.0055477931522,
-      "prScore": 84.0055477931522,
+      "totalScore": 130.20704303520156,
+      "prScore": 130.20704303520156,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "Neysixx: Focused on a significant structural refactor within the Sendo-labs/frontend repository, merging a large pull request to improve the page structure (#3) which involved changes to over 3800 lines of code. They also have ongoing work to implement a new worker feature in an open pull request (#2). This activity shows a primary focus on refactoring and new feature development."
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 33.104644267469595,
+      "prScore": 33.104644267469595,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
     },
     {
       "username": "M4XGO",
@@ -175,8 +229,8 @@
       "summary": "tionebDotsamapha: Focused on documentation this week, opening a pull request to update the README file in the Sendo-labs/sendo-api repository (PR #2)."
     }
   ],
-  "newPRs": 2,
-  "mergedPRs": 2,
+  "newPRs": 4,
+  "mergedPRs": 4,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 1

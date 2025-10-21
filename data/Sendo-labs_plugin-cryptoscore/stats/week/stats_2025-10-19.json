@@ -147,12 +147,22 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 84.0055477931522,
-      "prScore": 84.0055477931522,
+      "totalScore": 130.20704303520156,
+      "prScore": 130.20704303520156,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "Neysixx: Focused on a significant structural refactor within the Sendo-labs/frontend repository, merging a large pull request to improve the page structure (#3) which involved changes to over 3800 lines of code. They also have ongoing work to implement a new worker feature in an open pull request (#2). This activity shows a primary focus on refactoring and new feature development."
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 33.104644267469595,
+      "prScore": 33.104644267469595,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
     },
     {
       "username": "M4XGO",

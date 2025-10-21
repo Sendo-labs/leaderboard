@@ -1,0 +1,91 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-21T00:00:00.000Z",
+    "intervalEnd": "2025-10-22T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/frontend",
+  "overview": "From 2025-10-21 to 2025-10-22, Sendo-labs/frontend had 2 new PRs (2 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQEvmTc6u4Ay-",
+      "title": "chore: update .gitignore to include specific environment files and create an env sample",
+      "author": "Neysixx",
+      "number": 4,
+      "body": "- Added specific environment files (.env.local, .env.development.local, .env.test.local, .env.production.local) to .gitignore for better management of local configurations.\r\n- Ensured that the base .env file is still ignored to prevent sensitive information from being committed.\r\nThis pull request adds example environment variables for configuring the Eliza server. These additions help developers understand which variables are needed to connect to the Eliza server in local development.\r\n\r\n* Added `NEXT_PUBLIC_ELIZA_SERVER_URL` and `NEXT_PUBLIC_ELIZA_SERVER_AUTH_TOKEN` to `.env.example` to document required Eliza server configuration variables.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-21T15:48:48Z",
+      "mergedAt": "2025-10-21T15:49:48Z",
+      "additions": 8,
+      "deletions": 1
+    },
+    {
+      "id": "PR_kwDOQEvmTc6u4H7w",
+      "title": "critical: add missing deps to avoid build issues",
+      "author": "Neysixx",
+      "number": 5,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-21T15:57:32Z",
+      "mergedAt": "2025-10-21T15:57:47Z",
+      "additions": 6,
+      "deletions": 0
+    }
+  ],
+  "codeChanges": {
+    "additions": 14,
+    "deletions": 1,
+    "files": 4,
+    "commitCount": 4
+  },
+  "completedItems": [
+    {
+      "title": "critical: add missing deps to avoid build issues",
+      "prNumber": 5,
+      "type": "other",
+      "body": "",
+      "files": [
+        "bun.lock",
+        "package.json"
+      ]
+    },
+    {
+      "title": "chore: update .gitignore to include specific environment files and create an env sample",
+      "prNumber": 4,
+      "type": "other",
+      "body": "- Added specific environment files (.env.local, .env.development.local, .env.test.local, .env.production.local) to .gitignore for better management of local configurations.\r\n- Ensured that the base .env file is still ignored to prevent sens",
+      "files": [
+        ".env.example",
+        ".gitignore"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 46.20149524204936,
+      "prScore": 46.20149524204936,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 33.104644267469595,
+      "prScore": 33.104644267469595,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 2,
+  "mergedPRs": 2,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}
