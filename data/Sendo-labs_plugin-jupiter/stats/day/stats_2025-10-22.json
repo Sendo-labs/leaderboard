@@ -24,7 +24,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "standujar: Focused on feature work, bug fixes, and other tasks, merging a new feature in Sendo-labs/leaderboard#3 to add new projects. Their code changes primarily involved configuration files."
+      "summary": "standujar: Focused on significant feature development, notably merging a substantial PR in Sendo-labs/plugin-sendo-worker#1 (+13194/-60 lines) that introduced the initial implementation of the Sendo Worker, and also opened a PR to add comprehensive test infrastructure for it, demonstrating a primary focus on other work, tests, and feature development."
     },
     {
       "username": "Neysixx",
@@ -34,7 +34,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "Neysixx: Primarily focused on significant refactoring and new feature development within the `Sendo-labs/frontend` repository, merging two substantial pull requests, including a large feature addition in PR #7 (+1287/-827 lines) and a worker-plugin refactor in PR #6 (+712/-245 lines), demonstrating a strong emphasis on code quality and new functionality."
     }
   ],
   "newPRs": 0,

@@ -313,7 +313,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "Neysixx: This month, Neysixx drove a foundational refactor of the Sendo-labs/frontend repository to improve its project structure and configurations. Their most impactful contribution was a massive structural overhaul (Sendo-labs/frontend#1), which involved over 17,800 lines added and 16,100 lines removed. They also improved the application's page structure (Sendo-labs/frontend#3) and resolved a critical build failure by adding missing dependencies (Sendo-labs/frontend#5). This activity demonstrates a clear focus on large-scale refactoring and feature work within the frontend codebase."
+      "summary": "Neysixx: This month, Neysixx led a foundational overhaul of the `Sendo-labs/frontend` repository, merging six pull requests focused on restructuring and feature development. Their most impactful contribution was a massive project-wide refactor to update the structure and configurations (Sendo-labs/frontend#1), which involved over 34,000 line changes. In addition, they implemented new pages (Sendo-labs/frontend#7), improved the page structure (Sendo-labs/frontend#3), and resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5). This work demonstrates a clear focus on large-scale refactoring and feature implementation within the frontend codebase."
     },
     {
       "username": "standujar",
@@ -323,7 +323,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "standujar: Focused on foundational development, standujar initiated several new projects and features this month by merging five pull requests. They established the initial implementation for a new cryptoscore plugin (plugin-cryptoscore#1) and set up the frontend project with Eliza integration (frontend#2), with these two efforts representing significant foundational work. Additionally, they initialized and expanded the contributor tracking system in the leaderboard repository (leaderboard#1, #2, #3). Their commits were primarily focused on feature work and other foundational tasks, with changes split between code and configuration files."
+      "summary": "standujar: Focused on bootstrapping several new projects and plugins this month, merging multiple foundational pull requests. They established the initial implementation for the CryptoScore plugin (Sendo-labs/plugin-cryptoscore#1), the frontend project (Sendo-labs/frontend#2), and the Sendo Worker (Sendo-labs/plugin-sendo-worker#1). The Sendo Worker PR was particularly significant, introducing over 13,000 lines of code to establish the new service. This activity shows a primary focus on new feature work and initial project configuration."
     },
     {
       "username": "xdrkush",
@@ -333,7 +333,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "xdrkush: Made foundational contributions to the `sendo-api` repository this month, initiating the project with a massive PR (#1) that introduced over 21,000 lines of code. They also addressed a key functional issue by fixing the \"buy sell account\" logic in PR #3. Their activity shows a primary focus on building out the new service, with work spanning foundational setup, feature implementation, and bug fixes."
+      "summary": "xdrkush: Focused on establishing the new `Sendo-labs/sendo-api` repository, merging two pull requests. Their most significant contribution was the initial commit of the project (PR #1), which introduced over 21,000 lines of code. They also resolved a bug related to the buy/sell account functionality in PR #3, demonstrating a focus on both foundational work and bug fixes."
     },
     {
       "username": "M4XGO",
@@ -343,7 +343,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "M4XGO: This month, M4XGO focused on establishing foundational CI/CD infrastructure by creating a new reusable workflow system in Sendo-labs/reusable-workflows#1, a significant effort involving over 1000 lines of code. They immediately demonstrated the impact of this work by implementing the new release management and NPM publishing workflow in the Sendo-labs/plugin-cryptoscore repository via PR #2. Their contributions were concentrated in configuration and documentation files, reflecting a clear focus on improving development processes and automation."
+      "summary": "M4XGO focused on establishing and improving development infrastructure this month by creating a foundational set of reusable workflows and release management processes in Sendo-labs/reusable-workflows#1, a significant effort involving over 1000 lines of new code. They then applied this new system to enable automated release management and NPM publishing for the plugin-cryptoscore repository (Sendo-labs/plugin-cryptoscore#2). This work was concentrated entirely on configuration and documentation files, reflecting a clear focus on developer tooling and automation."
     },
     {
       "username": "0xCanet",
@@ -353,7 +353,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "0xCanet: This month, 0xCanet's work was dedicated to establishing the foundation for a new project, `Sendo-labs/frontend`. This was accomplished through a single, significant pull request (#1) that served as the initial commit, adding over 9,200 lines of code to the new repository."
+      "summary": "0xCanet: This month, 0xCanet's work was centered on the foundational setup of the new `Sendo-labs/frontend` repository. They merged a single, substantial pull request (Sendo-labs/frontend#1), which introduced the initial codebase for the project. This commit added over 9,200 lines of code across 111 files, establishing the new frontend application."
     },
     {
       "username": "0domart",
@@ -363,7 +363,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "0domart: This month, 0domart focused on developing new functionality in the Sendo-labs/spotlight repository, opening a pull request to implement SOL transfer logic and unit tests (Sendo-labs/spotlight#1). This work-in-progress involved substantial code changes (+1527/-617 lines across 12 files). The contribution shows a primary focus on building out test coverage for this new feature."
+      "summary": "0domart: This month, 0domart focused on developing new functionality in the Sendo-labs/spotlight repository. They opened a significant pull request (#1) to implement SOL transfer logic and its corresponding unit tests. This work-in-progress involved a substantial effort, with over 1500 new lines of code added across 12 files, indicating a primary focus on building out test suites."
     },
     {
       "username": "tionebDotsamapha",
@@ -373,7 +373,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
-      "summary": "tionebDotsamapha: Focused on improving project documentation this month, contributing an update to the `Sendo-labs/sendo-api` repository's README file (PR #2). This change, which translated the documentation to English, made the project more accessible. Their activity for the period was concentrated entirely on documentation."
+      "summary": "tionebDotsamapha: Focused on improving project documentation this month, merging a pull request (#2) to update the README file to English in the Sendo-labs/sendo-api repository. This contribution represented their sole activity, with all changes concentrated on documentation."
     }
   ],
   "newPRs": 9,
