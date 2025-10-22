@@ -24,7 +24,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "xdrkush: Focused on bug fixes and feature work, opening a pull request in Sendo-labs/sendo-api#3 to address an account-related fix, while modifying 11 files with a net addition of 137 lines of code."
+      "summary": "xdrkush: Focused on bug fixes and feature work, merging a significant PR in Sendo-labs/sendo-api#3 (+510/-225 lines) that addressed a \"buy sell account\" issue. Their code changes primarily involved bugfix work (67%) and feature work (33%), touching code, tests, and configuration files."
     },
     {
       "username": "Neysixx",
@@ -34,7 +34,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "Neysixx: Focused on maintenance and configuration, merging two pull requests in Sendo-labs/frontend, including a critical dependency fix in PR #5 and an update to the .gitignore in PR #4, demonstrating attention to build stability and repository hygiene. Their code changes primarily involved other work and tests, with a focus on configuration files."
+      "summary": "Neysixx: Focused on maintenance and configuration, merging two PRs in Sendo-labs/frontend, including a critical dependency fix in PR #5 and an update to the .gitignore in PR #4, demonstrating attention to build stability and repository hygiene. Their code changes primarily involved other work and tests, with a focus on configuration files."
     }
   ],
   "newPRs": 0,
