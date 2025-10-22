@@ -1,0 +1,35 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-17T00:00:00.000Z",
+    "intervalEnd": "2025-10-18T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/plugin-sendo-worker",
+  "overview": "From 2025-10-17 to 2025-10-18, Sendo-labs/plugin-sendo-worker had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "0domart",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
+      "totalScore": 35.3857738965761,
+      "prScore": 35.3857738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "0domart: Focused on developing core transfer logic and unit tests, as evidenced by the open PR Sendo-labs/spotlight#1, which involved substantial code changes across 12 files (+1527/-617 lines) in a single commit, primarily dedicated to tests."
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}

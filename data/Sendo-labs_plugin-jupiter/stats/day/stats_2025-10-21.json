@@ -1,0 +1,45 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-21T00:00:00.000Z",
+    "intervalEnd": "2025-10-22T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/plugin-jupiter",
+  "overview": "From 2025-10-21 to 2025-10-22, Sendo-labs/plugin-jupiter had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 49.104644267469595,
+      "prScore": 49.104644267469595,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "xdrkush: Focused on bug fixes and feature work, opening a pull request in Sendo-labs/sendo-api#3 to address an account-related fix, while modifying 11 files with a net addition of 137 lines of code."
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 46.20149524204936,
+      "prScore": 46.20149524204936,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "Neysixx: Focused on maintenance and configuration, merging two pull requests in Sendo-labs/frontend, including a critical dependency fix in PR #5 and an update to the .gitignore in PR #4, demonstrating attention to build stability and repository hygiene. Their code changes primarily involved other work and tests, with a focus on configuration files."
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}

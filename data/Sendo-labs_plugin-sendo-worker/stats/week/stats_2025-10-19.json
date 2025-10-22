@@ -1,0 +1,75 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-19T00:00:00.000Z",
+    "intervalEnd": "2025-10-26T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/plugin-sendo-worker",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/plugin-sendo-worker had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 130.20704303520156,
+      "prScore": 130.20704303520156,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "Neysixx: Focused on a significant structural refactor within the Sendo-labs/frontend repository, merging a large pull request to improve the page structure (#3) which involved changes to over 3800 lines of code. They also have ongoing work to implement a new worker feature in an open pull request (#2). This activity shows a primary focus on refactoring and new feature development."
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 49.104644267469595,
+      "prScore": 49.104644267469595,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "xdrkush: This week, xdrkush focused on addressing an issue with account functionality in the Sendo-labs/sendo-api repository. They opened PR #3 (\"Fix:buy sell account\"), which introduced changes across 17 files (+581/-296 lines). This effort combined feature and bugfix work, with changes touching code, tests, and configuration files."
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 43.063342630130634,
+      "prScore": 43.063342630130634,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "standujar: This week, standujar focused on repository configuration, expanding the project's tracking scope by merging a PR in Sendo-labs/leaderboard (#2). Their work consisted entirely of modifications to configuration files."
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 29.347774539791274,
+      "prScore": 29.347774539791274,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "M4XGO: No activity this week."
+    },
+    {
+      "username": "tionebDotsamapha",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16654460?u=de9d9ffada915d875d292de1fc6230610ce9eb11&v=4",
+      "totalScore": 27.891422315129955,
+      "prScore": 27.691422315129955,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "summary": "tionebDotsamapha: Focused on documentation this week, opening a pull request to update the README file in the Sendo-labs/sendo-api repository (PR #2)."
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}

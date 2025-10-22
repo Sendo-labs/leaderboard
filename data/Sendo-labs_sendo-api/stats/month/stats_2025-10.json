@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/sendo-api",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/sendo-api had 3 new PRs (2 merged), 0 new issues, and 2 active contributors.",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/sendo-api had 3 new PRs (3 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -28,7 +28,7 @@
       "body": "",
       "repository": "Sendo-labs/sendo-api",
       "createdAt": "2025-10-21T12:57:24Z",
-      "mergedAt": null,
+      "mergedAt": "2025-10-22T12:27:26Z",
       "additions": 464,
       "deletions": 179
     },
@@ -46,10 +46,10 @@
     }
   ],
   "codeChanges": {
-    "additions": 21078,
-    "deletions": 73,
-    "files": 43,
-    "commitCount": 10
+    "additions": 21542,
+    "deletions": 252,
+    "files": 45,
+    "commitCount": 11
   },
   "completedItems": [
     {
@@ -111,6 +111,23 @@
         "tests/decodeTx.ts",
         "tsconfig.json"
       ]
+    },
+    {
+      "title": "Fix:buy sell account",
+      "prNumber": 3,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "env-sample",
+        "package.json",
+        "src/controllers/trades.ts",
+        "src/services/birdeyes.ts",
+        "src/utils/decoder/extractBalances.ts",
+        "src/utils/rateLimiter.ts",
+        "tests/birdeyeTest.ts",
+        "tests/decodeTx.ts",
+        "tests/tradesTest.ts"
+      ]
     }
   ],
   "topContributors": [
@@ -127,12 +144,22 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 142.5708421542721,
-      "prScore": 142.5708421542721,
+      "totalScore": 164.24789042328283,
+      "prScore": 164.24789042328283,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "standujar: Focused on foundational work this month, establishing several new projects and features across the Sendo-labs organization. They delivered significant impact by creating the initial implementation for a new plugin in Sendo-labs/plugin-cryptoscore#1 (+2548 lines) and setting up the entire frontend project in Sendo-labs/frontend#2 (+2814 lines). Additionally, they initialized a new contributor tracking system in Sendo-labs/leaderboard#1. This activity shows a primary focus on feature work and other foundational tasks, with changes concentrated in code and configuration files."
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 98.6484181640457,
+      "prScore": 98.6484181640457,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "xdrkush: This month, xdrkush's efforts were focused on initiating the new `sendo-api` repository. They landed a single, substantial pull request (Sendo-labs/sendo-api#1) which introduced the project's foundational structure with over 21,000 lines of code. This initial commit consisted primarily of application code and configuration files, establishing the groundwork for the new service."
     },
     {
       "username": "M4XGO",
@@ -143,16 +170,6 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "M4XGO: This month, M4XGO focused on establishing foundational CI/CD infrastructure for the Sendo-labs organization. They opened a significant pull request to create reusable workflows and manage releases (Sendo-labs/reusable-workflows#1). This single initiative involved over 1000 lines of new code across 15 files, primarily consisting of documentation and configuration changes."
-    },
-    {
-      "username": "xdrkush",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 82.6484181640457,
-      "prScore": 82.6484181640457,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "summary": "xdrkush: This month, xdrkush's efforts were focused on initiating the new `sendo-api` repository. They landed a single, substantial pull request (Sendo-labs/sendo-api#1) which introduced the project's foundational structure with over 21,000 lines of code. This initial commit consisted primarily of application code and configuration files, establishing the groundwork for the new service."
     },
     {
       "username": "0xCanet",
@@ -186,8 +203,8 @@
     }
   ],
   "newPRs": 3,
-  "mergedPRs": 2,
+  "mergedPRs": 3,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 2
+  "activeContributors": 3
 }

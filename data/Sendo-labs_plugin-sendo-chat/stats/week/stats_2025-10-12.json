@@ -1,0 +1,65 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-12T00:00:00.000Z",
+    "intervalEnd": "2025-10-19T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/plugin-sendo-chat",
+  "overview": "From 2025-10-12 to 2025-10-19, Sendo-labs/plugin-sendo-chat had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 59.42577389657609,
+      "prScore": 59.42577389657609,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "Neysixx: Executed a large-scale refactor of the `Sendo-labs/frontend` repository, overhauling the project structure and updating configurations. This was accomplished through a single, massive pull request (#1) that modified 370 files with +17867/-16129 lines of changes. Their contributions were primarily focused on refactoring (46%), but also included significant feature work and bugfixes."
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 56.40848035748714,
+      "prScore": 56.40848035748714,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "M4XGO: Focused on establishing new CI/CD processes, opening a pull request in Sendo-labs/reusable-workflows (#1) to set up new workflows and release management. This work involved over 1000 lines of changes across 12 files. Their efforts were concentrated on documentation and configuration files."
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "xdrkush: Focused on bootstrapping a new project this week by initializing the `Sendo-labs/sendo-api` repository. They merged a single, substantial pull request (#1) which introduced over 21,000 lines of code to establish the project's foundation. This initial setup consisted primarily of new code and configuration files."
+    },
+    {
+      "username": "0domart",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
+      "totalScore": 35.3857738965761,
+      "prScore": 35.3857738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "0domart: Focused on new feature development, opening a pull request in Sendo-labs/spotlight (#1) to complete the SOL transfer logic. This substantial contribution added over 1500 lines of code, with the changes primarily focused on implementing unit tests for the new functionality."
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}

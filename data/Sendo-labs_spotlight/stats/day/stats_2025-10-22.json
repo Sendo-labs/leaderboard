@@ -15,7 +15,18 @@
     "commitCount": 0
   },
   "completedItems": [],
-  "topContributors": [],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 21.67704826901074,
+      "prScore": 21.67704826901074,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
   "newPRs": 0,
   "mergedPRs": 0,
   "newIssues": 0,

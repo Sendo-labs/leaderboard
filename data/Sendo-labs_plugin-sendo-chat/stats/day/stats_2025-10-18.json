@@ -1,0 +1,55 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-18T00:00:00.000Z",
+    "intervalEnd": "2025-10-19T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/plugin-sendo-chat",
+  "overview": "From 2025-10-18 to 2025-10-19, Sendo-labs/plugin-sendo-chat had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 59.42577389657609,
+      "prScore": 59.42577389657609,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "Neysixx: Focused on a significant refactor of the Sendo-labs/frontend project, successfully merging PR #1 which involved substantial changes across 370 files (+17867/-16129 lines) to restructure the project and update configurations, demonstrating a primary focus on refactor and feature work."
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 56.40848035748714,
+      "prScore": 56.40848035748714,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "M4XGO: Significantly contributed to workflow and release management by merging a substantial PR in Sendo-labs/reusable-workflows#1 (+1005/-38 lines), demonstrating a focus on documentation and configuration."
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "xdrkush: Focused on foundational work, initiating the `sendo-api` repository with a substantial PR (#1) that introduced over 21,000 lines of code, primarily contributing to new code and configuration files."
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}

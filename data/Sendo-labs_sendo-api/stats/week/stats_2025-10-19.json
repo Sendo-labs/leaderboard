@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/sendo-api",
-  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/sendo-api had 2 new PRs (1 merged), 0 new issues, and 2 active contributors.",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/sendo-api had 2 new PRs (2 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -16,7 +16,7 @@
       "body": "",
       "repository": "Sendo-labs/sendo-api",
       "createdAt": "2025-10-21T12:57:24Z",
-      "mergedAt": null,
+      "mergedAt": "2025-10-22T12:27:26Z",
       "additions": 464,
       "deletions": 179
     },
@@ -34,10 +34,10 @@
     }
   ],
   "codeChanges": {
-    "additions": 71,
-    "deletions": 71,
-    "files": 1,
-    "commitCount": 6
+    "additions": 535,
+    "deletions": 250,
+    "files": 10,
+    "commitCount": 7
   },
   "completedItems": [
     {
@@ -47,6 +47,23 @@
       "body": "@xdrkush i traslated your readme in english if you want to merge it.\r\n",
       "files": [
         "README.md"
+      ]
+    },
+    {
+      "title": "Fix:buy sell account",
+      "prNumber": 3,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "env-sample",
+        "package.json",
+        "src/controllers/trades.ts",
+        "src/services/birdeyes.ts",
+        "src/utils/decoder/extractBalances.ts",
+        "src/utils/rateLimiter.ts",
+        "tests/birdeyeTest.ts",
+        "tests/decodeTx.ts",
+        "tests/tradesTest.ts"
       ]
     }
   ],
@@ -64,12 +81,22 @@
     {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 33.104644267469595,
-      "prScore": 33.104644267469595,
+      "totalScore": 49.104644267469595,
+      "prScore": 49.104644267469595,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "xdrkush: This week, xdrkush focused on addressing an issue with account functionality in the Sendo-labs/sendo-api repository. They opened PR #3 (\"Fix:buy sell account\"), which introduced changes across 17 files (+581/-296 lines). This effort combined feature and bugfix work, with changes touching code, tests, and configuration files."
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 43.063342630130634,
+      "prScore": 43.063342630130634,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "standujar: This week, standujar focused on repository configuration, expanding the project's tracking scope by merging a PR in Sendo-labs/leaderboard (#2). Their work consisted entirely of modifications to configuration files."
     },
     {
       "username": "M4XGO",
@@ -90,21 +117,11 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "summary": "tionebDotsamapha: Focused on documentation this week, opening a pull request to update the README file in the Sendo-labs/sendo-api repository (PR #2)."
-    },
-    {
-      "username": "standujar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 21.38629436111989,
-      "prScore": 21.38629436111989,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "summary": "standujar: This week, standujar focused on repository configuration, expanding the project's tracking scope by merging a PR in Sendo-labs/leaderboard (#2). Their work consisted entirely of modifications to configuration files."
     }
   ],
   "newPRs": 2,
-  "mergedPRs": 1,
+  "mergedPRs": 2,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 2
+  "activeContributors": 3
 }

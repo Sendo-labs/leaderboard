@@ -5,20 +5,62 @@
     "intervalType": "day"
   },
   "repository": "Sendo-labs/sendo-api",
-  "overview": "From 2025-10-22 to 2025-10-23, Sendo-labs/sendo-api had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "overview": "From 2025-10-22 to 2025-10-23, Sendo-labs/sendo-api had 0 new PRs (1 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQE5fGM6u1nIr",
+      "title": "Fix:buy sell account",
+      "author": "xdrkush",
+      "number": 3,
+      "body": "",
+      "repository": "Sendo-labs/sendo-api",
+      "createdAt": "2025-10-21T12:57:24Z",
+      "mergedAt": "2025-10-22T12:27:26Z",
+      "additions": 464,
+      "deletions": 179
+    }
+  ],
   "codeChanges": {
-    "additions": 0,
-    "deletions": 0,
-    "files": 0,
-    "commitCount": 0
+    "additions": 464,
+    "deletions": 179,
+    "files": 9,
+    "commitCount": 1
   },
-  "completedItems": [],
-  "topContributors": [],
+  "completedItems": [
+    {
+      "title": "Fix:buy sell account",
+      "prNumber": 3,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "env-sample",
+        "package.json",
+        "src/controllers/trades.ts",
+        "src/services/birdeyes.ts",
+        "src/utils/decoder/extractBalances.ts",
+        "src/utils/rateLimiter.ts",
+        "tests/birdeyeTest.ts",
+        "tests/decodeTx.ts",
+        "tests/tradesTest.ts"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 21.67704826901074,
+      "prScore": 21.67704826901074,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
   "newPRs": 0,
-  "mergedPRs": 0,
+  "mergedPRs": 1,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 0
+  "activeContributors": 2
 }

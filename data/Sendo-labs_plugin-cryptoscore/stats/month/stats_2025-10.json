@@ -189,12 +189,22 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 142.5708421542721,
-      "prScore": 142.5708421542721,
+      "totalScore": 164.24789042328283,
+      "prScore": 164.24789042328283,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "standujar: Focused on foundational work this month, establishing several new projects and features across the Sendo-labs organization. They delivered significant impact by creating the initial implementation for a new plugin in Sendo-labs/plugin-cryptoscore#1 (+2548 lines) and setting up the entire frontend project in Sendo-labs/frontend#2 (+2814 lines). Additionally, they initialized a new contributor tracking system in Sendo-labs/leaderboard#1. This activity shows a primary focus on feature work and other foundational tasks, with changes concentrated in code and configuration files."
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 98.6484181640457,
+      "prScore": 98.6484181640457,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "xdrkush: This month, xdrkush's efforts were focused on initiating the new `sendo-api` repository. They landed a single, substantial pull request (Sendo-labs/sendo-api#1) which introduced the project's foundational structure with over 21,000 lines of code. This initial commit consisted primarily of application code and configuration files, establishing the groundwork for the new service."
     },
     {
       "username": "M4XGO",
@@ -205,16 +215,6 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "M4XGO: This month, M4XGO focused on establishing foundational CI/CD infrastructure for the Sendo-labs organization. They opened a significant pull request to create reusable workflows and manage releases (Sendo-labs/reusable-workflows#1). This single initiative involved over 1000 lines of new code across 15 files, primarily consisting of documentation and configuration changes."
-    },
-    {
-      "username": "xdrkush",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 82.6484181640457,
-      "prScore": 82.6484181640457,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "summary": "xdrkush: This month, xdrkush's efforts were focused on initiating the new `sendo-api` repository. They landed a single, substantial pull request (Sendo-labs/sendo-api#1) which introduced the project's foundational structure with over 21,000 lines of code. This initial commit consisted primarily of application code and configuration files, establishing the groundwork for the new service."
     },
     {
       "username": "0xCanet",
