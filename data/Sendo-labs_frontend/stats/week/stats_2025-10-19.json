@@ -209,6 +209,16 @@
       "summary": "M4XGO: No activity this week."
     },
     {
+      "username": "tionebDotsamapha",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16654460?u=de9d9ffada915d875d292de1fc6230610ce9eb11&v=4",
+      "totalScore": 27.891422315129955,
+      "prScore": 27.691422315129955,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "summary": "tionebDotsamapha: Focused on documentation this week, opening a pull request to update the README file in the Sendo-labs/sendo-api repository (PR #2)."
+    },
+    {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
       "totalScore": 21.38629436111989,
@@ -217,16 +227,6 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "standujar: This week, standujar focused on repository configuration, expanding the project's tracking scope by merging a PR in Sendo-labs/leaderboard (#2). Their work consisted entirely of modifications to configuration files."
-    },
-    {
-      "username": "tionebDotsamapha",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/16654460?u=de9d9ffada915d875d292de1fc6230610ce9eb11&v=4",
-      "totalScore": 11.891422315129953,
-      "prScore": 11.691422315129953,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0.2,
-      "summary": "tionebDotsamapha: Focused on documentation this week, opening a pull request to update the README file in the Sendo-labs/sendo-api repository (PR #2)."
     }
   ],
   "newPRs": 4,

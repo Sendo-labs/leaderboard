@@ -92,6 +92,16 @@
       "summary": "Neysixx: Focused on a significant refactor of the Sendo-labs/frontend project, successfully merging PR #1 which involved substantial changes across 370 files (+17867/-16129 lines) to restructure the project and update configurations, demonstrating a primary focus on refactor and feature work."
     },
     {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 56.40848035748714,
+      "prScore": 56.40848035748714,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "M4XGO: Significantly contributed to workflow and release management by merging a substantial PR in Sendo-labs/reusable-workflows#1 (+1005/-38 lines), demonstrating a focus on documentation and configuration."
+    },
+    {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
       "totalScore": 49.5437738965761,
@@ -100,16 +110,6 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "xdrkush: Focused on foundational work, initiating the `sendo-api` repository with a substantial PR (#1) that introduced over 21,000 lines of code, primarily contributing to new code and configuration files."
-    },
-    {
-      "username": "M4XGO",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
-      "totalScore": 40.40848035748714,
-      "prScore": 40.40848035748714,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "summary": "M4XGO: Significantly contributed to workflow and release management by merging a substantial PR in Sendo-labs/reusable-workflows#1 (+1005/-38 lines), demonstrating a focus on documentation and configuration."
     }
   ],
   "newPRs": 1,
