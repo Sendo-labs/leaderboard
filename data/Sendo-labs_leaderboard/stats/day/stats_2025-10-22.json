@@ -42,12 +42,22 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 21.67704826901074,
-      "prScore": 21.67704826901074,
+      "totalScore": 121.63659606216294,
+      "prScore": 121.63659606216294,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "standujar: Focused on feature work, bug fixes, and other tasks, merging a new feature in Sendo-labs/leaderboard#3 to add new projects. Their code changes primarily involved configuration files."
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 111.38470653072267,
+      "prScore": 111.38470653072267,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
     }
   ],
   "newPRs": 1,

@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/frontend had 4 new PRs (4 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/frontend had 6 new PRs (6 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -29,8 +29,8 @@
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-10-19T09:35:30Z",
       "mergedAt": null,
-      "additions": 2069,
-      "deletions": 304
+      "additions": 3612,
+      "deletions": 913
     },
     {
       "id": "PR_kwDOQEvmTc6ugOVG",
@@ -45,35 +45,35 @@
       "deletions": 1796
     },
     {
-      "id": "PR_kwDOQEvmTc6u4Ay-",
-      "title": "chore: update .gitignore to include specific environment files and create an env sample",
+      "id": "PR_kwDOQEvmTc6vIkk9",
+      "title": "feat: new pages",
       "author": "Neysixx",
-      "number": 4,
-      "body": "- Added specific environment files (.env.local, .env.development.local, .env.test.local, .env.production.local) to .gitignore for better management of local configurations.\r\n- Ensured that the base .env file is still ignored to prevent sensitive information from being committed.\r\nThis pull request adds example environment variables for configuring the Eliza server. These additions help developers understand which variables are needed to connect to the Eliza server in local development.\r\n\r\n* Added `NEXT_PUBLIC_ELIZA_SERVER_URL` and `NEXT_PUBLIC_ELIZA_SERVER_AUTH_TOKEN` to `.env.example` to document required Eliza server configuration variables.",
+      "number": 7,
+      "body": "This pull request refactors several main pages (`analyzer`, `leaderboard`, `worker`, and the new `onboarding` page) to use a shared layout component, `PageWrapper`, for consistent styling and structure. It also introduces a new onboarding flow and makes minor improvements to the contact section. These changes improve code maintainability, visual consistency, and user onboarding experience.\r\n\r\n**Shared Layout Refactor:**\r\n\r\n* Replaced custom layout wrappers in `src/app/analyzer/client.tsx`, `src/app/leaderboard/client.tsx`, and `src/app/worker/client.tsx` with the shared `PageWrapper` component, ensuring consistent page structure and reducing duplicated code. [[1]](diffhunk://#diff-5eada83b5857ea3eb390602cfbb8443939c66c9d28f234197efbc52b20d49d62R20) [[2]](diffhunk://#diff-5eada83b5857ea3eb390602cfbb8443939c66c9d28f234197efbc52b20d49d62L249-R250) [[3]](diffhunk://#diff-5eada83b5857ea3eb390602cfbb8443939c66c9d28f234197efbc52b20d49d62L342-R342) [[4]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62R9) [[5]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62L180-R181) [[6]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62L358-R358) [[7]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34R21) [[8]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L171-R172) [[9]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L277) [[10]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L290-R289)\r\n\r\n**Onboarding Flow Addition:**\r\n\r\n* Added a new onboarding page (`src/app/onboarding/client.tsx` and `src/app/onboarding/page.tsx`) with a step-by-step guide, rewards system explanation, and calls-to-action for new contributors. This page uses `PageWrapper` for layout consistency. [[1]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89R1-R396) [[2]](diffhunk://#diff-5ff8336f9c23d713d14e7d213695092f92f81381421e6d128e24857d5f8b0f3aR1-R22)\r\n\r\n**Contact Section UI Update:**\r\n\r\n* Updated the `ContactSection` component to adjust section height, padding, and heading sizes for improved visual balance and responsiveness. [[1]](diffhunk://#diff-b6d289b33b9a10f149dbf2d4bd001c64c559cb4e3e16ae3b33df67879d264373L1-R1) [[2]](diffhunk://#diff-b6d289b33b9a10f149dbf2d4bd001c64c559cb4e3e16ae3b33df67879d264373L26-R32)",
       "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-10-21T15:48:48Z",
-      "mergedAt": "2025-10-21T15:49:48Z",
-      "additions": 8,
-      "deletions": 1
+      "createdAt": "2025-10-22T19:20:55Z",
+      "mergedAt": "2025-10-22T19:51:49Z",
+      "additions": 1083,
+      "deletions": 623
     },
     {
-      "id": "PR_kwDOQEvmTc6u4H7w",
-      "title": "critical: add missing deps to avoid build issues",
+      "id": "PR_kwDOQEvmTc6vG_D5",
+      "title": "refactor: worker-plugin",
       "author": "Neysixx",
-      "number": 5,
-      "body": "",
+      "number": 6,
+      "body": "- Updated label elements in the RuleBuilder component to enhance readability by breaking long lines into multiple lines.\n- Ensured consistent formatting for label attributes across different rule types, improving overall code clarity.",
       "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-10-21T15:57:32Z",
-      "mergedAt": "2025-10-21T15:57:47Z",
-      "additions": 6,
-      "deletions": 0
+      "createdAt": "2025-10-22T16:58:49Z",
+      "mergedAt": "2025-10-22T19:12:24Z",
+      "additions": 659,
+      "deletions": 192
     }
   ],
   "codeChanges": {
-    "additions": 5736,
-    "deletions": 4056,
-    "files": 58,
-    "commitCount": 18
+    "additions": 7478,
+    "deletions": 4871,
+    "files": 75,
+    "commitCount": 35
   },
   "completedItems": [
     {
@@ -175,18 +175,72 @@
         ".env.example",
         ".gitignore"
       ]
+    },
+    {
+      "title": "feat: new pages",
+      "prNumber": 7,
+      "type": "feature",
+      "body": "This pull request refactors several main pages (`analyzer`, `leaderboard`, `worker`, and the new `onboarding` page) to use a shared layout component, `PageWrapper`, for consistent styling and structure. It also introduces a new onboarding f",
+      "files": [
+        "src/app/analyzer/client.tsx",
+        "src/app/leaderboard/client.tsx",
+        "src/app/onboarding/client.tsx",
+        "src/app/onboarding/page.tsx",
+        "src/app/worker/client.tsx",
+        "src/components/home/contact-section.tsx",
+        "src/components/home/hero-section.tsx",
+        "src/components/home/how-it-works-section.tsx",
+        "src/components/home/statistics-section.tsx",
+        "src/components/home/team-section.tsx",
+        "src/components/navigation.tsx",
+        "src/components/shared/page-wrapper.tsx",
+        "src/components/worker/action-history.tsx"
+      ]
+    },
+    {
+      "title": "refactor: worker-plugin",
+      "prNumber": 6,
+      "type": "refactor",
+      "body": "- Updated label elements in the RuleBuilder component to enhance readability by breaking long lines into multiple lines.\n- Ensured consistent formatting for label attributes across different rule types, improving overall code clarity.",
+      "files": [
+        "bun.lock",
+        "package.json",
+        "src/app/leaderboard/client.tsx",
+        "src/app/worker/client.tsx",
+        "src/components/navigation.tsx",
+        "src/components/shared/loader.tsx",
+        "src/components/shared/query-boundary.tsx",
+        "src/components/worker/action-history.tsx",
+        "src/components/worker/action-list.tsx",
+        "src/components/worker/analysis-panel.tsx",
+        "src/components/worker/rule-builder.tsx",
+        "src/services/agent.service.ts",
+        "src/services/worker-client.service.ts",
+        "src/types/agent.ts",
+        "src/types/user-actions.ts"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 130.20704303520156,
-      "prScore": 130.20704303520156,
+      "totalScore": 241.59174956592423,
+      "prScore": 241.59174956592423,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "Neysixx: Focused on a significant refactor of the `Sendo-labs/frontend` repository, merging a large pull request to improve the application's page structure (Sendo-labs/frontend#3). They also resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5), while continuing to develop a new worker implementation in an open PR. This work was primarily centered on refactoring the frontend codebase."
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 143.02289042328283,
+      "prScore": 143.02289042328283,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "standujar: Expanded the Sendo-labs/leaderboard by adding new projects and repositories via two pull requests (#2, #3). In addition to this feature work, they also pushed a significant number of configuration updates directly, modifying 16 files (+566/-199 lines). This activity shows a primary focus on configuration changes and feature additions."
     },
     {
       "username": "xdrkush",
@@ -197,16 +251,6 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "Final check:\n- Single paragraph? Yes.\n- Starts with \"xdrkush: \"? Yes.\n- No more than 3 sentences? Yes (2 sentences).\n- High-level summary first? Yes.\n- Weaves in impactful contribution with number? Yes.\n- Uses quantitative data for"
-    },
-    {
-      "username": "standujar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 43.063342630130634,
-      "prScore": 43.063342630130634,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "summary": "standujar: Expanded the Sendo-labs/leaderboard by adding new projects and repositories via two pull requests (#2, #3). In addition to this feature work, they also pushed a significant number of configuration updates directly, modifying 16 files (+566/-199 lines). This activity shows a primary focus on configuration changes and feature additions."
     },
     {
       "username": "M4XGO",
@@ -229,8 +273,8 @@
       "summary": "tionebDotsamapha: Focused on improving project documentation this week by merging a pull request in Sendo-labs/sendo-api (#2) to update the README file. This contribution reflects a singular focus on documentation."
     }
   ],
-  "newPRs": 4,
-  "mergedPRs": 4,
+  "newPRs": 6,
+  "mergedPRs": 6,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 1

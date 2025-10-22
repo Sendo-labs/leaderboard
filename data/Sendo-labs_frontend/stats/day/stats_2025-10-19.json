@@ -29,8 +29,8 @@
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-10-19T09:35:30Z",
       "mergedAt": null,
-      "additions": 2069,
-      "deletions": 304
+      "additions": 3612,
+      "deletions": 913
     },
     {
       "id": "PR_kwDOQEvmTc6ugOVG",
@@ -142,7 +142,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "Neysixx: Focused on significant refactoring and feature development, merging a large pull request in Sendo-labs/frontend#3 (+2024/-1796 lines) that improved page structure, while also opening a new feature PR for worker implementation. Their work involved modifying 292 files with a primary focus on refactor work (57%) and feature work (21%)."
+      "summary": "Neysixx: Focused on significant feature development and refactoring, merging a large PR in Sendo-labs/frontend#3 (+2024/-1796 lines) that improved page structure, while also opening a new feature PR for worker implementation. Their work primarily involved refactoring (57%) and feature development (21%) across 292 files, demonstrating a strong impact on the frontend codebase."
     },
     {
       "username": "M4XGO",
@@ -152,7 +152,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "M4XGO: Focused on feature work, merging a significant PR in Sendo-labs/plugin-cryptoscore#2 (+74/-10 lines) that added release management and NPM publishing workflows, primarily modifying configuration files."
+      "summary": "M4XGO: Focused on feature work, merging a significant PR in Sendo-labs/plugin-cryptoscore#2 (+74/-10 lines) that added release management and NPM publishing workflows, with a primary focus on configuration files."
     },
     {
       "username": "tionebDotsamapha",

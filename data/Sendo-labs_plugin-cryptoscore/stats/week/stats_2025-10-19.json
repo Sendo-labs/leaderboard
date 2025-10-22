@@ -147,12 +147,22 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 130.20704303520156,
-      "prScore": 130.20704303520156,
+      "totalScore": 241.59174956592423,
+      "prScore": 241.59174956592423,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "Neysixx: Focused on a significant refactor of the `Sendo-labs/frontend` repository, merging a large pull request to improve the application's page structure (Sendo-labs/frontend#3). They also resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5), while continuing to develop a new worker implementation in an open PR. This work was primarily centered on refactoring the frontend codebase."
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 143.02289042328283,
+      "prScore": 143.02289042328283,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "standujar: Expanded the Sendo-labs/leaderboard by adding new projects and repositories via two pull requests (#2, #3). In addition to this feature work, they also pushed a significant number of configuration updates directly, modifying 16 files (+566/-199 lines). This activity shows a primary focus on configuration changes and feature additions."
     },
     {
       "username": "xdrkush",
@@ -163,16 +173,6 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "Final check:\n- Single paragraph? Yes.\n- Starts with \"xdrkush: \"? Yes.\n- No more than 3 sentences? Yes (2 sentences).\n- High-level summary first? Yes.\n- Weaves in impactful contribution with number? Yes.\n- Uses quantitative data for"
-    },
-    {
-      "username": "standujar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 43.063342630130634,
-      "prScore": 43.063342630130634,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "summary": "standujar: Expanded the Sendo-labs/leaderboard by adding new projects and repositories via two pull requests (#2, #3). In addition to this feature work, they also pushed a significant number of configuration updates directly, modifying 16 files (+566/-199 lines). This activity shows a primary focus on configuration changes and feature additions."
     },
     {
       "username": "M4XGO",

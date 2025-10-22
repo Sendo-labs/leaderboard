@@ -75,7 +75,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "Neysixx: Executed a large-scale refactor of the `Sendo-labs/frontend` repository, overhauling the project structure and updating configurations. This was accomplished through a single, massive pull request (#1) that modified 370 files with +17867/-16129 lines of changes. Their contributions were primarily focused on refactoring (46%), but also included significant feature work and bugfixes."
+      "summary": "Neysixx: Focused on a significant architectural overhaul of the Sendo-labs/frontend repository, landing a single, large-scale pull request (#1) to refactor the project structure and update configurations. This effort modified 370 files (+17867/-16129 lines), blending major refactoring with feature work and bug fixes."
     },
     {
       "username": "M4XGO",
@@ -85,7 +85,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "M4XGO: Focused on establishing new CI/CD processes, opening a pull request in Sendo-labs/reusable-workflows (#1) to set up new workflows and release management. This work involved over 1000 lines of changes across 12 files. Their efforts were concentrated on documentation and configuration files."
+      "summary": "M4XGO: Focused on establishing foundational repository automation by setting up new workflows and release management in the Sendo-labs/reusable-workflows repository. They merged a single, significant pull request (#1) that added over 1000 lines of code to accomplish this. Their work was evenly split between documentation and configuration files."
     },
     {
       "username": "xdrkush",
@@ -95,7 +95,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "xdrkush: Focused on bootstrapping a new project this week by initializing the `Sendo-labs/sendo-api` repository. They merged a single, substantial pull request (#1) which introduced over 21,000 lines of code to establish the project's foundation. This initial setup consisted primarily of new code and configuration files."
+      "summary": "xdrkush: Initiated the new `sendo-api` repository, merging a substantial foundational pull request (Sendo-labs/sendo-api#1) that introduced over 21,000 lines of code. This work established the project's initial structure, consisting primarily of new code and configuration files."
     },
     {
       "username": "0domart",
@@ -105,7 +105,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "0domart: Focused on new feature development, opening a pull request in Sendo-labs/spotlight (#1) to complete the SOL transfer logic. This substantial contribution added over 1500 lines of code, with the changes primarily focused on implementing unit tests for the new functionality."
+      "summary": "0domart: Focused on developing and testing new functionality in the Sendo-labs/spotlight repository this week. They opened a pull request (#1) to implement SOL transfer logic, which included a substantial effort in writing new unit tests (+1527/-617 lines) to ensure its correctness."
     }
   ],
   "newPRs": 1,
