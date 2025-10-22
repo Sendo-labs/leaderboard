@@ -5,16 +5,71 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/plugin-sendo-worker",
-  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/plugin-sendo-worker had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/plugin-sendo-worker had 1 new PRs (1 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQHEs2c6vDk3o",
+      "title": "feat: add initial implementation of the Sendo Worker",
+      "author": "standujar",
+      "number": 1,
+      "body": "Complete implementation of the Sendo Worker orchestrator - a dynamic analysis engine that discovers agent capabilities, executes analysis actions, and generates LLM-powered actionnable recommendations.\r\n\r\n## Key Features\r\n\r\n### Dynamic Analysis System\r\n- **Action Categorization**: LLM-based classification (DATA vs ACTION)\r\n- **Parallel Execution**: Simultaneous action execution for performance\r\n- **Provider Integration**: Automatic data collection via composeState\r\n- **Smart Selection**: Filters relevant actions before execution\r\n\r\n### Analysis Generation\r\n- **4-Section Analysis**: Wallet overview, market conditions, risk assessment, opportunities\r\n- **LLM-Powered**: Uses ModelType.OBJECT_LARGE for comprehensive insights\r\n- **Plugin Attribution**: Cites data sources in analysis\r\n\r\n### Recommendations\r\n- **Context-Aware**: Based on analysis results and available actions\r\n- **Double Parallelization**: By action type, then by individual action\r\n- **Executable**: Includes trigger messages for direct execution\r\n\r\n### Action Execution\r\n- **Async Processing**: Non-blocking execution with status tracking\r\n- **Real Runtime**: Uses actual processActions() and stateCache\r\n- **Database Persistence**: Tracks status, results, and errors\r\n\r\n## Implementation\r\n\r\n### Service (946 lines)\r\n\\`src/services/sendoWorkerService.ts\\`\r\n- categorizeActions() - LLM classification\r\n- collectProviderData() - Via composeState\r\n- selectRelevantDataActions() - Intelligent filtering\r\n- executeAnalysisActions() - Parallel execution\r\n- generateAnalysis() - 4-section analysis\r\n- generateRecommendations() - Context-aware suggestions\r\n- executeActions() - Async execution\r\n- Full CRUD operations\r\n\r\n### API Routes (5 endpoints)\r\n\\`src/routes/index.ts\\`\r\n- GET /analysis - List analyses\r\n- POST /analysis - Run analysis\r\n- GET /analysis/:id/actions - Get recommendations\r\n- GET /action/:id - Get action details\r\n- POST /actions/execute - Execute actions\r\n\r\n### Database\r\n\\`src/schemas/\\`\r\n- analysis_results (id, agentId, analysis, pluginsUsed, executionTimeMs)\r\n- recommended_actions (id, analysisId, actionType, status, result, error, etc.)\r\n- Drizzle ORM with auto-migrations\r\n\r\n### Helpers\r\n\\`src/utils/actionResult.ts\\`\r\n- getActionResultFromCache() - Retrieve from stateCache\r\n- extractErrorMessage() - Clean error extraction\r\n\r\n## Documentation\r\n\r\n- \\`plugin_specification/\\` - 8 comprehensive spec files\r\n- \\`IMPLEMENTATION_STATUS.md\\` - Detailed status vs spec\r\n- \\`REPRISE.md\\` - Session notes\r\n\r\n## Testing\r\n\r\nInfrastructure ready, tests to be added in follow-up PR.",
+      "repository": "Sendo-labs/plugin-sendo-worker",
+      "createdAt": "2025-10-22T12:17:28Z",
+      "mergedAt": "2025-10-22T12:45:46Z",
+      "additions": 13134,
+      "deletions": 0
+    }
+  ],
   "codeChanges": {
-    "additions": 0,
+    "additions": 13134,
     "deletions": 0,
-    "files": 0,
-    "commitCount": 0
+    "files": 33,
+    "commitCount": 5
   },
-  "completedItems": [],
+  "completedItems": [
+    {
+      "title": "feat: add initial implementation of the Sendo Worker",
+      "prNumber": 1,
+      "type": "feature",
+      "body": "Complete implementation of the Sendo Worker orchestrator - a dynamic analysis engine that discovers agent capabilities, executes analysis actions, and generates LLM-powered actionnable recommendations.\r\n\r\n## Key Features\r\n\r\n### Dynamic Anal",
+      "files": [
+        ".gitignore",
+        "README.md",
+        "bun.lock",
+        "openapi.json",
+        "package-lock.json",
+        "package.json",
+        "src/actions/index.ts",
+        "src/config/index.ts",
+        "src/index.ts",
+        "src/providers/index.ts",
+        "src/routes/index.ts",
+        "src/schemas/analysis-results.ts",
+        "src/schemas/index.ts",
+        "src/schemas/recommended-actions.ts",
+        "src/services/index.ts",
+        "src/services/sendoWorkerService.ts",
+        "src/templates/actionCategorizationPrompt.ts",
+        "src/templates/generateAnalysisPrompt.ts",
+        "src/templates/generateDataActionTriggerPrompt.ts",
+        "src/templates/generateRecommendationPrompt.ts",
+        "src/templates/index.ts",
+        "src/templates/selectRelevantActionsPrompt.ts",
+        "src/templates/selectRelevantDataActionsPrompt.ts",
+        "src/types/actions.ts",
+        "src/types/analysis.ts",
+        "src/types/api.ts",
+        "src/types/generation.ts",
+        "src/types/index.ts",
+        "src/types/schemas.ts",
+        "src/utils/actionResult.ts",
+        "src/utils/index.ts",
+        "tsconfig.json",
+        "tsup.config.ts"
+      ]
+    }
+  ],
   "topContributors": [
     {
       "username": "Neysixx",
@@ -67,9 +122,9 @@
       "summary": "tionebDotsamapha: Focused on improving project documentation this week by merging a pull request in Sendo-labs/sendo-api (#2) to update the README file. This contribution reflects a singular focus on documentation."
     }
   ],
-  "newPRs": 0,
-  "mergedPRs": 0,
+  "newPRs": 1,
+  "mergedPRs": 1,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 0
+  "activeContributors": 1
 }
