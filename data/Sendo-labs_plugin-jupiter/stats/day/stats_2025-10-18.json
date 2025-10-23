@@ -44,7 +44,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "xdrkush: Focused on foundational work, successfully merging a substantial initial commit to Sendo-labs/sendo-api#1, which introduced over 21,000 lines of code. Their contributions primarily involved code and configuration changes, indicating a focus on setting up core functionalities."
+      "summary": "xdrkush: Focused on foundational work, initiating the `sendo-api` repository with a substantial PR (#1) that introduced over 21,000 lines of code, primarily contributing to new code and configuration files."
     }
   ],
   "newPRs": 0,

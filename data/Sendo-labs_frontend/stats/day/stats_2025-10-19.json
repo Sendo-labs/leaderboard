@@ -29,7 +29,7 @@
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-10-19T09:35:30Z",
       "mergedAt": null,
-      "additions": 3612,
+      "additions": 3670,
       "deletions": 913
     },
     {
@@ -142,7 +142,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "Neysixx: Focused on significant feature development and refactoring, merging a large PR in Sendo-labs/frontend#3 (+2024/-1796 lines) that improved page structure, while also opening a new feature PR for worker implementation. Their work primarily involved refactoring (57%) and feature development (21%) across 292 files, demonstrating a strong impact on the frontend codebase."
+      "summary": "Neysixx: Focused on significant refactoring and feature work, notably merging a substantial PR in Sendo-labs/frontend#3 (+2024/-1796 lines) that improved page structure, while also opening a new feature PR for worker implementation in Sendo-labs/frontend#2. Their work involved modifying 292 files with a primary focus on refactoring (57%) and feature development (21%)."
     },
     {
       "username": "M4XGO",
@@ -162,7 +162,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
-      "summary": "tionebDotsamapha: Focused on documentation improvements, merging a PR in Sendo-labs/sendo-api (#2) that updated the README.md, demonstrating a commitment to clear project information."
+      "summary": "tionebDotsamapha: Focused on documentation improvements, successfully merging a PR in Sendo-labs/sendo-api (#2) that updated the README.md to English, demonstrating a commitment to clear and accessible project information."
     },
     {
       "username": "standujar",

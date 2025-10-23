@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/frontend had 6 new PRs (6 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/frontend had 7 new PRs (7 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -29,7 +29,7 @@
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-10-19T09:35:30Z",
       "mergedAt": null,
-      "additions": 3612,
+      "additions": 3670,
       "deletions": 913
     },
     {
@@ -70,10 +70,10 @@
     }
   ],
   "codeChanges": {
-    "additions": 7478,
-    "deletions": 4871,
-    "files": 75,
-    "commitCount": 35
+    "additions": 7544,
+    "deletions": 4879,
+    "files": 77,
+    "commitCount": 37
   },
   "completedItems": [
     {
@@ -219,14 +219,26 @@
         "src/types/agent.ts",
         "src/types/user-actions.ts"
       ]
+    },
+    {
+      "title": "refactor: removed 'accepted' status from ActionHistory component to simplify action status handling and improve clarity in the UI.",
+      "prNumber": 8,
+      "type": "refactor",
+      "body": "",
+      "files": [
+        "docs/CLAUDE.md",
+        "docs/GEMINI.md",
+        "src/app/worker/page.tsx",
+        "src/components/worker/action-history.tsx"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 241.59174956592423,
-      "prScore": 241.59174956592423,
+      "totalScore": 270.22672579299683,
+      "prScore": 270.22672579299683,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -235,8 +247,8 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 143.02289042328283,
-      "prScore": 143.02289042328283,
+      "totalScore": 214.24840513678276,
+      "prScore": 214.24840513678276,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -273,8 +285,8 @@
       "summary": "tionebDotsamapha: This week, their efforts were directed towards improving project documentation. They merged a pull request in the Sendo-labs/sendo-api repository (#2) to update the README file. This work indicates a focus on documentation."
     }
   ],
-  "newPRs": 6,
-  "mergedPRs": 6,
+  "newPRs": 7,
+  "mergedPRs": 7,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 1

@@ -1,0 +1,71 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-23T00:00:00.000Z",
+    "intervalEnd": "2025-10-24T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/frontend",
+  "overview": "From 2025-10-23 to 2025-10-24, Sendo-labs/frontend had 1 new PRs (1 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQEvmTc6vMteK",
+      "title": "refactor: removed 'accepted' status from ActionHistory component to simplify action status handling and improve clarity in the UI.",
+      "author": "Neysixx",
+      "number": 8,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-23T06:53:41Z",
+      "mergedAt": "2025-10-23T06:54:05Z",
+      "additions": 66,
+      "deletions": 8
+    }
+  ],
+  "codeChanges": {
+    "additions": 66,
+    "deletions": 8,
+    "files": 4,
+    "commitCount": 2
+  },
+  "completedItems": [
+    {
+      "title": "refactor: removed 'accepted' status from ActionHistory component to simplify action status handling and improve clarity in the UI.",
+      "prNumber": 8,
+      "type": "refactor",
+      "body": "",
+      "files": [
+        "docs/CLAUDE.md",
+        "docs/GEMINI.md",
+        "src/app/worker/page.tsx",
+        "src/components/worker/action-history.tsx"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 71.22551471349995,
+      "prScore": 71.22551471349995,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 28.63497622707262,
+      "prScore": 28.63497622707262,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 1,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

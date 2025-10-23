@@ -1,0 +1,95 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-23T00:00:00.000Z",
+    "intervalEnd": "2025-10-24T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/leaderboard",
+  "overview": "From 2025-10-23 to 2025-10-24, Sendo-labs/leaderboard had 2 new PRs (2 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOP7jpj86vPnWm",
+      "title": "feat: add json endpoints",
+      "author": "standujar",
+      "number": 4,
+      "body": "# Add JSON Leaderboard API Endpoints\r\n\r\n## Summary\r\n\r\nThis PR adds static JSON API endpoints for leaderboard data, enabling external applications, mobile apps, and third-party integrations to consume leaderboard information programmatically.\r\n\r\n## Features\r\n\r\n- **Three time periods**: Monthly, weekly, and lifetime leaderboards\r\n- **Comprehensive scoring**: Includes total score plus breakdown by contribution type (PR, issue, review, comment)\r\n- **Wallet addresses**: Includes Solana and Ethereum wallet addresses from GitHub profiles\r\n- **Calendar-based periods**: \r\n  - Weekly: Sunday to today\r\n  - Monthly: 1st of month to today\r\n  - Lifetime: Project start date to today\r\n- **CLI command**: `bun run pipeline export-leaderboard`\r\n- **CI/CD integration**: Automatically generates fresh leaderboard data on every deployment\r\n- **Full test coverage**: 9 comprehensive tests covering all scenarios\r\n\r\n## API Endpoints\r\n\r\nThe following static JSON files will be available via GitHub Pages:\r\n\r\n- `/data/api/leaderboard-monthly.json`\r\n- `/data/api/leaderboard-weekly.json`\r\n- `/data/api/leaderboard-lifetime.json`\r\n\r\n## Response Format\r\n\r\n```json\r\n{\r\n  \"period\": \"monthly\",\r\n  \"startDate\": \"2025-10-01\",\r\n  \"endDate\": \"2025-10-23\",\r\n  \"generatedAt\": \"2025-10-23T11:12:25.933Z\",\r\n  \"totalUsers\": 150,\r\n  \"leaderboard\": [\r\n    {\r\n      \"rank\": 1,\r\n      \"username\": \"contributor1\",\r\n      \"avatarUrl\": \"https://avatars.githubusercontent.com/...\",\r\n      \"score\": 1234.5,\r\n      \"prScore\": 800.0,\r\n      \"issueScore\": 200.0,\r\n      \"reviewScore\": 150.5,\r\n      \"commentScore\": 84.0,\r\n      \"wallets\": {\r\n        \"solana\": \"9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin\",\r\n        \"ethereum\": \"0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb\"\r\n      }\r\n    }\r\n  ]\r\n}\r\n```\r\n\r\n## Use Cases\r\n- Mobile apps: Display leaderboard data in native applications\r\n- Discord bots: Show contributor rankings and stats\r\n- Analytics dashboards: Track contributor engagement over time\r\n- Reward systems: Automate token distributions based on rankings\r\n- Third-party integrations: Enable community-built tools and services\r\n\r\n## Testing\r\nAll tests pass successfully:\r\n- bun test src/lib/pipelines/export/exportLeaderboardAPI.test.ts",
+      "repository": "Sendo-labs/leaderboard",
+      "createdAt": "2025-10-23T11:25:12Z",
+      "mergedAt": "2025-10-23T11:26:34Z",
+      "additions": 684,
+      "deletions": 3
+    },
+    {
+      "id": "PR_kwDOP7jpj86vP7HQ",
+      "title": "fix: only require OPENROUTER_API_KEY for AI summary commands",
+      "author": "standujar",
+      "number": 5,
+      "body": "",
+      "repository": "Sendo-labs/leaderboard",
+      "createdAt": "2025-10-23T11:54:27Z",
+      "mergedAt": "2025-10-23T11:54:34Z",
+      "additions": 21,
+      "deletions": 11
+    }
+  ],
+  "codeChanges": {
+    "additions": 705,
+    "deletions": 14,
+    "files": 7,
+    "commitCount": 12
+  },
+  "completedItems": [
+    {
+      "title": "fix: only require OPENROUTER_API_KEY for AI summary commands",
+      "prNumber": 5,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "cli/analyze-pipeline.ts"
+      ]
+    },
+    {
+      "title": "feat: add json endpoints",
+      "prNumber": 4,
+      "type": "feature",
+      "body": "# Add JSON Leaderboard API Endpoints\r\n\r\n## Summary\r\n\r\nThis PR adds static JSON API endpoints for leaderboard data, enabling external applications, mobile apps, and third-party integrations to consume leaderboard information programmatically",
+      "files": [
+        ".github/workflows/deploy.yml",
+        "cli/analyze-pipeline.ts",
+        "config/pipeline.config.ts",
+        "src/__testing__/helpers/mock-data.ts",
+        "src/lib/pipelines/export/exportLeaderboardAPI.test.ts",
+        "src/lib/pipelines/export/exportLeaderboardAPI.ts",
+        "src/lib/pipelines/summarize/callAIService.ts"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 71.22551471349995,
+      "prScore": 71.22551471349995,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 28.63497622707262,
+      "prScore": 28.63497622707262,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 2,
+  "mergedPRs": 2,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

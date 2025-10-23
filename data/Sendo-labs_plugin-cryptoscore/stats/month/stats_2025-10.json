@@ -177,24 +177,24 @@
   ],
   "topContributors": [
     {
-      "username": "Neysixx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 301.0175234625003,
-      "prScore": 301.0175234625003,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "summary": "Neysixx: This month, Neysixx led a foundational overhaul of the `Sendo-labs/frontend` repository, merging six pull requests focused on restructuring and feature development. Their most impactful contribution was a massive project-wide refactor to update the structure and configurations (Sendo-labs/frontend#1), which involved over 34,000 line changes. In addition, they implemented new pages (Sendo-labs/frontend#7), improved the page structure (Sendo-labs/frontend#3), and resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5). This work demonstrates a clear focus on large-scale refactoring and feature implementation within the frontend codebase."
-    },
-    {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 264.20743821643504,
-      "prScore": 264.20743821643504,
+      "totalScore": 335.43295292993497,
+      "prScore": 335.43295292993497,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "standujar: Focused on bootstrapping several new projects and plugins this month, merging multiple foundational pull requests. They established the initial implementation for the CryptoScore plugin (Sendo-labs/plugin-cryptoscore#1), the frontend project (Sendo-labs/frontend#2), and the Sendo Worker (Sendo-labs/plugin-sendo-worker#1). The Sendo Worker PR was particularly significant, introducing over 13,000 lines of code to establish the new service. This activity shows a primary focus on new feature work and initial project configuration."
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 329.65249968957295,
+      "prScore": 329.65249968957295,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "Neysixx: This month, Neysixx led a foundational overhaul of the `Sendo-labs/frontend` repository, merging six pull requests focused on restructuring and feature development. Their most impactful contribution was a massive project-wide refactor to update the structure and configurations (Sendo-labs/frontend#1), which involved over 34,000 line changes. In addition, they implemented new pages (Sendo-labs/frontend#7), improved the page structure (Sendo-labs/frontend#3), and resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5). This work demonstrates a clear focus on large-scale refactoring and feature implementation within the frontend codebase."
     },
     {
       "username": "xdrkush",
