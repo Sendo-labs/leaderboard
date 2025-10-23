@@ -5,9 +5,21 @@
     "intervalType": "day"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-23 to 2025-10-24, Sendo-labs/frontend had 1 new PRs (1 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-23 to 2025-10-24, Sendo-labs/frontend had 2 new PRs (3 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [
+    {
+      "id": "PR_kwDOQEvmTc6ugDSE",
+      "title": "feat: worker implementation",
+      "author": "Neysixx",
+      "number": 2,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-19T09:35:30Z",
+      "mergedAt": "2025-10-23T19:39:24Z",
+      "additions": 3848,
+      "deletions": 913
+    },
     {
       "id": "PR_kwDOQEvmTc6vMteK",
       "title": "refactor: removed 'accepted' status from ActionHistory component to simplify action status handling and improve clarity in the UI.",
@@ -19,15 +31,76 @@
       "mergedAt": "2025-10-23T06:54:05Z",
       "additions": 66,
       "deletions": 8
+    },
+    {
+      "id": "PR_kwDOQEvmTc6vWsKS",
+      "title": "chore: update @elizaos dependencies to version 1.6.3",
+      "author": "standujar",
+      "number": 9,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-23T20:10:27Z",
+      "mergedAt": "2025-10-23T20:11:43Z",
+      "additions": 8,
+      "deletions": 24
     }
   ],
   "codeChanges": {
-    "additions": 66,
-    "deletions": 8,
-    "files": 4,
-    "commitCount": 2
+    "additions": 3944,
+    "deletions": 945,
+    "files": 41,
+    "commitCount": 14
   },
   "completedItems": [
+    {
+      "title": "feat: worker implementation",
+      "prNumber": 2,
+      "type": "feature",
+      "body": "",
+      "files": [
+        "bun.lock",
+        "docs/worker.md",
+        "package.json",
+        "src/app/layout.tsx",
+        "src/components/agent-panel.tsx",
+        "src/components/navigation.tsx",
+        "src/hooks/useElizaAgent.ts",
+        "src/hooks/useElizaChat.ts",
+        "src/lib/eliza/client.ts",
+        "src/lib/providers.tsx",
+        "src/lib/query-keys.ts",
+        "src/services/agent.service.ts",
+        "src/services/eliza.service.ts",
+        "src/services/worker-client.service.ts",
+        "src/types/agent.ts",
+        "src/types/plugins.ts",
+        "src/types/sessions.ts",
+        "src/types/user-actions.ts",
+        "src/app/worker/client.tsx",
+        "src/app/worker/page.tsx",
+        "src/components/worker/action-history.tsx",
+        "src/components/worker/action-list.tsx",
+        "src/components/worker/analysis-panel.tsx",
+        "src/components/worker/worker-panel.tsx",
+        "src/lib/constants.ts",
+        "src/app/analyzer/client.tsx",
+        "src/app/leaderboard/client.tsx",
+        "src/app/onboarding/client.tsx",
+        "src/app/onboarding/page.tsx",
+        "src/components/home/contact-section.tsx",
+        "src/components/home/hero-section.tsx",
+        "src/components/home/how-it-works-section.tsx",
+        "src/components/home/statistics-section.tsx",
+        "src/components/home/team-section.tsx",
+        "src/components/shared/loader.tsx",
+        "src/components/shared/page-wrapper.tsx",
+        "src/components/shared/query-boundary.tsx",
+        "src/components/worker/rule-builder.tsx",
+        "docs/CLAUDE.md",
+        "docs/GEMINI.md",
+        "src/app/favicon.ico"
+      ]
+    },
     {
       "title": "refactor: removed 'accepted' status from ActionHistory component to simplify action status handling and improve clarity in the UI.",
       "prNumber": 8,
@@ -38,6 +111,16 @@
         "docs/GEMINI.md",
         "src/app/worker/page.tsx",
         "src/components/worker/action-history.tsx"
+      ]
+    },
+    {
+      "title": "chore: update @elizaos dependencies to version 1.6.3",
+      "prNumber": 9,
+      "type": "other",
+      "body": "",
+      "files": [
+        "bun.lock",
+        "package.json"
       ]
     }
   ],
@@ -50,7 +133,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "standujar: Focused on feature development and bug fixes, notably adding JSON endpoints in Sendo-labs/leaderboard via PR #4 (+684/-3 lines) and addressing an API key requirement in Sendo-labs/leaderboard via PR #5. Their work primarily involved bug fixes and feature development across code, tests, and configuration files."
     },
     {
       "username": "Neysixx",
@@ -60,12 +143,12 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "Neysixx: Focused on refactoring efforts today, successfully merging a pull request in Sendo-labs/frontend (#8) that removed the 'accepted' status from the ActionHistory component, demonstrating a focus on code refinement and documentation."
     }
   ],
-  "newPRs": 1,
-  "mergedPRs": 1,
+  "newPRs": 2,
+  "mergedPRs": 3,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 2
 }

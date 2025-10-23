@@ -5,14 +5,14 @@
     "intervalType": "day"
   },
   "repository": "Sendo-labs/plugin-sendo-worker",
-  "overview": "From 2025-10-23 to 2025-10-24, Sendo-labs/plugin-sendo-worker had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "overview": "From 2025-10-23 to 2025-10-24, Sendo-labs/plugin-sendo-worker had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [],
   "codeChanges": {
     "additions": 0,
     "deletions": 0,
     "files": 0,
-    "commitCount": 0
+    "commitCount": 2
   },
   "completedItems": [],
   "topContributors": [
@@ -24,7 +24,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "standujar: Focused on feature development and bug fixes, notably adding JSON endpoints in Sendo-labs/leaderboard via PR #4 (+684/-3 lines) and addressing an API key requirement in Sendo-labs/leaderboard via PR #5. Their work primarily involved bug fixes and feature development across code, tests, and configuration files."
     },
     {
       "username": "Neysixx",
@@ -34,12 +34,12 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "summary": "Neysixx: Focused on refactoring efforts today, successfully merging a pull request in Sendo-labs/frontend (#8) that removed the 'accepted' status from the ActionHistory component, demonstrating a focus on code refinement and documentation."
     }
   ],
   "newPRs": 0,
   "mergedPRs": 0,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 0
+  "activeContributors": 1
 }
