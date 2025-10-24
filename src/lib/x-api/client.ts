@@ -83,7 +83,7 @@ export class XApiClient {
 
   constructor(config: XApiConfig) {
     this.apiKey = config.apiKey;
-    this.baseUrl = config.baseUrl || "https://api.twitterapi.io/api/v2";
+    this.baseUrl = config.baseUrl || "https://api.twitterapi.io";
     this.timeout = config.timeout || 60000; // 60s timeout for scraping API
   }
 
@@ -140,8 +140,8 @@ export class XApiClient {
   /**
    * Search for tweets matching a query
    *
-   * Endpoint: /search
-   * Docs: https://docs.twitterapi.io/endpoints/search
+   * Endpoint: /twitter/tweet/advanced_search
+   * Docs: https://docs.twitterapi.io/api-reference/endpoint/tweet_advanced_search
    *
    * Query examples:
    * - "@SendoMarket" - mentions
@@ -151,17 +151,33 @@ export class XApiClient {
    */
   async searchTweets(params: {
     query: string;
-    limit?: number; // Max tweets to return (default 20, max 100)
-    cursor?: string; // Pagination cursor
-  }): Promise<TwitterApiIoResponse<{ tweets: XPost[]; cursor?: string }>> {
-    return await this.makeRequest<{ tweets: XPost[]; cursor?: string }>(
-      "/search",
-      {
-        query: params.query,
-        limit: params.limit || 100,
-        ...(params.cursor && { cursor: params.cursor }),
+    limit?: number; // Pagination limit (note: API returns ~20 tweets per page)
+    cursor?: string; // Pagination cursor (use "" for first page)
+  }): Promise<
+    TwitterApiIoResponse<{
+      tweets: XPost[];
+      next_cursor?: string;
+      has_next_page?: boolean;
+    }>
+  > {
+    const response = await this.makeRequest<{
+      tweets: XPost[];
+      next_cursor?: string;
+      has_next_page?: boolean;
+    }>("/twitter/tweet/advanced_search", {
+      query: params.query,
+      queryType: "Latest", // Required: "Latest" or "Top"
+      cursor: params.cursor || "", // Empty string for first page
+    });
+
+    // Normalize response to match expected format
+    return {
+      data: {
+        tweets: response.data?.tweets || [],
+        next_cursor: response.data?.next_cursor,
+        has_next_page: response.data?.has_next_page,
       },
-    );
+    };
   }
 
   /**

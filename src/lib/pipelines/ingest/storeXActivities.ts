@@ -234,13 +234,13 @@ const fetchAndStoreXActivitiesStep = createStep(
       let cursor: string | undefined;
       let pageCount = 0;
 
-      // Fetch up to 500 posts (5 pages of 100)
-      // Note: If there are >500 recent posts, older posts may be missed
+      // Fetch up to 500 posts (25 pages of ~20)
+      // Note: API returns ~20 tweets per page
+      // If there are >500 recent posts, older posts may be missed
       // This is acceptable as we run daily and can catch them retroactively
       do {
         const response = await xClient.searchTweets({
           query,
-          limit: 100,
           cursor,
         });
 
@@ -251,7 +251,7 @@ const fetchAndStoreXActivitiesStep = createStep(
         const normalizedPosts = response.data.tweets.map(normalizeXPost);
         allPosts = allPosts.concat(normalizedPosts);
 
-        cursor = response.data.cursor;
+        cursor = response.data.next_cursor;
         pageCount++;
 
         stepLogger?.debug(
@@ -260,7 +260,7 @@ const fetchAndStoreXActivitiesStep = createStep(
 
         // Respect rate limits (1s between pages)
         await new Promise((resolve) => setTimeout(resolve, 1000));
-      } while (cursor && pageCount < 5);
+      } while (cursor && pageCount < 25);
 
       stepLogger?.info(
         `Fetched ${allPosts.length} total posts from X API (${pageCount} pages)`,
