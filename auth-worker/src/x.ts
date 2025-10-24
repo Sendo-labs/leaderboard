@@ -216,7 +216,24 @@ export async function handleXCallback(
 
     const userData = (await userResponse.json()) as XUserResponse;
 
-    // 4. Generate signed JWT
+    // 4. Check if user is trying to link the SendoMarket account (prevent cheating)
+    if (userData.data.username.toLowerCase() === "sendomarket") {
+      return new Response(
+        JSON.stringify({
+          error:
+            "Cannot link the @SendoMarket account. This account is reserved for the project.",
+        }),
+        {
+          status: 403,
+          headers: {
+            "Content-Type": "application/json",
+            ...getCorsHeaders(env),
+          },
+        },
+      );
+    }
+
+    // 5. Generate signed JWT
     const linkedAt = new Date().toISOString();
     const linkingProof = await generateLinkingJWT(
       {
