@@ -114,7 +114,8 @@ export function XLinkForm({ xUsername, isLinked }: XLinkFormProps) {
             <div className="flex items-center space-x-1 text-muted-foreground">
               <ArrowRight className="h-3 w-3" />
               <span>
-                Your GitHub profile README will be updated automatically
+                After linking, copy the comment and paste it into your GitHub
+                profile README
               </span>
             </div>
           </div>
