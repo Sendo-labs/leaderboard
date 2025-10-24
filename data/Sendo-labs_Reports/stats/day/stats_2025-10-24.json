@@ -4,17 +4,40 @@
     "intervalEnd": "2025-10-25T00:00:00.000Z",
     "intervalType": "day"
   },
-  "repository": "Sendo-labs/leaderboard-rewards",
-  "overview": "From 2025-10-24 to 2025-10-25, Sendo-labs/leaderboard-rewards had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "repository": "Sendo-labs/Reports",
+  "overview": "From 2025-10-24 to 2025-10-25, Sendo-labs/Reports had 1 new PRs (1 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQIQzts6vcnkl",
+      "title": "docs: elizaos plugin reports",
+      "author": "plvo",
+      "number": 1,
+      "body": "",
+      "repository": "Sendo-labs/Reports",
+      "createdAt": "2025-10-24T07:52:52Z",
+      "mergedAt": "2025-10-24T10:02:42Z",
+      "additions": 146,
+      "deletions": 0
+    }
+  ],
   "codeChanges": {
-    "additions": 0,
+    "additions": 146,
     "deletions": 0,
-    "files": 0,
-    "commitCount": 0
+    "files": 1,
+    "commitCount": 4
   },
-  "completedItems": [],
+  "completedItems": [
+    {
+      "title": "docs: elizaos plugin reports",
+      "prNumber": 1,
+      "type": "docs",
+      "body": "",
+      "files": [
+        "plugin-reports.md"
+      ]
+    }
+  ],
   "topContributors": [
     {
       "username": "standujar",
@@ -50,9 +73,9 @@
       "summary": null
     }
   ],
-  "newPRs": 0,
-  "mergedPRs": 0,
+  "newPRs": 1,
+  "mergedPRs": 1,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 2
 }

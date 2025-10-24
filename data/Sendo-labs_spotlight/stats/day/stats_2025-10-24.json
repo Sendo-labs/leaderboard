@@ -5,7 +5,7 @@
     "intervalType": "day"
   },
   "repository": "Sendo-labs/spotlight",
-  "overview": "From 2025-10-24 to 2025-10-25, Sendo-labs/spotlight had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "overview": "From 2025-10-24 to 2025-10-25, Sendo-labs/spotlight had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [],
   "codeChanges": {
@@ -37,11 +37,22 @@
       "commentScore": 0,
       "socialScore": 0,
       "summary": "MonteCrypto999: Focused on significant feature development, opening PR Sendo-labs/plugin-jupiter#1 to add referral fee support and live E2E scripts, which involved substantial code changes across 31 files (+5965/-431 lines) and 13 commits, primarily in feature work, other work, bugfix work, and docs work, touching code, config, and tests."
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 27.695216293389368,
+      "prScore": 27.49521629338937,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
     }
   ],
   "newPRs": 0,
   "mergedPRs": 0,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 0
+  "activeContributors": 1
 }

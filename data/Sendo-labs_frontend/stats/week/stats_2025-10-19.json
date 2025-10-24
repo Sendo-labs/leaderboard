@@ -358,6 +358,17 @@
       "commentScore": 0.2,
       "socialScore": 0,
       "summary": "tionebDotsamapha: This week's focus was on improving project documentation, merging a pull request in Sendo-labs/sendo-api (#2) to update the README file. Their contributions were entirely focused on documentation."
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 27.695216293389368,
+      "prScore": 27.49521629338937,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
     }
   ],
   "newPRs": 8,

@@ -5,9 +5,21 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/leaderboard",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/leaderboard had 8 new PRs (7 merged), 0 new issues, and 3 active contributors.",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/leaderboard had 9 new PRs (8 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
   "topPRs": [
+    {
+      "id": "PR_kwDOP7jpj86vmt7T",
+      "title": "feat: X social scoring",
+      "author": "standujar",
+      "number": 9,
+      "body": "## X/Twitter Integration\r\n\r\nImplements basic X activity tracking for users who link their accounts.\r\n\r\n### What's Working\r\n- ✅ OAuth linking via Cloudflare Worker\r\n- ✅ JWT-based account verification\r\n- ✅ Activity ingestion pipeline (mentions, posts, retweets, replies)\r\n- ✅ Database schema (socialAccounts, xActivities)\r\n- ✅ Social score calculation and aggregation\r\n- ✅ UI display (𝕏 icon on leaderboard, activity stats on profiles)\r\n\r\n### Implementation\r\n- **API**: twitterapi.io for scraping (1 req/5s rate limit)\r\n- **Query**: `@SendoMarket OR from:SendoMarket include:nativeretweets` captures all relevant activity in 1 call\r\n- **Strategy**: Global search + filter by linked users (scales efficiently)\r\n- **Storage**: Idempotent upserts, engagement metrics updated on each run\r\n\r\n### What's Missing for the moment\r\n- Multi-platform architecture (LK, TG and others)\r\n- Detailed activity lists and charts\r\n- Advanced UI components (tabs, graphs, filters)\r\n\r\n### Testing\r\nPipeline successfully runs daily, captures activities from linked accounts.",
+      "repository": "Sendo-labs/leaderboard",
+      "createdAt": "2025-10-24T21:54:57Z",
+      "mergedAt": "2025-10-24T21:56:29Z",
+      "additions": 5957,
+      "deletions": 21
+    },
     {
       "id": "PR_kwDOP7jpj86vgoCs",
       "title": "Feat: improve deploy workflow",
@@ -55,25 +67,13 @@
       "mergedAt": "2025-10-23T11:54:34Z",
       "additions": 21,
       "deletions": 11
-    },
-    {
-      "id": "PR_kwDOP7jpj86uf95Q",
-      "title": "chore: add some repo in tracker",
-      "author": "standujar",
-      "number": 2,
-      "body": "",
-      "repository": "Sendo-labs/leaderboard",
-      "createdAt": "2025-10-19T09:19:38Z",
-      "mergedAt": "2025-10-19T09:20:03Z",
-      "additions": 15,
-      "deletions": 0
     }
   ],
   "codeChanges": {
-    "additions": 758,
-    "deletions": 15,
-    "files": 7,
-    "commitCount": 50
+    "additions": 6715,
+    "deletions": 36,
+    "files": 41,
+    "commitCount": 65
   },
   "completedItems": [
     {
@@ -141,6 +141,49 @@
       "body": "",
       "files": [
         "config/pipeline.config.ts"
+      ]
+    },
+    {
+      "title": "feat: X social scoring",
+      "prNumber": 9,
+      "type": "feature",
+      "body": "## X/Twitter Integration\r\n\r\nImplements basic X activity tracking for users who link their accounts.\r\n\r\n### What's Working\r\n- ✅ OAuth linking via Cloudflare Worker\r\n- ✅ JWT-based account verification\r\n- ✅ Activity ingestion pipeline (mention",
+      "files": [
+        ".env.example",
+        ".github/workflows/run-pipelines.yml",
+        "auth-worker/.dev.vars.example",
+        "auth-worker/.gitignore",
+        "auth-worker/README.md",
+        "auth-worker/src/index.ts",
+        "auth-worker/src/jwt.ts",
+        "auth-worker/src/x.ts",
+        "auth-worker/wrangler.toml",
+        "bun.lock",
+        "drizzle/0013_robust_ink.sql",
+        "drizzle/meta/0013_snapshot.json",
+        "drizzle/meta/_journal.json",
+        "package.json",
+        "src/app/auth/x/callback/page.tsx",
+        "src/app/leaderboard/queries.ts",
+        "src/app/profile/[username]/components/UserProfile.tsx",
+        "src/app/profile/[username]/queries.ts",
+        "src/app/profile/edit/components/ProfileEditor.tsx",
+        "src/app/profile/edit/components/XLinkForm.tsx",
+        "src/app/profile/edit/hooks/useProfileWallets.ts",
+        "src/components/leaderboard-card.tsx",
+        "src/components/leaderboard.tsx",
+        "src/lib/data/schema.ts",
+        "src/lib/pipelines/export/exportLeaderboardAPI.ts",
+        "src/lib/pipelines/ingest/index.ts",
+        "src/lib/pipelines/ingest/storeXActivities.ts",
+        "src/lib/scoring/queries.ts",
+        "src/lib/scoring/scoreCalculator.ts",
+        "src/lib/scoring/storage.ts",
+        "src/lib/scoring/xScoreCalculator.ts",
+        "src/lib/x-api/client.ts",
+        "src/lib/x-api/jwtVerifier.ts",
+        "src/lib/x-api/profileScanner.ts",
+        "src/lib/xLinking/readmeUtils.ts"
       ]
     }
   ],
@@ -232,10 +275,21 @@
       "commentScore": 0.2,
       "socialScore": 0,
       "summary": "tionebDotsamapha: This month, tionebDotsamapha's work was centered on improving project documentation. Their sole merged pull request (Sendo-labs/sendo-api#2) updated the README file to English, a significant change of 71 lines that improves the project's accessibility. This contribution reflects a focus entirely on documentation."
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 27.695216293389368,
+      "prScore": 27.49521629338937,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
     }
   ],
-  "newPRs": 8,
-  "mergedPRs": 7,
+  "newPRs": 9,
+  "mergedPRs": 8,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 3

@@ -263,6 +263,17 @@
       "commentScore": 0.2,
       "socialScore": 0,
       "summary": "tionebDotsamapha: This month, tionebDotsamapha's work was centered on improving project documentation. Their sole merged pull request (Sendo-labs/sendo-api#2) updated the README file to English, a significant change of 71 lines that improves the project's accessibility. This contribution reflects a focus entirely on documentation."
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 27.695216293389368,
+      "prScore": 27.49521629338937,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
     }
   ],
   "newPRs": 8,
