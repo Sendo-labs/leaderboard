@@ -217,12 +217,13 @@ export async function handleXCallback(
     const userData = (await userResponse.json()) as XUserResponse;
 
     // 4. Generate signed JWT
+    const linkedAt = new Date().toISOString();
     const linkingProof = await generateLinkingJWT(
       {
         githubUsername: linkingData.githubUsername,
         xUserId: userData.data.id,
         xUsername: userData.data.username,
-        linkedAt: new Date().toISOString(),
+        linkedAt,
       },
       env.LINKING_SECRET,
     );
@@ -236,7 +237,9 @@ export async function handleXCallback(
         success: true,
         linkingProof,
         xUsername: userData.data.username,
+        xUserId: userData.data.id,
         githubUsername: linkingData.githubUsername,
+        linkedAt,
       }),
       {
         status: 200,

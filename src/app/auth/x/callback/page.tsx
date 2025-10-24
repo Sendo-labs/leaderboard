@@ -64,11 +64,22 @@ function XCallbackContent() {
       setXUsername(xUsername);
       setGithubUsername(githubUsername);
 
+      // Get GitHub token from auth context
+      if (!token) {
+        throw new Error("Not authenticated with GitHub");
+      }
+
       // Step 2: Check if user has GitHub profile repo
       const repoUrl = `https://api.github.com/repos/${githubUsername}/${githubUsername}`;
-      const repoResponse = await fetch(repoUrl);
+      const repoResponse = await fetch(repoUrl, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
       if (!repoResponse.ok) {
+        const repoError = await repoResponse.text();
+        console.error("Repo fetch error:", repoError);
         setStatus("error");
         setMessage(
           `GitHub profile repository ${githubUsername}/${githubUsername} not found. Please create it first.`,
@@ -82,6 +93,9 @@ function XCallbackContent() {
       // Step 3: Fetch current README
       const readmeUrl = `https://api.github.com/repos/${githubUsername}/${githubUsername}/contents/README.md`;
       const readmeResponse = await fetch(readmeUrl, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
         cache: "no-store",
       });
 
@@ -140,11 +154,20 @@ function XCallbackContent() {
 
       if (!commitResponse.ok) {
         const errorData = await commitResponse.json();
-        throw new Error(errorData.message || "Failed to commit README changes");
+        console.error("Commit failed:", errorData);
+        throw new Error(
+          errorData.message ||
+            `Failed to commit README changes: ${commitResponse.status} ${commitResponse.statusText}`,
+        );
       }
 
       setStatus("success");
       setMessage("X account linked and README updated successfully!");
+
+      // Redirect to profile edit page after 2 seconds
+      setTimeout(() => {
+        router.push("/profile/edit");
+      }, 2000);
     } catch (err) {
       console.error("Error in X callback:", err);
       setStatus("error");
@@ -230,13 +253,10 @@ function XCallbackContent() {
             </div>
 
             <div className="flex justify-center gap-4">
-              <Button onClick={() => router.push("/leaderboard/profile/edit")}>
+              <Button onClick={() => router.push("/profile/edit")}>
                 Return to Profile
               </Button>
-              <Button
-                variant="outline"
-                onClick={() => router.push("/leaderboard")}
-              >
+              <Button variant="outline" onClick={() => router.push("/")}>
                 View Leaderboard
               </Button>
             </div>
@@ -259,7 +279,7 @@ function XCallbackContent() {
               <Button onClick={handleRelink}>Re-link X Account</Button>
               <Button
                 variant="outline"
-                onClick={() => router.push("/leaderboard/profile/edit")}
+                onClick={() => router.push("/profile/edit")}
               >
                 Return to Profile
               </Button>
@@ -269,7 +289,7 @@ function XCallbackContent() {
 
         {status === "error" && !isWritingToReadme && (
           <div className="flex justify-center">
-            <Button onClick={() => router.push("/leaderboard/profile/edit")}>
+            <Button onClick={() => router.push("/profile/edit")}>
               Return to Profile
             </Button>
           </div>
