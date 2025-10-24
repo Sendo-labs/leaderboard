@@ -128,12 +128,12 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 94.72202227496643,
+      "totalScore": 97.72202227496643,
       "prScore": 94.72202227496643,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "socialScore": 0,
+      "socialScore": 3,
       "summary": "standujar: Focused on feature development and bug fixes, notably adding JSON endpoints in Sendo-labs/leaderboard via PR #4 (+684/-3 lines) and addressing an API key requirement in Sendo-labs/leaderboard via PR #5. Their work primarily involved bug fixes and feature development across code, tests, and configuration files."
     },
     {

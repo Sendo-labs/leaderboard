@@ -147,12 +147,12 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 313.3358588759364,
+      "totalScore": 319.3358588759364,
       "prScore": 313.3358588759364,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "socialScore": 0,
+      "socialScore": 6,
       "summary": "standujar: Made a foundational contribution by delivering the initial implementation of the Sendo Worker in `Sendo-labs/plugin-sendo-worker#1`, a significant effort involving over 13,000 lines of code. They also enhanced the `Sendo-labs/leaderboard` repository by adding new projects and JSON endpoints via PRs #3 and #4. Their activity shows a primary focus on feature work, bug fixes, and establishing test infrastructure."
     },
     {

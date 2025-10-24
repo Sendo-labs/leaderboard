@@ -98,12 +98,12 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 434.52040666908863,
+      "totalScore": 440.52040666908863,
       "prScore": 434.52040666908863,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "socialScore": 0,
+      "socialScore": 6,
       "summary": "standujar: Focused on foundational development, establishing several new systems and plugins this month. They delivered the initial implementation for the Sendo Worker in a significant PR (Sendo-labs/plugin-sendo-worker#1, +13194 lines) and also set up the initial project structure for the frontend (Sendo-labs/frontend#2) and the CryptoScore plugin (Sendo-labs/plugin-cryptoscore#1). Their work also included initializing the contributor tracking system (Sendo-labs/leaderboard#1) and adding JSON endpoints to it (Sendo-labs/leaderboard#4). This activity demonstrates a strong focus on bootstrapping new features and core infrastructure."
     },
     {
