@@ -294,24 +294,24 @@
   ],
   "topContributors": [
     {
-      "username": "Neysixx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 270.22672579299683,
-      "prScore": 270.22672579299683,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "summary": "Neysixx: Focused on significant refactoring and feature development in the Sendo-labs/frontend repository, landing several impactful changes. They executed a large-scale improvement to the page structure (Sendo-labs/frontend#3), refactored the worker-plugin (Sendo-labs/frontend#6), and resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5). This work demonstrates a primary focus on refactoring, which accounted for the majority of their code changes."
-    },
-    {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 214.24840513678276,
-      "prScore": 214.24840513678276,
+      "totalScore": 313.3358588759364,
+      "prScore": 313.3358588759364,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "standujar: Made a foundational contribution by delivering the initial implementation of the Sendo Worker in `Sendo-labs/plugin-sendo-worker#1`, a significant effort involving over 13,000 lines of code. They also enhanced the `Sendo-labs/leaderboard` repository by adding new projects and JSON endpoints via PRs #3 and #4. Their activity shows a primary focus on feature work, bug fixes, and establishing test infrastructure."
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 286.22672579299683,
+      "prScore": 286.22672579299683,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "Neysixx: Focused on significant refactoring and feature development in the Sendo-labs/frontend repository, landing several impactful changes. They executed a large-scale improvement to the page structure (Sendo-labs/frontend#3), refactored the worker-plugin (Sendo-labs/frontend#6), and resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5). This work demonstrates a primary focus on refactoring, which accounted for the majority of their code changes."
     },
     {
       "username": "xdrkush",
@@ -322,6 +322,16 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "xdrkush: This week, xdrkush focused on resolving an issue within the `sendo-api` repository, merging PR #3 to address a bug in the buy/sell account functionality. This was a notable contribution with over 700 lines of changes across 17 files. Their work was evenly split between bug fixes and feature development, including updates to both application code and tests."
+    },
+    {
+      "username": "MonteCrypto999",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/58423789?u=7db7196121472df50395eadf84f9d5963d886d69&v=4",
+      "totalScore": 43.2637738965761,
+      "prScore": 43.2637738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
     },
     {
       "username": "M4XGO",

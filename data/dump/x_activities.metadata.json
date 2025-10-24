@@ -1,0 +1,23 @@
+{
+    "name": "x_activities",
+    "columns": [
+        "id",
+        "username",
+        "activity_type",
+        "content",
+        "target_post_id",
+        "target_user_id",
+        "is_about_sendo",
+        "mentions_sendo_market",
+        "hashtags_used",
+        "media_count",
+        "engagement_count",
+        "likes_count",
+        "reposts_count",
+        "replies_count",
+        "views_count",
+        "created_at",
+        "last_updated"
+    ],
+    "schema": "CREATE TABLE `x_activities` (\n\t`id` text PRIMARY KEY NOT NULL,\n\t`username` text NOT NULL,\n\t`activity_type` text NOT NULL,\n\t`content` text,\n\t`target_post_id` text,\n\t`target_user_id` text,\n\t`is_about_sendo` integer DEFAULT true NOT NULL,\n\t`mentions_sendo_market` integer DEFAULT false,\n\t`hashtags_used` text,\n\t`media_count` integer DEFAULT 0,\n\t`engagement_count` integer DEFAULT 0,\n\t`likes_count` integer DEFAULT 0,\n\t`reposts_count` integer DEFAULT 0,\n\t`replies_count` integer DEFAULT 0,\n\t`views_count` integer DEFAULT 0,\n\t`created_at` text NOT NULL,\n\t`last_updated` text DEFAULT CURRENT_TIMESTAMP NOT NULL,\n\tFOREIGN KEY (`username`) REFERENCES `users`(`username`) ON UPDATE no action ON DELETE cascade\n)"
+}

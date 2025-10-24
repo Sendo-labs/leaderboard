@@ -29,15 +29,15 @@
       "repository": "Sendo-labs/plugin-sendo-worker",
       "createdAt": "2025-10-22T14:06:55Z",
       "mergedAt": null,
-      "additions": 4992,
-      "deletions": 118
+      "additions": 4991,
+      "deletions": 679
     }
   ],
   "codeChanges": {
     "additions": 13134,
     "deletions": 0,
     "files": 33,
-    "commitCount": 19
+    "commitCount": 20
   },
   "completedItems": [
     {
@@ -86,8 +86,8 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 335.43295292993497,
-      "prScore": 335.43295292993497,
+      "totalScore": 434.52040666908863,
+      "prScore": 434.52040666908863,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -96,8 +96,8 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 329.65249968957295,
-      "prScore": 329.65249968957295,
+      "totalScore": 345.65249968957295,
+      "prScore": 345.65249968957295,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -132,6 +132,16 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "0xCanet: This month, 0xCanet's work was focused on establishing the new `Sendo-labs/frontend` repository. They merged a single, substantial pull request (Sendo-labs/frontend#1) that served as the initial commit for the project. This foundational work introduced over 9,200 lines of code across 111 files, setting up the new codebase."
+    },
+    {
+      "username": "MonteCrypto999",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/58423789?u=7db7196121472df50395eadf84f9d5963d886d69&v=4",
+      "totalScore": 43.2637738965761,
+      "prScore": 43.2637738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
     },
     {
       "username": "0domart",

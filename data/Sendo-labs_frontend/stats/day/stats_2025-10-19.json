@@ -28,8 +28,8 @@
       "body": "",
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-10-19T09:35:30Z",
-      "mergedAt": null,
-      "additions": 3670,
+      "mergedAt": "2025-10-23T19:39:24Z",
+      "additions": 3848,
       "deletions": 913
     },
     {
@@ -137,12 +137,12 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 84.0055477931522,
-      "prScore": 84.0055477931522,
+      "totalScore": 100.0055477931522,
+      "prScore": 100.0055477931522,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": "Neysixx: Focused on significant refactoring and feature work, notably merging a substantial PR in Sendo-labs/frontend#3 (+2024/-1796 lines) that improved page structure, while also opening a new feature PR for worker implementation in Sendo-labs/frontend#2. Their work involved modifying 292 files with a primary focus on refactoring (57%) and feature development (21%)."
+      "summary": "Neysixx: Focused on significant refactoring and feature development, merging a substantial PR in Sendo-labs/frontend#3 (+2024/-1796 lines) that improved page structure, while also opening a new feature PR for worker implementation. Their work involved modifying 292 files with a primary focus on refactor work (57%) and feature work (21%)."
     },
     {
       "username": "M4XGO",
@@ -162,7 +162,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
-      "summary": "tionebDotsamapha: Focused on documentation improvements, successfully merging a PR in Sendo-labs/sendo-api (#2) that updated the README.md to English, demonstrating a commitment to clear and accessible project information."
+      "summary": "tionebDotsamapha: Focused on documentation improvements, merging a PR in Sendo-labs/sendo-api (#2) that updated the README.md, demonstrating a commitment to clear project information."
     },
     {
       "username": "standujar",

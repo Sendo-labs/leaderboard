@@ -1,0 +1,20 @@
+{
+    "name": "social_accounts",
+    "columns": [
+        "id",
+        "user_id",
+        "platform",
+        "platform_user_id",
+        "platform_username",
+        "display_name",
+        "profile_url",
+        "is_verified",
+        "is_primary",
+        "is_active",
+        "verification_method",
+        "last_synced_at",
+        "created_at",
+        "updated_at"
+    ],
+    "schema": "CREATE TABLE `social_accounts` (\n\t`id` integer PRIMARY KEY AUTOINCREMENT NOT NULL,\n\t`user_id` text NOT NULL,\n\t`platform` text DEFAULT 'x' NOT NULL,\n\t`platform_user_id` text NOT NULL,\n\t`platform_username` text NOT NULL,\n\t`display_name` text,\n\t`profile_url` text,\n\t`is_verified` integer DEFAULT false,\n\t`is_primary` integer DEFAULT false,\n\t`is_active` integer DEFAULT true,\n\t`verification_method` text,\n\t`last_synced_at` text,\n\t`created_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,\n\t`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,\n\tFOREIGN KEY (`user_id`) REFERENCES `users`(`username`) ON UPDATE no action ON DELETE cascade\n)"
+}

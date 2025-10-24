@@ -12,7 +12,8 @@
         "comment_score",
         "metrics",
         "category",
-        "last_updated"
+        "last_updated",
+        "social_score"
     ],
-    "schema": "CREATE TABLE \"user_daily_scores\" (\n\t`id` text PRIMARY KEY NOT NULL,\n\t`username` text NOT NULL,\n\t`date` text NOT NULL,\n\t`timestamp` text DEFAULT CURRENT_TIMESTAMP NOT NULL,\n\t`score` real DEFAULT 0 NOT NULL,\n\t`pr_score` real DEFAULT 0,\n\t`issue_score` real DEFAULT 0,\n\t`review_score` real DEFAULT 0,\n\t`comment_score` real DEFAULT 0,\n\t`metrics` text DEFAULT '{}' NOT NULL,\n\t`category` text DEFAULT 'day',\n\t`last_updated` text DEFAULT CURRENT_TIMESTAMP NOT NULL,\n\tFOREIGN KEY (`username`) REFERENCES `users`(`username`) ON UPDATE no action ON DELETE cascade\n)"
+    "schema": "CREATE TABLE \"user_daily_scores\" (\n\t`id` text PRIMARY KEY NOT NULL,\n\t`username` text NOT NULL,\n\t`date` text NOT NULL,\n\t`timestamp` text DEFAULT CURRENT_TIMESTAMP NOT NULL,\n\t`score` real DEFAULT 0 NOT NULL,\n\t`pr_score` real DEFAULT 0,\n\t`issue_score` real DEFAULT 0,\n\t`review_score` real DEFAULT 0,\n\t`comment_score` real DEFAULT 0,\n\t`metrics` text DEFAULT '{}' NOT NULL,\n\t`category` text DEFAULT 'day',\n\t`last_updated` text DEFAULT CURRENT_TIMESTAMP NOT NULL, `social_score` real DEFAULT 0,\n\tFOREIGN KEY (`username`) REFERENCES `users`(`username`) ON UPDATE no action ON DELETE cascade\n)"
 }

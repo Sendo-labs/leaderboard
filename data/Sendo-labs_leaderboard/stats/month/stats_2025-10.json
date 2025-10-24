@@ -5,9 +5,21 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/leaderboard",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/leaderboard had 5 new PRs (5 merged), 0 new issues, and 3 active contributors.",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/leaderboard had 8 new PRs (7 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
   "topPRs": [
+    {
+      "id": "PR_kwDOP7jpj86vgoCs",
+      "title": "Feat: improve deploy workflow",
+      "author": "standujar",
+      "number": 7,
+      "body": "",
+      "repository": "Sendo-labs/leaderboard",
+      "createdAt": "2025-10-24T12:48:19Z",
+      "mergedAt": null,
+      "additions": 4101,
+      "deletions": 14
+    },
     {
       "id": "PR_kwDOP7jpj86vPnWm",
       "title": "feat: add json endpoints",
@@ -55,25 +67,13 @@
       "mergedAt": "2025-10-19T09:20:03Z",
       "additions": 15,
       "deletions": 0
-    },
-    {
-      "id": "PR_kwDOP7jpj86r8XF7",
-      "title": "feat: initialize contributor tracking system",
-      "author": "standujar",
-      "number": 1,
-      "body": "Initialize the contributor tracking system for Sendo-labs analytics.",
-      "repository": "Sendo-labs/leaderboard",
-      "createdAt": "2025-10-03T12:02:37Z",
-      "mergedAt": "2025-10-03T12:03:09Z",
-      "additions": 0,
-      "deletions": 0
     }
   ],
   "codeChanges": {
-    "additions": 745,
-    "deletions": 14,
+    "additions": 758,
+    "deletions": 15,
     "files": 7,
-    "commitCount": 44
+    "commitCount": 50
   },
   "completedItems": [
     {
@@ -124,14 +124,32 @@
         "src/lib/pipelines/export/exportLeaderboardAPI.ts",
         "src/lib/pipelines/summarize/callAIService.ts"
       ]
+    },
+    {
+      "title": "feat: Allow manual workflow dispatch on any branch",
+      "prNumber": 8,
+      "type": "feature",
+      "body": "",
+      "files": [
+        ".github/workflows/deploy.yml"
+      ]
+    },
+    {
+      "title": "chore: Add Reports repository to pipeline configuration",
+      "prNumber": 6,
+      "type": "other",
+      "body": "",
+      "files": [
+        "config/pipeline.config.ts"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 335.43295292993497,
-      "prScore": 335.43295292993497,
+      "totalScore": 434.52040666908863,
+      "prScore": 434.52040666908863,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -140,8 +158,8 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 329.65249968957295,
-      "prScore": 329.65249968957295,
+      "totalScore": 345.65249968957295,
+      "prScore": 345.65249968957295,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -178,6 +196,16 @@
       "summary": "0xCanet: This month, 0xCanet's work was focused on establishing the new `Sendo-labs/frontend` repository. They merged a single, substantial pull request (Sendo-labs/frontend#1) that served as the initial commit for the project. This foundational work introduced over 9,200 lines of code across 111 files, setting up the new codebase."
     },
     {
+      "username": "MonteCrypto999",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/58423789?u=7db7196121472df50395eadf84f9d5963d886d69&v=4",
+      "totalScore": 43.2637738965761,
+      "prScore": 43.2637738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
       "username": "0domart",
       "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
       "totalScore": 35.3857738965761,
@@ -198,8 +226,8 @@
       "summary": "tionebDotsamapha: This month, tionebDotsamapha's work was centered on improving project documentation. Their sole merged pull request (Sendo-labs/sendo-api#2) updated the README file to English, a significant change of 71 lines that improves the project's accessibility. This contribution reflects a focus entirely on documentation."
     }
   ],
-  "newPRs": 5,
-  "mergedPRs": 5,
+  "newPRs": 8,
+  "mergedPRs": 7,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 3

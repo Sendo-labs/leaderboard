@@ -5,36 +5,49 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/plugin-jupiter",
-  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/plugin-jupiter had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/plugin-jupiter had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQF3eqM6vj_aL",
+      "title": "Add referral fee support (Legacy Swap) + live E2E scripts, docs, and config",
+      "author": "MonteCrypto999",
+      "number": 1,
+      "body": "# PR: Optional Referral Fees on Jupiter Legacy Swap\r\n\r\nThis PR adds **optional referral fees** on *Jupiter Legacy Swap* via `platformFeeBps` and `feeAccount`,\r\nwith clean **env-based config**, **tests**, and **runnable E2E examples** (simulation/signing).\r\n\r\n---\r\n\r\n## 🧩 Features\r\n\r\n### Referral Fees\r\n\r\n* Adds `platformFeeBps` to `/quote` when `REFERRAL_FEE_BPS > 0`.\r\n* Derives `feeAccount` as the **ATA for the chosen mint** from `REFERRAL_FEE_RECEIVER`.\r\n* **Modes:**\r\n\r\n  * `sol_only`: collect fees only if SOL/WSOL is in the pair.\r\n  * `smart`: prefer SOL if available, else input mint.\r\n* Respects **ExactIn / ExactOut** rules and skips fees if constraints aren’t met.\r\n\r\n---\r\n\r\n## 🧠 Code Changes\r\n\r\n* **`src/service.ts`**\r\n\r\n  * Integrates `platformFeeBps` in quote and `feeAccount` in swap.\r\n  * Handles mint selection and fee receiver ATA derivation.\r\n* **`src/__tests__/integration.test.ts`**\r\n\r\n  * Live-mode tests against Jupiter API (referral on/off, custom mint sample).\r\n* **`src/scripts/e2e-mainnet.ts`**\r\n\r\n  * E2E script using `.env` (can simulate and sign/send).\r\n* **`local-e2e/` (gitignored)**\r\n\r\n  * Local simulator for build/quote/swap, simulate, and sign via **Helius RPC**.\r\n* **Docs & Config**\r\n\r\n  * `README.md` and `env.example`: updated with clear config and E2E instructions.\r\n  * `.gitignore`: ignores `local-e2e` and env files.\r\n\r\n---\r\n\r\n## ⚙️ How to Use\r\n\r\n### 1. Setup Environment\r\n\r\nCopy `.env.example` → `.env` and set:\r\n\r\n```bash\r\nREFERRAL_FEE_BPS=20\r\nREFERRAL_MODE=sol_only\r\nREFERRAL_FEE_RECEIVER=<fee receiver public key>\r\nTEST_INPUT_MINT=So11111111111111111111111111111111111111112\r\nTEST_OUTPUT_MINT=Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk\r\nTEST_INPUT_AMOUNT_ATOMIC=5000000      # 0.005 SOL\r\nTEST_SLIPPAGE_BPS=150\r\n# Optional (for simulation/signing)\r\nHELIUS_RPC_URL=<url>\r\nSIGNER_SECRET_KEY=[…]\r\nSEND_TX=0\r\n```\r\n\r\n---\r\n\r\n### 2. Run E2E Example\r\n\r\n```bash\r\nnpm run build && node dist/scripts/e2e-mainnet.js\r\n```\r\n\r\n---\r\n\r\n### 3. Local Simulator (ignored, for ops/dev)\r\n\r\nPopulate `local-e2e/.env.local` as above, then run:\r\n\r\n```bash\r\nnpm run local:sim\r\n```\r\n\r\n---\r\n\r\n## 🧩 Notes & Edge Cases\r\n\r\n* **Error “Invalid token account / 0x1789 (6025)”**\r\n  Usually a route/account issue.\r\n  Ensure the **fee receiver’s ATA exists** for the selected mint (e.g., WSOL in `sol_only` mode).\r\n  If absent, create the ATA or let Jupiter create it idempotently.\r\n  Some routes may still fail in simulation—try higher slippage or another route.\r\n\r\n* **No Referral Program needed** for Legacy Swap.\r\n  (Still required for Trigger API.)\r\n\r\n---\r\n\r\n## 🔗 References\r\n\r\n* [[Jupiter Docs – Add Fees to Swap](https://dev.jup.ag/docs/swap/add-fees-to-swap)](https://dev.jup.ag/docs/swap/add-fees-to-swap)\r\n* [[ElizaOS – Create a Plugin](https://docs.elizaos.ai/guides/create-a-plugin)](https://docs.elizaos.ai/guides/create-a-plugin)\r\n\r\n---\r\n\r\n## ✅ Checklist\r\n\r\n* [x] Referral fee applied only when `REFERRAL_FEE_BPS > 0` and valid `feeAccount`\r\n* [x] `feeAccount` derived from `REFERRAL_FEE_RECEIVER` ATA for selected mint\r\n* [x] Live integration tests against Jupiter API\r\n* [x] E2E script with simulation/signing (HELIUS RPC)\r\n* [x] `README` and `.env.example` updated\r\n* [x] Local-only utilities ignored by git",
+      "repository": "Sendo-labs/plugin-jupiter",
+      "createdAt": "2025-10-24T17:11:36Z",
+      "mergedAt": null,
+      "additions": 5627,
+      "deletions": 93
+    }
+  ],
   "codeChanges": {
     "additions": 0,
     "deletions": 0,
     "files": 0,
-    "commitCount": 0
+    "commitCount": 13
   },
   "completedItems": [],
   "topContributors": [
     {
-      "username": "Neysixx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 270.22672579299683,
-      "prScore": 270.22672579299683,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "summary": "Neysixx: Focused on significant refactoring and feature development in the Sendo-labs/frontend repository, landing several impactful changes. They executed a large-scale improvement to the page structure (Sendo-labs/frontend#3), refactored the worker-plugin (Sendo-labs/frontend#6), and resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5). This work demonstrates a primary focus on refactoring, which accounted for the majority of their code changes."
-    },
-    {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 214.24840513678276,
-      "prScore": 214.24840513678276,
+      "totalScore": 313.3358588759364,
+      "prScore": 313.3358588759364,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "standujar: Made a foundational contribution by delivering the initial implementation of the Sendo Worker in `Sendo-labs/plugin-sendo-worker#1`, a significant effort involving over 13,000 lines of code. They also enhanced the `Sendo-labs/leaderboard` repository by adding new projects and JSON endpoints via PRs #3 and #4. Their activity shows a primary focus on feature work, bug fixes, and establishing test infrastructure."
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 286.22672579299683,
+      "prScore": 286.22672579299683,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": "Neysixx: Focused on significant refactoring and feature development in the Sendo-labs/frontend repository, landing several impactful changes. They executed a large-scale improvement to the page structure (Sendo-labs/frontend#3), refactored the worker-plugin (Sendo-labs/frontend#6), and resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5). This work demonstrates a primary focus on refactoring, which accounted for the majority of their code changes."
     },
     {
       "username": "xdrkush",
@@ -45,6 +58,16 @@
       "reviewScore": 0,
       "commentScore": 0,
       "summary": "xdrkush: This week, xdrkush focused on resolving an issue within the `sendo-api` repository, merging PR #3 to address a bug in the buy/sell account functionality. This was a notable contribution with over 700 lines of changes across 17 files. Their work was evenly split between bug fixes and feature development, including updates to both application code and tests."
+    },
+    {
+      "username": "MonteCrypto999",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/58423789?u=7db7196121472df50395eadf84f9d5963d886d69&v=4",
+      "totalScore": 43.2637738965761,
+      "prScore": 43.2637738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
     },
     {
       "username": "M4XGO",
@@ -67,9 +90,9 @@
       "summary": "tionebDotsamapha: This week's focus was on improving project documentation, merging a pull request in Sendo-labs/sendo-api (#2) to update the README file. Their contributions were entirely focused on documentation."
     }
   ],
-  "newPRs": 0,
+  "newPRs": 1,
   "mergedPRs": 0,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 0
+  "activeContributors": 1
 }

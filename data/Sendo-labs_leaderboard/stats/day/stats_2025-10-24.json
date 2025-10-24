@@ -1,0 +1,101 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-24T00:00:00.000Z",
+    "intervalEnd": "2025-10-25T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/leaderboard",
+  "overview": "From 2025-10-24 to 2025-10-25, Sendo-labs/leaderboard had 3 new PRs (2 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOP7jpj86vgoCs",
+      "title": "Feat: improve deploy workflow",
+      "author": "standujar",
+      "number": 7,
+      "body": "",
+      "repository": "Sendo-labs/leaderboard",
+      "createdAt": "2025-10-24T12:48:19Z",
+      "mergedAt": null,
+      "additions": 4101,
+      "deletions": 14
+    },
+    {
+      "id": "PR_kwDOP7jpj86vgrNd",
+      "title": "feat: Allow manual workflow dispatch on any branch",
+      "author": "standujar",
+      "number": 8,
+      "body": "",
+      "repository": "Sendo-labs/leaderboard",
+      "createdAt": "2025-10-24T12:51:14Z",
+      "mergedAt": "2025-10-24T12:51:22Z",
+      "additions": 8,
+      "deletions": 1
+    },
+    {
+      "id": "PR_kwDOP7jpj86veWLu",
+      "title": "chore: Add Reports repository to pipeline configuration",
+      "author": "standujar",
+      "number": 6,
+      "body": "",
+      "repository": "Sendo-labs/leaderboard",
+      "createdAt": "2025-10-24T10:04:48Z",
+      "mergedAt": "2025-10-24T10:04:56Z",
+      "additions": 5,
+      "deletions": 0
+    }
+  ],
+  "codeChanges": {
+    "additions": 13,
+    "deletions": 1,
+    "files": 2,
+    "commitCount": 6
+  },
+  "completedItems": [
+    {
+      "title": "feat: Allow manual workflow dispatch on any branch",
+      "prNumber": 8,
+      "type": "feature",
+      "body": "",
+      "files": [
+        ".github/workflows/deploy.yml"
+      ]
+    },
+    {
+      "title": "chore: Add Reports repository to pipeline configuration",
+      "prNumber": 6,
+      "type": "other",
+      "body": "",
+      "files": [
+        "config/pipeline.config.ts"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 75.59094617768714,
+      "prScore": 75.59094617768714,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    },
+    {
+      "username": "MonteCrypto999",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/58423789?u=7db7196121472df50395eadf84f9d5963d886d69&v=4",
+      "totalScore": 43.2637738965761,
+      "prScore": 43.2637738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 3,
+  "mergedPRs": 2,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}
