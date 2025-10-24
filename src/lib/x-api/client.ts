@@ -245,22 +245,24 @@ export function createXApiClient(): XApiClient {
 }
 
 /**
- * Helper to build search query for SendoMarket mentions
+ * Helper to build search query for SendoMarket mentions and retweets
+ *
+ * This query captures:
+ * 1. Posts mentioning @SendoMarket
+ * 2. Retweets of @SendoMarket posts
+ * 3. Replies to @SendoMarket (optional)
  */
 export function buildSendoMentionQuery(
   options: {
-    excludeRetweets?: boolean;
     excludeReplies?: boolean;
   } = {},
 ): string {
-  const parts = ["@SendoMarket"];
+  // Use OR operator to capture both mentions AND retweets of SendoMarket
+  // (@SendoMarket) - tweets mentioning @SendoMarket (includes quoted tweets with mentions)
+  // (from:SendoMarket) - tweets from @SendoMarket account (captures original posts that get retweeted)
+  const parts = ["(@SendoMarket OR from:SendoMarket)"];
 
-  // Exclude pure retweets
-  if (options.excludeRetweets !== false) {
-    parts.push("-filter:retweets");
-  }
-
-  // Exclude replies
+  // Exclude replies if requested
   if (options.excludeReplies) {
     parts.push("-filter:replies");
   }

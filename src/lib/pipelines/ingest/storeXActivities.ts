@@ -226,7 +226,6 @@ const fetchAndStoreXActivitiesStep = createStep(
       const xClient = createXApiClient();
 
       const query = buildSendoMentionQuery({
-        excludeRetweets: true, // Don't count pure retweets
         excludeReplies: false, // Include replies
       });
 
