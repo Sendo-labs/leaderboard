@@ -72,6 +72,11 @@ export default {
       name: "leaderboard-rewards",
       defaultBranch: "main",
     },
+    {
+      owner: "Sendo-labs",
+      name: "Reports",
+      defaultBranch: "main",
+    }
   ],
   walletAddresses: {
     enabled: true,
