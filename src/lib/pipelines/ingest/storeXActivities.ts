@@ -83,7 +83,7 @@ async function storeXActivity(
       lastUpdated: new Date().toISOString(),
     })
     .onConflictDoUpdate({
-      target: xActivities.id,
+      target: [xActivities.id],
       set: {
         // Update engagement metrics
         engagementCount:
