@@ -7,7 +7,7 @@
 
 import { db } from "@/lib/data/db";
 import { xActivities, socialAccounts, users } from "@/lib/data/schema";
-import { eq } from "drizzle-orm";
+import { eq, and } from "drizzle-orm";
 import {
   createXApiClient,
   buildSendoMentionQuery,
@@ -116,10 +116,27 @@ async function syncSocialAccount(
     })
     .onConflictDoNothing();
 
-  // Upsert social account
-  await db
-    .insert(socialAccounts)
-    .values({
+  // Check if account already exists
+  const existing = await db.query.socialAccounts.findFirst({
+    where: and(
+      eq(socialAccounts.userId, linkedAccount.githubUsername),
+      eq(socialAccounts.platform, "x"),
+    ),
+  });
+
+  if (existing) {
+    // Update existing account
+    await db
+      .update(socialAccounts)
+      .set({
+        platformUsername: linkedAccount.xUsername,
+        lastSyncedAt: new Date().toISOString(),
+        updatedAt: linkedAccount.lastUpdated,
+      })
+      .where(eq(socialAccounts.id, existing.id));
+  } else {
+    // Insert new account
+    await db.insert(socialAccounts).values({
       userId: linkedAccount.githubUsername,
       platform: "x",
       platformUserId: linkedAccount.xUserId,
@@ -133,15 +150,8 @@ async function syncSocialAccount(
       lastSyncedAt: new Date().toISOString(),
       createdAt: linkedAccount.linkedAt,
       updatedAt: linkedAccount.lastUpdated,
-    })
-    .onConflictDoUpdate({
-      target: [socialAccounts.userId, socialAccounts.platform],
-      set: {
-        platformUsername: linkedAccount.xUsername,
-        lastSyncedAt: new Date().toISOString(),
-        updatedAt: linkedAccount.lastUpdated,
-      },
     });
+  }
 }
 
 /**
