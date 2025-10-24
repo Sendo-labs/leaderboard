@@ -67,11 +67,16 @@ export async function handleInitiateXLink(
   try {
     // 2. Fetch GitHub username
     const githubUserResponse = await fetch("https://api.github.com/user", {
-      headers: { Authorization: `Bearer ${githubToken}` },
+      headers: {
+        Authorization: `Bearer ${githubToken}`,
+        "User-Agent": "Sendo-Auth-Worker",
+      },
     });
 
     if (!githubUserResponse.ok) {
-      throw new Error("Invalid GitHub token");
+      const errorText = await githubUserResponse.text();
+      console.error("GitHub API error:", githubUserResponse.status, errorText);
+      throw new Error(`Invalid GitHub token: ${githubUserResponse.status}`);
     }
 
     const githubUser = (await githubUserResponse.json()) as { login: string };
@@ -90,7 +95,7 @@ export async function handleInitiateXLink(
     );
 
     // 5. Build X authorization URL
-    const redirectUri = `${env.ALLOWED_ORIGIN}/auth/x/callback`;
+    const redirectUri = `${env.ALLOWED_ORIGIN}/leaderboard/auth/x/callback`;
     const xAuthUrl = new URL("https://x.com/i/oauth2/authorize");
 
     xAuthUrl.searchParams.set("response_type", "code");
@@ -185,7 +190,7 @@ export async function handleXCallback(
       body: new URLSearchParams({
         code,
         grant_type: "authorization_code",
-        redirect_uri: `${env.ALLOWED_ORIGIN}/auth/x/callback`,
+        redirect_uri: `${env.ALLOWED_ORIGIN}/leaderboard/auth/x/callback`,
         code_verifier: "challenge", // PKCE
       }),
     });

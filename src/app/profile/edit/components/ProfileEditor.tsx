@@ -22,6 +22,7 @@ export default function ProfileEditor() {
     user,
     profileRepoExists,
     walletData,
+    xData,
     pageLoading,
     error,
     successMessage,
@@ -129,7 +130,10 @@ export default function ProfileEditor() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <XLinkForm xUsername={null} isLinked={false} />
+          <XLinkForm
+            xUsername={xData?.xAccount.xUsername ?? null}
+            isLinked={!!xData}
+          />
         </CardContent>
       </Card>
     </div>

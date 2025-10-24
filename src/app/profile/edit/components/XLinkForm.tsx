@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Loader2, Info, Shield, ArrowRight, Twitter } from "lucide-react";
+import { Loader2, Info, Shield, ArrowRight, X } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 
 const AUTH_WORKER_URL = "https://github-auth-worker.sendo-auth.workers.dev";
@@ -58,7 +58,7 @@ export function XLinkForm({ xUsername, isLinked }: XLinkFormProps) {
       <div className="flex items-center justify-between">
         <div className="space-y-1">
           <h3 className="flex items-center gap-2 text-lg font-semibold">
-            <Twitter className="h-5 w-5" />X Account
+            <X className="h-5 w-5" />X Account
           </h3>
           {isLinked && xUsername && (
             <p className="text-sm text-muted-foreground">
@@ -77,7 +77,7 @@ export function XLinkForm({ xUsername, isLinked }: XLinkFormProps) {
 
         <Button
           onClick={handleLinkX}
-          disabled={isProcessing || isLinked}
+          disabled={isProcessing}
           variant={isLinked ? "outline" : "default"}
         >
           {isProcessing ? (
@@ -86,7 +86,7 @@ export function XLinkForm({ xUsername, isLinked }: XLinkFormProps) {
               Linking...
             </>
           ) : isLinked ? (
-            "✓ Linked"
+            "Re-link X Account"
           ) : (
             "Link X Account"
           )}
@@ -114,7 +114,7 @@ export function XLinkForm({ xUsername, isLinked }: XLinkFormProps) {
             <div className="flex items-center space-x-1 text-muted-foreground">
               <ArrowRight className="h-3 w-3" />
               <span>
-                After linking, add the JWT token to your GitHub profile README
+                Your GitHub profile README will be updated automatically
               </span>
             </div>
           </div>
