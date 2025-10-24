@@ -18,6 +18,7 @@ export interface ScoreResult {
   issueScore: number;
   reviewScore: number;
   commentScore: number;
+  socialScore?: number;
   metrics: {
     pullRequests: {
       total: number;
@@ -44,6 +45,20 @@ export interface ScoreResult {
       additions: number;
       deletions: number;
       files: number;
+    };
+    xActivities?: {
+      posts: {
+        total: number;
+        original: number;
+        quotes: number;
+        replies: number;
+        reposts: number;
+      };
+      engagement: {
+        totalMentions: number;
+        withHashtag: number;
+        withMedia: number;
+      };
     };
   };
 }
@@ -246,8 +261,36 @@ export async function calculateContributorScore(
   const reviewScore = calculateReviewScore(reviewMetrics, scoringConfig);
   const commentScore = calculateCommentScore(commentMetrics, scoringConfig);
 
-  // Calculate total score
-  const totalScore = prScore + issueScore + reviewScore + commentScore;
+  // Calculate X (social) score if activities exist
+  let socialScore = 0;
+  let xActivitiesMetrics = undefined;
+
+  try {
+    const { getContributorXActivities, calculateXScore } = await import(
+      "./xScoreCalculator"
+    );
+
+    if (queryParams.dateRange?.startDate && queryParams.dateRange?.endDate) {
+      const xActivities = await getContributorXActivities(
+        username,
+        queryParams.dateRange.startDate,
+        queryParams.dateRange.endDate,
+      );
+
+      if (xActivities.length > 0) {
+        const xScoreResult = calculateXScore(xActivities);
+        socialScore = xScoreResult.socialScore;
+        xActivitiesMetrics = xScoreResult.metrics;
+      }
+    }
+  } catch (error) {
+    // X scoring is optional - if it fails, just continue without it
+    console.error("Error calculating X score:", error);
+  }
+
+  // Calculate total score (GitHub + X)
+  const totalScore =
+    prScore + issueScore + reviewScore + commentScore + socialScore;
 
   // Calculate code changes
   const codeChanges = {
@@ -262,12 +305,14 @@ export async function calculateContributorScore(
     issueScore,
     reviewScore,
     commentScore,
+    socialScore: socialScore > 0 ? socialScore : undefined,
     metrics: {
       pullRequests: contributorPRMetrics,
       issues: issueMetrics,
       reviews: reviewMetrics,
       comments: commentMetrics,
       codeChanges,
+      xActivities: xActivitiesMetrics,
     },
   };
 }

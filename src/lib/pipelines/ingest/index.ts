@@ -4,11 +4,12 @@ import { createStep, pipe } from "../types";
 import { mapStep } from "../types";
 import { getSelectedRepositories } from "../getSelectedRepositories";
 import { fetchWalletAddresses } from "./fetchWalletAddresses";
+import { fetchAndStoreXActivities } from "./storeXActivities";
 
 export { createIngestionContext };
 
-// Pipeline for generating monthly project summaries
-export const ingestPipeline = pipe(
+// GitHub data ingestion pipeline
+const ingestGithubData = pipe(
   getSelectedRepositories,
   createStep("mapRepos", (repositories) => {
     return repositories.map(({ repoId, owner, name, defaultBranch }) => ({
@@ -37,5 +38,10 @@ export const ingestPipeline = pipe(
       );
     }
   }),
-  createStep("WalletAddress", fetchWalletAddresses),
 );
+
+// Social data ingestion pipeline
+const ingestSocialData = pipe(fetchWalletAddresses, fetchAndStoreXActivities);
+
+// Combined ingestion pipeline
+export const ingestPipeline = pipe(ingestGithubData, ingestSocialData);

@@ -48,6 +48,7 @@ export async function saveUserDailyScore(
       issueScore: scoreData.issueScore,
       reviewScore: scoreData.reviewScore,
       commentScore: scoreData.commentScore,
+      socialScore: scoreData.socialScore || 0,
       metrics: JSON.stringify(scoreData.metrics),
       category: "day",
     })
@@ -60,6 +61,7 @@ export async function saveUserDailyScore(
         issueScore: scoreData.issueScore,
         reviewScore: scoreData.reviewScore,
         commentScore: scoreData.commentScore,
+        socialScore: scoreData.socialScore || 0,
         metrics: JSON.stringify(scoreData.metrics),
         lastUpdated: sql`CURRENT_TIMESTAMP`,
       },
