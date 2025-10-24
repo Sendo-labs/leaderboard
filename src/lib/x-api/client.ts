@@ -6,43 +6,40 @@
  */
 
 export interface XPost {
-  rest_id: string; // Tweet ID
-  legacy: {
-    full_text: string;
-    created_at: string; // "Wed Oct 10 20:19:24 +0000 2018"
-    favorite_count: number;
-    retweet_count: number;
-    reply_count: number;
-    quote_count: number;
-    bookmark_count: number;
-    entities: {
-      hashtags: Array<{ text: string }>;
-      user_mentions: Array<{ screen_name: string; id_str: string }>;
-      urls: Array<{ url: string; expanded_url: string }>;
-      media?: Array<{
-        type: "photo" | "video" | "animated_gif";
-        media_url_https: string;
-      }>;
-    };
-    retweeted_status_id_str?: string; // If it's a retweet
-    quoted_status_id_str?: string; // If it's a quote tweet
-    in_reply_to_status_id_str?: string; // If it's a reply
-    in_reply_to_user_id_str?: string;
+  id: string;
+  text: string;
+  createdAt: string;
+  likeCount: number;
+  retweetCount: number;
+  replyCount: number;
+  quoteCount: number;
+  bookmarkCount: number;
+  viewCount: number;
+  isReply: boolean;
+  inReplyToId: string | null;
+  inReplyToUserId: string | null;
+  inReplyToUsername: string | null;
+  conversationId: string;
+  entities: {
+    hashtags?: Array<{ text: string }>;
+    user_mentions?: Array<{ screen_name: string; id_str: string }>;
+    urls?: Array<{ url: string; expanded_url: string }>;
+    media?: Array<{
+      type: "photo" | "video" | "animated_gif";
+      media_url_https: string;
+    }>;
   };
-  core?: {
-    user_results: {
-      result: {
-        rest_id: string;
-        legacy: {
-          screen_name: string;
-          name: string;
-          verified: boolean;
-        };
-      };
-    };
-  };
-  views?: {
-    count?: string; // View count as string
+  retweeted_tweet: XPost | null;
+  quoted_tweet: XPost | null;
+  author: {
+    id: string;
+    userName: string;
+    name: string;
+    isVerified: boolean;
+    isBlueVerified: boolean;
+    profilePicture: string;
+    followers: number;
+    following: number;
   };
 }
 
@@ -93,7 +90,7 @@ export class XApiClient {
   private async makeRequest<T>(
     endpoint: string,
     params?: Record<string, string | number>,
-  ): Promise<TwitterApiIoResponse<T>> {
+  ): Promise<T> {
     const url = new URL(`${this.baseUrl}${endpoint}`);
     if (params) {
       Object.entries(params).forEach(([key, value]) => {
@@ -170,12 +167,12 @@ export class XApiClient {
       cursor: params.cursor || "", // Empty string for first page
     });
 
-    // Normalize response to match expected format
+    // API returns tweets directly, not wrapped in data
     return {
       data: {
-        tweets: response.data?.tweets || [],
-        next_cursor: response.data?.next_cursor,
-        has_next_page: response.data?.has_next_page,
+        tweets: response.tweets || [],
+        next_cursor: response.next_cursor,
+        has_next_page: response.has_next_page,
       },
     };
   }
@@ -191,14 +188,18 @@ export class XApiClient {
     limit?: number;
     cursor?: string;
   }): Promise<TwitterApiIoResponse<{ tweets: XPost[]; cursor?: string }>> {
-    return await this.makeRequest<{ tweets: XPost[]; cursor?: string }>(
-      "/user/timeline",
-      {
-        username: params.username,
-        limit: params.limit || 100,
-        ...(params.cursor && { cursor: params.cursor }),
-      },
-    );
+    const response = await this.makeRequest<{
+      tweets: XPost[];
+      cursor?: string;
+    }>("/user/timeline", {
+      username: params.username,
+      limit: params.limit || 100,
+      ...(params.cursor && { cursor: params.cursor }),
+    });
+
+    return {
+      data: response,
+    };
   }
 
   /**
@@ -210,9 +211,13 @@ export class XApiClient {
   async getUserByUsername(
     username: string,
   ): Promise<TwitterApiIoResponse<{ user: XUser }>> {
-    return await this.makeRequest<{ user: XUser }>(
+    const response = await this.makeRequest<{ user: XUser }>(
       `/user/by/username/${username}`,
     );
+
+    return {
+      data: response,
+    };
   }
 
   /**
@@ -224,7 +229,13 @@ export class XApiClient {
   async getTweet(
     tweetId: string,
   ): Promise<TwitterApiIoResponse<{ tweet: XPost }>> {
-    return await this.makeRequest<{ tweet: XPost }>(`/tweet/by/id/${tweetId}`);
+    const response = await this.makeRequest<{ tweet: XPost }>(
+      `/tweet/by/id/${tweetId}`,
+    );
+
+    return {
+      data: response,
+    };
   }
 }
 
@@ -249,18 +260,18 @@ export function createXApiClient(): XApiClient {
  *
  * This query captures:
  * 1. Posts mentioning @SendoMarket
- * 2. Retweets of @SendoMarket posts
- * 3. Replies to @SendoMarket (optional)
+ * 2. Posts from @SendoMarket account
+ * 3. All retweets of the above (pure retweets included via include:nativeretweets)
+ * 4. Replies to @SendoMarket (optional)
  */
 export function buildSendoMentionQuery(
   options: {
     excludeReplies?: boolean;
   } = {},
 ): string {
-  // Use OR operator to capture both mentions AND retweets of SendoMarket
-  // (@SendoMarket) - tweets mentioning @SendoMarket (includes quoted tweets with mentions)
-  // (from:SendoMarket) - tweets from @SendoMarket account (captures original posts that get retweeted)
-  const parts = ["(@SendoMarket OR from:SendoMarket)"];
+  // Combine mentions and from:SendoMarket to capture both mentions and original posts
+  // include:nativeretweets ensures we capture pure retweets (without added text)
+  const parts = ["@SendoMarket OR from:SendoMarket include:nativeretweets"];
 
   // Exclude replies if requested
   if (options.excludeReplies) {
@@ -304,37 +315,28 @@ export interface NormalizedXPost {
 }
 
 export function normalizeXPost(post: XPost): NormalizedXPost {
-  const authorId = post.core?.user_results?.result?.rest_id || "unknown_author";
-  const authorUsername =
-    post.core?.user_results?.result?.legacy?.screen_name || "unknown_username";
-  const authorName =
-    post.core?.user_results?.result?.legacy?.name || authorUsername;
-
   return {
-    id: post.rest_id,
-    text: post.legacy.full_text,
-    authorId,
-    authorUsername,
-    authorName,
-    createdAt: parseTwitterDate(post.legacy.created_at),
-    likesCount: post.legacy.favorite_count,
-    repostsCount: post.legacy.retweet_count,
-    repliesCount: post.legacy.reply_count || 0,
-    quotesCount: post.legacy.quote_count || 0,
-    viewsCount: post.views?.count ? parseInt(post.views.count, 10) : 0,
-    bookmarksCount: post.legacy.bookmark_count || 0,
-    isRetweet: !!post.legacy.retweeted_status_id_str,
-    isQuote: !!post.legacy.quoted_status_id_str,
-    isReply:
-      !!post.legacy.in_reply_to_status_id_str ||
-      !!post.legacy.in_reply_to_user_id_str,
-    hashtags:
-      post.legacy.entities.hashtags?.map((h) => h.text.toLowerCase()) || [],
+    id: post.id,
+    text: post.text,
+    authorId: post.author.id,
+    authorUsername: post.author.userName,
+    authorName: post.author.name,
+    createdAt: parseTwitterDate(post.createdAt),
+    likesCount: post.likeCount,
+    repostsCount: post.retweetCount,
+    repliesCount: post.replyCount || 0,
+    quotesCount: post.quoteCount || 0,
+    viewsCount: post.viewCount || 0,
+    bookmarksCount: post.bookmarkCount || 0,
+    isRetweet: !!post.retweeted_tweet,
+    isQuote: !!post.quoted_tweet,
+    isReply: post.isReply,
+    hashtags: post.entities.hashtags?.map((h) => h.text.toLowerCase()) || [],
     mentions:
-      post.legacy.entities.user_mentions?.map((m) => ({
+      post.entities.user_mentions?.map((m) => ({
         username: m.screen_name.toLowerCase(),
         id: m.id_str,
       })) || [],
-    mediaCount: post.legacy.entities.media?.length || 0,
+    mediaCount: post.entities.media?.length || 0,
   };
 }
