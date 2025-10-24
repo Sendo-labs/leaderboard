@@ -30,6 +30,20 @@ export interface UserStats {
   changedFiles: number;
 }
 
+export interface XAccountData {
+  xUsername: string;
+  xUserId: string;
+  profileUrl: string | null;
+  stats: {
+    totalPosts: number;
+    posts: number;
+    quotes: number;
+    replies: number;
+    reposts: number;
+    totalEngagement: number;
+  };
+}
+
 type UserProfileProps = {
   username: string;
   monthlySummaries: Summary[];
@@ -42,6 +56,7 @@ type UserProfileProps = {
   stats: UserStats;
   dailyActivity: UserActivityHeatmap[];
   linkedWallets: LinkedWallet[];
+  xAccount: XAccountData | null;
 };
 
 export default function UserProfile({
@@ -56,6 +71,7 @@ export default function UserProfile({
   stats,
   dailyActivity,
   linkedWallets,
+  xAccount,
 }: UserProfileProps) {
   return (
     <div className="mx-auto w-full max-w-4xl space-y-6 sm:p-4">
@@ -218,6 +234,63 @@ export default function UserProfile({
             </div>
           </CardContent>
         </Card>
+
+        {/* X (Twitter) Activity Section */}
+        {xAccount && (
+          <Card className="overflow-hidden md:col-span-2">
+            <CardHeader className="p-3">
+              <CardTitle className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+                <span>𝕏 Social Activity</span>
+                {xAccount.profileUrl && (
+                  <a
+                    href={xAccount.profileUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-primary hover:underline"
+                  >
+                    @{xAccount.xUsername}
+                  </a>
+                )}
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="p-3 pt-0">
+              <div className="grid grid-cols-4 gap-2 sm:gap-4">
+                <div className="text-center">
+                  <div className="font-mono text-lg font-bold sm:text-2xl">
+                    {xAccount.stats.posts}
+                  </div>
+                  <p className="text-[10px] text-muted-foreground sm:text-xs">
+                    Posts
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="font-mono text-lg font-bold sm:text-2xl">
+                    {xAccount.stats.quotes}
+                  </div>
+                  <p className="text-[10px] text-muted-foreground sm:text-xs">
+                    Quotes
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="font-mono text-lg font-bold sm:text-2xl">
+                    {xAccount.stats.replies}
+                  </div>
+                  <p className="text-[10px] text-muted-foreground sm:text-xs">
+                    Replies
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="font-mono text-lg font-bold sm:text-2xl">
+                    {xAccount.stats.totalEngagement}
+                  </div>
+                  <p className="text-[10px] text-muted-foreground sm:text-xs">
+                    Engagement
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        )}
       </div>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">

@@ -35,6 +35,7 @@ export function generateScoreSelectFields<
     issueScore: SQLiteColumn;
     reviewScore: SQLiteColumn;
     commentScore: SQLiteColumn;
+    socialScore?: SQLiteColumn;
   },
 >(table: T) {
   return {
@@ -43,6 +44,9 @@ export function generateScoreSelectFields<
     issueScore: sql<number>`COALESCE(SUM(${table.issueScore}), 0)`,
     reviewScore: sql<number>`COALESCE(SUM(${table.reviewScore}), 0)`,
     commentScore: sql<number>`COALESCE(SUM(${table.commentScore}), 0)`,
+    socialScore: table.socialScore
+      ? sql<number>`COALESCE(SUM(${table.socialScore}), 0)`
+      : sql<number>`0`,
   };
 }
 /**

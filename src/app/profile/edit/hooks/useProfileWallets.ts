@@ -11,6 +11,10 @@ import {
   parseWalletLinkingDataFromReadme,
   generateReadmeWalletSection,
 } from "@/lib/walletLinking/readmeUtils";
+import {
+  XLinkingData,
+  parseXLinkingDataFromReadme,
+} from "@/lib/xLinking/readmeUtils";
 import { z } from "zod";
 import { decodeBase64 } from "@/lib/decode";
 
@@ -23,6 +27,7 @@ export function useProfileWallets() {
   );
   const [readmeContent, setReadmeContent] = useState<string | null>(null);
   const [walletData, setWalletData] = useState<WalletLinkingData | null>(null);
+  const [xData, setXData] = useState<XLinkingData | null>(null);
   const [walletSection, setWalletSection] = useState<string | null>(null);
   const [defaultBranch, setDefaultBranch] = useState<string>("main");
 
@@ -62,6 +67,10 @@ export function useProfileWallets() {
       // parse Readme content for Wallet data
       const walletData = parseWalletLinkingDataFromReadme(decodedReadmeText);
       setWalletData(walletData);
+
+      // parse Readme content for X data
+      const xData = parseXLinkingDataFromReadme(decodedReadmeText);
+      setXData(xData);
     } catch (err: unknown) {
       console.error("Error in fetchProfileData:", err);
       setError(
@@ -169,6 +178,7 @@ export function useProfileWallets() {
     profileRepoExists,
     walletSection,
     walletData,
+    xData,
     pageLoading,
     error,
     successMessage,

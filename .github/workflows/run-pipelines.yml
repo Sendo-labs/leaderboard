@@ -41,6 +41,8 @@ on:
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+  TWITTER_API_IO_KEY: ${{ secrets.TWITTER_API_IO_KEY }}
+  LINKING_SECRET: ${{ secrets.LINKING_SECRET }}
   PIPELINE_DATA_BRANCH: "_data" # Define branch name as environment variable
   DATA_DIR: "data"
 jobs:

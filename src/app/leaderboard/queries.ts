@@ -1,6 +1,6 @@
 import { db } from "@/lib/data/db";
-import { userTagScores, tags } from "@/lib/data/schema";
-import { eq, inArray } from "drizzle-orm";
+import { userTagScores, tags, socialAccounts } from "@/lib/data/schema";
+import { eq, inArray, and } from "drizzle-orm";
 import { getDateRangeForPeriod } from "@/lib/pipelines/queryHelpers";
 import { getTopUsersByScore } from "@/lib/scoring/queries";
 import { groupBy } from "@/lib/arrayHelpers";
@@ -46,11 +46,28 @@ export async function getLeaderboard(period: LeaderboardPeriod) {
     .leftJoin(tags, eq(userTagScores.tag, tags.name))
     .where(inArray(userTagScores.username, usernameList));
 
+  // Fetch X account linking status for these users
+  const xAccountsData = await db
+    .select({
+      userId: socialAccounts.userId,
+    })
+    .from(socialAccounts)
+    .where(
+      and(
+        inArray(socialAccounts.userId, usernameList),
+        eq(socialAccounts.platform, "x"),
+        eq(socialAccounts.isActive, true),
+      ),
+    );
+
   // Group tag scores by username for easy lookup
   const userTagScoresMap = groupBy(
     tagScoresData,
     (tagScore) => tagScore.username,
   );
+
+  // Create a Set of users with linked X accounts
+  const usersWithXAccount = new Set(xAccountsData.map((x) => x.userId));
 
   // Create a map of the top users with their scores for quick lookup
   const userScoreMap = new Map(
@@ -86,6 +103,7 @@ export async function getLeaderboard(period: LeaderboardPeriod) {
         return {
           ...user,
           linkedWallets,
+          hasLinkedXAccount: usersWithXAccount.has(user.username),
         };
       } catch (error) {
         console.warn(
@@ -95,6 +113,7 @@ export async function getLeaderboard(period: LeaderboardPeriod) {
         return {
           ...user,
           linkedWallets: [],
+          hasLinkedXAccount: usersWithXAccount.has(user.username),
         };
       }
     }),

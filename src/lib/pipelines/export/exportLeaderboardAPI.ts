@@ -22,6 +22,7 @@ export interface LeaderboardEntry {
   issueScore: number;
   reviewScore: number;
   commentScore: number;
+  socialScore?: number;
   wallets: {
     solana?: string;
     ethereum?: string;
@@ -153,6 +154,10 @@ async function getLeaderboardData(
     issueScore: Number(row.issueScore || 0),
     reviewScore: Number(row.reviewScore || 0),
     commentScore: Number(row.commentScore || 0),
+    socialScore:
+      Number(row.socialScore || 0) > 0
+        ? Number(row.socialScore || 0)
+        : undefined,
     wallets: walletMap.get(row.username) || {},
   }));
 }

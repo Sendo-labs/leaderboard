@@ -72,6 +72,11 @@ export function LeaderboardCard({
                     </Tooltip>
                   </TooltipProvider>
                 )}
+                {user.hasLinkedXAccount && (
+                  <span className="ml-1 inline-block align-middle text-sm">
+                    𝕏
+                  </span>
+                )}
               </h3>
               <div className="flex gap-2">
                 <StatBadge
