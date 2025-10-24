@@ -6,6 +6,8 @@ import {
   userTagScores,
   tags,
   userSummaries,
+  socialAccounts,
+  xActivities,
 } from "@/lib/data/schema";
 import { calculateDateRange, IntervalType } from "@/lib/date-utils";
 import {
@@ -155,6 +157,10 @@ export async function getUserProfile(username: string) {
 
   // Get wallet addresses
   const walletData = await getUserWalletData(user.username);
+
+  // Get X account info and stats
+  const xAccountData = await getUserXData(username);
+
   return {
     username,
     score: userScore.totalScore,
@@ -175,5 +181,52 @@ export async function getUserProfile(username: string) {
     totalLevel: tagsData.totalLevel,
     dailyActivity,
     linkedWallets: walletData?.wallets || [],
+    xAccount: xAccountData,
+  };
+}
+
+/**
+ * Get user's X (Twitter) account data and activity stats
+ */
+export async function getUserXData(username: string) {
+  // Check if user has a linked X account
+  const xAccount = await db.query.socialAccounts.findFirst({
+    where: and(
+      eq(socialAccounts.userId, username),
+      eq(socialAccounts.platform, "x"),
+      eq(socialAccounts.isActive, true),
+    ),
+  });
+
+  if (!xAccount) {
+    return null;
+  }
+
+  // Get X activities stats
+  const xStats = await db
+    .select({
+      totalPosts: count(),
+      posts: sql<number>`SUM(CASE WHEN ${xActivities.activityType} = 'post' THEN 1 ELSE 0 END)`,
+      quotes: sql<number>`SUM(CASE WHEN ${xActivities.activityType} = 'quote' THEN 1 ELSE 0 END)`,
+      replies: sql<number>`SUM(CASE WHEN ${xActivities.activityType} = 'reply' THEN 1 ELSE 0 END)`,
+      reposts: sql<number>`SUM(CASE WHEN ${xActivities.activityType} = 'repost' THEN 1 ELSE 0 END)`,
+      totalEngagement: sql<number>`SUM(${xActivities.engagementCount})`,
+    })
+    .from(xActivities)
+    .where(eq(xActivities.username, username))
+    .get();
+
+  return {
+    xUsername: xAccount.platformUsername,
+    xUserId: xAccount.platformUserId,
+    profileUrl: xAccount.profileUrl,
+    stats: {
+      totalPosts: xStats?.totalPosts || 0,
+      posts: xStats?.posts || 0,
+      quotes: xStats?.quotes || 0,
+      replies: xStats?.replies || 0,
+      reposts: xStats?.reposts || 0,
+      totalEngagement: xStats?.totalEngagement || 0,
+    },
   };
 }
