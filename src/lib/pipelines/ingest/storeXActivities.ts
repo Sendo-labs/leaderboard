@@ -257,8 +257,8 @@ const fetchAndStoreXActivitiesStep = createStep(
           `Fetched page ${pageCount}: ${normalizedPosts.length} posts`,
         );
 
-        // Respect rate limits (1s between pages)
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        // Respect rate limits (5s between pages - twitterapi.io allows 1 request per 5 seconds)
+        await new Promise((resolve) => setTimeout(resolve, 5000));
       } while (cursor && pageCount < 25);
 
       stepLogger?.info(
