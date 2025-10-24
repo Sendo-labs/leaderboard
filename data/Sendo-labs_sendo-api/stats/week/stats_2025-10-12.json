@@ -89,6 +89,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "Neysixx: Executed a significant refactor of the `Sendo-labs/frontend` repository, merging a single, large-scale pull request (Sendo-labs/frontend#1) that overhauled the project structure and updated configurations. This substantial effort modified 370 files with changes totaling +17867/-16129 lines. The work"
     },
     {
@@ -99,6 +100,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "M4XGO: This week, M4XGO focused on establishing foundational automation by setting up new workflows and release management for the Sendo-labs organization. They accomplished this by merging a single, significant pull request, Sendo-labs/reusable-workflows#1 (+1005/-38 lines), which implemented this new capability. Their work was split evenly between documentation and configuration files."
     },
     {
@@ -109,6 +111,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "xdrkush: This week, xdrkush initiated the `Sendo-labs/sendo-api` repository by merging its foundational pull request (#1). This single, substantial commit added over 21,000 lines of code and configuration files to establish the new service."
     },
     {
@@ -119,6 +122,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "0domart: Focused on new feature development in the Sendo-labs/spotlight repository this week. They opened a significant pull request (#1) to implement SOL transfer logic, which involved a substantial effort of +1527/-617 lines of code. The work shows a primary focus on building out unit tests for this new functionality."
     }
   ],

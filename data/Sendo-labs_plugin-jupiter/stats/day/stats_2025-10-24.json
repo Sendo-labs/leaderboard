@@ -37,7 +37,8 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "socialScore": 0,
+      "summary": "standujar: Focused on enhancing the CI/CD pipeline and feature development, merging two PRs in Sendo-labs/leaderboard, including #8 which allows manual workflow dispatch on any branch, and also opened PR #7 to further improve the deploy workflow. Their code changes primarily involved feature work and configuration updates across 21 files."
     },
     {
       "username": "MonteCrypto999",
@@ -47,7 +48,8 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "socialScore": 0,
+      "summary": "MonteCrypto999: Focused on significant feature development, opening PR Sendo-labs/plugin-jupiter#1 to add referral fee support and live E2E scripts, which involved substantial code changes across 31 files (+5965/-431 lines) and 13 commits, primarily in feature work, other work, bugfix work, and docs work, touching code, config, and tests."
     }
   ],
   "newPRs": 1,

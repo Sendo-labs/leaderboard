@@ -24,6 +24,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "standujar: Focused on feature development and bug fixes, notably adding JSON endpoints in Sendo-labs/leaderboard via PR #4 (+684/-3 lines) and addressing an API key requirement in Sendo-labs/leaderboard via PR #5. Their work primarily involved bug fixes and feature development across code, tests, and configuration files."
     },
     {
@@ -34,6 +35,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "Neysixx: Focused on refactoring efforts today, successfully merging a pull request in Sendo-labs/frontend (#8) that removed the 'accepted' status from the ActionHistory component, demonstrating a focus on code refinement and documentation."
     }
   ],

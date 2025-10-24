@@ -89,6 +89,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "Neysixx: Focused on a significant refactor of the Sendo-labs/frontend project, successfully merging PR #1 which involved substantial changes across 370 files (+17867/-16129 lines) to restructure the project and update configurations, demonstrating a primary focus on refactor and feature work."
     },
     {
@@ -99,6 +100,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "M4XGO: Significantly contributed to workflow and release management by merging a substantial PR in Sendo-labs/reusable-workflows#1 (+1005/-38 lines), demonstrating a focus on documentation and configuration."
     },
     {
@@ -109,6 +111,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "xdrkush: Focused on foundational work, initiating the `sendo-api` repository with a substantial PR (#1) that introduced over 21,000 lines of code, primarily contributing to new code and configuration files."
     }
   ],

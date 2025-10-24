@@ -37,6 +37,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "xdrkush: Focused on bug fixes and feature work, merging a significant PR in Sendo-labs/sendo-api#3 (+510/-225 lines) to address account-related functionality, with their code changes primarily impacting code and tests."
     },
     {
@@ -47,6 +48,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "Neysixx: Focused on maintenance and configuration, merging two PRs in Sendo-labs/frontend, including a critical dependency fix in PR #5 and an update to the .gitignore in PR #4, demonstrating attention to build stability and repository hygiene. Their code changes primarily involved other work and tests, with a focus on configuration files."
     }
   ],

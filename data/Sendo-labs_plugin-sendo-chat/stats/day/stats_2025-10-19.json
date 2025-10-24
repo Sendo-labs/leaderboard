@@ -24,6 +24,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "Neysixx: Focused on significant refactoring and feature development, merging a substantial PR in Sendo-labs/frontend#3 (+2024/-1796 lines) that improved page structure, while also opening a new feature PR for worker implementation. Their work involved modifying 292 files with a primary focus on refactor work (57%) and feature work (21%)."
     },
     {
@@ -34,6 +35,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "M4XGO: Focused on feature work, merging a significant PR in Sendo-labs/plugin-cryptoscore#2 (+74/-10 lines) that added release management and NPM publishing workflows, with a primary focus on configuration files."
     },
     {
@@ -44,6 +46,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
+      "socialScore": 0,
       "summary": "tionebDotsamapha: Focused on documentation improvements, merging a PR in Sendo-labs/sendo-api (#2) that updated the README.md, demonstrating a commitment to clear project information."
     },
     {
@@ -54,6 +57,7 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
+      "socialScore": 0,
       "summary": "standujar: Focused on configuration updates, merging a pull request in Sendo-labs/leaderboard (#2) that added a repository to the tracker, primarily modifying config files."
     }
   ],
