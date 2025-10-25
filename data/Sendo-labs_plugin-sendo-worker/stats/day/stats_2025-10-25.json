@@ -1,0 +1,71 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-25T00:00:00.000Z",
+    "intervalEnd": "2025-10-26T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/plugin-sendo-worker",
+  "overview": "From 2025-10-25 to 2025-10-26, Sendo-labs/plugin-sendo-worker had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQHEs2c6vrlYW",
+      "title": "chore: add GitHub workflows for automated NPM publishing and releases",
+      "author": "M4XGO",
+      "number": 3,
+      "body": "- Created .release-please-manifest.json to define the release version.\r\n- Added release-please-config.json for release type and changelog configuration.\r\n- Implemented GitHub Actions workflows for automated NPM publishing and release management.\r\n\r\n\r\n## How : \r\nUsing : https://github.com/Sendo-labs/reusable-workflows/pull/1 to test",
+      "repository": "Sendo-labs/plugin-sendo-worker",
+      "createdAt": "2025-10-25T15:17:32Z",
+      "mergedAt": null,
+      "additions": 66,
+      "deletions": 0
+    }
+  ],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 2
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 69.55589109657984,
+      "prScore": 69.55589109657984,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 59.3013142679857,
+      "prScore": 59.3013142679857,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "chainsona",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/139795911?u=f59865d4bfaaae679b0b0cce3a620a99fbc3dfbf&v=4",
+      "totalScore": 34.410773896576096,
+      "prScore": 34.410773896576096,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

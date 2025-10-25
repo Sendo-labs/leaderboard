@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/sendo-api",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/sendo-api had 3 new PRs (3 merged), 0 new issues, and 3 active contributors.",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/sendo-api had 5 new PRs (5 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -19,6 +19,18 @@
       "mergedAt": "2025-10-18T21:32:00Z",
       "additions": 21007,
       "deletions": 2
+    },
+    {
+      "id": "PR_kwDOQE5fGM6vtAkQ",
+      "title": "Fix/buy sell account",
+      "author": "xdrkush",
+      "number": 4,
+      "body": "",
+      "repository": "Sendo-labs/sendo-api",
+      "createdAt": "2025-10-25T22:48:14Z",
+      "mergedAt": "2025-10-25T22:48:28Z",
+      "additions": 689,
+      "deletions": 85
     },
     {
       "id": "PR_kwDOQE5fGM6u1nIr",
@@ -43,13 +55,25 @@
       "mergedAt": "2025-10-19T17:49:45Z",
       "additions": 71,
       "deletions": 71
+    },
+    {
+      "id": "PR_kwDOQE5fGM6vtDBL",
+      "title": "fix: pagination oops",
+      "author": "xdrkush",
+      "number": 5,
+      "body": "",
+      "repository": "Sendo-labs/sendo-api",
+      "createdAt": "2025-10-25T23:05:07Z",
+      "mergedAt": "2025-10-25T23:05:16Z",
+      "additions": 14,
+      "deletions": 4
     }
   ],
   "codeChanges": {
-    "additions": 21542,
-    "deletions": 252,
-    "files": 45,
-    "commitCount": 11
+    "additions": 22245,
+    "deletions": 341,
+    "files": 47,
+    "commitCount": 16
   },
   "completedItems": [
     {
@@ -128,6 +152,32 @@
         "tests/decodeTx.ts",
         "tests/tradesTest.ts"
       ]
+    },
+    {
+      "title": "fix: pagination oops",
+      "prNumber": 5,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "src/controllers/trades.ts",
+        "src/services/helius.ts"
+      ]
+    },
+    {
+      "title": "Fix/buy sell account",
+      "prNumber": 4,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        ".gitignore",
+        ".vscode/settings.json",
+        "package.json",
+        "src/controllers/trades.ts",
+        "src/services/birdeyes.ts",
+        "src/services/helius.ts",
+        "src/utils/rateLimiter.ts",
+        "tests/loadMoreTest.ts"
+      ]
     }
   ],
   "topContributors": [
@@ -156,8 +206,8 @@
     {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 98.6484181640457,
-      "prScore": 98.6484181640457,
+      "totalScore": 168.20430926062554,
+      "prScore": 168.20430926062554,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -167,8 +217,8 @@
     {
       "username": "M4XGO",
       "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
-      "totalScore": 85.75625489727841,
-      "prScore": 85.75625489727841,
+      "totalScore": 145.0575691652641,
+      "prScore": 145.0575691652641,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -209,6 +259,17 @@
       "summary": "0domart: This month, 0domart focused on core functionality for the Sendo-labs/spotlight repository, opening a pull request to implement SOL transfer logic (Sendo-labs/spotlight#1). This single, substantial contribution modified 12 files with over 1,500 lines of new code. The work shows a strong emphasis on quality and correctness, with a primary focus on building out the associated unit tests."
     },
     {
+      "username": "chainsona",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/139795911?u=f59865d4bfaaae679b0b0cce3a620a99fbc3dfbf&v=4",
+      "totalScore": 34.410773896576096,
+      "prScore": 34.410773896576096,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
       "username": "tionebDotsamapha",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16654460?u=de9d9ffada915d875d292de1fc6230610ce9eb11&v=4",
       "totalScore": 27.891422315129955,
@@ -231,8 +292,8 @@
       "summary": null
     }
   ],
-  "newPRs": 3,
-  "mergedPRs": 3,
+  "newPRs": 5,
+  "mergedPRs": 5,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 3

@@ -5,14 +5,27 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/leaderboard-rewards",
-  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/leaderboard-rewards had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-19 to 2025-10-26, Sendo-labs/leaderboard-rewards had 1 new PRs (0 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQFph086vsx78",
+      "title": "Reward contributors",
+      "author": "chainsona",
+      "number": 1,
+      "body": "## Problem\r\nOSS contributors deserve fair, transparent rewards for their work. Manual reward distribution doesn't scale and lacks verifiability.\r\n\r\n## Solution\r\nBuilt an oracle bot that fetches contributor XP from leaderboard API and syncs to Solana program for contributors to claim from.",
+      "repository": "Sendo-labs/leaderboard-rewards",
+      "createdAt": "2025-10-25T21:27:38Z",
+      "mergedAt": null,
+      "additions": 14199,
+      "deletions": 1
+    }
+  ],
   "codeChanges": {
     "additions": 0,
     "deletions": 0,
     "files": 0,
-    "commitCount": 2
+    "commitCount": 3
   },
   "completedItems": [],
   "topContributors": [
@@ -41,13 +54,24 @@
     {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 49.104644267469595,
-      "prScore": 49.104644267469595,
+      "totalScore": 118.66053536404944,
+      "prScore": 118.66053536404944,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
       "summary": "xdrkush: This week, xdrkush focused on resolving an issue within the `sendo-api` repository, merging PR #3 to address a bug in the buy/sell account functionality. This was a notable contribution with over 700 lines of changes across 17 files. Their work was evenly split between bug fixes and feature development, including updates to both application code and tests."
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 88.64908880777698,
+      "prScore": 88.64908880777698,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "M4XGO: Focused on improving project infrastructure by establishing automated release management and NPM publishing workflows in the Sendo-labs/plugin-cryptoscore repository (PR #2). This work consisted entirely of modifications to configuration files, indicating a primary focus on tooling and deployment processes."
     },
     {
       "username": "MonteCrypto999",
@@ -61,15 +85,15 @@
       "summary": "MonteCrypto999: Focused on a significant feature addition for the Jupiter plugin, opening a pull request to add referral fee support (Sendo-labs/plugin-jupiter#1). This large-scale effort introduced over 5,900 lines of code across 31 files. The work primarily involved feature implementation, configuration changes, and the addition of new tests."
     },
     {
-      "username": "M4XGO",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
-      "totalScore": 29.347774539791274,
-      "prScore": 29.347774539791274,
+      "username": "chainsona",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/139795911?u=f59865d4bfaaae679b0b0cce3a620a99fbc3dfbf&v=4",
+      "totalScore": 34.410773896576096,
+      "prScore": 34.410773896576096,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": "M4XGO: Focused on improving project infrastructure by establishing automated release management and NPM publishing workflows in the Sendo-labs/plugin-cryptoscore repository (PR #2). This work consisted entirely of modifications to configuration files, indicating a primary focus on tooling and deployment processes."
+      "summary": null
     },
     {
       "username": "tionebDotsamapha",
@@ -94,9 +118,9 @@
       "summary": null
     }
   ],
-  "newPRs": 0,
+  "newPRs": 1,
   "mergedPRs": 0,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 2
 }

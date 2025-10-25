@@ -201,8 +201,8 @@
     {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 98.6484181640457,
-      "prScore": 98.6484181640457,
+      "totalScore": 168.20430926062554,
+      "prScore": 168.20430926062554,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -212,8 +212,8 @@
     {
       "username": "M4XGO",
       "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
-      "totalScore": 85.75625489727841,
-      "prScore": 85.75625489727841,
+      "totalScore": 145.0575691652641,
+      "prScore": 145.0575691652641,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -252,6 +252,17 @@
       "commentScore": 0,
       "socialScore": 0,
       "summary": "0domart: This month, 0domart focused on core functionality for the Sendo-labs/spotlight repository, opening a pull request to implement SOL transfer logic (Sendo-labs/spotlight#1). This single, substantial contribution modified 12 files with over 1,500 lines of new code. The work shows a strong emphasis on quality and correctness, with a primary focus on building out the associated unit tests."
+    },
+    {
+      "username": "chainsona",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/139795911?u=f59865d4bfaaae679b0b0cce3a620a99fbc3dfbf&v=4",
+      "totalScore": 34.410773896576096,
+      "prScore": 34.410773896576096,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
     },
     {
       "username": "tionebDotsamapha",
