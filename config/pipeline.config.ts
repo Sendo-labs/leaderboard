@@ -54,6 +54,11 @@ export default {
     },
     {
       owner: "Sendo-labs",
+      name: "plugin-sendo-analyser",
+      defaultBranch: "main",
+    },
+    {
+      owner: "Sendo-labs",
       name: "plugin-sendo-chat",
       defaultBranch: "main",
     },
