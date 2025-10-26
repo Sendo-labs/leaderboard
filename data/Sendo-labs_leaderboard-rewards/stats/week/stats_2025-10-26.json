@@ -1,0 +1,141 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-26T00:00:00.000Z",
+    "intervalEnd": "2025-11-02T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/leaderboard-rewards",
+  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/leaderboard-rewards had 0 new PRs (1 merged), 0 new issues, and 2 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQFph086vsx78",
+      "title": "Reward contributors",
+      "author": "chainsona",
+      "number": 1,
+      "body": "## Problem\r\nOSS contributors deserve fair, transparent rewards for their work. Manual reward distribution doesn't scale and lacks verifiability.\r\n\r\n## Solution\r\nBuilt an oracle bot that fetches contributor XP from leaderboard API and syncs to Solana program for contributors to claim from.",
+      "repository": "Sendo-labs/leaderboard-rewards",
+      "createdAt": "2025-10-25T21:27:38Z",
+      "mergedAt": "2025-10-26T22:50:23Z",
+      "additions": 14199,
+      "deletions": 1
+    }
+  ],
+  "codeChanges": {
+    "additions": 14199,
+    "deletions": 1,
+    "files": 50,
+    "commitCount": 1
+  },
+  "completedItems": [
+    {
+      "title": "Reward contributors",
+      "prNumber": 1,
+      "type": "other",
+      "body": "## Problem\r\nOSS contributors deserve fair, transparent rewards for their work. Manual reward distribution doesn't scale and lacks verifiability.\r\n\r\n## Solution\r\nBuilt an oracle bot that fetches contributor XP from leaderboard API and syncs ",
+      "files": [
+        ".github/workflows/security-audit.yml",
+        ".github/workflows/test.yml",
+        ".gitignore",
+        ".prettierignore",
+        "Anchor.toml",
+        "Cargo.lock",
+        "Cargo.toml",
+        "README.md",
+        "docs/COST_OPTIMIZATION.md",
+        "docs/DEPLOYMENT_CHECKLIST.md",
+        "docs/INTEGRATION.md",
+        "docs/SPECS.md",
+        "indexer/README.md",
+        "indexer/package.json",
+        "indexer/src/index.ts",
+        "indexer/tsconfig.json",
+        "migrations/deploy.ts",
+        "oracle-bot/.eslintrc.js",
+        "oracle-bot/.prettierrc",
+        "oracle-bot/README.md",
+        "oracle-bot/__tests__/endpoint.test.ts",
+        "oracle-bot/__tests__/fixtures.ts",
+        "oracle-bot/__tests__/inspect-data.ts",
+        "oracle-bot/__tests__/integration.test.ts",
+        "oracle-bot/__tests__/leaderboard.test.ts",
+        "oracle-bot/__tests__/oracle.test.ts",
+        "oracle-bot/env.example",
+        "oracle-bot/package.json",
+        "oracle-bot/pnpm-lock.yaml",
+        "oracle-bot/src/client.ts",
+        "oracle-bot/src/config.ts",
+        "oracle-bot/src/index.ts",
+        "oracle-bot/src/leaderboard.ts",
+        "oracle-bot/src/logger.ts",
+        "oracle-bot/src/monitoring.ts",
+        "oracle-bot/src/oracle.ts",
+        "oracle-bot/tsconfig.json",
+        "package.json",
+        "pnpm-lock.yaml",
+        "programs/leaderboard-rewards/Cargo.toml",
+        "programs/leaderboard-rewards/Xargo.toml",
+        "programs/leaderboard-rewards/src/lib.rs",
+        "scripts/claim-sbt.ts",
+        "scripts/create-epoch.ts",
+        "scripts/fund-usdc.ts",
+        "scripts/initialize.ts",
+        "scripts/mint-and-fund.ts",
+        "scripts/utils.ts",
+        "tests/leaderboard-rewards.ts",
+        "tsconfig.json"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 224.380011005393,
+      "prScore": 224.180011005393,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 62.280766381557314,
+      "prScore": 62.280766381557314,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 17.288179408697676,
+      "prScore": 17.288179408697676,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Fleo-Thyphon-ElizaOS",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/191503042?u=0485cedb4a47d55f3f98e368d9312b08c36761be&v=4",
+      "totalScore": 0.2,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 1,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 2
+}

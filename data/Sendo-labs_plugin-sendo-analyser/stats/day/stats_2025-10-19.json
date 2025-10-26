@@ -1,0 +1,69 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-19T00:00:00.000Z",
+    "intervalEnd": "2025-10-20T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/plugin-sendo-analyser",
+  "overview": "From 2025-10-19 to 2025-10-20, Sendo-labs/plugin-sendo-analyser had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 100.0055477931522,
+      "prScore": 100.0055477931522,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "Neysixx: Focused on significant refactoring and feature development, merging a substantial PR in Sendo-labs/frontend#3 (+2024/-1796 lines) that improved page structure, while also opening a new feature PR for worker implementation. Their work involved modifying 292 files with a primary focus on refactor work (57%) and feature work (21%)."
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 29.347774539791274,
+      "prScore": 29.347774539791274,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "M4XGO: Focused on feature work, merging a significant PR in Sendo-labs/plugin-cryptoscore#2 (+74/-10 lines) that added release management and NPM publishing workflows, with a primary focus on configuration files."
+    },
+    {
+      "username": "tionebDotsamapha",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16654460?u=de9d9ffada915d875d292de1fc6230610ce9eb11&v=4",
+      "totalScore": 27.891422315129955,
+      "prScore": 27.691422315129955,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": "tionebDotsamapha: Focused on documentation improvements, merging a PR in Sendo-labs/sendo-api (#2) that updated the README.md, demonstrating a commitment to clear project information."
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 21.38629436111989,
+      "prScore": 21.38629436111989,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "standujar: Focused on configuration updates, merging a pull request in Sendo-labs/leaderboard (#2) that added a repository to the tracker, primarily modifying config files."
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}

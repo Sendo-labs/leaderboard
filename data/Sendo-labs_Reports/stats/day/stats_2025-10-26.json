@@ -1,0 +1,82 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-26T00:00:00.000Z",
+    "intervalEnd": "2025-10-27T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/Reports",
+  "overview": "From 2025-10-26 to 2025-10-27, Sendo-labs/Reports had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQIQzts6vwQIY",
+      "title": "docs: pyth actions test",
+      "author": "plvo",
+      "number": 2,
+      "body": "",
+      "repository": "Sendo-labs/Reports",
+      "createdAt": "2025-10-26T15:38:45Z",
+      "mergedAt": null,
+      "additions": 245,
+      "deletions": 5
+    }
+  ],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 1
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 224.380011005393,
+      "prScore": 224.180011005393,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 62.280766381557314,
+      "prScore": 62.280766381557314,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 17.288179408697676,
+      "prScore": 17.288179408697676,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Fleo-Thyphon-ElizaOS",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/191503042?u=0485cedb4a47d55f3f98e368d9312b08c36761be&v=4",
+      "totalScore": 0.2,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

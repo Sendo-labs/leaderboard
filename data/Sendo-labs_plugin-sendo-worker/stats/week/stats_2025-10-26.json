@@ -1,0 +1,221 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-26T00:00:00.000Z",
+    "intervalEnd": "2025-11-02T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/plugin-sendo-worker",
+  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/plugin-sendo-worker had 4 new PRs (6 merged), 0 new issues, and 2 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQHEs2c6vE8on",
+      "title": "feat: Add comprehensive test infrastructure with real runtime testing",
+      "author": "standujar",
+      "number": 2,
+      "body": "## 🎯 What This Does\n\nBuilds a **bulletproof testing system** so we can ship fast without breaking things. No more \"works on my machine\" surprises!\n\n## ✨ Key Changes\n\n### Testing Infrastructure\n- **98 automated tests** covering all critical features (63 unit + 27 integration + 8 DB)\n- **Fixture-based system**: Centralized test data in `fixtures/llm-responses.ts`\n- **Smart test helpers**: Automatically detect prompt types and return correct responses\n- **Testing guide**: Complete [`__tests__/README.md`](src/__tests__/README.md) for contributors\n\n### Bug Fixes & Improvements\n- ✅ Added `errorType` field to distinguish setup failures vs execution failures\n- ✅ Fixed database crash when running ACTION type actions (missing room creation)\n- ✅ Refactored mock system - eliminated 176 lines of duplicated code\n\n### Before/After\n```typescript\n// ❌ Before: Copy-paste nightmare repeated in every test\nruntime.useModel = mock((options) => {\n  if (prompt.includes('GET_WALLET_BALANCE')) {\n    return { category: 'DATA', actionType: 'wallet_info' };\n  }\n  // ... repeated 20+ times across files\n});\n\n// ✅ After: One simple line, centralized data\nsetupLLMMock(runtime, { useFixtures: true });\n```\n\n## 📊 Test Coverage\n\n**Unit Tests** (63 tests across 9 files):\n- Action categorization (6 tests)\n- Action execution (8 tests)\n- Relevant actions selection (6 tests)\n- Analysis generation (5 tests)\n- Recommendations generation (7 tests)\n- Analysis saving (5 tests)\n- Provider data collection (6 tests)\n- Decision processing (12 tests)\n- DB getters (8 tests)\n\n**Integration Tests** (27 tests):\n- Full analysis workflow (8 tests)\n- API routes with error handling (19 tests)\n\n**Database Tests** (8 tests)\n\n## 🏗️ Architecture\n\n```\n__tests__/\n├── fixtures/\n│   └── llm-responses.ts        # Centralized test data\n├── helpers/\n│   ├── test-runtime.ts         # Runtime creation utilities\n│   └── mock-llm.ts             # Intelligent LLM mocking\n├── unit/                        # 9 test files\n└── integration/                 # 2 test files\n```\n\n## 🚀 How to Use\n\n```bash\n# Run all tests\nbun run test:all\n\n# Run specific suites\nbun run test:unit\nbun run test:integration\n\n# Debug mode\nsetupLLMMock(runtime, { useFixtures: true, logPrompts: true });\n```\n\n## 📈 Stats\n\n- **+3,221 lines** of test infrastructure\n- **-176 lines** of old/duplicated code\n- **98 tests** passing with 0 failures\n\n## 🎯 Impact\n\n- ✅ Ship features faster with confidence\n- ✅ Catch bugs before they reach production\n- ✅ Easy for new contributors to add tests\n- ✅ Consistent, reproducible test results\n\n## 💡 Testing Philosophy\n\n- **Real execution paths**: Use actual ElizaOS runtime, not excessive mocking\n- **Minimal mocking**: Only mock LLM calls, everything else is real\n- **Predictable data**: Fixtures ensure consistent, reproducible tests\n- **Easy maintenance**: Centralized data makes updates trivial\n\n## 🎯 Next Steps\n\n1. Enhanced seed script using fixtures for realistic demo data\n2. Real LLM testing with `USE_REAL_LLM` flag\n3. Integration testing with actual ElizaOS plugins (Solana, EVM)",
+      "repository": "Sendo-labs/plugin-sendo-worker",
+      "createdAt": "2025-10-22T14:06:55Z",
+      "mergedAt": "2025-10-26T11:01:06Z",
+      "additions": 4991,
+      "deletions": 679
+    },
+    {
+      "id": "PR_kwDOQHEs2c6vrlYW",
+      "title": "chore: add GitHub workflows for automated NPM publishing and releases",
+      "author": "M4XGO",
+      "number": 3,
+      "body": "- Created .release-please-manifest.json to define the release version.\r\n- Added release-please-config.json for release type and changelog configuration.\r\n- Implemented GitHub Actions workflows for automated NPM publishing and release management.\r\n\r\n\r\n## How : \r\nUsing : https://github.com/Sendo-labs/reusable-workflows/pull/1 to test",
+      "repository": "Sendo-labs/plugin-sendo-worker",
+      "createdAt": "2025-10-25T15:17:32Z",
+      "mergedAt": "2025-10-26T11:02:30Z",
+      "additions": 66,
+      "deletions": 0
+    },
+    {
+      "id": "PR_kwDOQHEs2c6vvGG6",
+      "title": "fix: bump",
+      "author": "standujar",
+      "number": 6,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-worker",
+      "createdAt": "2025-10-26T11:05:08Z",
+      "mergedAt": "2025-10-26T11:05:16Z",
+      "additions": 47,
+      "deletions": 8584
+    },
+    {
+      "id": "PR_kwDOQHEs2c6vvFxF",
+      "title": "chore(main): release 1.0.0",
+      "author": "github-actions",
+      "number": 5,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-10-26)\n\n\n### Features\n\n* Add comprehensive test infrastructure with real runtime testing ([fcf3f9b](https://github.com/Sendo-labs/plugin-sendo-worker/commit/fcf3f9bcae6b7bbaf658fee0a171d86839cc3414))\n* add initial implementation of the Sendo Worker ([463e5ff](https://github.com/Sendo-labs/plugin-sendo-worker/commit/463e5fff9c2423438989cbf4b0cd808b08227feb))\n* enhance analysis functionality by adding new API route to retrieve analysis by ID, update runAnalysis method to include recommended actions, and implement integration tests for analysis workflow ([ede9796](https://github.com/Sendo-labs/plugin-sendo-worker/commit/ede9796a5d74d681e750449ce72c2470524d15ff))\n\n\n### Bug Fixes\n\n* **tests:** cast response in categorizeActions test to any for TypeScript compatibility ([b13670b](https://github.com/Sendo-labs/plugin-sendo-worker/commit/b13670bda791ecadf75ceb5922a85abb370a17e2))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/plugin-sendo-worker",
+      "createdAt": "2025-10-26T11:03:08Z",
+      "mergedAt": "2025-10-26T11:05:33Z",
+      "additions": 17,
+      "deletions": 2
+    },
+    {
+      "id": "PR_kwDOQHEs2c6vvFTn",
+      "title": "Refactor to use official Eliza getActionResults API",
+      "author": "standujar",
+      "number": 4,
+      "body": "## Changes\n\n- Replace internal `stateCache` access with official `runtime.getActionResults()` API\n- Add proper `HandlerOptions` typing in test helpers  \n- Fix params format in REBALANCE_PORTFOLIO fixture to match Zod schema\n\n## Testing\n\nAll tests passing:\n- Unit tests: 39/39 ✅\n- Integration tests: 35/35 ✅\n- Total: 74/74 ✅\n\n## Benefits\n\n- Uses official Eliza API instead of internal implementation details\n- Improved type safety with proper HandlerOptions typing\n- More maintainable and future-proof code",
+      "repository": "Sendo-labs/plugin-sendo-worker",
+      "createdAt": "2025-10-26T11:00:34Z",
+      "mergedAt": "2025-10-26T11:01:56Z",
+      "additions": 7,
+      "deletions": 9
+    }
+  ],
+  "codeChanges": {
+    "additions": 5132,
+    "deletions": 9274,
+    "files": 36,
+    "commitCount": 12
+  },
+  "completedItems": [
+    {
+      "title": "feat: Add comprehensive test infrastructure with real runtime testing",
+      "prNumber": 2,
+      "type": "feature",
+      "body": "## 🎯 What This Does\n\nBuilds a **bulletproof testing system** so we can ship fast without breaking things. No more \"works on my machine\" surprises!\n\n## ✨ Key Changes\n\n### Testing Infrastructure\n- **98 automated tests** covering all critical",
+      "files": [
+        ".gitignore",
+        "README.md",
+        "bun.lock",
+        "package.json",
+        "src/__tests__/README.md",
+        "src/__tests__/fixtures/llm-responses.ts",
+        "src/__tests__/helpers/mock-llm.ts",
+        "src/__tests__/helpers/test-runtime.ts",
+        "src/__tests__/integration/api-routes.test.ts",
+        "src/__tests__/integration/run-analysis.test.ts",
+        "src/__tests__/unit/categorize-actions.test.ts",
+        "src/__tests__/unit/collect-provider-data.test.ts",
+        "src/__tests__/unit/db-getters.test.ts",
+        "src/__tests__/unit/execute-analysis-actions.test.ts",
+        "src/__tests__/unit/generate-analysis.test.ts",
+        "src/__tests__/unit/generate-recommendations.test.ts",
+        "src/__tests__/unit/process-decisions.test.ts",
+        "src/__tests__/unit/save-analysis.test.ts",
+        "src/__tests__/unit/select-relevant-data-actions.test.ts",
+        "src/routes/index.ts",
+        "src/schemas/index.ts",
+        "src/schemas/recommended-actions.ts",
+        "src/services/sendoWorkerService.ts",
+        "src/types/actions.ts",
+        "src/types/api.ts",
+        "src/types/index.ts",
+        "src/schemas/analysis-results.ts",
+        "src/templates/generateRecommendationPrompt.ts",
+        "src/types/schemas.ts"
+      ]
+    },
+    {
+      "title": "chore: add GitHub workflows for automated NPM publishing and releases",
+      "prNumber": 3,
+      "type": "other",
+      "body": "- Created .release-please-manifest.json to define the release version.\r\n- Added release-please-config.json for release type and changelog configuration.\r\n- Implemented GitHub Actions workflows for automated NPM publishing and release manage",
+      "files": [
+        ".github/workflows/publish-npm.yaml",
+        ".github/workflows/release.yml",
+        ".release-please-manifest.json",
+        "release-please-config.json"
+      ]
+    },
+    {
+      "title": "chore: update .gitignore to include .env.test and new directories for…",
+      "prNumber": 7,
+      "type": "tests",
+      "body": "… plugin specifications and scripts",
+      "files": [
+        ".gitignore"
+      ]
+    },
+    {
+      "title": "fix: bump",
+      "prNumber": 6,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "bun.lock",
+        "package-lock.json"
+      ]
+    },
+    {
+      "title": "chore(main): release 1.0.0",
+      "prNumber": 5,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-10-26)\n\n\n### Features\n\n* Add comprehensive test infrastructure with real runtime testing ([fcf3f9b](https://github.com/Sendo-labs/plugin-sendo-worker/commit/fcf3f9bcae6b7bb",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    },
+    {
+      "title": "Refactor to use official Eliza getActionResults API",
+      "prNumber": 4,
+      "type": "refactor",
+      "body": "## Changes\n\n- Replace internal `stateCache` access with official `runtime.getActionResults()` API\n- Add proper `HandlerOptions` typing in test helpers  \n- Fix params format in REBALANCE_PORTFOLIO fixture to match Zod schema\n\n## Testing\n\nAll",
+      "files": [
+        "src/__tests__/fixtures/llm-responses.ts",
+        "src/__tests__/helpers/test-runtime.ts",
+        "src/utils/actionResult.ts"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 224.380011005393,
+      "prScore": 224.180011005393,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 62.280766381557314,
+      "prScore": 62.280766381557314,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 17.288179408697676,
+      "prScore": 17.288179408697676,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Fleo-Thyphon-ElizaOS",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/191503042?u=0485cedb4a47d55f3f98e368d9312b08c36761be&v=4",
+      "totalScore": 0.2,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 4,
+  "mergedPRs": 6,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 2
+}

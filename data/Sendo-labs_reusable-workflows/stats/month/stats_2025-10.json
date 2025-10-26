@@ -98,19 +98,19 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 440.52040666908863,
-      "prScore": 434.52040666908863,
+      "totalScore": 664.9004176744816,
+      "prScore": 658.7004176744816,
       "issueScore": 0,
       "reviewScore": 0,
-      "commentScore": 0,
+      "commentScore": 0.2,
       "socialScore": 6,
       "summary": "standujar: Focused on foundational development, establishing several new systems and plugins this month. They delivered the initial implementation for the Sendo Worker in a significant PR (Sendo-labs/plugin-sendo-worker#1, +13194 lines) and also set up the initial project structure for the frontend (Sendo-labs/frontend#2) and the CryptoScore plugin (Sendo-labs/plugin-cryptoscore#1). Their work also included initializing the contributor tracking system (Sendo-labs/leaderboard#1) and adding JSON endpoints to it (Sendo-labs/leaderboard#4). This activity demonstrates a strong focus on bootstrapping new features and core infrastructure."
     },
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 345.65249968957295,
-      "prScore": 345.65249968957295,
+      "totalScore": 407.9332660711303,
+      "prScore": 407.9332660711303,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -149,6 +149,17 @@
       "commentScore": 0,
       "socialScore": 0,
       "summary": "0xCanet: This month, 0xCanet's work was focused on establishing the new `Sendo-labs/frontend` repository. They merged a single, substantial pull request (Sendo-labs/frontend#1) that served as the initial commit for the project. This foundational work introduced over 9,200 lines of code across 111 files, setting up the new codebase."
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 44.983395702087044,
+      "prScore": 44.78339570208705,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
     },
     {
       "username": "MonteCrypto999",
@@ -195,15 +206,15 @@
       "summary": "tionebDotsamapha: This month, tionebDotsamapha's work was centered on improving project documentation. Their sole merged pull request (Sendo-labs/sendo-api#2) updated the README file to English, a significant change of 71 lines that improves the project's accessibility. This contribution reflects a focus entirely on documentation."
     },
     {
-      "username": "plvo",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
-      "totalScore": 27.695216293389368,
-      "prScore": 27.49521629338937,
+      "username": "Fleo-Thyphon-ElizaOS",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/191503042?u=0485cedb4a47d55f3f98e368d9312b08c36761be&v=4",
+      "totalScore": 0.2,
+      "prScore": 0,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "Fleo-Thyphon-ElizaOS: made a substantial number of local code changes this month, modifying 49 files across 3 commits. This effort resulted in a significant volume of code changes (+29801/-7379 lines), though this work has not yet been submitted as a pull request. The commits indicate a focus on bug fixes and other general work."
     }
   ],
   "newPRs": 3,

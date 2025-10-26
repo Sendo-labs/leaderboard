@@ -1,0 +1,278 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-01T00:00:00.000Z",
+    "intervalEnd": "2025-11-01T00:00:00.000Z",
+    "intervalType": "month"
+  },
+  "repository": "Sendo-labs/plugin-sendo-analyser",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/plugin-sendo-analyser had 4 new PRs (4 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQJY5T86vvB-f",
+      "title": "Feat: migrate to plugin-sendo-analyser implementation",
+      "author": "standujar",
+      "number": 1,
+      "body": "Migrates complete sendo-api functionality into ElizaOS plugin:\r\n- 7 REST API endpoints: /signatures, /trades, /transactions, /tokens, /nfts, /global, /wallet\r\n- SendoAnalyserService with wallet analysis methods\r\n- Multi-protocol transaction decoders (Jupiter, Raydium, Pump.fun, Orca, Meteora, Whirlpool)\r\n- Helius SDK and BirdEye API integration\r\n- Drizzle ORM schemas for caching (wallet_analysis_cache, wallet_insights) - Not used\r\n- TypeScript types and Zod schemas for data validation",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-26T10:42:25Z",
+      "mergedAt": "2025-10-26T10:42:39Z",
+      "additions": 17774,
+      "deletions": 0
+    },
+    {
+      "id": "PR_kwDOQJY5T86vxeZn",
+      "title": "docs: update README.md with comprehensive plugin details",
+      "author": "standujar",
+      "number": 4,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-26T22:47:41Z",
+      "mergedAt": "2025-10-26T22:47:47Z",
+      "additions": 341,
+      "deletions": 1
+    },
+    {
+      "id": "PR_kwDOQJY5T86vxama",
+      "title": "chore: update version and enhance pagination for trades, signatures, …",
+      "author": "standujar",
+      "number": 3,
+      "body": "…and transactions\r\n\r\n- Bump version to 1.1.0 in package.json\r\n- Modify API endpoints to support cursor-based pagination for trades, signatures, and transactions\r\n- Update service methods to return pagination metadata along with results",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-26T22:21:55Z",
+      "mergedAt": "2025-10-26T22:22:12Z",
+      "additions": 100,
+      "deletions": 28
+    },
+    {
+      "id": "PR_kwDOQJY5T86vwmfJ",
+      "title": "fix: package",
+      "author": "standujar",
+      "number": 2,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-26T17:39:33Z",
+      "mergedAt": "2025-10-26T17:39:44Z",
+      "additions": 1,
+      "deletions": 0
+    }
+  ],
+  "codeChanges": {
+    "additions": 18216,
+    "deletions": 29,
+    "files": 45,
+    "commitCount": 9
+  },
+  "completedItems": [
+    {
+      "title": "docs: update README.md with comprehensive plugin details",
+      "prNumber": 4,
+      "type": "docs",
+      "body": "",
+      "files": [
+        "README.md"
+      ]
+    },
+    {
+      "title": "chore: update version and enhance pagination for trades, signatures, …",
+      "prNumber": 3,
+      "type": "other",
+      "body": "…and transactions\r\n\r\n- Bump version to 1.1.0 in package.json\r\n- Modify API endpoints to support cursor-based pagination for trades, signatures, and transactions\r\n- Update service methods to return pagination metadata along with results",
+      "files": [
+        "package.json",
+        "src/routes/index.ts",
+        "src/services/helius.ts",
+        "src/services/sendoAnalyserService.ts"
+      ]
+    },
+    {
+      "title": "fix: package",
+      "prNumber": 2,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "package.json"
+      ]
+    },
+    {
+      "title": "Feat: migrate to plugin-sendo-analyser implementation",
+      "prNumber": 1,
+      "type": "feature",
+      "body": "Migrates complete sendo-api functionality into ElizaOS plugin:\r\n- 7 REST API endpoints: /signatures, /trades, /transactions, /tokens, /nfts, /global, /wallet\r\n- SendoAnalyserService with wallet analysis methods\r\n- Multi-protocol transaction",
+      "files": [
+        ".env.example",
+        ".gitignore",
+        "bun.lock",
+        "package.json",
+        "src/config/idl/jupiter.ts",
+        "src/config/idl/pumpamm.idl.json",
+        "src/config/idl/pumpfees.idl.json",
+        "src/config/idl/pumpfun.idl.json",
+        "src/config/index.ts",
+        "src/index.ts",
+        "src/routes/index.ts",
+        "src/schemas/index.ts",
+        "src/schemas/wallet-analysis.ts",
+        "src/services/birdeyes.ts",
+        "src/services/helius.ts",
+        "src/services/sendoAnalyserService.ts",
+        "src/types/analysis.ts",
+        "src/types/api.ts",
+        "src/types/index.ts",
+        "src/types/schemas.ts",
+        "src/types/wallet.ts",
+        "src/utils/decoder/computeBudget/index.ts",
+        "src/utils/decoder/computeBudget/schema.ts",
+        "src/utils/decoder/extractBalances.ts",
+        "src/utils/decoder/index.ts",
+        "src/utils/decoder/jupiter/index.ts",
+        "src/utils/decoder/jupiter/schema.ts",
+        "src/utils/decoder/jupiter/swapType.ts",
+        "src/utils/decoder/meteora/index.ts",
+        "src/utils/decoder/meteora/schema.ts",
+        "src/utils/decoder/orca/index.ts",
+        "src/utils/decoder/orca/schema.ts",
+        "src/utils/decoder/pumpfun/index.ts",
+        "src/utils/decoder/pumpfun/schema.ts",
+        "src/utils/decoder/pumpswap/index.ts",
+        "src/utils/decoder/pumpswap/schema.ts",
+        "src/utils/decoder/raydium/index.ts",
+        "src/utils/decoder/raydium/schema.ts",
+        "src/utils/decoder/tradingUtils.ts",
+        "src/utils/decoder/whirlpool/index.ts",
+        "src/utils/decoder/whirlpool/schema.ts",
+        "src/utils/rateLimiter.ts",
+        "tsconfig.json",
+        "tsup.config.ts"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 664.9004176744816,
+      "prScore": 658.7004176744816,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 6,
+      "summary": "standujar: Focused on foundational development, establishing several new systems and plugins this month. They delivered the initial implementation for the Sendo Worker in a significant PR (Sendo-labs/plugin-sendo-worker#1, +13194 lines) and also set up the initial project structure for the frontend (Sendo-labs/frontend#2) and the CryptoScore plugin (Sendo-labs/plugin-cryptoscore#1). Their work also included initializing the contributor tracking system (Sendo-labs/leaderboard#1) and adding JSON endpoints to it (Sendo-labs/leaderboard#4). This activity demonstrates a strong focus on bootstrapping new features and core infrastructure."
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 407.9332660711303,
+      "prScore": 407.9332660711303,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "Neysixx: Drove significant foundational improvements in the Sendo-labs/frontend repository, focusing primarily on large-scale refactoring. Their most impactful contribution was a massive project-wide refactor to update the structure and configurations (Sendo-labs/frontend#1), involving over 34,000 line changes. Alongside this, Neysixx delivered new pages (Sendo-labs/frontend#7), improved the existing page structure (Sendo-labs/frontend#3), and resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5). This activity demonstrates a clear focus on refactoring, which constituted the majority of their work."
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 168.20430926062554,
+      "prScore": 168.20430926062554,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "xdrkush: This month, xdrkush made foundational contributions to the new `Sendo-labs/sendo-api` repository. They initiated the project with a significant PR (#1) that added over 21,000 lines of code, establishing the service's groundwork. Following this, they addressed an issue with buy/sell accounts in a subsequent fix (PR #3). Their efforts were primarily focused on a mix of feature work and bug fixes within this new API."
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 145.0575691652641,
+      "prScore": 145.0575691652641,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "M4XGO: Focused on establishing foundational development workflows and release processes this month. They implemented a significant new CI/CD setup in Sendo-labs/reusable-workflows#1, adding over 1000 lines of configuration to create reusable workflows and manage releases. M4XGO also extended this automation to enable NPM publishing for a separate plugin via Sendo-labs/plugin-cryptoscore#2. Their work was concentrated entirely in configuration and documentation files, reflecting a clear focus on improving repository infrastructure and automation."
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "0xCanet: This month, 0xCanet's work was focused on establishing the new `Sendo-labs/frontend` repository. They merged a single, substantial pull request (Sendo-labs/frontend#1) that served as the initial commit for the project. This foundational work introduced over 9,200 lines of code across 111 files, setting up the new codebase."
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 44.983395702087044,
+      "prScore": 44.78339570208705,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "MonteCrypto999",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/58423789?u=7db7196121472df50395eadf84f9d5963d886d69&v=4",
+      "totalScore": 43.2637738965761,
+      "prScore": 43.2637738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "MonteCrypto999: Focused on a major new feature this month, opening a substantial pull request to add referral fee support in Sendo-labs/plugin-jupiter (#1). This work-in-progress is extensive, introducing nearly 6,000 lines of code across 31 files. The changes indicate a comprehensive effort spanning feature implementation, configuration, bugfixes, and tests."
+    },
+    {
+      "username": "0domart",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
+      "totalScore": 35.3857738965761,
+      "prScore": 35.3857738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "0domart: This month, 0domart focused on core functionality for the Sendo-labs/spotlight repository, opening a pull request to implement SOL transfer logic (Sendo-labs/spotlight#1). This single, substantial contribution modified 12 files with over 1,500 lines of new code. The work shows a strong emphasis on quality and correctness, with a primary focus on building out the associated unit tests."
+    },
+    {
+      "username": "chainsona",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/139795911?u=f59865d4bfaaae679b0b0cce3a620a99fbc3dfbf&v=4",
+      "totalScore": 34.410773896576096,
+      "prScore": 34.410773896576096,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "tionebDotsamapha",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16654460?u=de9d9ffada915d875d292de1fc6230610ce9eb11&v=4",
+      "totalScore": 27.891422315129955,
+      "prScore": 27.691422315129955,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": "tionebDotsamapha: This month, tionebDotsamapha's work was centered on improving project documentation. Their sole merged pull request (Sendo-labs/sendo-api#2) updated the README file to English, a significant change of 71 lines that improves the project's accessibility. This contribution reflects a focus entirely on documentation."
+    },
+    {
+      "username": "Fleo-Thyphon-ElizaOS",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/191503042?u=0485cedb4a47d55f3f98e368d9312b08c36761be&v=4",
+      "totalScore": 0.2,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": "Fleo-Thyphon-ElizaOS: made a substantial number of local code changes this month, modifying 49 files across 3 commits. This effort resulted in a significant volume of code changes (+29801/-7379 lines), though this work has not yet been submitted as a pull request. The commits indicate a focus on bug fixes and other general work."
+    }
+  ],
+  "newPRs": 4,
+  "mergedPRs": 4,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

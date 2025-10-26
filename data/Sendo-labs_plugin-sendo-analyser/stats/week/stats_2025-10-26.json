@@ -1,0 +1,201 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-26T00:00:00.000Z",
+    "intervalEnd": "2025-11-02T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/plugin-sendo-analyser",
+  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/plugin-sendo-analyser had 4 new PRs (4 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQJY5T86vvB-f",
+      "title": "Feat: migrate to plugin-sendo-analyser implementation",
+      "author": "standujar",
+      "number": 1,
+      "body": "Migrates complete sendo-api functionality into ElizaOS plugin:\r\n- 7 REST API endpoints: /signatures, /trades, /transactions, /tokens, /nfts, /global, /wallet\r\n- SendoAnalyserService with wallet analysis methods\r\n- Multi-protocol transaction decoders (Jupiter, Raydium, Pump.fun, Orca, Meteora, Whirlpool)\r\n- Helius SDK and BirdEye API integration\r\n- Drizzle ORM schemas for caching (wallet_analysis_cache, wallet_insights) - Not used\r\n- TypeScript types and Zod schemas for data validation",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-26T10:42:25Z",
+      "mergedAt": "2025-10-26T10:42:39Z",
+      "additions": 17774,
+      "deletions": 0
+    },
+    {
+      "id": "PR_kwDOQJY5T86vxeZn",
+      "title": "docs: update README.md with comprehensive plugin details",
+      "author": "standujar",
+      "number": 4,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-26T22:47:41Z",
+      "mergedAt": "2025-10-26T22:47:47Z",
+      "additions": 341,
+      "deletions": 1
+    },
+    {
+      "id": "PR_kwDOQJY5T86vxama",
+      "title": "chore: update version and enhance pagination for trades, signatures, …",
+      "author": "standujar",
+      "number": 3,
+      "body": "…and transactions\r\n\r\n- Bump version to 1.1.0 in package.json\r\n- Modify API endpoints to support cursor-based pagination for trades, signatures, and transactions\r\n- Update service methods to return pagination metadata along with results",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-26T22:21:55Z",
+      "mergedAt": "2025-10-26T22:22:12Z",
+      "additions": 100,
+      "deletions": 28
+    },
+    {
+      "id": "PR_kwDOQJY5T86vwmfJ",
+      "title": "fix: package",
+      "author": "standujar",
+      "number": 2,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-26T17:39:33Z",
+      "mergedAt": "2025-10-26T17:39:44Z",
+      "additions": 1,
+      "deletions": 0
+    }
+  ],
+  "codeChanges": {
+    "additions": 18216,
+    "deletions": 29,
+    "files": 45,
+    "commitCount": 9
+  },
+  "completedItems": [
+    {
+      "title": "docs: update README.md with comprehensive plugin details",
+      "prNumber": 4,
+      "type": "docs",
+      "body": "",
+      "files": [
+        "README.md"
+      ]
+    },
+    {
+      "title": "chore: update version and enhance pagination for trades, signatures, …",
+      "prNumber": 3,
+      "type": "other",
+      "body": "…and transactions\r\n\r\n- Bump version to 1.1.0 in package.json\r\n- Modify API endpoints to support cursor-based pagination for trades, signatures, and transactions\r\n- Update service methods to return pagination metadata along with results",
+      "files": [
+        "package.json",
+        "src/routes/index.ts",
+        "src/services/helius.ts",
+        "src/services/sendoAnalyserService.ts"
+      ]
+    },
+    {
+      "title": "fix: package",
+      "prNumber": 2,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "package.json"
+      ]
+    },
+    {
+      "title": "Feat: migrate to plugin-sendo-analyser implementation",
+      "prNumber": 1,
+      "type": "feature",
+      "body": "Migrates complete sendo-api functionality into ElizaOS plugin:\r\n- 7 REST API endpoints: /signatures, /trades, /transactions, /tokens, /nfts, /global, /wallet\r\n- SendoAnalyserService with wallet analysis methods\r\n- Multi-protocol transaction",
+      "files": [
+        ".env.example",
+        ".gitignore",
+        "bun.lock",
+        "package.json",
+        "src/config/idl/jupiter.ts",
+        "src/config/idl/pumpamm.idl.json",
+        "src/config/idl/pumpfees.idl.json",
+        "src/config/idl/pumpfun.idl.json",
+        "src/config/index.ts",
+        "src/index.ts",
+        "src/routes/index.ts",
+        "src/schemas/index.ts",
+        "src/schemas/wallet-analysis.ts",
+        "src/services/birdeyes.ts",
+        "src/services/helius.ts",
+        "src/services/sendoAnalyserService.ts",
+        "src/types/analysis.ts",
+        "src/types/api.ts",
+        "src/types/index.ts",
+        "src/types/schemas.ts",
+        "src/types/wallet.ts",
+        "src/utils/decoder/computeBudget/index.ts",
+        "src/utils/decoder/computeBudget/schema.ts",
+        "src/utils/decoder/extractBalances.ts",
+        "src/utils/decoder/index.ts",
+        "src/utils/decoder/jupiter/index.ts",
+        "src/utils/decoder/jupiter/schema.ts",
+        "src/utils/decoder/jupiter/swapType.ts",
+        "src/utils/decoder/meteora/index.ts",
+        "src/utils/decoder/meteora/schema.ts",
+        "src/utils/decoder/orca/index.ts",
+        "src/utils/decoder/orca/schema.ts",
+        "src/utils/decoder/pumpfun/index.ts",
+        "src/utils/decoder/pumpfun/schema.ts",
+        "src/utils/decoder/pumpswap/index.ts",
+        "src/utils/decoder/pumpswap/schema.ts",
+        "src/utils/decoder/raydium/index.ts",
+        "src/utils/decoder/raydium/schema.ts",
+        "src/utils/decoder/tradingUtils.ts",
+        "src/utils/decoder/whirlpool/index.ts",
+        "src/utils/decoder/whirlpool/schema.ts",
+        "src/utils/rateLimiter.ts",
+        "tsconfig.json",
+        "tsup.config.ts"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 224.380011005393,
+      "prScore": 224.180011005393,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 62.280766381557314,
+      "prScore": 62.280766381557314,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 17.288179408697676,
+      "prScore": 17.288179408697676,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Fleo-Thyphon-ElizaOS",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/191503042?u=0485cedb4a47d55f3f98e368d9312b08c36761be&v=4",
+      "totalScore": 0.2,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 4,
+  "mergedPRs": 4,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

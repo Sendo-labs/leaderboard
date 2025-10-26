@@ -16,7 +16,7 @@
       "body": "- Created .release-please-manifest.json to define the release version.\r\n- Added release-please-config.json for release type and changelog configuration.\r\n- Implemented GitHub Actions workflows for automated NPM publishing and release management.\r\n\r\n\r\n## How : \r\nUsing : https://github.com/Sendo-labs/reusable-workflows/pull/1 to test",
       "repository": "Sendo-labs/plugin-sendo-worker",
       "createdAt": "2025-10-25T15:17:32Z",
-      "mergedAt": null,
+      "mergedAt": "2025-10-26T11:02:30Z",
       "additions": 66,
       "deletions": 0
     }

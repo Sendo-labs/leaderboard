@@ -16,7 +16,7 @@
       "body": "## Problem\r\nOSS contributors deserve fair, transparent rewards for their work. Manual reward distribution doesn't scale and lacks verifiability.\r\n\r\n## Solution\r\nBuilt an oracle bot that fetches contributor XP from leaderboard API and syncs to Solana program for contributors to claim from.",
       "repository": "Sendo-labs/leaderboard-rewards",
       "createdAt": "2025-10-25T21:27:38Z",
-      "mergedAt": null,
+      "mergedAt": "2025-10-26T22:50:23Z",
       "additions": 14199,
       "deletions": 1
     }

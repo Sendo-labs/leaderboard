@@ -1,0 +1,103 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-26T00:00:00.000Z",
+    "intervalEnd": "2025-11-02T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/spotlight",
+  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/spotlight had 0 new PRs (1 merged), 0 new issues, and 2 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQDrCWs6uTj-P",
+      "title": "Complete SOL transfer logic and unit tests",
+      "author": "0domart",
+      "number": 1,
+      "body": "This PR includes:\n\n- Fixed SOL transfer logic using proper CPI for user→vault transfers and direct lamport manipulation for vault→recipients\n- Added admin verification (only the creator can settle auctions)\n- Added time validation (auctions must end before settling)\n- Implemented comprehensive unit tests\n- Updated README with quick start instructions\n- All tests passing ✅\n\nKey changes:\n- Replaced problematic `try_borrow_mut_lamports()` with proper Anchor CPI patterns\n- Added `admin` field to `SpotState` for proper access control\n- Fixed account space calculations\n- Added proper error handling and validation",
+      "repository": "Sendo-labs/spotlight",
+      "createdAt": "2025-10-17T12:48:02Z",
+      "mergedAt": "2025-10-26T13:35:14Z",
+      "additions": 1527,
+      "deletions": 617
+    }
+  ],
+  "codeChanges": {
+    "additions": 1527,
+    "deletions": 617,
+    "files": 12,
+    "commitCount": 1
+  },
+  "completedItems": [
+    {
+      "title": "Complete SOL transfer logic and unit tests",
+      "prNumber": 1,
+      "type": "tests",
+      "body": "This PR includes:\n\n- Fixed SOL transfer logic using proper CPI for user→vault transfers and direct lamport manipulation for vault→recipients\n- Added admin verification (only the creator can settle auctions)\n- Added time validation (auctions",
+      "files": [
+        ".anchor/program-logs/6BmBt2kKtLaZqYjH4juQxHDhMKj8LCLZtoKRiyP9NhJU.sendo_spotlight.log",
+        "Anchor.toml",
+        "Cargo.lock",
+        "README.md",
+        "programs/sendo_spotlight/Cargo.toml",
+        "programs/sendo_spotlight/src/instructions/init_spot.rs",
+        "programs/sendo_spotlight/src/instructions/place_bid.rs",
+        "programs/sendo_spotlight/src/instructions/settle.rs",
+        "programs/sendo_spotlight/src/lib.rs",
+        "programs/sendo_spotlight/src/state/spot_state.rs",
+        "tests/sendo_spotlight.ts",
+        "validator.log"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 224.380011005393,
+      "prScore": 224.180011005393,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 62.280766381557314,
+      "prScore": 62.280766381557314,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 17.288179408697676,
+      "prScore": 17.288179408697676,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Fleo-Thyphon-ElizaOS",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/191503042?u=0485cedb4a47d55f3f98e368d9312b08c36761be&v=4",
+      "totalScore": 0.2,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 1,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 2
+}

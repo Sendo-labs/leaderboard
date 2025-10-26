@@ -1,0 +1,58 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-24T00:00:00.000Z",
+    "intervalEnd": "2025-10-25T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/plugin-sendo-analyser",
+  "overview": "From 2025-10-24 to 2025-10-25, Sendo-labs/plugin-sendo-analyser had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 75.59094617768714,
+      "prScore": 75.59094617768714,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "standujar: Focused on enhancing the CI/CD pipeline and feature development, merging two PRs in Sendo-labs/leaderboard, including #8 which allows manual workflow dispatch on any branch, and also opened PR #7 to further improve the deploy workflow. Their code changes primarily involved feature work and configuration updates across 21 files."
+    },
+    {
+      "username": "MonteCrypto999",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/58423789?u=7db7196121472df50395eadf84f9d5963d886d69&v=4",
+      "totalScore": 43.2637738965761,
+      "prScore": 43.2637738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "MonteCrypto999: Focused on significant feature development, opening PR Sendo-labs/plugin-jupiter#1 to add referral fee support and live E2E scripts, which involved substantial code changes across 31 files (+5965/-431 lines) and 13 commits, primarily in feature work, other work, bugfix work, and docs work, touching code, config, and tests."
+    },
+    {
+      "username": "plvo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
+      "totalScore": 27.695216293389368,
+      "prScore": 27.49521629338937,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}
