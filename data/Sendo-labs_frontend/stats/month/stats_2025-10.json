@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/frontend had 12 new PRs (12 merged), 0 new issues, and 3 active contributors.",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/frontend had 15 new PRs (15 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -70,10 +70,10 @@
     }
   ],
   "codeChanges": {
-    "additions": 18393,
-    "deletions": 6016,
-    "files": 140,
-    "commitCount": 79
+    "additions": 19984,
+    "deletions": 7355,
+    "files": 149,
+    "commitCount": 93
   },
   "completedItems": [
     {
@@ -393,6 +393,71 @@
         "src/lib/wrapper/with-action.ts",
         "src/types/actions.d.ts"
       ]
+    },
+    {
+      "title": "feat: chat agent",
+      "prNumber": 13,
+      "type": "feature",
+      "body": "This pull request introduces a significant update to the agent chat functionality in the application. The main change is the replacement of the old `AgentPanel` component with a new, feature-rich `AgentChat` component, which provides an int",
+      "files": [
+        "src/app/layout.tsx",
+        "src/components/agent-chat.tsx",
+        "src/components/agent-panel.tsx",
+        "src/hooks/use-eliza-agent.ts",
+        "src/hooks/use-eliza-chat.ts",
+        "src/hooks/useElizaAgent.ts",
+        "src/lib/agents/chat/character.ts",
+        "src/lib/agents/utils.ts",
+        "src/lib/agents/worker/character.ts",
+        "src/lib/constants.ts",
+        "src/types/agent.ts"
+      ]
+    },
+    {
+      "title": "refactor: update worker client and analysis handling to improve data fetching and remove deprecated components",
+      "prNumber": 12,
+      "type": "refactor",
+      "body": "This pull request refactors the worker analysis and actions workflow, streamlining the polling logic and improving the user experience for waiting states. It removes the manual \"suggest\" button and replaces it with automatic polling for ana",
+      "files": [
+        "src/app/worker/client.tsx",
+        "src/app/worker/page.tsx",
+        "src/components/worker/action-list.tsx",
+        "src/components/worker/analysis-panel.tsx",
+        "src/components/worker/worker-toggle.tsx",
+        "src/hooks/useElizaAgent.ts",
+        "src/hooks/useElizaChat.ts",
+        "src/lib/agents/creation-template.ts",
+        "src/lib/agents/worker/mocks.ts",
+        "src/lib/auth/session.ts",
+        "src/lib/providers.tsx",
+        "src/services/agent.service.ts",
+        "src/services/eliza.service.ts",
+        "src/services/worker-client.service.ts"
+      ]
+    },
+    {
+      "title": "feat: agents-creation",
+      "prNumber": 11,
+      "type": "feature",
+      "body": "- Adjusted indentation for the TestIdentityToken component in Home.\n- Simplified the Worker component's props destructuring for better clarity.\n- Enhanced formatting in the Worker component's AlertDialog for improved readability.\n- Removed ",
+      "files": [
+        "bun.lock",
+        "src/app/client.tsx",
+        "src/app/worker/client.tsx",
+        "src/app/worker/page.tsx",
+        "src/components/auth/test-identity-token.tsx",
+        "src/components/shared/loader.tsx",
+        "src/components/worker/action-list.tsx",
+        "src/components/worker/analysis-panel.tsx",
+        "src/components/worker/worker-toggle.tsx",
+        "src/lib/agents/creation-template.ts",
+        "src/lib/agents/utils.ts",
+        "src/lib/agents/worker/character.ts",
+        "src/lib/agents/worker/mocks.ts",
+        "src/lib/auth/session.ts",
+        "src/services/eliza.service.ts",
+        "src/services/worker-client.service.ts"
+      ]
     }
   ],
   "topContributors": [
@@ -410,8 +475,8 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 407.9332660711303,
-      "prScore": 407.9332660711303,
+      "totalScore": 579.110529235367,
+      "prScore": 579.110529235367,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -460,7 +525,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "plvo: Focused on improving documentation within the Sendo-labs/Reports repository this month. They contributed a significant update by merging Sendo-labs/Reports#1, which added 146 lines of documentation for elizaos plugin reports. They continued this effort by opening another documentation-related pull request. All of their code changes were concentrated on documentation."
     },
     {
       "username": "MonteCrypto999",
@@ -493,7 +558,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "chainsona: Focused on a single, high-impact feature delivery this month, merging a pull request to reward contributors in the Sendo-labs/leaderboard-rewards repository (#1). This was a substantial effort, adding over 14,000 lines of code in a single commit that modified 50 files. The work shows a comprehensive implementation, with changes spanning application code, tests, configuration, and documentation."
     },
     {
       "username": "tionebDotsamapha",
@@ -518,8 +583,8 @@
       "summary": "Fleo-Thyphon-ElizaOS: made a substantial number of local code changes this month, modifying 49 files across 3 commits. This effort resulted in a significant volume of code changes (+29801/-7379 lines), though this work has not yet been submitted as a pull request. The commits indicate a focus on bug fixes and other general work."
     }
   ],
-  "newPRs": 12,
-  "mergedPRs": 12,
+  "newPRs": 15,
+  "mergedPRs": 15,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 3

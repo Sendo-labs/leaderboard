@@ -157,7 +157,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "standujar: Primarily focused on significant development within the Sendo-labs ecosystem, notably migrating to the `plugin-sendo-analyser` implementation via PR #1 (+17774 lines) and enhancing pagination for trades in PR #3, alongside general other work and bug fixes across 245 files."
     },
     {
       "username": "Neysixx",
@@ -168,7 +168,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "Neysixx: Focused on feature development, successfully merging a substantial PR in Sendo-labs/frontend (#10) that introduced a new feature with over 1000 lines of code, demonstrating a primary focus on feature work and code contributions."
     },
     {
       "username": "plvo",
@@ -179,7 +179,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "plvo: Focused on documentation work, opening one PR in Sendo-labs/Reports (#2) that modified 3 files with a net addition of 240 lines, indicating a primary focus on docs."
     },
     {
       "username": "Fleo-Thyphon-ElizaOS",
@@ -190,7 +190,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "Fleo-Thyphon-ElizaOS: Today's activity focused on tests work, with a single commit modifying 12 files (+1527/-617 lines) and one PR comment, indicating a concentrated effort on testing."
     }
   ],
   "newPRs": 4,

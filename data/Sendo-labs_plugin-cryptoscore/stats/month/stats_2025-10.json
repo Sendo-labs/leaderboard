@@ -190,8 +190,8 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 407.9332660711303,
-      "prScore": 407.9332660711303,
+      "totalScore": 579.110529235367,
+      "prScore": 579.110529235367,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -240,7 +240,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "plvo: Focused on improving documentation within the Sendo-labs/Reports repository this month. They contributed a significant update by merging Sendo-labs/Reports#1, which added 146 lines of documentation for elizaos plugin reports. They continued this effort by opening another documentation-related pull request. All of their code changes were concentrated on documentation."
     },
     {
       "username": "MonteCrypto999",
@@ -273,7 +273,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "chainsona: Focused on a single, high-impact feature delivery this month, merging a pull request to reward contributors in the Sendo-labs/leaderboard-rewards repository (#1). This was a substantial effort, adding over 14,000 lines of code in a single commit that modified 50 files. The work shows a comprehensive implementation, with changes spanning application code, tests, configuration, and documentation."
     },
     {
       "username": "tionebDotsamapha",

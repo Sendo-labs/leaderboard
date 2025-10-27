@@ -38,7 +38,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "xdrkush: Focused on critical bug fixes within the Sendo-labs/sendo-api repository, merging two pull requests including a substantial fix for account functionality in PR #4 (+694/-90 lines) and a pagination correction in PR #5. Their work primarily involved bugfix contributions across code and configuration files."
     },
     {
       "username": "M4XGO",
@@ -49,7 +49,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "M4XGO: Focused on improving deployment and release workflows, merging three PRs including a significant contribution to `Sendo-labs/plugin-sendo-worker` (#3) which added GitHub workflows for automated NPM publishing and release, alongside refactoring deployment processes in `Sendo-labs/plugin-solana` (#1) and `Sendo-labs/plugin-jupiter` (#2). Their primary focus was on other work and feature development, predominantly modifying configuration files."
     },
     {
       "username": "chainsona",
@@ -60,7 +60,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "chainsona: Focused on feature work, delivering a substantial new feature by merging PR #1 \"Reward contributors\" in Sendo-labs/leaderboard-rewards, which involved significant code changes across 50 files (+14199/-1 lines). This work primarily involved contributions to code, tests, config, and documentation."
     }
   ],
   "newPRs": 1,

@@ -1,25 +1,13 @@
 {
   "interval": {
-    "intervalStart": "2025-10-26T00:00:00.000Z",
-    "intervalEnd": "2025-11-02T00:00:00.000Z",
-    "intervalType": "week"
+    "intervalStart": "2025-10-27T00:00:00.000Z",
+    "intervalEnd": "2025-10-28T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/frontend had 4 new PRs (4 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-27 to 2025-10-28, Sendo-labs/frontend had 3 new PRs (3 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
-    {
-      "id": "PR_kwDOQEvmTc6vwPfS",
-      "title": "feat: privy",
-      "author": "Neysixx",
-      "number": 10,
-      "body": "This pull request introduces Privy authentication into the project, enabling both client-side and server-side user authentication and session management. The main changes include adding Privy configuration, integrating Privy libraries, implementing login/logout UI components, and providing server utilities for session validation. Below are the most important changes grouped by theme:\r\n\r\n**Authentication Integration**\r\n\r\n* Added Privy configuration variables (`PRIVY_APP_ID`, `PRIVY_APP_SECRET`, `NEXT_PUBLIC_PRIVY_APP_ID`) to `.env.example` for environment setup.\r\n* Installed Privy libraries (`@privy-io/node`, `@privy-io/react-auth`) in `package.json` for both server and client authentication flows.\r\n\r\n**Client-Side Authentication UI**\r\n\r\n* Created `LoginButton` component in `src/components/auth/login.tsx` using Privy hooks for login/logout, and integrated it into the navigation bar (`src/components/navigation.tsx`). [[1]](diffhunk://#diff-596571a44c8e8edb3221c177f36432f0d6708a75cd5950c797525d3e1d3e23c0R1-R24) [[2]](diffhunk://#diff-d9fcccb82e22d45c50029699d79f97851782bbf5a470a6802036498af5158394R8) [[3]](diffhunk://#diff-d9fcccb82e22d45c50029699d79f97851782bbf5a470a6802036498af5158394R62) [[4]](diffhunk://#diff-d9fcccb82e22d45c50029699d79f97851782bbf5a470a6802036498af5158394R95)\r\n* Added a debug component `TestIdentityToken` in `src/components/auth/test-identity-token.tsx` to display and verify the Privy identity token for development purposes.\r\n* Updated `button.tsx` to include a new `nav-link` variant for consistent authentication button styling.\r\n\r\n**Provider and Session Management**\r\n\r\n* Wrapped the application in `PrivyProvider` in `src/lib/providers.tsx` to enable Privy authentication context and configuration throughout the app. [[1]](diffhunk://#diff-e16265e92ff2fc58a3353f4c3ecf74daa6c8d51e6f726e8f53d7820a4af5d650R4) [[2]](diffhunk://#diff-e16265e92ff2fc58a3353f4c3ecf74daa6c8d51e6f726e8f53d7820a4af5d650R26-R44)\r\n* Added server-side Privy client initialization in `src/lib/auth/privy.ts` and implemented the `getServerSession` function in `src/lib/auth/session.ts` for validating tokens and retrieving authenticated user information. [[1]](diffhunk://#diff-a5d2805c79a05472d51e7b7e75e291b5df570fa3c0aa27cda96af247696025deR1-R12) [[2]](diffhunk://#diff-8adb4fe17fbd9a162c4d504aaacfe2794e641de01fb28d5db323d8c74be2910cR1-R47)\r\n\r\n**Server-Side Action Wrapper**\r\n\r\n* Introduced `withAction` utility in `src/lib/wrapper/with-action.ts` to streamline server actions with authentication and error handling, leveraging the new Privy session management.",
-      "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-10-26T15:36:26Z",
-      "mergedAt": "2025-10-26T17:12:37Z",
-      "additions": 973,
-      "deletions": 24
-    },
     {
       "id": "PR_kwDOQEvmTc6v97ik",
       "title": "feat: chat agent",
@@ -58,32 +46,12 @@
     }
   ],
   "codeChanges": {
-    "additions": 2564,
-    "deletions": 1363,
-    "files": 36,
-    "commitCount": 19
+    "additions": 1591,
+    "deletions": 1339,
+    "files": 28,
+    "commitCount": 14
   },
   "completedItems": [
-    {
-      "title": "feat: privy",
-      "prNumber": 10,
-      "type": "feature",
-      "body": "This pull request introduces Privy authentication into the project, enabling both client-side and server-side user authentication and session management. The main changes include adding Privy configuration, integrating Privy libraries, impl",
-      "files": [
-        ".env.example",
-        "bun.lock",
-        "package.json",
-        "src/components/auth/login.tsx",
-        "src/components/auth/test-identity-token.tsx",
-        "src/components/navigation.tsx",
-        "src/components/ui/button.tsx",
-        "src/lib/auth/privy.ts",
-        "src/lib/auth/session.ts",
-        "src/lib/providers.tsx",
-        "src/lib/wrapper/with-action.ts",
-        "src/types/actions.d.ts"
-      ]
-    },
     {
       "title": "feat: chat agent",
       "prNumber": 13,
@@ -154,50 +122,17 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 233.45802954579415,
-      "prScore": 233.45802954579415,
+      "totalScore": 171.17726316423682,
+      "prScore": 171.17726316423682,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "standujar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 224.380011005393,
-      "prScore": 224.180011005393,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0.2,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "plvo",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
-      "totalScore": 17.288179408697676,
-      "prScore": 17.288179408697676,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "Fleo-Thyphon-ElizaOS",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/191503042?u=0485cedb4a47d55f3f98e368d9312b08c36761be&v=4",
-      "totalScore": 0.2,
-      "prScore": 0,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0.2,
       "socialScore": 0,
       "summary": null
     }
   ],
-  "newPRs": 4,
-  "mergedPRs": 4,
+  "newPRs": 3,
+  "mergedPRs": 3,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 1
