@@ -1,0 +1,60 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-28T00:00:00.000Z",
+    "intervalEnd": "2025-10-29T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/frontend",
+  "overview": "From 2025-10-28 to 2025-10-29, Sendo-labs/frontend had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQEvmTc6wPtkx",
+      "title": "feat: worker-code",
+      "author": "Neysixx",
+      "number": 14,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-28T21:56:38Z",
+      "mergedAt": null,
+      "additions": 79,
+      "deletions": 4
+    }
+  ],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 4
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 44.00129921890887,
+      "prScore": 44.00129921890887,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 12.861633597686627,
+      "prScore": 12.861633597686627,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

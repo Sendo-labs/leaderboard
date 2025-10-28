@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/frontend had 15 new PRs (15 merged), 0 new issues, and 3 active contributors.",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/frontend had 16 new PRs (15 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -73,7 +73,7 @@
     "additions": 19984,
     "deletions": 7355,
     "files": 149,
-    "commitCount": 93
+    "commitCount": 97
   },
   "completedItems": [
     {
@@ -475,19 +475,19 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 579.110529235367,
-      "prScore": 579.110529235367,
+      "totalScore": 593.9721628330537,
+      "prScore": 591.9721628330537,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "socialScore": 0,
+      "socialScore": 2,
       "summary": "Neysixx: Drove significant foundational improvements in the Sendo-labs/frontend repository, focusing primarily on large-scale refactoring. Their most impactful contribution was a massive project-wide refactor to update the structure and configurations (Sendo-labs/frontend#1), involving over 34,000 line changes. Alongside this, Neysixx delivered new pages (Sendo-labs/frontend#7), improved the existing page structure (Sendo-labs/frontend#3), and resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5). This activity demonstrates a clear focus on refactoring, which constituted the majority of their work."
     },
     {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 168.20430926062554,
-      "prScore": 168.20430926062554,
+      "totalScore": 212.20560847953442,
+      "prScore": 212.20560847953442,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -583,7 +583,7 @@
       "summary": "Fleo-Thyphon-ElizaOS: made a substantial number of local code changes this month, modifying 49 files across 3 commits. This effort resulted in a significant volume of code changes (+29801/-7379 lines), though this work has not yet been submitted as a pull request. The commits indicate a focus on bug fixes and other general work."
     }
   ],
-  "newPRs": 15,
+  "newPRs": 16,
   "mergedPRs": 15,
   "newIssues": 0,
   "closedIssues": 0,
