@@ -5,7 +5,7 @@
     "intervalType": "day"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-27 to 2025-10-28, Sendo-labs/frontend had 3 new PRs (3 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-27 to 2025-10-28, Sendo-labs/frontend had 3 new PRs (3 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -49,7 +49,7 @@
     "additions": 1591,
     "deletions": 1339,
     "files": 28,
-    "commitCount": 14
+    "commitCount": 18
   },
   "completedItems": [
     {
@@ -135,5 +135,5 @@
   "mergedPRs": 3,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 2
 }

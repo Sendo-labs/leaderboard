@@ -5,33 +5,47 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/plugin-cryptoscore",
-  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/plugin-cryptoscore had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/plugin-cryptoscore had 1 new PRs (1 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
-  "topPRs": [],
-  "codeChanges": {
-    "additions": 0,
-    "deletions": 0,
-    "files": 0,
-    "commitCount": 0
-  },
-  "completedItems": [],
-  "topContributors": [
+  "topPRs": [
     {
-      "username": "Neysixx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 246.31966314348077,
-      "prScore": 246.31966314348077,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
+      "id": "PR_kwDOP9-6-M6wQmGW",
+      "title": "chore: update dependencies and version for CryptoScore plugin",
+      "author": "standujar",
+      "number": 9,
+      "body": "",
+      "repository": "Sendo-labs/plugin-cryptoscore",
+      "createdAt": "2025-10-28T23:40:52Z",
+      "mergedAt": "2025-10-28T23:40:58Z",
+      "additions": 91,
+      "deletions": 65
+    }
+  ],
+  "codeChanges": {
+    "additions": 91,
+    "deletions": 65,
+    "files": 3,
+    "commitCount": 2
+  },
+  "completedItems": [
+    {
+      "title": "chore: update dependencies and version for CryptoScore plugin",
+      "prNumber": 9,
+      "type": "other",
+      "body": "",
+      "files": [
+        "bun.lock",
+        "package.json",
+        "src/index.ts"
+      ]
+    }
+  ],
+  "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 224.380011005393,
-      "prScore": 224.180011005393,
+      "totalScore": 370.0513032677388,
+      "prScore": 369.8513032677388,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
@@ -39,10 +53,21 @@
       "summary": null
     },
     {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 330.84886602522477,
+      "prScore": 330.84886602522477,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 44.00129921890887,
-      "prScore": 44.00129921890887,
+      "totalScore": 156.60211944613994,
+      "prScore": 156.60211944613994,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -72,9 +97,9 @@
       "summary": null
     }
   ],
-  "newPRs": 0,
-  "mergedPRs": 0,
+  "newPRs": 1,
+  "mergedPRs": 1,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 0
+  "activeContributors": 1
 }

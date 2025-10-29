@@ -5,9 +5,33 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/frontend had 5 new PRs (4 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/frontend had 9 new PRs (5 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [
+    {
+      "id": "PR_kwDOQEvmTc6wQuWt",
+      "title": "refactor: agent-env",
+      "author": "Neysixx",
+      "number": 15,
+      "body": "- Reformatted code in various action files for consistency and clarity.\n- Enhanced readability by aligning indentation and spacing.\n- Updated comments for better understanding of the code logic.\n- Ensured consistent use of async/await syntax in asynchronous functions.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-28T23:57:14Z",
+      "mergedAt": null,
+      "additions": 2040,
+      "deletions": 462
+    },
+    {
+      "id": "PR_kwDOQEvmTc6waX4c",
+      "title": "feat: merge-analyzer",
+      "author": "xdrkush",
+      "number": 17,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-29T16:02:02Z",
+      "mergedAt": null,
+      "additions": 1529,
+      "deletions": 296
+    },
     {
       "id": "PR_kwDOQEvmTc6vwPfS",
       "title": "feat: privy",
@@ -43,37 +67,13 @@
       "mergedAt": "2025-10-27T17:08:43Z",
       "additions": 526,
       "deletions": 414
-    },
-    {
-      "id": "PR_kwDOQEvmTc6v9GYR",
-      "title": "refactor: update worker client and analysis handling to improve data fetching and remove deprecated components",
-      "author": "Neysixx",
-      "number": 12,
-      "body": "This pull request refactors the worker analysis and actions workflow, streamlining the polling logic and improving the user experience for waiting states. It removes the manual \"suggest\" button and replaces it with automatic polling for analysis and actions, updating both backend calls and frontend components to match. Additionally, it cleans up imports and props across several files for consistency and maintainability.\r\n\r\n**Worker analysis and actions polling improvements:**\r\n\r\n* Replaced manual analysis creation (and removed the `WorkerToggle` suggest button) with automatic polling for worker analysis and actions in `src/app/worker/client.tsx`. Polling occurs every 2 seconds until data is available, and a new loading state (`isWaitingForAnalysis`) is introduced to track this. [[1]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L128-R137) [[2]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L153-R185) [[3]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L272-L273) [[4]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L111-R117) [[5]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34R292) [[6]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L385) [[7]](diffhunk://#diff-d8a332e10e11f0fd168c5f3a592bf9d65600382cebd064b5f26fabe17ade6ffbL1-L34)\r\n* Updated backend service calls to use new method names: `getAnalyses` and `getActionsByAnalysisId` replace the older `getWorkerAnalysis` and `getWorkerActionsByAnalysisId` in both server and client code. [[1]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L128-R137) [[2]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L153-R185) [[3]](diffhunk://#diff-083a864383578fb7f3d00c18444153c6311b62a7e2f3d3708c6c4ef180d41005L43-R49)\r\n\r\n**User experience enhancements:**\r\n\r\n* The `AnalysisPanel` component now displays a loading spinner and status message while waiting for analysis, improving feedback to the user during polling. [[1]](diffhunk://#diff-663dc3c6e41a4ff7eec6ddeb922198ce2ac27b79702f501422000d6eba57002cL3-R11) [[2]](diffhunk://#diff-663dc3c6e41a4ff7eec6ddeb922198ce2ac27b79702f501422000d6eba57002cL23-R37)\r\n* Removed the full-screen loader and manual analysis creation button, as analysis is now created automatically. [[1]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L385) [[2]](diffhunk://#diff-d8a332e10e11f0fd168c5f3a592bf9d65600382cebd064b5f26fabe17ade6ffbL1-L34)\r\n\r\n**Code consistency and cleanup:**\r\n\r\n* Cleaned up imports and prop usage across multiple files, including removing the unused `userId` prop from `ActionList` and updating import orders for clarity. [[1]](diffhunk://#diff-c172c41dd0e3c85674141d5b3ef3394342fe9f6b46a0f0b558774184782715f5L3-R3) [[2]](diffhunk://#diff-c172c41dd0e3c85674141d5b3ef3394342fe9f6b46a0f0b558774184782715f5L14) [[3]](diffhunk://#diff-c172c41dd0e3c85674141d5b3ef3394342fe9f6b46a0f0b558774184782715f5L41-R41) [[4]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L299) [[5]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L32-R36) [[6]](diffhunk://#diff-083a864383578fb7f3d00c18444153c6311b62a7e2f3d3708c6c4ef180d41005L2-R7) [[7]](diffhunk://#diff-663dc3c6e41a4ff7eec6ddeb922198ce2ac27b79702f501422000d6eba57002cL61-R72) [[8]](diffhunk://#diff-ac395cc93cd290a4ce4a829afccd499f9b0469366cea735f54da176765a954d8L1-R2) [[9]](diffhunk://#diff-84a2affba03ed7738f322d153542928a7e8b209d72ebacd558860f002325c9d6L1-R1) [[10]](diffhunk://#diff-20ffa1831ebf06b95a23b427ac0d32a1d48b459df785f16277384897a51ee7e9L3-R3) [[11]](diffhunk://#diff-39cb33bf75f1459993724eb9889c54da86595fc180c838d4339fd56bcc7bc28aL3-R8) [[12]](diffhunk://#diff-e16265e92ff2fc58a3353f4c3ecf74daa6c8d51e6f726e8f53d7820a4af5d650L3-R4) [[13]](diffhunk://#diff-8adb4fe17fbd9a162c4d504aaacfe2794e641de01fb28d5db323d8c74be2910cR1-L3)\r\n\r\n**Backend session and provider updates:**\r\n\r\n* Minor adjustments to session and provider files for correct import order and type usage. [[1]](diffhunk://#diff-8adb4fe17fbd9a162c4d504aaacfe2794e641de01fb28d5db323d8c74be2910cR1-L3) [[2]](diffhunk://#diff-e16265e92ff2fc58a3353f4c3ecf74daa6c8d51e6f726e8f53d7820a4af5d650L3-R4)\r\n\r\nOverall, these changes automate the workflow for worker analysis and recommended actions, improve feedback during waiting periods, and clean up the codebase for better maintainability.",
-      "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-10-27T17:54:37Z",
-      "mergedAt": "2025-10-27T18:02:57Z",
-      "additions": 345,
-      "deletions": 457
-    },
-    {
-      "id": "PR_kwDOQEvmTc6wPtkx",
-      "title": "feat: worker-code",
-      "author": "Neysixx",
-      "number": 14,
-      "body": "",
-      "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-10-28T21:56:38Z",
-      "mergedAt": null,
-      "additions": 79,
-      "deletions": 4
     }
   ],
   "codeChanges": {
-    "additions": 2564,
-    "deletions": 1363,
-    "files": 36,
-    "commitCount": 23
+    "additions": 2676,
+    "deletions": 1396,
+    "files": 41,
+    "commitCount": 43
   },
   "completedItems": [
     {
@@ -160,25 +160,30 @@
         "src/services/eliza.service.ts",
         "src/services/worker-client.service.ts"
       ]
+    },
+    {
+      "title": "feat: worker-creation",
+      "prNumber": 16,
+      "type": "feature",
+      "body": "- Removed unnecessary blank lines in createChatAgent and getChatAgent functions for better readability.\n- Standardized indentation in create.ts and use-eliza-agent.ts files.\n- Ensured consistent formatting in use-eliza-client.ts and utils.t",
+      "files": [
+        "src/actions/agents/create.ts",
+        "src/actions/chat/create.ts",
+        "src/actions/chat/get.ts",
+        "src/app/worker/page.tsx",
+        "src/hooks/use-eliza-agent.ts",
+        "src/hooks/use-eliza-chat.ts",
+        "src/hooks/use-eliza-client.ts",
+        "src/services/kenny.service.ts"
+      ]
     }
   ],
   "topContributors": [
     {
-      "username": "Neysixx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 246.31966314348077,
-      "prScore": 246.31966314348077,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 224.380011005393,
-      "prScore": 224.180011005393,
+      "totalScore": 370.0513032677388,
+      "prScore": 369.8513032677388,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
@@ -186,10 +191,21 @@
       "summary": null
     },
     {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 330.84886602522477,
+      "prScore": 330.84886602522477,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 44.00129921890887,
-      "prScore": 44.00129921890887,
+      "totalScore": 156.60211944613994,
+      "prScore": 156.60211944613994,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -219,9 +235,9 @@
       "summary": null
     }
   ],
-  "newPRs": 5,
-  "mergedPRs": 4,
+  "newPRs": 9,
+  "mergedPRs": 5,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 2
 }

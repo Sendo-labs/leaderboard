@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/frontend had 16 new PRs (15 merged), 0 new issues, and 3 active contributors.",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/frontend had 20 new PRs (16 merged), 0 new issues, and 4 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -57,23 +57,23 @@
       "deletions": 176
     },
     {
-      "id": "PR_kwDOQEvmTc6ugOVG",
-      "title": "feat: improve pages structure in order to anticipate a better data recovery strategy",
+      "id": "PR_kwDOQEvmTc6wQuWt",
+      "title": "refactor: agent-env",
       "author": "Neysixx",
-      "number": 3,
-      "body": "Refactor pages structure to fit with Nextjs best practice. For the moment, we just display mocked data, but in the next PRs, we are going to use real fetched user data from the agent. With Nextjs, the data fetching must be done on serverside and passed as props to client components (+ security and + fast)",
+      "number": 15,
+      "body": "- Reformatted code in various action files for consistency and clarity.\n- Enhanced readability by aligning indentation and spacing.\n- Updated comments for better understanding of the code logic.\n- Ensured consistent use of async/await syntax in asynchronous functions.",
       "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-10-19T10:26:17Z",
-      "mergedAt": "2025-10-19T10:26:38Z",
-      "additions": 2024,
-      "deletions": 1796
+      "createdAt": "2025-10-28T23:57:14Z",
+      "mergedAt": null,
+      "additions": 2040,
+      "deletions": 462
     }
   ],
   "codeChanges": {
-    "additions": 19984,
-    "deletions": 7355,
-    "files": 149,
-    "commitCount": 97
+    "additions": 20096,
+    "deletions": 7388,
+    "files": 154,
+    "commitCount": 117
   },
   "completedItems": [
     {
@@ -458,14 +458,30 @@
         "src/services/eliza.service.ts",
         "src/services/worker-client.service.ts"
       ]
+    },
+    {
+      "title": "feat: worker-creation",
+      "prNumber": 16,
+      "type": "feature",
+      "body": "- Removed unnecessary blank lines in createChatAgent and getChatAgent functions for better readability.\n- Standardized indentation in create.ts and use-eliza-agent.ts files.\n- Ensured consistent formatting in use-eliza-client.ts and utils.t",
+      "files": [
+        "src/actions/agents/create.ts",
+        "src/actions/chat/create.ts",
+        "src/actions/chat/get.ts",
+        "src/app/worker/page.tsx",
+        "src/hooks/use-eliza-agent.ts",
+        "src/hooks/use-eliza-chat.ts",
+        "src/hooks/use-eliza-client.ts",
+        "src/services/kenny.service.ts"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 664.9004176744816,
-      "prScore": 658.7004176744816,
+      "totalScore": 810.5717099368273,
+      "prScore": 804.3717099368274,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
@@ -475,8 +491,8 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 593.9721628330537,
-      "prScore": 591.9721628330537,
+      "totalScore": 678.5013657147978,
+      "prScore": 676.5013657147978,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -486,8 +502,8 @@
     {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 212.20560847953442,
-      "prScore": 212.20560847953442,
+      "totalScore": 324.8064287067655,
+      "prScore": 324.8064287067655,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -583,9 +599,9 @@
       "summary": "Fleo-Thyphon-ElizaOS: made a substantial number of local code changes this month, modifying 49 files across 3 commits. This effort resulted in a significant volume of code changes (+29801/-7379 lines), though this work has not yet been submitted as a pull request. The commits indicate a focus on bug fixes and other general work."
     }
   ],
-  "newPRs": 16,
-  "mergedPRs": 15,
+  "newPRs": 20,
+  "mergedPRs": 16,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 3
+  "activeContributors": 4
 }

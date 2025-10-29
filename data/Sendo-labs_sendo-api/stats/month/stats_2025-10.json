@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/sendo-api",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/sendo-api had 6 new PRs (6 merged), 0 new issues, and 3 active contributors.",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/sendo-api had 9 new PRs (9 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -57,23 +57,23 @@
       "deletions": 179
     },
     {
-      "id": "PR_kwDOQE5fGM6ufDUe",
-      "title": "Update README.md to En",
-      "author": "tionebDotsamapha",
-      "number": 2,
-      "body": "@xdrkush i traslated your readme in english if you want to merge it.\r\n",
+      "id": "PR_kwDOQE5fGM6wU121",
+      "title": "fix: clean controller trades, create ./utils/parseTrade.ts",
+      "author": "xdrkush",
+      "number": 7,
+      "body": "",
       "repository": "Sendo-labs/sendo-api",
-      "createdAt": "2025-10-19T05:42:47Z",
-      "mergedAt": "2025-10-19T17:49:45Z",
-      "additions": 71,
-      "deletions": 71
+      "createdAt": "2025-10-29T09:37:49Z",
+      "mergedAt": "2025-10-29T09:38:04Z",
+      "additions": 295,
+      "deletions": 291
     }
   ],
   "codeChanges": {
-    "additions": 23077,
-    "deletions": 459,
-    "files": 48,
-    "commitCount": 19
+    "additions": 23553,
+    "deletions": 817,
+    "files": 50,
+    "commitCount": 25
   },
   "completedItems": [
     {
@@ -193,14 +193,44 @@
         "tests/loadMoreTest.ts",
         "tests/rateLimitTest.ts"
       ]
+    },
+    {
+      "title": "fix: mv parseTrade in ./utils",
+      "prNumber": 9,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "src/controllers/trades.ts",
+        "src/utils/parseTrade.ts"
+      ]
+    },
+    {
+      "title": "refacto: call api + temp",
+      "prNumber": 8,
+      "type": "other",
+      "body": "",
+      "files": [
+        "src/parseTrade.ts",
+        "src/services/helius.ts"
+      ]
+    },
+    {
+      "title": "fix: clean controller trades, create ./utils/parseTrade.ts",
+      "prNumber": 7,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "src/controllers/trades.ts",
+        "src/parseTrade.ts"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 664.9004176744816,
-      "prScore": 658.7004176744816,
+      "totalScore": 810.5717099368273,
+      "prScore": 804.3717099368274,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
@@ -210,8 +240,8 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 593.9721628330537,
-      "prScore": 591.9721628330537,
+      "totalScore": 678.5013657147978,
+      "prScore": 676.5013657147978,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -221,8 +251,8 @@
     {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 212.20560847953442,
-      "prScore": 212.20560847953442,
+      "totalScore": 324.8064287067655,
+      "prScore": 324.8064287067655,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -318,8 +348,8 @@
       "summary": "Fleo-Thyphon-ElizaOS: made a substantial number of local code changes this month, modifying 49 files across 3 commits. This effort resulted in a significant volume of code changes (+29801/-7379 lines), though this work has not yet been submitted as a pull request. The commits indicate a focus on bug fixes and other general work."
     }
   ],
-  "newPRs": 6,
-  "mergedPRs": 6,
+  "newPRs": 9,
+  "mergedPRs": 9,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 3

@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/plugin-sendo-analyser",
-  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/plugin-sendo-analyser had 4 new PRs (4 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/plugin-sendo-analyser had 7 new PRs (7 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -19,6 +19,30 @@
       "mergedAt": "2025-10-26T10:42:39Z",
       "additions": 17774,
       "deletions": 0
+    },
+    {
+      "id": "PR_kwDOQJY5T86wW7Qj",
+      "title": "feat: use latest sendo-api updates",
+      "author": "standujar",
+      "number": 6,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-29T12:28:34Z",
+      "mergedAt": "2025-10-29T12:28:43Z",
+      "additions": 627,
+      "deletions": 108
+    },
+    {
+      "id": "PR_kwDOQJY5T86wQmeD",
+      "title": "chore: update dependencies and enhance Sendo Analyser service",
+      "author": "standujar",
+      "number": 5,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-28T23:41:29Z",
+      "mergedAt": "2025-10-28T23:41:42Z",
+      "additions": 440,
+      "deletions": 256
     },
     {
       "id": "PR_kwDOQJY5T86vxeZn",
@@ -43,25 +67,13 @@
       "mergedAt": "2025-10-26T22:22:12Z",
       "additions": 100,
       "deletions": 28
-    },
-    {
-      "id": "PR_kwDOQJY5T86vwmfJ",
-      "title": "fix: package",
-      "author": "standujar",
-      "number": 2,
-      "body": "",
-      "repository": "Sendo-labs/plugin-sendo-analyser",
-      "createdAt": "2025-10-26T17:39:33Z",
-      "mergedAt": "2025-10-26T17:39:44Z",
-      "additions": 1,
-      "deletions": 0
     }
   ],
   "codeChanges": {
-    "additions": 18216,
-    "deletions": 29,
-    "files": 45,
-    "commitCount": 9
+    "additions": 19284,
+    "deletions": 394,
+    "files": 50,
+    "commitCount": 15
   },
   "completedItems": [
     {
@@ -145,25 +157,57 @@
         "tsconfig.json",
         "tsup.config.ts"
       ]
+    },
+    {
+      "title": "chore: bump version to 1.3.0 in package.json",
+      "prNumber": 7,
+      "type": "other",
+      "body": "",
+      "files": [
+        "package.json"
+      ]
+    },
+    {
+      "title": "feat: use latest sendo-api updates",
+      "prNumber": 6,
+      "type": "feature",
+      "body": "",
+      "files": [
+        "src/config/index.ts",
+        "src/services/api/birdeyes.ts",
+        "src/services/api/helius.ts",
+        "src/services/sendoAnalyserService.ts",
+        "src/utils/parseTrade.ts",
+        "src/utils/rateLimiter.ts"
+      ]
+    },
+    {
+      "title": "chore: update dependencies and enhance Sendo Analyser service",
+      "prNumber": 5,
+      "type": "other",
+      "body": "",
+      "files": [
+        "bun.lock",
+        "package.json",
+        "src/config/index.ts",
+        "src/index.ts",
+        "src/services/api/birdeyes.ts",
+        "src/services/api/globals.ts",
+        "src/services/api/helius.ts",
+        "src/services/api/index.ts",
+        "src/services/birdeyes.ts",
+        "src/services/helius.ts",
+        "src/services/sendoAnalyserService.ts",
+        "src/utils/decoder/index.ts"
+      ]
     }
   ],
   "topContributors": [
     {
-      "username": "Neysixx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 246.31966314348077,
-      "prScore": 246.31966314348077,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 224.380011005393,
-      "prScore": 224.180011005393,
+      "totalScore": 370.0513032677388,
+      "prScore": 369.8513032677388,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
@@ -171,10 +215,21 @@
       "summary": null
     },
     {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 330.84886602522477,
+      "prScore": 330.84886602522477,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 44.00129921890887,
-      "prScore": 44.00129921890887,
+      "totalScore": 156.60211944613994,
+      "prScore": 156.60211944613994,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -204,8 +259,8 @@
       "summary": null
     }
   ],
-  "newPRs": 4,
-  "mergedPRs": 4,
+  "newPRs": 7,
+  "mergedPRs": 7,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 1

@@ -1,25 +1,13 @@
 {
   "interval": {
-    "intervalStart": "2025-10-26T00:00:00.000Z",
-    "intervalEnd": "2025-11-02T00:00:00.000Z",
-    "intervalType": "week"
+    "intervalStart": "2025-10-29T00:00:00.000Z",
+    "intervalEnd": "2025-10-30T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/sendo-api",
-  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/sendo-api had 4 new PRs (4 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-10-29 to 2025-10-30, Sendo-labs/sendo-api had 3 new PRs (3 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
-    {
-      "id": "PR_kwDOQE5fGM6wPUFU",
-      "title": "amelioration analyse data, rate limit",
-      "author": "xdrkush",
-      "number": 6,
-      "body": "",
-      "repository": "Sendo-labs/sendo-api",
-      "createdAt": "2025-10-28T21:18:00Z",
-      "mergedAt": "2025-10-28T21:18:33Z",
-      "additions": 832,
-      "deletions": 118
-    },
     {
       "id": "PR_kwDOQE5fGM6wU121",
       "title": "fix: clean controller trades, create ./utils/parseTrade.ts",
@@ -58,27 +46,12 @@
     }
   ],
   "codeChanges": {
-    "additions": 1308,
-    "deletions": 476,
-    "files": 9,
-    "commitCount": 8
+    "additions": 476,
+    "deletions": 358,
+    "files": 4,
+    "commitCount": 6
   },
   "completedItems": [
-    {
-      "title": "amelioration analyse data, rate limit",
-      "prNumber": 6,
-      "type": "other",
-      "body": "",
-      "files": [
-        "env-sample",
-        "src/controllers/trades.ts",
-        "src/services/birdeyes.ts",
-        "src/services/helius.ts",
-        "src/utils/rateLimiter.ts",
-        "tests/loadMoreTest.ts",
-        "tests/rateLimitTest.ts"
-      ]
-    },
     {
       "title": "fix: mv parseTrade in ./utils",
       "prNumber": 9,
@@ -112,21 +85,21 @@
   ],
   "topContributors": [
     {
-      "username": "standujar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 370.0513032677388,
-      "prScore": 369.8513032677388,
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 112.60082022723107,
+      "prScore": 112.60082022723107,
       "issueScore": 0,
       "reviewScore": 0,
-      "commentScore": 0.2,
+      "commentScore": 0,
       "socialScore": 0,
       "summary": null
     },
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 330.84886602522477,
-      "prScore": 330.84886602522477,
+      "totalScore": 84.52920288174403,
+      "prScore": 84.52920288174403,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -134,41 +107,19 @@
       "summary": null
     },
     {
-      "username": "xdrkush",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 156.60211944613994,
-      "prScore": 156.60211944613994,
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 60.35299650052068,
+      "prScore": 60.35299650052068,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "plvo",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
-      "totalScore": 17.288179408697676,
-      "prScore": 17.288179408697676,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "Fleo-Thyphon-ElizaOS",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/191503042?u=0485cedb4a47d55f3f98e368d9312b08c36761be&v=4",
-      "totalScore": 0.2,
-      "prScore": 0,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0.2,
       "socialScore": 0,
       "summary": null
     }
   ],
-  "newPRs": 4,
-  "mergedPRs": 4,
+  "newPRs": 3,
+  "mergedPRs": 3,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 1

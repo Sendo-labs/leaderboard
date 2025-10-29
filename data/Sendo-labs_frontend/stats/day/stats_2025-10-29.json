@@ -1,0 +1,112 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-29T00:00:00.000Z",
+    "intervalEnd": "2025-10-30T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/frontend",
+  "overview": "From 2025-10-29 to 2025-10-30, Sendo-labs/frontend had 3 new PRs (1 merged), 0 new issues, and 2 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQEvmTc6waX4c",
+      "title": "feat: merge-analyzer",
+      "author": "xdrkush",
+      "number": 17,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-29T16:02:02Z",
+      "mergedAt": null,
+      "additions": 1529,
+      "deletions": 296
+    },
+    {
+      "id": "PR_kwDOQEvmTc6wUdG4",
+      "title": "feat: worker-creation",
+      "author": "Neysixx",
+      "number": 16,
+      "body": "- Removed unnecessary blank lines in createChatAgent and getChatAgent functions for better readability.\n- Standardized indentation in create.ts and use-eliza-agent.ts files.\n- Ensured consistent formatting in use-eliza-client.ts and utils.ts files.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-29T09:07:41Z",
+      "mergedAt": "2025-10-29T09:07:52Z",
+      "additions": 112,
+      "deletions": 33
+    },
+    {
+      "id": "PR_kwDOQEvmTc6wfmAq",
+      "title": "refine: analyzer",
+      "author": "Neysixx",
+      "number": 18,
+      "body": "- Removed unnecessary line breaks in the error message display for improved readability and consistency.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-29T23:04:14Z",
+      "mergedAt": null,
+      "additions": 94,
+      "deletions": 905
+    }
+  ],
+  "codeChanges": {
+    "additions": 112,
+    "deletions": 33,
+    "files": 8,
+    "commitCount": 14
+  },
+  "completedItems": [
+    {
+      "title": "feat: worker-creation",
+      "prNumber": 16,
+      "type": "feature",
+      "body": "- Removed unnecessary blank lines in createChatAgent and getChatAgent functions for better readability.\n- Standardized indentation in create.ts and use-eliza-agent.ts files.\n- Ensured consistent formatting in use-eliza-client.ts and utils.t",
+      "files": [
+        "src/actions/agents/create.ts",
+        "src/actions/chat/create.ts",
+        "src/actions/chat/get.ts",
+        "src/app/worker/page.tsx",
+        "src/hooks/use-eliza-agent.ts",
+        "src/hooks/use-eliza-chat.ts",
+        "src/hooks/use-eliza-client.ts",
+        "src/services/kenny.service.ts"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 112.60082022723107,
+      "prScore": 112.60082022723107,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 84.52920288174403,
+      "prScore": 84.52920288174403,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 60.35299650052068,
+      "prScore": 60.35299650052068,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 3,
+  "mergedPRs": 1,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 2
+}
