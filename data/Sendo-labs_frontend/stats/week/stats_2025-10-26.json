@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/frontend had 9 new PRs (5 merged), 0 new issues, and 2 active contributors.",
+  "overview": "From 2025-10-26 to 2025-11-02, Sendo-labs/frontend had 9 new PRs (8 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -16,21 +16,9 @@
       "body": "- Reformatted code in various action files for consistency and clarity.\n- Enhanced readability by aligning indentation and spacing.\n- Updated comments for better understanding of the code logic.\n- Ensured consistent use of async/await syntax in asynchronous functions.",
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-10-28T23:57:14Z",
-      "mergedAt": null,
-      "additions": 2040,
-      "deletions": 462
-    },
-    {
-      "id": "PR_kwDOQEvmTc6waX4c",
-      "title": "feat: merge-analyzer",
-      "author": "xdrkush",
-      "number": 17,
-      "body": "",
-      "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-10-29T16:02:02Z",
-      "mergedAt": null,
-      "additions": 1529,
-      "deletions": 296
+      "mergedAt": "2025-10-30T10:47:29Z",
+      "additions": 2818,
+      "deletions": 808
     },
     {
       "id": "PR_kwDOQEvmTc6vwPfS",
@@ -43,6 +31,18 @@
       "mergedAt": "2025-10-26T17:12:37Z",
       "additions": 973,
       "deletions": 24
+    },
+    {
+      "id": "PR_kwDOQEvmTc6waX4c",
+      "title": "feat: merge-analyzer",
+      "author": "xdrkush",
+      "number": 17,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-29T16:02:02Z",
+      "mergedAt": "2025-10-30T10:43:29Z",
+      "additions": 868,
+      "deletions": 436
     },
     {
       "id": "PR_kwDOQEvmTc6v97ik",
@@ -70,10 +70,10 @@
     }
   ],
   "codeChanges": {
-    "additions": 2676,
-    "deletions": 1396,
-    "files": 41,
-    "commitCount": 43
+    "additions": 7574,
+    "deletions": 3551,
+    "files": 68,
+    "commitCount": 51
   },
   "completedItems": [
     {
@@ -162,6 +162,68 @@
       ]
     },
     {
+      "title": "refine: analyzer",
+      "prNumber": 18,
+      "type": "other",
+      "body": "- Removed unnecessary line breaks in the error message display for improved readability and consistency.",
+      "files": [
+        "src/actions/analyzer/get-trades.ts",
+        "src/actions/worker/actions.ts",
+        "src/actions/worker/get.ts",
+        "src/app/analyzer/client.tsx",
+        "src/app/layout.tsx",
+        "src/app/worker/client.tsx",
+        "src/app/worker/page.tsx",
+        "src/components/agent-panel.tsx",
+        "src/components/worker/action-list.tsx",
+        "src/hooks/use-eliza-agent.ts",
+        "src/hooks/use-eliza-chat.ts",
+        "src/hooks/use-eliza-client.ts",
+        "src/hooks/use-trades-analysis.ts",
+        "src/hooks/useElizaAgent.ts",
+        "src/lib/constants.ts",
+        "src/lib/utils.ts",
+        "src/services/eliza.service.ts",
+        "src/services/kenny.service.ts",
+        "src/services/trades.service.ts",
+        "src/services/worker-client.service.ts"
+      ]
+    },
+    {
+      "title": "feat: merge-analyzer",
+      "prNumber": 17,
+      "type": "feature",
+      "body": "",
+      "files": [
+        ".env.example",
+        ".gitignore",
+        "bun.lock",
+        "src/app/analyzer/client.tsx",
+        "src/app/layout.tsx",
+        "src/app/worker/client.tsx",
+        "src/app/worker/page.tsx",
+        "src/components/agent-panel.tsx",
+        "src/components/analyzer/performance-metrics.tsx",
+        "src/components/analyzer/token-details-list.tsx",
+        "src/components/worker/action-list.tsx",
+        "src/hooks/useElizaAgent.ts",
+        "src/hooks/useTradesAnalysis.ts",
+        "src/services/trades.service.ts",
+        "src/actions/analyzer/get.ts",
+        "src/actions/worker/actions.ts",
+        "src/actions/worker/get.ts",
+        "src/hooks/use-eliza-agent.ts",
+        "src/hooks/use-eliza-chat.ts",
+        "src/hooks/use-eliza-client.ts",
+        "src/hooks/use-trades-analysis.ts",
+        "src/lib/constants.ts",
+        "src/lib/utils.ts",
+        "src/services/eliza.service.ts",
+        "src/services/kenny.service.ts",
+        "src/services/worker-client.service.ts"
+      ]
+    },
+    {
       "title": "feat: worker-creation",
       "prNumber": 16,
       "type": "feature",
@@ -176,14 +238,70 @@
         "src/hooks/use-eliza-client.ts",
         "src/services/kenny.service.ts"
       ]
+    },
+    {
+      "title": "refactor: agent-env",
+      "prNumber": 15,
+      "type": "refactor",
+      "body": "- Reformatted code in various action files for consistency and clarity.\n- Enhanced readability by aligning indentation and spacing.\n- Updated comments for better understanding of the code logic.\n- Ensured consistent use of async/await synta",
+      "files": [
+        ".env.example",
+        "bun.lock",
+        "package.json",
+        "src/actions/agents/create.ts",
+        "src/actions/agents/get.ts",
+        "src/actions/analyzer/get.ts",
+        "src/actions/chat/get.ts",
+        "src/actions/openrouter/create.ts",
+        "src/actions/openrouter/get.ts",
+        "src/actions/openrouter/utils.ts",
+        "src/actions/secrets/create.ts",
+        "src/actions/secrets/get.ts",
+        "src/actions/secrets/update.ts",
+        "src/actions/secrets/utils.ts",
+        "src/actions/worker/actions.ts",
+        "src/actions/worker/create.ts",
+        "src/actions/worker/get.ts",
+        "src/app/worker/client.tsx",
+        "src/app/worker/page.tsx",
+        "src/components/agent-chat.tsx",
+        "src/components/worker/action-list.tsx",
+        "src/components/worker/analysis-panel.tsx",
+        "src/hooks/use-eliza-agent.ts",
+        "src/hooks/use-eliza-chat.ts",
+        "src/hooks/use-eliza-client.ts",
+        "src/lib/agents/chat/character.ts",
+        "src/lib/agents/utils.ts",
+        "src/lib/agents/worker/character.ts",
+        "src/lib/aws/profile.ts",
+        "src/lib/constants.ts",
+        "src/lib/utils.ts",
+        "src/schemas/openrouter.ts",
+        "src/services/agent.service.ts",
+        "src/services/aws/secret-manager.service.ts",
+        "src/services/aws/ssm.service.ts",
+        "src/services/eliza.service.ts",
+        "src/services/kenny.service.ts",
+        "src/services/openrouter.service.ts",
+        "src/services/worker-client.service.ts",
+        "src/types/agent.ts",
+        "src/types/openrouter.ts",
+        ".gitignore",
+        "src/app/analyzer/client.tsx",
+        "src/app/layout.tsx",
+        "src/components/analyzer/performance-metrics.tsx",
+        "src/components/analyzer/token-details-list.tsx",
+        "src/hooks/use-trades-analysis.ts",
+        "src/services/trades.service.ts"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 370.0513032677388,
-      "prScore": 369.8513032677388,
+      "totalScore": 406.33407716431486,
+      "prScore": 406.1340771643149,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
@@ -236,7 +354,7 @@
     }
   ],
   "newPRs": 9,
-  "mergedPRs": 5,
+  "mergedPRs": 8,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 2

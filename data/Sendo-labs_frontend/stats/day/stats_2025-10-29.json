@@ -16,9 +16,21 @@
       "body": "",
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-10-29T16:02:02Z",
-      "mergedAt": null,
-      "additions": 1529,
-      "deletions": 296
+      "mergedAt": "2025-10-30T10:43:29Z",
+      "additions": 868,
+      "deletions": 436
+    },
+    {
+      "id": "PR_kwDOQEvmTc6wfmAq",
+      "title": "refine: analyzer",
+      "author": "Neysixx",
+      "number": 18,
+      "body": "- Removed unnecessary line breaks in the error message display for improved readability and consistency.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-10-29T23:04:14Z",
+      "mergedAt": "2025-10-30T09:15:37Z",
+      "additions": 115,
+      "deletions": 911
     },
     {
       "id": "PR_kwDOQEvmTc6wUdG4",
@@ -31,25 +43,13 @@
       "mergedAt": "2025-10-29T09:07:52Z",
       "additions": 112,
       "deletions": 33
-    },
-    {
-      "id": "PR_kwDOQEvmTc6wfmAq",
-      "title": "refine: analyzer",
-      "author": "Neysixx",
-      "number": 18,
-      "body": "- Removed unnecessary line breaks in the error message display for improved readability and consistency.",
-      "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-10-29T23:04:14Z",
-      "mergedAt": null,
-      "additions": 94,
-      "deletions": 905
     }
   ],
   "codeChanges": {
     "additions": 112,
     "deletions": 33,
     "files": 8,
-    "commitCount": 14
+    "commitCount": 16
   },
   "completedItems": [
     {

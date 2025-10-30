@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/plugin-sendo-worker",
-  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/plugin-sendo-worker had 7 new PRs (7 merged), 0 new issues, and 2 active contributors.",
+  "overview": "From 2025-10-01 to 2025-11-01, Sendo-labs/plugin-sendo-worker had 8 new PRs (7 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -33,6 +33,18 @@
       "deletions": 679
     },
     {
+      "id": "PR_kwDOQHEs2c6wg5rZ",
+      "title": "refactor: modularize SendoWorkerService into focused modules and full Wallet Integration",
+      "author": "standujar",
+      "number": 8,
+      "body": "## Summary\r\n\r\nRefactored the monolithic SendoWorkerService (1223 lines) into a modular architecture with 9 specialized modules, reducing the main service to 257 lines (-79%).\r\n\r\n## Key Changes\r\n\r\n- **9 new modules** with single responsibilities (WorldManager, ProviderCollector, DataSelector, DataExecutor, ActionCategorizer, AnalysisGenerator, RecommendationGenerator, DecisionProcessor, AnalysisRepository)\r\n- **SendoWorkerService** now acts as orchestrator, delegating to modules\r\n- **Improved error handling** with proper error type classification (initialization/execution/technical)\r\n- **Better testability** - unit tests now test modules directly\r\n- **Integration tests** updated to use proper service loading mechanism\r\n\r\n## Test Plan\r\n\r\n- [x] All unit tests passing (9 test files)\r\n- [x] Integration tests updated and passing\r\n- [x] Build successful\r\n- [x] Error handling properly categorizes error types",
+      "repository": "Sendo-labs/plugin-sendo-worker",
+      "createdAt": "2025-10-30T02:26:12Z",
+      "mergedAt": null,
+      "additions": 2272,
+      "deletions": 1087
+    },
+    {
       "id": "PR_kwDOQHEs2c6vrlYW",
       "title": "chore: add GitHub workflows for automated NPM publishing and releases",
       "author": "M4XGO",
@@ -55,25 +67,13 @@
       "mergedAt": "2025-10-26T11:05:16Z",
       "additions": 47,
       "deletions": 8584
-    },
-    {
-      "id": "PR_kwDOQHEs2c6vvFxF",
-      "title": "chore(main): release 1.0.0",
-      "author": "github-actions",
-      "number": 5,
-      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-10-26)\n\n\n### Features\n\n* Add comprehensive test infrastructure with real runtime testing ([fcf3f9b](https://github.com/Sendo-labs/plugin-sendo-worker/commit/fcf3f9bcae6b7bbaf658fee0a171d86839cc3414))\n* add initial implementation of the Sendo Worker ([463e5ff](https://github.com/Sendo-labs/plugin-sendo-worker/commit/463e5fff9c2423438989cbf4b0cd808b08227feb))\n* enhance analysis functionality by adding new API route to retrieve analysis by ID, update runAnalysis method to include recommended actions, and implement integration tests for analysis workflow ([ede9796](https://github.com/Sendo-labs/plugin-sendo-worker/commit/ede9796a5d74d681e750449ce72c2470524d15ff))\n\n\n### Bug Fixes\n\n* **tests:** cast response in categorizeActions test to any for TypeScript compatibility ([b13670b](https://github.com/Sendo-labs/plugin-sendo-worker/commit/b13670bda791ecadf75ceb5922a85abb370a17e2))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
-      "repository": "Sendo-labs/plugin-sendo-worker",
-      "createdAt": "2025-10-26T11:03:08Z",
-      "mergedAt": "2025-10-26T11:05:33Z",
-      "additions": 17,
-      "deletions": 2
     }
   ],
   "codeChanges": {
     "additions": 18266,
     "deletions": 9274,
     "files": 53,
-    "commitCount": 34
+    "commitCount": 36
   },
   "completedItems": [
     {
@@ -212,8 +212,8 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 810.5717099368273,
-      "prScore": 804.3717099368274,
+      "totalScore": 846.8544838334035,
+      "prScore": 840.6544838334034,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
@@ -331,7 +331,7 @@
       "summary": "Fleo-Thyphon-ElizaOS: made a substantial number of local code changes this month, modifying 49 files across 3 commits. This effort resulted in a significant volume of code changes (+29801/-7379 lines), though this work has not yet been submitted as a pull request. The commits indicate a focus on bug fixes and other general work."
     }
   ],
-  "newPRs": 7,
+  "newPRs": 8,
   "mergedPRs": 7,
   "newIssues": 0,
   "closedIssues": 0,

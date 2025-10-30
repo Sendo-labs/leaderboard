@@ -16,9 +16,9 @@
       "body": "- Reformatted code in various action files for consistency and clarity.\n- Enhanced readability by aligning indentation and spacing.\n- Updated comments for better understanding of the code logic.\n- Ensured consistent use of async/await syntax in asynchronous functions.",
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-10-28T23:57:14Z",
-      "mergedAt": null,
-      "additions": 2040,
-      "deletions": 462
+      "mergedAt": "2025-10-30T10:47:29Z",
+      "additions": 2818,
+      "deletions": 808
     },
     {
       "id": "PR_kwDOQEvmTc6wPtkx",

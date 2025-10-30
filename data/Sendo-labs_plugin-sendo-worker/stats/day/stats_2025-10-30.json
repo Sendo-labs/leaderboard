@@ -1,0 +1,49 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-30T00:00:00.000Z",
+    "intervalEnd": "2025-10-31T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/plugin-sendo-worker",
+  "overview": "From 2025-10-30 to 2025-10-31, Sendo-labs/plugin-sendo-worker had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQHEs2c6wg5rZ",
+      "title": "refactor: modularize SendoWorkerService into focused modules and full Wallet Integration",
+      "author": "standujar",
+      "number": 8,
+      "body": "## Summary\r\n\r\nRefactored the monolithic SendoWorkerService (1223 lines) into a modular architecture with 9 specialized modules, reducing the main service to 257 lines (-79%).\r\n\r\n## Key Changes\r\n\r\n- **9 new modules** with single responsibilities (WorldManager, ProviderCollector, DataSelector, DataExecutor, ActionCategorizer, AnalysisGenerator, RecommendationGenerator, DecisionProcessor, AnalysisRepository)\r\n- **SendoWorkerService** now acts as orchestrator, delegating to modules\r\n- **Improved error handling** with proper error type classification (initialization/execution/technical)\r\n- **Better testability** - unit tests now test modules directly\r\n- **Integration tests** updated to use proper service loading mechanism\r\n\r\n## Test Plan\r\n\r\n- [x] All unit tests passing (9 test files)\r\n- [x] Integration tests updated and passing\r\n- [x] Build successful\r\n- [x] Error handling properly categorizes error types",
+      "repository": "Sendo-labs/plugin-sendo-worker",
+      "createdAt": "2025-10-30T02:26:12Z",
+      "mergedAt": null,
+      "additions": 2272,
+      "deletions": 1087
+    }
+  ],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 2
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 36.282773896576096,
+      "prScore": 36.282773896576096,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}
