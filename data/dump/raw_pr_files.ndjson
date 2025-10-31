@@ -835,3 +835,7 @@
 ["PR_kwDOQHEs2c6wg5rZ_src/utils/index.ts", "PR_kwDOQHEs2c6wg5rZ", "src/utils/index.ts", 3, 2, "MODIFIED", "2025-10-30 23:08:51"]
 ["PR_kwDOQHEs2c6wg5rZ_src/utils/walletManager.ts", "PR_kwDOQHEs2c6wg5rZ", "src/utils/walletManager.ts", 129, 0, "ADDED", "2025-10-30 23:08:51"]
 ["PR_kwDOQHEs2c6wg5rZ_src/utils/worldManager.ts", "PR_kwDOQHEs2c6wg5rZ", "src/utils/worldManager.ts", 91, 0, "ADDED", "2025-10-30 23:08:51"]
+["PR_kwDOQJY5T86w0gdc_.github/workflows/publish-npm.yaml", "PR_kwDOQJY5T86w0gdc", ".github/workflows/publish-npm.yaml", 22, 0, "ADDED", "2025-10-31 23:09:04"]
+["PR_kwDOQJY5T86w0gdc_.github/workflows/release.yml", "PR_kwDOQJY5T86w0gdc", ".github/workflows/release.yml", 15, 0, "ADDED", "2025-10-31 23:09:04"]
+["PR_kwDOQJY5T86w0gdc_.release-please-manifest.json", "PR_kwDOQJY5T86w0gdc", ".release-please-manifest.json", 3, 0, "ADDED", "2025-10-31 23:09:04"]
+["PR_kwDOQJY5T86w0gdc_release-please-config.json", "PR_kwDOQJY5T86w0gdc", "release-please-config.json", 26, 0, "ADDED", "2025-10-31 23:09:04"]

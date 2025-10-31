@@ -1,0 +1,49 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-31T00:00:00.000Z",
+    "intervalEnd": "2025-11-01T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/plugin-sendo-analyser",
+  "overview": "From 2025-10-31 to 2025-11-01, Sendo-labs/plugin-sendo-analyser had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQJY5T86w0gdc",
+      "title": "feat: add release configuration and workflows for automated publishing",
+      "author": "M4XGO",
+      "number": 8,
+      "body": "## WHY  : \r\nAdding a complete CI/CD workflow to the repository with the aim of publishing plugins on NPM. \r\nCreated .release-please-manifest.json to define the release version.\r\nAdded release-please-config.json for release type and changelog configuration.\r\nImplemented GitHub Actions workflows for automated NPM publishing and release management.\r\n\r\n## How :\r\nUsing the precedent reusable-workflow I've made here : https://github.com/Sendo-labs/reusable-workflows/",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-10-31T12:09:32Z",
+      "mergedAt": null,
+      "additions": 66,
+      "deletions": 0
+    }
+  ],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 1
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 13.804385238781931,
+      "prScore": 13.804385238781931,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

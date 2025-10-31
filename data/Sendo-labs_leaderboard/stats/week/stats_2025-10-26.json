@@ -53,12 +53,12 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 330.84886602522477,
+      "totalScore": 331.84886602522477,
       "prScore": 330.84886602522477,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "socialScore": 0,
+      "socialScore": 1,
       "summary": null
     },
     {
@@ -77,6 +77,17 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/113256696?u=ca871f39ebb1e4822ae672777e82d91cce8f26ab&v=4",
       "totalScore": 17.288179408697676,
       "prScore": 17.288179408697676,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 13.804385238781931,
+      "prScore": 13.804385238781931,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,

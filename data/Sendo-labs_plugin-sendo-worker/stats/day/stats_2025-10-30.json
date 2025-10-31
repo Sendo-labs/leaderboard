@@ -39,6 +39,17 @@
       "commentScore": 0,
       "socialScore": 0,
       "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 1,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 1,
+      "summary": null
     }
   ],
   "newPRs": 1,

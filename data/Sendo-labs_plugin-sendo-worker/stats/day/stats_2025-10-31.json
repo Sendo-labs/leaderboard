@@ -1,0 +1,36 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-31T00:00:00.000Z",
+    "intervalEnd": "2025-11-01T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/plugin-sendo-worker",
+  "overview": "From 2025-10-31 to 2025-11-01, Sendo-labs/plugin-sendo-worker had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "M4XGO",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
+      "totalScore": 13.804385238781931,
+      "prScore": 13.804385238781931,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}

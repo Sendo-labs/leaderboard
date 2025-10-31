@@ -102,12 +102,12 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 678.5013657147978,
+      "totalScore": 679.5013657147978,
       "prScore": 676.5013657147978,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "socialScore": 2,
+      "socialScore": 3,
       "summary": "Neysixx: Drove significant foundational improvements in the Sendo-labs/frontend repository, focusing primarily on large-scale refactoring. Their most impactful contribution was a massive project-wide refactor to update the structure and configurations (Sendo-labs/frontend#1), involving over 34,000 line changes. Alongside this, Neysixx delivered new pages (Sendo-labs/frontend#7), improved the existing page structure (Sendo-labs/frontend#3), and resolved a critical build issue by adding missing dependencies (Sendo-labs/frontend#5). This activity demonstrates a clear focus on refactoring, which constituted the majority of their work."
     },
     {
@@ -124,8 +124,8 @@
     {
       "username": "M4XGO",
       "avatarUrl": "https://avatars.githubusercontent.com/u/123946204?u=04900812a591e86d8014ca5ef41b7a4440617afa&v=4",
-      "totalScore": 145.0575691652641,
-      "prScore": 145.0575691652641,
+      "totalScore": 158.86195440404606,
+      "prScore": 158.86195440404606,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
