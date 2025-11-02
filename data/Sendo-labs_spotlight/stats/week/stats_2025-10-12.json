@@ -16,7 +16,7 @@
       "body": "This PR includes:\n\n- Fixed SOL transfer logic using proper CPI for user→vault transfers and direct lamport manipulation for vault→recipients\n- Added admin verification (only the creator can settle auctions)\n- Added time validation (auctions must end before settling)\n- Implemented comprehensive unit tests\n- Updated README with quick start instructions\n- All tests passing ✅\n\nKey changes:\n- Replaced problematic `try_borrow_mut_lamports()` with proper Anchor CPI patterns\n- Added `admin` field to `SpotState` for proper access control\n- Fixed account space calculations\n- Added proper error handling and validation",
       "repository": "Sendo-labs/spotlight",
       "createdAt": "2025-10-17T12:48:02Z",
-      "mergedAt": null,
+      "mergedAt": "2025-10-26T13:35:14Z",
       "additions": 1527,
       "deletions": 617
     }
@@ -52,6 +52,17 @@
       "summary": "M4XGO: This week, M4XGO focused on establishing foundational automation by setting up new workflows and release management for the Sendo-labs organization. They accomplished this by merging a single, significant pull request, Sendo-labs/reusable-workflows#1 (+1005/-38 lines), which implemented this new capability. Their work was split evenly between documentation and configuration files."
     },
     {
+      "username": "0domart",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
+      "totalScore": 51.3857738965761,
+      "prScore": 51.3857738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "0domart: Focused on new feature development in the Sendo-labs/spotlight repository this week. They opened a significant pull request (#1) to implement SOL transfer logic, which involved a substantial effort of +1527/-617 lines of code. The work shows a primary focus on building out unit tests for this new functionality."
+    },
+    {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
       "totalScore": 49.5437738965761,
@@ -61,17 +72,6 @@
       "commentScore": 0,
       "socialScore": 0,
       "summary": "xdrkush: This week, xdrkush initiated the `Sendo-labs/sendo-api` repository by merging its foundational pull request (#1). This single, substantial commit added over 21,000 lines of code and configuration files to establish the new service."
-    },
-    {
-      "username": "0domart",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/49200403?u=d9201431ca215619ad98e9eb958b48a4e47cd474&v=4",
-      "totalScore": 35.3857738965761,
-      "prScore": 35.3857738965761,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
-      "summary": "0domart: Focused on new feature development in the Sendo-labs/spotlight repository this week. They opened a significant pull request (#1) to implement SOL transfer logic, which involved a substantial effort of +1527/-617 lines of code. The work shows a primary focus on building out unit tests for this new functionality."
     }
   ],
   "newPRs": 1,

@@ -24,7 +24,8 @@
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "summary": null
+      "socialScore": 0,
+      "summary": "standujar: Initialized the contributor tracking system in Sendo-labs/leaderboard by merging PR #1. Their overall activity included 17 commits and modifications to 19 files, with a focus split between bug fixes, feature work, and other tasks."
     }
   ],
   "newPRs": 0,

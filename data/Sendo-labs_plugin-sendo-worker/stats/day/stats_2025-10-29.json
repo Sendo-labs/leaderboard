@@ -25,7 +25,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "xdrkush: Primarily focused on bugfix work and refactoring, merging four pull requests including a significant feature in Sendo-labs/frontend#17 (\"feat: merge-analyzer\") with substantial code changes (+3124/-2042 lines), alongside refactoring and cleaning up trade-related logic in Sendo-labs/sendo-api."
     },
     {
       "username": "Neysixx",
@@ -36,7 +36,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "Neysixx: Focused on significant refactoring and feature development, merging two impactful pull requests: \"refine: analyzer\" (Sendo-labs/frontend#18), which involved a substantial refactor with a large deletion of 917 lines, and \"feat: worker-creation\" (Sendo-labs/frontend#16). Their primary focus areas were refactor work (47%), bugfix work (33%), and feature work (20%)."
     },
     {
       "username": "standujar",
@@ -47,7 +47,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "standujar: Focused on feature work within `Sendo-labs/plugin-sendo-analyser`, notably implementing API updates in PR #6 (+627/-108 lines), and also performed other work, resulting in 4 commits and modifications across 14 files."
     }
   ],
   "newPRs": 0,

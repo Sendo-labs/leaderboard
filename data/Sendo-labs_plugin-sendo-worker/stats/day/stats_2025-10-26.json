@@ -177,7 +177,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 1,
-      "summary": "standujar: Primarily focused on significant development within the Sendo-labs ecosystem, notably migrating to the `plugin-sendo-analyser` implementation via PR #1 (+17774 lines) and enhancing pagination for trades in PR #3, alongside general other work and bug fixes across 245 files."
+      "summary": "standujar: Primarily focused on significant development and migration efforts, notably contributing to the `plugin-sendo-analyser` with a large migration PR (#1) and enhancing its documentation (#4), alongside general other work and bug fixes across various repositories."
     },
     {
       "username": "Neysixx",
@@ -210,7 +210,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": "Fleo-Thyphon-ElizaOS: Today's activity focused on tests work, with a single commit modifying 12 files (+1527/-617 lines) and one PR comment, indicating a concentrated effort on testing."
+      "summary": "Fleo-Thyphon-ElizaOS: Today's activity primarily involved a single commit that modified 12 files (+1527/-617 lines), with 100% of the focus on tests work, and provided one PR comment."
     }
   ],
   "newPRs": 4,

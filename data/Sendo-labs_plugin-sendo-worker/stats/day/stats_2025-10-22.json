@@ -28,7 +28,7 @@
       "body": "## 🎯 What This Does\n\nBuilds a **bulletproof testing system** so we can ship fast without breaking things. No more \"works on my machine\" surprises!\n\n## ✨ Key Changes\n\n### Testing Infrastructure\n- **98 automated tests** covering all critical features (63 unit + 27 integration + 8 DB)\n- **Fixture-based system**: Centralized test data in `fixtures/llm-responses.ts`\n- **Smart test helpers**: Automatically detect prompt types and return correct responses\n- **Testing guide**: Complete [`__tests__/README.md`](src/__tests__/README.md) for contributors\n\n### Bug Fixes & Improvements\n- ✅ Added `errorType` field to distinguish setup failures vs execution failures\n- ✅ Fixed database crash when running ACTION type actions (missing room creation)\n- ✅ Refactored mock system - eliminated 176 lines of duplicated code\n\n### Before/After\n```typescript\n// ❌ Before: Copy-paste nightmare repeated in every test\nruntime.useModel = mock((options) => {\n  if (prompt.includes('GET_WALLET_BALANCE')) {\n    return { category: 'DATA', actionType: 'wallet_info' };\n  }\n  // ... repeated 20+ times across files\n});\n\n// ✅ After: One simple line, centralized data\nsetupLLMMock(runtime, { useFixtures: true });\n```\n\n## 📊 Test Coverage\n\n**Unit Tests** (63 tests across 9 files):\n- Action categorization (6 tests)\n- Action execution (8 tests)\n- Relevant actions selection (6 tests)\n- Analysis generation (5 tests)\n- Recommendations generation (7 tests)\n- Analysis saving (5 tests)\n- Provider data collection (6 tests)\n- Decision processing (12 tests)\n- DB getters (8 tests)\n\n**Integration Tests** (27 tests):\n- Full analysis workflow (8 tests)\n- API routes with error handling (19 tests)\n\n**Database Tests** (8 tests)\n\n## 🏗️ Architecture\n\n```\n__tests__/\n├── fixtures/\n│   └── llm-responses.ts        # Centralized test data\n├── helpers/\n│   ├── test-runtime.ts         # Runtime creation utilities\n│   └── mock-llm.ts             # Intelligent LLM mocking\n├── unit/                        # 9 test files\n└── integration/                 # 2 test files\n```\n\n## 🚀 How to Use\n\n```bash\n# Run all tests\nbun run test:all\n\n# Run specific suites\nbun run test:unit\nbun run test:integration\n\n# Debug mode\nsetupLLMMock(runtime, { useFixtures: true, logPrompts: true });\n```\n\n## 📈 Stats\n\n- **+3,221 lines** of test infrastructure\n- **-176 lines** of old/duplicated code\n- **98 tests** passing with 0 failures\n\n## 🎯 Impact\n\n- ✅ Ship features faster with confidence\n- ✅ Catch bugs before they reach production\n- ✅ Easy for new contributors to add tests\n- ✅ Consistent, reproducible test results\n\n## 💡 Testing Philosophy\n\n- **Real execution paths**: Use actual ElizaOS runtime, not excessive mocking\n- **Minimal mocking**: Only mock LLM calls, everything else is real\n- **Predictable data**: Fixtures ensure consistent, reproducible tests\n- **Easy maintenance**: Centralized data makes updates trivial\n\n## 🎯 Next Steps\n\n1. Enhanced seed script using fixtures for realistic demo data\n2. Real LLM testing with `USE_REAL_LLM` flag\n3. Integration testing with actual ElizaOS plugins (Solana, EVM)",
       "repository": "Sendo-labs/plugin-sendo-worker",
       "createdAt": "2025-10-22T14:06:55Z",
-      "mergedAt": null,
+      "mergedAt": "2025-10-26T11:01:06Z",
       "additions": 4991,
       "deletions": 679
     }
@@ -86,8 +86,8 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 124.63659606216294,
-      "prScore": 121.63659606216294,
+      "totalScore": 140.63659606216294,
+      "prScore": 137.63659606216294,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -97,12 +97,12 @@
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 111.38470653072267,
+      "totalScore": 112.38470653072267,
       "prScore": 111.38470653072267,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "socialScore": 0,
+      "socialScore": 1,
       "summary": "Neysixx: Primarily focused on significant refactoring and new feature development within the `Sendo-labs/frontend` repository, merging two substantial pull requests including a new pages feature (PR #7) and a worker-plugin refactor (PR #6), demonstrating a focus on code modernization and expansion."
     }
   ],

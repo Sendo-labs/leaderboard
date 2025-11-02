@@ -25,7 +25,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "standujar: Focused on significant refactoring and feature work, as evidenced by the open PR Sendo-labs/plugin-sendo-worker#8, which modularizes the SendoWorkerService and involved substantial code changes across 37 files (+2273/-1088 lines), with a balanced focus on both code and tests."
     },
     {
       "username": "Neysixx",
@@ -36,7 +36,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 1,
-      "summary": null
+      "summary": "Neysixx: Focused on significant refactoring work, modifying 77 files with 5 commits, contributing to a substantial code restructuring effort."
     }
   ],
   "newPRs": 0,

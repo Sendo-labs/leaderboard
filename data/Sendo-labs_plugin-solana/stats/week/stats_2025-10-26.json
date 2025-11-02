@@ -52,7 +52,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 1,
-      "summary": null
+      "summary": "standujar: Spearheaded a major initiative this week by migrating functionality into the new `plugin-sendo-analyser`, a significant effort highlighted by the merge of PR #1 which introduced over 17,000 lines of code. They continued to build on this foundation with several follow-up PRs that enhanced the new service and updated its dependencies (#5, #6). This work was complemented by contributions to other plugins, including a refactor in `plugin-sendo-worker` to adopt a new API (#4)."
     },
     {
       "username": "Neysixx",
@@ -63,7 +63,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 2,
-      "summary": null
+      "summary": "Neysixx: Drove substantial progress in the `Sendo-labs/frontend` repository, merging seven pull requests focused on building out agent and worker functionality. They introduced several key features, including a chat agent (#13), agent creation (#11), and Privy integration (#10), while also executing a massive refactor of the agent environment in PR #15 (+3872/-1862 lines). This work demonstrates a primary focus on large-scale refactoring and new feature development."
     },
     {
       "username": "xdrkush",
@@ -74,7 +74,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "xdrkush: Focused on enhancing both the frontend and backend, merging five pull requests across two repositories. They delivered a significant \"merge-analyzer\" feature in the frontend (frontend#17), adding over 3k lines of code, and also improved the API's data analysis and rate limiting (sendo-api#6). This activity, which included several smaller API refactors, was primarily categorized as bugfix work."
     },
     {
       "username": "plvo",
@@ -85,7 +85,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "plvo: This week, plvo focused on documentation, opening a pull request in Sendo-labs/Reports (#2) to test Python actions. This work involved 245 lines of additions across 3 documentation files."
     },
     {
       "username": "M4XGO",
@@ -96,7 +96,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "M4XGO: Focused on improving repository automation and the release process this week. They opened a pull request (Sendo-labs/plugin-sendo-analyser#8) to add new release configurations and automated workflows. This work consisted entirely of configuration file changes, indicating a focus on project tooling."
     },
     {
       "username": "Fleo-Thyphon-ElizaOS",
@@ -107,7 +107,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "Fleo-Thyphon-ElizaOS: This week's activity centered on improving testing, with a single large commit modifying 12 files (+1527/-617 lines). They also provided feedback on one pull request. All code changes were focused entirely on tests."
     }
   ],
   "newPRs": 0,

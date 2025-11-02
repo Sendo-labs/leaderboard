@@ -42,12 +42,12 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 75.59094617768714,
-      "prScore": 75.59094617768714,
+      "totalScore": 134.48472007426324,
+      "prScore": 128.28472007426325,
       "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
+      "reviewScore": 5,
+      "commentScore": 0.2,
+      "socialScore": 1,
       "summary": "standujar: Focused on enhancing the CI/CD pipeline and feature development, merging two PRs in Sendo-labs/leaderboard, including #8 which allows manual workflow dispatch on any branch, and also opened PR #7 to further improve the deploy workflow. Their code changes primarily involved feature work and configuration updates across 21 files."
     },
     {
@@ -70,7 +70,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "plvo: Focused on documentation improvements, merging a significant PR in Sendo-labs/Reports (#1) that added 146 lines of documentation for the elizaos plugin reports, demonstrating a clear focus on enhancing project documentation."
     }
   ],
   "newPRs": 1,

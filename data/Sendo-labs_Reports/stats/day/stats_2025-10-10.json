@@ -1,0 +1,47 @@
+{
+  "interval": {
+    "intervalStart": "2025-10-10T00:00:00.000Z",
+    "intervalEnd": "2025-10-11T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/Reports",
+  "overview": "From 2025-10-10 to 2025-10-11, Sendo-labs/Reports had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 100.9805477931522,
+      "prScore": 100.9805477931522,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": "standujar: Focused on feature development, successfully merging a significant PR in Sendo-labs/plugin-cryptoscore (#1) which introduced the initial plugin implementation with a substantial code addition of over 2.5k lines, primarily contributing to new code and configuration."
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?v=4",
+      "totalScore": 49.5437738965761,
+      "prScore": 49.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}

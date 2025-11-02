@@ -25,7 +25,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "standujar: Focused on maintenance and dependency updates, merging two significant pull requests: Sendo-labs/plugin-cryptoscore#9 and Sendo-labs/plugin-sendo-analyser#5, which involved updating dependencies and enhancing the Sendo Analyser service. Their work primarily involved code and configuration changes across 30 files, indicating a focus on other work."
     },
     {
       "username": "Neysixx",
@@ -36,7 +36,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "Neysixx: Focused on significant refactoring and feature development within the frontend, notably merging PR Sendo-labs/frontend#15 which involved substantial changes (+3872/-1862 lines) and also has an open feature PR Sendo-labs/frontend#14, indicating a primary focus on both improving existing code and adding new capabilities."
     },
     {
       "username": "xdrkush",
@@ -47,7 +47,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "xdrkush: Focused on improving API performance and data analysis, merging a substantial PR in Sendo-labs/sendo-api (#6) that included significant code changes (+832/-118 lines) and contributed to bugfix and other work, primarily touching code and tests."
     }
   ],
   "newPRs": 0,
