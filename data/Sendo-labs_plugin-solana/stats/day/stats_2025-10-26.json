@@ -46,23 +46,23 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 224.380011005393,
+      "totalScore": 225.380011005393,
       "prScore": 224.180011005393,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
-      "socialScore": 0,
+      "socialScore": 1,
       "summary": "standujar: Primarily focused on significant development within the Sendo-labs ecosystem, notably migrating to the `plugin-sendo-analyser` implementation via PR #1 (+17774 lines) and enhancing pagination for trades in PR #3, alongside general other work and bug fixes across 245 files."
     },
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 62.280766381557314,
+      "totalScore": 63.280766381557314,
       "prScore": 62.280766381557314,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
-      "socialScore": 0,
+      "socialScore": 1,
       "summary": "Neysixx: Focused on feature development, successfully merging a substantial PR in Sendo-labs/frontend (#10) that introduced a new feature with over 1000 lines of code, demonstrating a primary focus on feature work and code contributions."
     },
     {
