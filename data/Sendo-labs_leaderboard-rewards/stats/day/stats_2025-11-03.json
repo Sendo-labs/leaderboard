@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2025-11-02T00:00:00.000Z",
-    "intervalEnd": "2025-11-09T00:00:00.000Z",
-    "intervalType": "week"
+    "intervalStart": "2025-11-03T00:00:00.000Z",
+    "intervalEnd": "2025-11-04T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/leaderboard-rewards",
-  "overview": "From 2025-11-02 to 2025-11-09, Sendo-labs/leaderboard-rewards had 1 new PRs (0 merged), 0 new issues, and 2 active contributors.",
+  "overview": "From 2025-11-03 to 2025-11-04, Sendo-labs/leaderboard-rewards had 1 new PRs (0 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [
     {

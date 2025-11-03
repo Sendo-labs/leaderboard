@@ -5,20 +5,56 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/leaderboard-rewards",
-  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/leaderboard-rewards had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/leaderboard-rewards had 1 new PRs (0 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQFph086xRwI6",
+      "title": "fix: deploy and initialize program on devnet",
+      "author": "Johnleouf21",
+      "number": 2,
+      "body": "Resolved 8 critical issues preventing system from functioning:\r\n\r\nCode Fixes:\r\n- Fix cluster config in Anchor.toml (localnet → devnet)\r\n- Add missing Cargo features (custom-heap, custom-panic, anchor-debug)\r\n- Fix field name in create-epoch.ts (rewardAmount → usdcRewardAmount)\r\n- Add missing AnchorProvider import in create-epoch.ts\r\n- Update program ID after deployment sync\r\n\r\nDeployment:\r\n- Deploy program to devnet: GQ36eQ5oN6A47q7SpZFYGAA3HndkELmjdgsncbN1yQ9d\r\n- Initialize all on-chain accounts (Config, USDC vault, SBT token)\r\n- Create first epoch for testing\r\n- Auto-generate oracle bot configuration\r\n\r\nDocumentation:\r\n- Add CHANGELOG.md with all changes and rationale\r\n- Add PR_DESCRIPTION.md with detailed context\r\n\r\nImpact:\r\n- System went from 0% to 100% operational on devnet\r\n- All scripts now executable\r\n- Cargo warnings reduced from 20 to 3 (bénins)\r\n- Ready for integration testing\r\n\r\nDeployment Info:\r\n- Program: https://explorer.solana.com/address/GQ36eQ5oN6A47q7SpZFYGAA3HndkELmjdgsncbN1yQ9d?cluster=devnet\r\n- Config: https://explorer.solana.com/address/5bxtuN3vy2Tv6pmw1bAMzDncLvqnnwZdfVmyJxkXffFd?cluster=devnet\r\n- Epoch #1: https://explorer.solana.com/address/2X2MqQFS186BRzt7GU1e6E5PWowHmr6HhyVhhYLQSrVE?cluster=devnet\r\n\r\nSystem Status: ✅ Fully Operational on Devnet",
+      "repository": "Sendo-labs/leaderboard-rewards",
+      "createdAt": "2025-11-03T21:13:54Z",
+      "mergedAt": null,
+      "additions": 8,
+      "deletions": 5
+    }
+  ],
   "codeChanges": {
     "additions": 0,
     "deletions": 0,
     "files": 0,
-    "commitCount": 0
+    "commitCount": 3
   },
   "completedItems": [],
-  "topContributors": [],
-  "newPRs": 0,
+  "topContributors": [
+    {
+      "username": "Johnleouf21",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
+      "totalScore": 13.154114659230515,
+      "prScore": 13.154114659230515,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 6.2,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 6,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
   "mergedPRs": 0,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 0
+  "activeContributors": 2
 }
