@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2025-11-01T00:00:00.000Z",
-    "intervalEnd": "2025-12-01T00:00:00.000Z",
-    "intervalType": "month"
+    "intervalStart": "2025-11-04T00:00:00.000Z",
+    "intervalEnd": "2025-11-05T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/plugin-solana",
-  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/plugin-solana had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-11-04 to 2025-11-05, Sendo-labs/plugin-solana had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
   "topIssues": [],
   "topPRs": [],
   "codeChanges": {
@@ -37,33 +37,11 @@
       "commentScore": 0,
       "socialScore": 0,
       "summary": null
-    },
-    {
-      "username": "Johnleouf21",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
-      "totalScore": 13.154114659230515,
-      "prScore": 13.154114659230515,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "standujar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 6.2,
-      "prScore": 0,
-      "issueScore": 0,
-      "reviewScore": 6,
-      "commentScore": 0.2,
-      "socialScore": 0,
-      "summary": null
     }
   ],
   "newPRs": 0,
   "mergedPRs": 0,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 0
 }

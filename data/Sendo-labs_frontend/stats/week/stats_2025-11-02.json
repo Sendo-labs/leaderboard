@@ -5,17 +5,90 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-11-02 to 2025-11-09, Sendo-labs/frontend had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-11-02 to 2025-11-09, Sendo-labs/frontend had 2 new PRs (2 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQEvmTc6xdaVC",
+      "title": "fix: format address input header",
+      "author": "xdrkush",
+      "number": 19,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-04T16:27:14Z",
+      "mergedAt": "2025-11-04T16:27:25Z",
+      "additions": 30,
+      "deletions": 6
+    },
+    {
+      "id": "PR_kwDOQEvmTc6xe9VZ",
+      "title": "fix: number-font",
+      "author": "Neysixx",
+      "number": 20,
+      "body": "This pull request removes the usage of the `title-font` CSS class from various components in the analyzer feature. The goal is to standardize font usage and simplify the styling of text elements throughout the UI. The changes affect headings, labels, and value displays in several components related to performance, results, tokens, and wallet stats.\r\n\r\n**Font and style standardization:**\r\n\r\n* Removed the `title-font` class from headings and value displays in `ResultCard`, `ResultHeroCard`, `TokenDetailsList`, `PerformanceMetrics`, and `TokenDistribution` components to ensure consistent font styling. [[1]](diffhunk://#diff-f46c7f417fd4b179a80286650dc7e7aac7c204cd2dda08daa2ff71e68c4d1990L68-R76) [[2]](diffhunk://#diff-43efd92e75d6c54e4fd9d445bdac7c285e15edcd6d93af42b6231823a4c6dee4L80-R80) [[3]](diffhunk://#diff-43efd92e75d6c54e4fd9d445bdac7c285e15edcd6d93af42b6231823a4c6dee4L113-R113) [[4]](diffhunk://#diff-4022fb456223e3baefc71639a54fa9f4cdbf64a9a778adc6cca4a4320384732fL97-R97) [[5]](diffhunk://#diff-4022fb456223e3baefc71639a54fa9f4cdbf64a9a778adc6cca4a4320384732fL143-R143) [[6]](diffhunk://#diff-af4ff775c121f1713d0e07b86f320df6781af89ab2e47c8daee09b6f7a19cee0L55-R55) [[7]](diffhunk://#diff-16f809344f271817654eb3e66ad311c88c45bc1c64a057f423787a452839c191L44-R44)\r\n* Removed `title-font` from the PnL and value elements in the `BestWorstPerformers` component for both best and worst performers. [[1]](diffhunk://#diff-02866c6a69d2eed3b2151255202ee9f2019486126f4ef73479a723fb236a5abdL42-R42) [[2]](diffhunk://#diff-02866c6a69d2eed3b2151255202ee9f2019486126f4ef73479a723fb236a5abdL66-R66)\r\n* Removed `title-font` from the wallet value display in the `WalletStatsGrid` component.\r\n\r\nThese changes help maintain a clean and unified visual style across all analyzer components.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-04T18:34:23Z",
+      "mergedAt": "2025-11-04T19:54:18Z",
+      "additions": 14,
+      "deletions": 18
+    }
+  ],
   "codeChanges": {
-    "additions": 0,
-    "deletions": 0,
-    "files": 0,
-    "commitCount": 0
+    "additions": 44,
+    "deletions": 24,
+    "files": 8,
+    "commitCount": 5
   },
-  "completedItems": [],
+  "completedItems": [
+    {
+      "title": "fix: number-font",
+      "prNumber": 20,
+      "type": "bugfix",
+      "body": "This pull request removes the usage of the `title-font` CSS class from various components in the analyzer feature. The goal is to standardize font usage and simplify the styling of text elements throughout the UI. The changes affect heading",
+      "files": [
+        "src/components/analyzer/best-worst-performers.tsx",
+        "src/components/analyzer/performance-metrics.tsx",
+        "src/components/analyzer/result-card.tsx",
+        "src/components/analyzer/result-hero-card.tsx",
+        "src/components/analyzer/token-details-list.tsx",
+        "src/components/analyzer/token-distribution.tsx",
+        "src/components/analyzer/wallet-stats-grid.tsx",
+        "src/components/home/hero-section.tsx"
+      ]
+    },
+    {
+      "title": "fix: format address input header",
+      "prNumber": 19,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "src/components/home/hero-section.tsx"
+      ]
+    }
+  ],
   "topContributors": [
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 74.44798309055501,
+      "prScore": 74.44798309055501,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 39.356030245865924,
+      "prScore": 39.356030245865924,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
     {
       "username": "Johnleouf21",
       "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
@@ -39,9 +112,9 @@
       "summary": null
     }
   ],
-  "newPRs": 0,
-  "mergedPRs": 0,
+  "newPRs": 2,
+  "mergedPRs": 2,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 3
 }

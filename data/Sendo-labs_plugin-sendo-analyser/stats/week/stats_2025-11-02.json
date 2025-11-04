@@ -5,17 +5,85 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/plugin-sendo-analyser",
-  "overview": "From 2025-11-02 to 2025-11-09, Sendo-labs/plugin-sendo-analyser had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-11-02 to 2025-11-09, Sendo-labs/plugin-sendo-analyser had 2 new PRs (2 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
-  "topPRs": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQJY5T86xaYlk",
+      "title": "fix: add bs58 in package.json",
+      "author": "xdrkush",
+      "number": 9,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-04T12:42:36Z",
+      "mergedAt": "2025-11-04T12:42:58Z",
+      "additions": 70,
+      "deletions": 68
+    },
+    {
+      "id": "PR_kwDOQJY5T86xa1rA",
+      "title": "fix: install good bs58 OK",
+      "author": "xdrkush",
+      "number": 10,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-04T13:17:55Z",
+      "mergedAt": "2025-11-04T13:18:40Z",
+      "additions": 7,
+      "deletions": 7
+    }
+  ],
   "codeChanges": {
-    "additions": 0,
-    "deletions": 0,
-    "files": 0,
-    "commitCount": 0
+    "additions": 77,
+    "deletions": 75,
+    "files": 2,
+    "commitCount": 4
   },
-  "completedItems": [],
+  "completedItems": [
+    {
+      "title": "fix: install good bs58 OK",
+      "prNumber": 10,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "bun.lock",
+        "package.json"
+      ]
+    },
+    {
+      "title": "fix: add bs58 in package.json",
+      "prNumber": 9,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "bun.lock",
+        "package.json"
+      ]
+    }
+  ],
   "topContributors": [
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 74.44798309055501,
+      "prScore": 74.44798309055501,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 39.356030245865924,
+      "prScore": 39.356030245865924,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
     {
       "username": "Johnleouf21",
       "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
@@ -39,9 +107,9 @@
       "summary": null
     }
   ],
-  "newPRs": 0,
-  "mergedPRs": 0,
+  "newPRs": 2,
+  "mergedPRs": 2,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 2
 }
