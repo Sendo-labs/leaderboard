@@ -1,0 +1,58 @@
+{
+  "interval": {
+    "intervalStart": "2025-11-05T00:00:00.000Z",
+    "intervalEnd": "2025-11-06T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/reusable-workflows",
+  "overview": "From 2025-11-05 to 2025-11-06, Sendo-labs/reusable-workflows had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 36.831773896576095,
+      "prScore": 36.831773896576095,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?u=059e1e3aba6472d569edd95167ff2e02bf807e7a&v=4",
+      "totalScore": 33.7437738965761,
+      "prScore": 33.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 21.805458956322113,
+      "prScore": 21.805458956322113,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}
