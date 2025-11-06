@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/plugin-sendo-chat",
-  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/plugin-sendo-chat had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/plugin-sendo-chat had 0 new PRs (0 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [],
   "codeChanges": {
@@ -16,6 +16,17 @@
   },
   "completedItems": [],
   "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 181.65144939355517,
+      "prScore": 152.95144939355518,
+      "issueScore": 0,
+      "reviewScore": 28.5,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
     {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
@@ -30,22 +41,11 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 43.0317738965761,
+      "totalScore": 61.231773896576094,
       "prScore": 36.831773896576095,
       "issueScore": 0,
-      "reviewScore": 6,
-      "commentScore": 0.2,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "Neysixx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 39.356030245865924,
-      "prScore": 39.356030245865924,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
+      "reviewScore": 24,
+      "commentScore": 0.4,
       "socialScore": 0,
       "summary": null
     },
@@ -63,11 +63,11 @@
     {
       "username": "Johnleouf21",
       "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
-      "totalScore": 13.154114659230515,
+      "totalScore": 13.354114659230515,
       "prScore": 13.154114659230515,
       "issueScore": 0,
       "reviewScore": 0,
-      "commentScore": 0,
+      "commentScore": 0.2,
       "socialScore": 0,
       "summary": null
     }
@@ -76,5 +76,5 @@
   "mergedPRs": 0,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 2
 }

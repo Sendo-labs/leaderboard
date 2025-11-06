@@ -5,21 +5,9 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-11-02 to 2025-11-09, Sendo-labs/frontend had 5 new PRs (3 merged), 0 new issues, and 4 active contributors.",
+  "overview": "From 2025-11-02 to 2025-11-09, Sendo-labs/frontend had 7 new PRs (5 merged), 0 new issues, and 4 active contributors.",
   "topIssues": [],
   "topPRs": [
-    {
-      "id": "PR_kwDOQEvmTc6xsVF3",
-      "title": "Fix: 0x canet",
-      "author": "0xCanet",
-      "number": 23,
-      "body": "",
-      "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-11-05T16:19:37Z",
-      "mergedAt": null,
-      "additions": 1343,
-      "deletions": 155
-    },
     {
       "id": "PR_kwDOQEvmTc6xrQYO",
       "title": "feat: storage provider abstraction",
@@ -29,7 +17,43 @@
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-11-05T15:02:13Z",
       "mergedAt": null,
-      "additions": 1193,
+      "additions": 1196,
+      "deletions": 38
+    },
+    {
+      "id": "PR_kwDOQEvmTc6xsVF3",
+      "title": "Fix: 0x canet",
+      "author": "0xCanet",
+      "number": 23,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-05T16:19:37Z",
+      "mergedAt": null,
+      "additions": 427,
+      "deletions": 200
+    },
+    {
+      "id": "PR_kwDOQEvmTc6x10UN",
+      "title": "refactor: color vars management",
+      "author": "Neysixx",
+      "number": 25,
+      "body": "This pull request standardizes the usage of brand colors across the app by replacing hardcoded hex color values with CSS variables for Sendo brand colors. It introduces a new `sendo-dark-red` color and updates all relevant gradient backgrounds and UI elements to use these semantic variables, improving maintainability and consistency. Minor improvements to font-family declarations and formatting are also included.\r\n\r\n**Brand color standardization and updates:**\r\n\r\n* Added a new CSS variable `--sendo-dark-red` and updated `--sendo-orange` to match the brand palette in `globals.css`. All gradients now use `from-sendo-orange`, `via-sendo-red`, and `to-sendo-dark-red` instead of hardcoded hex values. [[1]](diffhunk://#diff-4f206759c961f544a48464ad2ee231adc87e72593d03a0004b68c17771f7a412L92-R95) [[2]](diffhunk://#diff-4f206759c961f544a48464ad2ee231adc87e72593d03a0004b68c17771f7a412L133-R137)\r\n* Updated all gradient backgrounds in UI components (`client.tsx` files for Analyzer, Leaderboard, Marketplace, Onboarding, Worker, and various components) to use Sendo brand color variables rather than hardcoded hex codes. [[1]](diffhunk://#diff-5eada83b5857ea3eb390602cfbb8443939c66c9d28f234197efbc52b20d49d62L81-R81) [[2]](diffhunk://#diff-5eada83b5857ea3eb390602cfbb8443939c66c9d28f234197efbc52b20d49d62L171-R171) [[3]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62L191-R193) [[4]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62L210-R212) [[5]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62L348-R352) [[6]](diffhunk://#diff-df6df6b5b4f958b0a2be6270ef904530898f4593dd37d676b334fcf5b900cf7aL451-R451) [[7]](diffhunk://#diff-df6df6b5b4f958b0a2be6270ef904530898f4593dd37d676b334fcf5b900cf7aL587-R587) [[8]](diffhunk://#diff-df6df6b5b4f958b0a2be6270ef904530898f4593dd37d676b334fcf5b900cf7aL596-R596) [[9]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L22-R22) [[10]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L45-R45) [[11]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L59-R59) [[12]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L75-R75) [[13]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L92-R100) [[14]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L123-R123) [[15]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L348-R356) [[16]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L368-R368) [[17]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L271-R271) [[18]](diffhunk://#diff-1b20369c23821a6e83e53c327eb8f2e04e99a5863152fa0c01147264af15c122L140-R140) [[19]](diffhunk://#diff-1b20369c23821a6e83e53c327eb8f2e04e99a5863152fa0c01147264af15c122L178-R178) [[20]](diffhunk://#diff-eb7759173b03348fe24cf2c207c2cc6307a8ca880d68d8a7c3d0f5793975bac6L21-R21) [[21]](diffhunk://#diff-8c6e330bbda2e00caafcd5e3083491f360862937581d0cdf95ab8a828faad2bdL15-R23)\r\n* Updated glow and overlay effects to use the new brand colors for visual consistency. [[1]](diffhunk://#diff-eb7759173b03348fe24cf2c207c2cc6307a8ca880d68d8a7c3d0f5793975bac6L21-R21) [[2]](diffhunk://#diff-8c6e330bbda2e00caafcd5e3083491f360862937581d0cdf95ab8a828faad2bdL15-R23)\r\n\r\n**Minor style and formatting improvements:**\r\n\r\n* Corrected font-family declaration in `.title-font` for improved cross-browser compatibility.\r\n* Minor formatting changes to improve code readability (e.g., multiline JSX for better clarity). [[1]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62L291-R295) [[2]](diffhunk://#diff-29d0a55f5ca1a9951042587f8b891bb4cd8b204f5bc855dc2468ed44cde2f5b3L53-R55)\r\n\r\nThese changes ensure that the app consistently uses the latest Sendo brand colors and improves maintainability by relying on CSS variables.",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-06T08:30:08Z",
+      "mergedAt": "2025-11-06T08:32:48Z",
+      "additions": 119,
+      "deletions": 96
+    },
+    {
+      "id": "PR_kwDOQEvmTc6x1A8R",
+      "title": "fix: guideline",
+      "author": "Neysixx",
+      "number": 24,
+      "body": "This pull request refactors the storage-related codebase to standardize naming conventions, improve type safety, and modernize the factory implementation. The most important changes include renaming files and interfaces for consistency, updating import paths throughout the codebase, and refactoring the `StorageFactory` class into a constant object with arrow functions.\r\n\r\n**Refactoring and modernization of storage factory:**\r\n\r\n* Refactored `StorageFactory` from a class to a constant object with arrow functions, updating all method definitions and usages accordingly in `src/factories/storage-factory.ts`. [[1]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L30-R35) [[2]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L57-R63) [[3]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L75-R81) [[4]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L93-R116)\r\n\r\n**File and interface renaming for consistency:**\r\n\r\n* Renamed adapter and factory files to use kebab-case and updated corresponding import paths across the codebase (e.g., `AWSSecretStoreAdapter.ts` → `aws-secret-store.adapter.ts`, `StorageFactory.ts` → `storage-factory.ts`). [[1]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L15-R20) [[2]](diffhunk://#diff-09ea11d778de38d05626e874eefea6e384a42aeaaa029e7fd40816dfdc4ded1fL6-R6) [[3]](diffhunk://#diff-e8b8a291e7283ebb96a1f61782c33ab1ffdf838a1ac23bae034ce889c4dcfb88L6-R6) [[4]](diffhunk://#diff-54dc3dce6273f8cb849a7b610db6f86ac78eb0e8312fb709258ec63b2b062f2cL9-R9) [[5]](diffhunk://#diff-780927099f9814f65ae09ab4b95c25969d713c42a0c329197843e689f9a350b8L9-R9)\r\n* Renamed interface files for clarity (`ISecretStore` → `siecret-store`, `IParameterStore` → `iparameter-store`) and updated all related imports. [[1]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L15-R20) [[2]](diffhunk://#diff-09ea11d778de38d05626e874eefea6e384a42aeaaa029e7fd40816dfdc4ded1fL6-R6) [[3]](diffhunk://#diff-e8b8a291e7283ebb96a1f61782c33ab1ffdf838a1ac23bae034ce889c4dcfb88L6-R6) [[4]](diffhunk://#diff-54dc3dce6273f8cb849a7b610db6f86ac78eb0e8312fb709258ec63b2b062f2cL9-R9) [[5]](diffhunk://#diff-780927099f9814f65ae09ab4b95c25969d713c42a0c329197843e689f9a350b8L9-R9) [[6]](diffhunk://#diff-47bec096c42c7764017b89295992034df7235b8ce6eec06342fb7344df816440L2-R2)\r\n\r\n**Type safety and import improvements:**\r\n\r\n* Updated imports to use `type` where appropriate for improved type safety and faster compilation. [[1]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L15-R20) [[2]](diffhunk://#diff-09ea11d778de38d05626e874eefea6e384a42aeaaa029e7fd40816dfdc4ded1fL6-R6) [[3]](diffhunk://#diff-e8b8a291e7283ebb96a1f61782c33ab1ffdf838a1ac23bae034ce889c4dcfb88L6-R6) [[4]](diffhunk://#diff-54dc3dce6273f8cb849a7b610db6f86ac78eb0e8312fb709258ec63b2b062f2cL9-R9) [[5]](diffhunk://#diff-780927099f9814f65ae09ab4b95c25969d713c42a0c329197843e689f9a350b8L9-R9) [[6]](diffhunk://#diff-47bec096c42c7764017b89295992034df7235b8ce6eec06342fb7344df816440L2-R2)\r\n* Changed return type of `getAnalyzerTrades` to allow `null` when the analyzer is not configured, instead of returning an empty response object.\r\n\r\n**General codebase consistency:**\r\n\r\n* Updated all usages of `StorageFactory` in action files to use the new import path and naming convention. [[1]](diffhunk://#diff-80c1e69d1af0f3d4e21c036b0e4a1874117dd8be490bfb1086a88c1856920029L5-R5) [[2]](diffhunk://#diff-c05d97b5ccf5edafffa54bdc12b29be534e528feed86dab8a5b2c7c994a9f008L3-R3) [[3]](diffhunk://#diff-22b965dba1d0fe6faebf12a5f59c2ff2555b21f01b83767fb71396af59cf21cfL4-R4) [[4]](diffhunk://#diff-2009bd4bde0e0bfa6bc862e069c5b59ae5c6ed6be03f469280f0200b46868a2eL4-R4) [[5]](diffhunk://#diff-d07764b138da85da73e91992176c5c778872d6a51f278769ca28b3714c3cd022L4-R4) [[6]](diffhunk://#diff-711176276fe1117ac6ed998054285aaba26c467948edc97d5a22577bfd1ace6fL4-R4)",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-06T07:21:39Z",
+      "mergedAt": "2025-11-06T07:22:27Z",
+      "additions": 39,
       "deletions": 37
     },
     {
@@ -43,37 +67,13 @@
       "mergedAt": "2025-11-04T16:27:25Z",
       "additions": 30,
       "deletions": 6
-    },
-    {
-      "id": "PR_kwDOQEvmTc6xkrZz",
-      "title": "Fix/wallet analyzer",
-      "author": "xdrkush",
-      "number": 21,
-      "body": "",
-      "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-11-05T06:38:24Z",
-      "mergedAt": "2025-11-05T06:38:34Z",
-      "additions": 30,
-      "deletions": 6
-    },
-    {
-      "id": "PR_kwDOQEvmTc6xe9VZ",
-      "title": "fix: number-font",
-      "author": "Neysixx",
-      "number": 20,
-      "body": "This pull request removes the usage of the `title-font` CSS class from various components in the analyzer feature. The goal is to standardize font usage and simplify the styling of text elements throughout the UI. The changes affect headings, labels, and value displays in several components related to performance, results, tokens, and wallet stats.\r\n\r\n**Font and style standardization:**\r\n\r\n* Removed the `title-font` class from headings and value displays in `ResultCard`, `ResultHeroCard`, `TokenDetailsList`, `PerformanceMetrics`, and `TokenDistribution` components to ensure consistent font styling. [[1]](diffhunk://#diff-f46c7f417fd4b179a80286650dc7e7aac7c204cd2dda08daa2ff71e68c4d1990L68-R76) [[2]](diffhunk://#diff-43efd92e75d6c54e4fd9d445bdac7c285e15edcd6d93af42b6231823a4c6dee4L80-R80) [[3]](diffhunk://#diff-43efd92e75d6c54e4fd9d445bdac7c285e15edcd6d93af42b6231823a4c6dee4L113-R113) [[4]](diffhunk://#diff-4022fb456223e3baefc71639a54fa9f4cdbf64a9a778adc6cca4a4320384732fL97-R97) [[5]](diffhunk://#diff-4022fb456223e3baefc71639a54fa9f4cdbf64a9a778adc6cca4a4320384732fL143-R143) [[6]](diffhunk://#diff-af4ff775c121f1713d0e07b86f320df6781af89ab2e47c8daee09b6f7a19cee0L55-R55) [[7]](diffhunk://#diff-16f809344f271817654eb3e66ad311c88c45bc1c64a057f423787a452839c191L44-R44)\r\n* Removed `title-font` from the PnL and value elements in the `BestWorstPerformers` component for both best and worst performers. [[1]](diffhunk://#diff-02866c6a69d2eed3b2151255202ee9f2019486126f4ef73479a723fb236a5abdL42-R42) [[2]](diffhunk://#diff-02866c6a69d2eed3b2151255202ee9f2019486126f4ef73479a723fb236a5abdL66-R66)\r\n* Removed `title-font` from the wallet value display in the `WalletStatsGrid` component.\r\n\r\nThese changes help maintain a clean and unified visual style across all analyzer components.",
-      "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-11-04T18:34:23Z",
-      "mergedAt": "2025-11-04T19:54:18Z",
-      "additions": 14,
-      "deletions": 18
     }
   ],
   "codeChanges": {
-    "additions": 74,
-    "deletions": 30,
-    "files": 8,
-    "commitCount": 12
+    "additions": 232,
+    "deletions": 163,
+    "files": 48,
+    "commitCount": 24
   },
   "completedItems": [
     {
@@ -109,9 +109,80 @@
       "files": [
         "src/components/home/hero-section.tsx"
       ]
+    },
+    {
+      "title": "refactor: color vars management",
+      "prNumber": 25,
+      "type": "refactor",
+      "body": "This pull request standardizes the usage of brand colors across the app by replacing hardcoded hex color values with CSS variables for Sendo brand colors. It introduces a new `sendo-dark-red` color and updates all relevant gradient backgrou",
+      "files": [
+        "src/app/analyzer/client.tsx",
+        "src/app/globals.css",
+        "src/app/layout.tsx",
+        "src/app/leaderboard/client.tsx",
+        "src/app/marketplace/client.tsx",
+        "src/app/onboarding/client.tsx",
+        "src/app/worker/client.tsx",
+        "src/components/agent-chat.tsx",
+        "src/components/analyzer/badge-card.tsx",
+        "src/components/analyzer/cta-activate-worker.tsx",
+        "src/components/analyzer/result-card.tsx",
+        "src/components/analyzer/result-hero-card.tsx",
+        "src/components/analyzer/share-buttons.tsx",
+        "src/components/analyzer/token-details-list.tsx",
+        "src/components/analyzer/wallet-input.tsx",
+        "src/components/home/contact-section.tsx",
+        "src/components/home/hero-section.tsx",
+        "src/components/home/how-it-works-section.tsx",
+        "src/components/home/statistics-section.tsx",
+        "src/components/home/team-section.tsx",
+        "src/components/marketplace/configure-plugin-modal.tsx",
+        "src/components/marketplace/plugin-card.tsx",
+        "src/components/marketplace/plugin-detail-modal.tsx",
+        "src/components/worker/action-list.tsx",
+        "src/components/worker/add-connection-modal.tsx",
+        "src/components/worker/analysis-panel.tsx",
+        "src/components/worker/configure-plugin-modal.tsx",
+        "src/components/worker/rule-builder.tsx",
+        "src/components/worker/worker-panel.tsx",
+        "src/components/worker/worker-switch.tsx"
+      ]
+    },
+    {
+      "title": "fix: guideline",
+      "prNumber": 24,
+      "type": "bugfix",
+      "body": "This pull request refactors the storage-related codebase to standardize naming conventions, improve type safety, and modernize the factory implementation. The most important changes include renaming files and interfaces for consistency, upd",
+      "files": [
+        "src/actions/analyzer/get.ts",
+        "src/actions/openrouter/create.ts",
+        "src/actions/openrouter/get.ts",
+        "src/actions/secrets/create.ts",
+        "src/actions/secrets/get.ts",
+        "src/actions/secrets/update.ts",
+        "src/actions/secrets/utils.ts",
+        "src/adapters/storage/aws-parameter-store.adapter.ts",
+        "src/adapters/storage/aws-secret-store.adapter.ts",
+        "src/adapters/storage/local-parameter-store.adapter.ts",
+        "src/adapters/storage/local-secret-store.adapter.ts",
+        "src/factories/storage-factory.ts",
+        "src/interfaces/storage/iparameter-store.ts",
+        "src/interfaces/storage/siecret-store.ts"
+      ]
     }
   ],
   "topContributors": [
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 181.65144939355517,
+      "prScore": 152.95144939355518,
+      "issueScore": 0,
+      "reviewScore": 28.5,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
     {
       "username": "xdrkush",
       "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
@@ -126,22 +197,11 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 43.0317738965761,
+      "totalScore": 61.231773896576094,
       "prScore": 36.831773896576095,
       "issueScore": 0,
-      "reviewScore": 6,
-      "commentScore": 0.2,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "Neysixx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 39.356030245865924,
-      "prScore": 39.356030245865924,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
+      "reviewScore": 24,
+      "commentScore": 0.4,
       "socialScore": 0,
       "summary": null
     },
@@ -159,17 +219,17 @@
     {
       "username": "Johnleouf21",
       "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
-      "totalScore": 13.154114659230515,
+      "totalScore": 13.354114659230515,
       "prScore": 13.154114659230515,
       "issueScore": 0,
       "reviewScore": 0,
-      "commentScore": 0,
+      "commentScore": 0.2,
       "socialScore": 0,
       "summary": null
     }
   ],
-  "newPRs": 5,
-  "mergedPRs": 3,
+  "newPRs": 7,
+  "mergedPRs": 5,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 4
