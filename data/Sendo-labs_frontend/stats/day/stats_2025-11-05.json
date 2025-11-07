@@ -9,6 +9,18 @@
   "topIssues": [],
   "topPRs": [
     {
+      "id": "PR_kwDOQEvmTc6xsVF3",
+      "title": "Fix: 0x canet",
+      "author": "0xCanet",
+      "number": 23,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-05T16:19:37Z",
+      "mergedAt": "2025-11-07T22:16:21Z",
+      "additions": 14230,
+      "deletions": 590
+    },
+    {
       "id": "PR_kwDOQEvmTc6xrQYO",
       "title": "feat: storage provider abstraction",
       "author": "standujar",
@@ -19,18 +31,6 @@
       "mergedAt": null,
       "additions": 1196,
       "deletions": 38
-    },
-    {
-      "id": "PR_kwDOQEvmTc6xsVF3",
-      "title": "Fix: 0x canet",
-      "author": "0xCanet",
-      "number": 23,
-      "body": "",
-      "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-11-05T16:19:37Z",
-      "mergedAt": null,
-      "additions": 427,
-      "deletions": 200
     },
     {
       "id": "PR_kwDOQEvmTc6xkrZz",
