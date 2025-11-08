@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2025-11-01T00:00:00.000Z",
-    "intervalEnd": "2025-12-01T00:00:00.000Z",
-    "intervalType": "month"
+    "intervalStart": "2025-11-08T00:00:00.000Z",
+    "intervalEnd": "2025-11-09T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/plugin-sendo-analyser",
-  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/plugin-sendo-analyser had 7 new PRs (4 merged), 0 new issues, and 4 active contributors.",
+  "overview": "From 2025-11-08 to 2025-11-09, Sendo-labs/plugin-sendo-analyser had 3 new PRs (2 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -21,18 +21,6 @@
       "deletions": 384
     },
     {
-      "id": "PR_kwDOQJY5T86yLrtT",
-      "title": "TMP- DO NOT MERGE",
-      "author": "standujar",
-      "number": 12,
-      "body": "",
-      "repository": "Sendo-labs/plugin-sendo-analyser",
-      "createdAt": "2025-11-07T17:02:44Z",
-      "mergedAt": null,
-      "additions": 397,
-      "deletions": 20
-    },
-    {
       "id": "PR_kwDOQJY5T86yVPqy",
       "title": "feat: enhance BirdEye API integration with historical price timeframe and batch metadata fetching with helius",
       "author": "standujar",
@@ -45,18 +33,6 @@
       "deletions": 41
     },
     {
-      "id": "PR_kwDOQJY5T86xaYlk",
-      "title": "fix: add bs58 in package.json",
-      "author": "xdrkush",
-      "number": 9,
-      "body": "",
-      "repository": "Sendo-labs/plugin-sendo-analyser",
-      "createdAt": "2025-11-04T12:42:36Z",
-      "mergedAt": "2025-11-04T12:42:58Z",
-      "additions": 70,
-      "deletions": 68
-    },
-    {
       "id": "PR_kwDOQJY5T86w0gdc",
       "title": "feat: add release configuration and workflows for automated publishing",
       "author": "M4XGO",
@@ -67,13 +43,37 @@
       "mergedAt": "2025-11-08T18:36:27Z",
       "additions": 66,
       "deletions": 0
+    },
+    {
+      "id": "PR_kwDOQJY5T86yUUW_",
+      "title": "chore(main): release 1.0.0",
+      "author": "github-actions",
+      "number": 13,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-11-08)\n\n\n### Features\n\n* add release configuration and workflows for automated publishing ([#8](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/8)) ([5d3fe50](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/5d3fe5081f08caa5be8d12e1fb8b6638e7bec16a))\n* async wallet analysis with caching and dynamic rate limiting ([#11](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/11)) ([661a279](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/661a2790d461b4d22213d1c35cc59a6d4c88e185))\n* use latest sendo-api updates ([#6](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/6)) ([fa40b2b](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/fa40b2b41bda39afcc44332d79b09e20ce3c2d5d))\n\n\n### Bug Fixes\n\n* add bs58 in package.json ([#9](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/9)) ([b23059d](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/b23059d1629a8cb0f55c6f1399766d116e59da8b))\n* install good bs58 OK ([#10](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/10)) ([2098e12](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/2098e128f5e72e2ce110e85626dfa75968bdecff))\n* package ([6bc3267](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/6bc32677699dd94735a132b0f39b8b7894457460))\n* package ([57037e2](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/57037e2d65c262fb2b55174e47e6905306b3c051))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-08T18:36:50Z",
+      "mergedAt": null,
+      "additions": 26,
+      "deletions": 8
+    },
+    {
+      "id": "PR_kwDOQJY5T86yUcC2",
+      "title": "chore(main): release 1.0.0",
+      "author": "github-actions",
+      "number": 14,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-11-08)\n\n\n### Features\n\n* add release configuration and workflows for automated publishing ([#8](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/8)) ([5d3fe50](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/5d3fe5081f08caa5be8d12e1fb8b6638e7bec16a))\n* async wallet analysis with caching and dynamic rate limiting ([#11](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/11)) ([661a279](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/661a2790d461b4d22213d1c35cc59a6d4c88e185))\n* use latest sendo-api updates ([#6](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/6)) ([fa40b2b](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/fa40b2b41bda39afcc44332d79b09e20ce3c2d5d))\n\n\n### Bug Fixes\n\n* add bs58 in package.json ([#9](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/9)) ([b23059d](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/b23059d1629a8cb0f55c6f1399766d116e59da8b))\n* install good bs58 OK ([#10](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/10)) ([2098e12](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/2098e128f5e72e2ce110e85626dfa75968bdecff))\n* package ([6bc3267](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/6bc32677699dd94735a132b0f39b8b7894457460))\n* package ([57037e2](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/57037e2d65c262fb2b55174e47e6905306b3c051))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-08T19:19:41Z",
+      "mergedAt": null,
+      "additions": 20,
+      "deletions": 2
     }
   ],
   "codeChanges": {
-    "additions": 3119,
-    "deletions": 459,
+    "additions": 3042,
+    "deletions": 384,
     "files": 32,
-    "commitCount": 23
+    "commitCount": 14
   },
   "completedItems": [
     {
@@ -86,26 +86,6 @@
         ".github/workflows/release.yml",
         ".release-please-manifest.json",
         "release-please-config.json"
-      ]
-    },
-    {
-      "title": "fix: install good bs58 OK",
-      "prNumber": 10,
-      "type": "bugfix",
-      "body": "",
-      "files": [
-        "bun.lock",
-        "package.json"
-      ]
-    },
-    {
-      "title": "fix: add bs58 in package.json",
-      "prNumber": 9,
-      "type": "bugfix",
-      "body": "",
-      "files": [
-        "bun.lock",
-        "package.json"
       ]
     },
     {
@@ -149,62 +129,18 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 256.9144633347815,
-      "prScore": 232.51446333478148,
-      "issueScore": 0,
-      "reviewScore": 24,
-      "commentScore": 0.4,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "Neysixx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 181.65144939355517,
-      "prScore": 152.95144939355518,
-      "issueScore": 0,
-      "reviewScore": 28.5,
-      "commentScore": 0.2,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "xdrkush",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
-      "totalScore": 96.25344204687713,
-      "prScore": 96.25344204687713,
+      "totalScore": 66.43547519869179,
+      "prScore": 66.43547519869179,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
       "summary": null
-    },
-    {
-      "username": "0xCanet",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?u=059e1e3aba6472d569edd95167ff2e02bf807e7a&v=4",
-      "totalScore": 35.7437738965761,
-      "prScore": 33.5437738965761,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0.2,
-      "socialScore": 2,
-      "summary": null
-    },
-    {
-      "username": "Johnleouf21",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
-      "totalScore": 13.354114659230515,
-      "prScore": 13.154114659230515,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0.2,
-      "socialScore": 0,
-      "summary": null
     }
   ],
-  "newPRs": 7,
-  "mergedPRs": 4,
+  "newPRs": 3,
+  "mergedPRs": 2,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 4
+  "activeContributors": 2
 }

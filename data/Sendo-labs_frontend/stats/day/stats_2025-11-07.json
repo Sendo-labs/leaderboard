@@ -181,6 +181,17 @@
       "commentScore": 0,
       "socialScore": 0,
       "summary": null
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?u=059e1e3aba6472d569edd95167ff2e02bf807e7a&v=4",
+      "totalScore": 2,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 2,
+      "summary": null
     }
   ],
   "newPRs": 1,

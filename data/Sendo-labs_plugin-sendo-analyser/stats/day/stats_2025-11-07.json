@@ -16,9 +16,9 @@
       "body": "## 🎯 Core Changes\r\n\r\n### 1. **Asynchronous Job System**\r\n- Background workers for wallet analysis\r\n- Job status tracking: `pending` → `processing` → `completed` / `failed`\r\n- Real-time progress updates after each batch\r\n- Incremental analysis (only new transactions)\r\n- Crash recovery with heartbeat monitoring\r\n\r\n### 2. **Multi-Layer Caching**\r\n- **Price cache**: Token prices in PostgreSQL (99.7% hit rate achieved)\r\n- **Transaction cache**: Decoded transactions for fast re-processing\r\n- **Job cache**: Instant results for previously analyzed wallets\r\n- **Auto-cleanup**: Prunes stale cache entries\r\n\r\n### 3. **Dynamic Rate Limiting**\r\n- **In-memory global counter** (no DB queries)\r\n- **Fair RPS sharing** across all concurrent jobs\r\n- **Adaptive batch sizing**: 5-50 tokens depending on load\r\n- **Dynamic timeouts**: Prevents errors under heavy load\r\n- **Formula**: batchSize = 1200 / activeJobs (clamped 5-50)\r\n\r\n### 4. **Per-Token SOL Volume Tracking** ⭐ NEW\r\n- Each token now shows BOTH `totalVolumeUSD` and `totalVolumeSOL`\r\n- **Proportional distribution**: SOL distributed based on USD volume share\r\n- **Two-pass processing**:\r\n  1. First pass: Calculate total USD volume per transaction\r\n  2. Second pass: Distribute SOL proportionally to each token\r\n- **Formula**: `volumeSOL = (tokenUSD / txTotalUSD) × txSOLChange`\r\n\r\n---\r\n\r\n## 📊 Database Schema\r\n\r\n### New Tables (5)\r\n\r\n1. **`wallet_analysis_jobs`** - Job tracking with status and progress\r\n2. **`tokens`** - Permanent token metadata (symbol, name)\r\n3. **`token_price_cache`** - Cached BirdEye prices\r\n4. **`transaction_cache`** - Lightweight decoded transactions\r\n5. **`token_analysis_results`** ⭐ - Per-token statistics with USD + SOL volumes\r\n\r\n### Removed Tables (2)\r\n- ❌ `wallet_analysis_cache` (replaced by job system)\r\n- ❌ `wallet_insights` (out of scope)\r\n\r\n### Key Schema Changes ⭐\r\n- Renamed: `totalVolume` → `totalVolumeUSD` (explicit)\r\n- Added: `totalVolumeSOL` (per-token SOL volume)\r\n- Indexes on `(jobId, mint)` for fast lookups\r\n\r\n---\r\n\r\n## 📈 Performance\r\n\r\n### Batch Scaling\r\n| Jobs | RPS/Job | Batch Size | Time/Batch |\r\n|------|---------|------------|------------|\r\n| 1 | 40 | 50 | ~2.5s |\r\n| 10 | 4 | 50 | ~25s |\r\n| 100 | 0.4 | 12 | ~60s |\r\n| 200 | 0.2 | 6 | ~60s |\r\n\r\n**Target**: ~60 seconds per batch regardless of load\r\n\r\n---\r\n\r\n## 🔧 Files Changed\r\n\r\n### New Files (11)\r\n- `src/services/workers/analysisWorker.ts` (526 lines) - Main worker\r\n- `src/services/analysis/tokenResults.ts` (168 lines) ⭐ - Token stats with SOL\r\n- `src/services/cache/*.ts` (579 lines) - Caching layer\r\n- `src/utils/dynamicRateLimiter.ts` (203 lines) - Rate limiting\r\n\r\n### Modified Files (10)\r\n- `src/schemas/wallet-analysis.ts` ⭐ - New schema with `totalVolumeUSD` + `totalVolumeSOL`\r\n- `src/services/api/birdeyes.ts` - Consolidated (merged 2 files → 1)\r\n- `src/services/sendoAnalyserService.ts` - Integrated with job system\r\n- `src/routes/index.ts` - Async job endpoints\r\n\r\n### Deleted Files (1)\r\n- ❌ `src/services/api/birdeyeWithDynamicLimiter.ts` (merged)\r\n\r\n**Net**: +2,496 lines, -337 lines\r\n\r\n---\r\n\r\n## ✅ Benefits\r\n\r\n### Performance\r\n- ⚡ Faster (no DB queries for job counting)\r\n- 📈 Scalable (1-400+ concurrent jobs)\r\n- 🔄 Real-time adaptation\r\n- ⏱️ Predictable (~60s/batch)\r\n\r\n### Reliability\r\n- ✅ No SQL errors\r\n- ✅ No timeouts\r\n- ✅ Fair API sharing\r\n- ✅ 99.7% price coverage\r\n\r\n### Accuracy ⭐\r\n- ✅ Per-token SOL volume\r\n- ✅ Proportional distribution\r\n- ✅ Explicit naming (USD vs SOL)\r\n\r\n### Maintainability\r\n- 🧹 Cleaner code (consolidated services)\r\n- 📚 Better docs\r\n- 🔍 Easier debugging\r\n- 🛠️ Simpler API\r\n\r\n---\r\n\r\n## 🎉 Result\r\n\r\nTransformed from synchronous single-request system to robust async architecture with:\r\n- Background job processing\r\n- Multi-layer caching\r\n- Dynamic rate limiting\r\n- **Per-token SOL volume tracking** ⭐",
       "repository": "Sendo-labs/plugin-sendo-analyser",
       "createdAt": "2025-11-07T15:59:40Z",
-      "mergedAt": null,
-      "additions": 2705,
-      "deletions": 383
+      "mergedAt": "2025-11-08T18:36:41Z",
+      "additions": 2976,
+      "deletions": 384
     },
     {
       "id": "PR_kwDOQJY5T86yLrtT",
@@ -50,6 +50,17 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?u=059e1e3aba6472d569edd95167ff2e02bf807e7a&v=4",
+      "totalScore": 2,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 2,
       "summary": null
     }
   ],

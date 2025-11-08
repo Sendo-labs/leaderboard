@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-11-02 to 2025-11-09, Sendo-labs/frontend had 8 new PRs (7 merged), 0 new issues, and 4 active contributors.",
+  "overview": "From 2025-11-02 to 2025-11-09, Sendo-labs/frontend had 9 new PRs (7 merged), 0 new issues, and 4 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -33,6 +33,18 @@
       "deletions": 590
     },
     {
+      "id": "PR_kwDOQEvmTc6yQMi3",
+      "title": "feat: new api usages",
+      "author": "standujar",
+      "number": 27,
+      "body": "## 🎯 Overview\r\n\r\nThis PR introduces a complete refactoring of the wallet analysis system, transforming it from a synchronous client-side implementation to an asynchronous server-side architecture with real-time updates and intelligent pagination.\r\n\r\n## ✨ Key Features\r\n\r\n### 1. **Asynchronous Analysis Architecture**\r\n- Replaced synchronous client-side analysis with asynchronous server-side processing\r\n- Analysis jobs run in the background on the server, allowing users to leave and return without losing progress\r\n- Automatic job resumption when reopening the analyzer page\r\n- Zombie job detection and automatic restart for stuck analysis processes\r\n\r\n### 2. **Real-Time Progress Tracking**\r\n- Live polling mechanism (every 5 seconds) to track analysis progress\r\n- Persistent toast notifications showing:\r\n  - Number of tokens discovered in real-time\r\n  - Number of transactions analyzed\r\n  - Completion status with automatic dismissal\r\n- Heartbeat monitoring to detect and recover from stuck analysis jobs (2-minute timeout)\r\n\r\n### 3. **Intelligent Token Loading**\r\n- Auto-fetch mechanism that detects when new tokens are discovered during analysis\r\n- Automatic token loading when analysis completes, even if the page hasn't refreshed\r\n- Smart state management to prevent duplicate fetches and race conditions\r\n\r\n### 4. **Infinite Scroll Pagination**\r\n- Intersection Observer-based infinite scroll for token list\r\n- 10 tokens loaded per page with automatic deduplication\r\n- Dynamic \"Load More\" indicator with safety timeout\r\n- Proper state reset when switching between wallets\r\n\r\n### 5. **Enhanced UI Components**\r\n\r\n#### CountUp Animation Component\r\n- Smooth number animations for all metrics\r\n- Configurable decimal places, separators, prefixes, and suffixes\r\n- Used across all stat displays for a polished user experience\r\n\r\n#### Optimized Result Display\r\n- Summary data separated from paginated token results\r\n- Top 3 \"pain points\" (biggest missed opportunities) calculated from full dataset\r\n- Real-time updating of total counts during analysis\r\n- \"Updating in real-time...\" indicator during active analysis\r\n\r\n### 6. **Improved Error Handling**\r\n- Comprehensive error states with user-friendly messages\r\n- Automatic retry logic for failed requests\r\n- Graceful degradation when API is unavailable\r\n- Clear feedback for zombie job detection and recovery\r\n\r\n### 7. **State Management Improvements**\r\n- Complete state reset when switching wallets\r\n- Proper cleanup of polling intervals and toast notifications\r\n- Prevention of memory leaks with ref-based tracking\r\n- Elimination of circular dependencies in React hooks\r\n\r\n## 🔧 Technical Changes\r\n\r\n### New Files\r\n- `src/hooks/use-wallet-analysis.ts` - Core async analysis hook with polling\r\n- `src/components/analyzer/token-analysis-list.tsx` - New token list component\r\n- `src/components/ui/count-up.tsx` - Animated number component\r\n- `src/services/analysis-client.service.ts` - API client for analysis endpoints\r\n\r\n### Removed Files\r\n- `src/hooks/use-trades-analysis.ts` - Old synchronous analysis hook\r\n- `src/services/trades.service.ts` - Old trades service\r\n\r\n### Modified Components\r\n- `src/app/analyzer/client.tsx` - Refactored to use new async hook\r\n- All analyzer components updated to use CountUp for animations\r\n- Improved responsive design and formatting across all components\r\n\r\n## 📊 Performance Improvements\r\n\r\n- **Reduced initial load time**: Only fetches summary on mount, loads tokens progressively\r\n- **Lower memory usage**: Pagination prevents loading all tokens at once\r\n- **Better UX**: Users can navigate away and return without losing progress\r\n- **Optimized polling**: Status polling separated from token fetching\r\n\r\n## 🐛 Bug Fixes\r\n\r\n- Fixed pagination not loading tokens when analysis completes\r\n- Fixed intersection observer stale closure issues\r\n- Fixed state not resetting when switching wallets\r\n- Fixed circular dependency errors in React hooks\r\n- Fixed duplicate token loading during pagination\r\n\r\n## 🎨 UI/UX Enhancements\r\n\r\n- Animated numbers for all statistics\r\n- Persistent loading toast with live progress updates\r\n- Clear visual feedback for all states (loading, processing, completed, error)\r\n- Responsive design improvements across all breakpoints\r\n- Better mobile layout with truncated text and flex-shrink utilities\r\n\r\n## 🔄 Migration Notes\r\n\r\nThe new system is fully backward compatible with existing wallet addresses. Previously analyzed wallets will automatically trigger a new analysis on first visit.\r\n\r\n## 📝 Summary\r\n\r\nThis PR represents a major architectural improvement to the wallet analyzer, moving from a synchronous client-side approach to a robust asynchronous server-side system with real-time updates, intelligent pagination, and a significantly improved user experience.\r\n",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-08T01:46:24Z",
+      "mergedAt": null,
+      "additions": 2818,
+      "deletions": 2804
+    },
+    {
       "id": "PR_kwDOQEvmTc6xrQYO",
       "title": "feat: storage provider abstraction",
       "author": "standujar",
@@ -55,25 +67,13 @@
       "mergedAt": "2025-11-06T08:32:48Z",
       "additions": 119,
       "deletions": 96
-    },
-    {
-      "id": "PR_kwDOQEvmTc6x1A8R",
-      "title": "fix: guideline",
-      "author": "Neysixx",
-      "number": 24,
-      "body": "This pull request refactors the storage-related codebase to standardize naming conventions, improve type safety, and modernize the factory implementation. The most important changes include renaming files and interfaces for consistency, updating import paths throughout the codebase, and refactoring the `StorageFactory` class into a constant object with arrow functions.\r\n\r\n**Refactoring and modernization of storage factory:**\r\n\r\n* Refactored `StorageFactory` from a class to a constant object with arrow functions, updating all method definitions and usages accordingly in `src/factories/storage-factory.ts`. [[1]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L30-R35) [[2]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L57-R63) [[3]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L75-R81) [[4]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L93-R116)\r\n\r\n**File and interface renaming for consistency:**\r\n\r\n* Renamed adapter and factory files to use kebab-case and updated corresponding import paths across the codebase (e.g., `AWSSecretStoreAdapter.ts` → `aws-secret-store.adapter.ts`, `StorageFactory.ts` → `storage-factory.ts`). [[1]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L15-R20) [[2]](diffhunk://#diff-09ea11d778de38d05626e874eefea6e384a42aeaaa029e7fd40816dfdc4ded1fL6-R6) [[3]](diffhunk://#diff-e8b8a291e7283ebb96a1f61782c33ab1ffdf838a1ac23bae034ce889c4dcfb88L6-R6) [[4]](diffhunk://#diff-54dc3dce6273f8cb849a7b610db6f86ac78eb0e8312fb709258ec63b2b062f2cL9-R9) [[5]](diffhunk://#diff-780927099f9814f65ae09ab4b95c25969d713c42a0c329197843e689f9a350b8L9-R9)\r\n* Renamed interface files for clarity (`ISecretStore` → `siecret-store`, `IParameterStore` → `iparameter-store`) and updated all related imports. [[1]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L15-R20) [[2]](diffhunk://#diff-09ea11d778de38d05626e874eefea6e384a42aeaaa029e7fd40816dfdc4ded1fL6-R6) [[3]](diffhunk://#diff-e8b8a291e7283ebb96a1f61782c33ab1ffdf838a1ac23bae034ce889c4dcfb88L6-R6) [[4]](diffhunk://#diff-54dc3dce6273f8cb849a7b610db6f86ac78eb0e8312fb709258ec63b2b062f2cL9-R9) [[5]](diffhunk://#diff-780927099f9814f65ae09ab4b95c25969d713c42a0c329197843e689f9a350b8L9-R9) [[6]](diffhunk://#diff-47bec096c42c7764017b89295992034df7235b8ce6eec06342fb7344df816440L2-R2)\r\n\r\n**Type safety and import improvements:**\r\n\r\n* Updated imports to use `type` where appropriate for improved type safety and faster compilation. [[1]](diffhunk://#diff-ca98f4bca8d8a842e0e584317fabce632465a8fba76d985c5abf0f1c730fa6a9L15-R20) [[2]](diffhunk://#diff-09ea11d778de38d05626e874eefea6e384a42aeaaa029e7fd40816dfdc4ded1fL6-R6) [[3]](diffhunk://#diff-e8b8a291e7283ebb96a1f61782c33ab1ffdf838a1ac23bae034ce889c4dcfb88L6-R6) [[4]](diffhunk://#diff-54dc3dce6273f8cb849a7b610db6f86ac78eb0e8312fb709258ec63b2b062f2cL9-R9) [[5]](diffhunk://#diff-780927099f9814f65ae09ab4b95c25969d713c42a0c329197843e689f9a350b8L9-R9) [[6]](diffhunk://#diff-47bec096c42c7764017b89295992034df7235b8ce6eec06342fb7344df816440L2-R2)\r\n* Changed return type of `getAnalyzerTrades` to allow `null` when the analyzer is not configured, instead of returning an empty response object.\r\n\r\n**General codebase consistency:**\r\n\r\n* Updated all usages of `StorageFactory` in action files to use the new import path and naming convention. [[1]](diffhunk://#diff-80c1e69d1af0f3d4e21c036b0e4a1874117dd8be490bfb1086a88c1856920029L5-R5) [[2]](diffhunk://#diff-c05d97b5ccf5edafffa54bdc12b29be534e528feed86dab8a5b2c7c994a9f008L3-R3) [[3]](diffhunk://#diff-22b965dba1d0fe6faebf12a5f59c2ff2555b21f01b83767fb71396af59cf21cfL4-R4) [[4]](diffhunk://#diff-2009bd4bde0e0bfa6bc862e069c5b59ae5c6ed6be03f469280f0200b46868a2eL4-R4) [[5]](diffhunk://#diff-d07764b138da85da73e91992176c5c778872d6a51f278769ca28b3714c3cd022L4-R4) [[6]](diffhunk://#diff-711176276fe1117ac6ed998054285aaba26c467948edc97d5a22577bfd1ace6fL4-R4)",
-      "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-11-06T07:21:39Z",
-      "mergedAt": "2025-11-06T07:22:27Z",
-      "additions": 39,
-      "deletions": 37
     }
   ],
   "codeChanges": {
     "additions": 30252,
     "deletions": 1279,
     "files": 70,
-    "commitCount": 28
+    "commitCount": 43
   },
   "completedItems": [
     {
@@ -304,8 +304,8 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 190.4789881360897,
-      "prScore": 166.0789881360897,
+      "totalScore": 256.9144633347815,
+      "prScore": 232.51446333478148,
       "issueScore": 0,
       "reviewScore": 24,
       "commentScore": 0.4,
@@ -337,12 +337,12 @@
     {
       "username": "0xCanet",
       "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?u=059e1e3aba6472d569edd95167ff2e02bf807e7a&v=4",
-      "totalScore": 33.7437738965761,
+      "totalScore": 35.7437738965761,
       "prScore": 33.5437738965761,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
-      "socialScore": 0,
+      "socialScore": 2,
       "summary": null
     },
     {
@@ -357,7 +357,7 @@
       "summary": null
     }
   ],
-  "newPRs": 8,
+  "newPRs": 9,
   "mergedPRs": 7,
   "newIssues": 0,
   "closedIssues": 0,
