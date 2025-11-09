@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/frontend had 9 new PRs (7 merged), 0 new issues, and 4 active contributors.",
+  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/frontend had 10 new PRs (9 merged), 0 new issues, and 4 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -40,9 +40,9 @@
       "body": "## 🎯 Overview\r\n\r\nThis PR introduces a complete refactoring of the wallet analysis system, transforming it from a synchronous client-side implementation to an asynchronous server-side architecture with real-time updates and intelligent pagination.\r\n\r\n## ✨ Key Features\r\n\r\n### 1. **Asynchronous Analysis Architecture**\r\n- Replaced synchronous client-side analysis with asynchronous server-side processing\r\n- Analysis jobs run in the background on the server, allowing users to leave and return without losing progress\r\n- Automatic job resumption when reopening the analyzer page\r\n- Zombie job detection and automatic restart for stuck analysis processes\r\n\r\n### 2. **Real-Time Progress Tracking**\r\n- Live polling mechanism (every 5 seconds) to track analysis progress\r\n- Persistent toast notifications showing:\r\n  - Number of tokens discovered in real-time\r\n  - Number of transactions analyzed\r\n  - Completion status with automatic dismissal\r\n- Heartbeat monitoring to detect and recover from stuck analysis jobs (2-minute timeout)\r\n\r\n### 3. **Intelligent Token Loading**\r\n- Auto-fetch mechanism that detects when new tokens are discovered during analysis\r\n- Automatic token loading when analysis completes, even if the page hasn't refreshed\r\n- Smart state management to prevent duplicate fetches and race conditions\r\n\r\n### 4. **Infinite Scroll Pagination**\r\n- Intersection Observer-based infinite scroll for token list\r\n- 10 tokens loaded per page with automatic deduplication\r\n- Dynamic \"Load More\" indicator with safety timeout\r\n- Proper state reset when switching between wallets\r\n\r\n### 5. **Enhanced UI Components**\r\n\r\n#### CountUp Animation Component\r\n- Smooth number animations for all metrics\r\n- Configurable decimal places, separators, prefixes, and suffixes\r\n- Used across all stat displays for a polished user experience\r\n\r\n#### Optimized Result Display\r\n- Summary data separated from paginated token results\r\n- Top 3 \"pain points\" (biggest missed opportunities) calculated from full dataset\r\n- Real-time updating of total counts during analysis\r\n- \"Updating in real-time...\" indicator during active analysis\r\n\r\n### 6. **Improved Error Handling**\r\n- Comprehensive error states with user-friendly messages\r\n- Automatic retry logic for failed requests\r\n- Graceful degradation when API is unavailable\r\n- Clear feedback for zombie job detection and recovery\r\n\r\n### 7. **State Management Improvements**\r\n- Complete state reset when switching wallets\r\n- Proper cleanup of polling intervals and toast notifications\r\n- Prevention of memory leaks with ref-based tracking\r\n- Elimination of circular dependencies in React hooks\r\n\r\n## 🔧 Technical Changes\r\n\r\n### New Files\r\n- `src/hooks/use-wallet-analysis.ts` - Core async analysis hook with polling\r\n- `src/components/analyzer/token-analysis-list.tsx` - New token list component\r\n- `src/components/ui/count-up.tsx` - Animated number component\r\n- `src/services/analysis-client.service.ts` - API client for analysis endpoints\r\n\r\n### Removed Files\r\n- `src/hooks/use-trades-analysis.ts` - Old synchronous analysis hook\r\n- `src/services/trades.service.ts` - Old trades service\r\n\r\n### Modified Components\r\n- `src/app/analyzer/client.tsx` - Refactored to use new async hook\r\n- All analyzer components updated to use CountUp for animations\r\n- Improved responsive design and formatting across all components\r\n\r\n## 📊 Performance Improvements\r\n\r\n- **Reduced initial load time**: Only fetches summary on mount, loads tokens progressively\r\n- **Lower memory usage**: Pagination prevents loading all tokens at once\r\n- **Better UX**: Users can navigate away and return without losing progress\r\n- **Optimized polling**: Status polling separated from token fetching\r\n\r\n## 🐛 Bug Fixes\r\n\r\n- Fixed pagination not loading tokens when analysis completes\r\n- Fixed intersection observer stale closure issues\r\n- Fixed state not resetting when switching wallets\r\n- Fixed circular dependency errors in React hooks\r\n- Fixed duplicate token loading during pagination\r\n\r\n## 🎨 UI/UX Enhancements\r\n\r\n- Animated numbers for all statistics\r\n- Persistent loading toast with live progress updates\r\n- Clear visual feedback for all states (loading, processing, completed, error)\r\n- Responsive design improvements across all breakpoints\r\n- Better mobile layout with truncated text and flex-shrink utilities\r\n\r\n## 🔄 Migration Notes\r\n\r\nThe new system is fully backward compatible with existing wallet addresses. Previously analyzed wallets will automatically trigger a new analysis on first visit.\r\n\r\n## 📝 Summary\r\n\r\nThis PR represents a major architectural improvement to the wallet analyzer, moving from a synchronous client-side approach to a robust asynchronous server-side system with real-time updates, intelligent pagination, and a significantly improved user experience.\r\n",
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-11-08T01:46:24Z",
-      "mergedAt": null,
-      "additions": 2818,
-      "deletions": 2804
+      "mergedAt": "2025-11-09T21:54:23Z",
+      "additions": 2804,
+      "deletions": 2515
     },
     {
       "id": "PR_kwDOQEvmTc6xrQYO",
@@ -70,10 +70,10 @@
     }
   ],
   "codeChanges": {
-    "additions": 30252,
-    "deletions": 1279,
-    "files": 70,
-    "commitCount": 43
+    "additions": 33269,
+    "deletions": 3996,
+    "files": 78,
+    "commitCount": 53
   },
   "completedItems": [
     {
@@ -298,14 +298,66 @@
         "src/components/marketplace/plugin-detail-modal.tsx",
         "src/components/shared/loader.tsx"
       ]
+    },
+    {
+      "title": "feat: new api usages",
+      "prNumber": 27,
+      "type": "feature",
+      "body": "## 🎯 Overview\r\n\r\nThis PR introduces a complete refactoring of the wallet analysis system, transforming it from a synchronous client-side implementation to an asynchronous server-side architecture with real-time updates and intelligent pagi",
+      "files": [
+        "biome.json",
+        "bun.lock",
+        "package.json",
+        "src/actions/analyzer/get.ts",
+        "src/actions/openrouter/get.ts",
+        "src/app/analyzer/client.tsx",
+        "src/app/globals.css",
+        "src/components/agent-chat.tsx",
+        "src/components/analyzer/best-worst-performers.tsx",
+        "src/components/analyzer/cta-activate-worker.tsx",
+        "src/components/analyzer/mini-chart-ath.tsx",
+        "src/components/analyzer/performance-metrics.tsx",
+        "src/components/analyzer/result-card.tsx",
+        "src/components/analyzer/result-hero-card.tsx",
+        "src/components/analyzer/share-buttons.tsx",
+        "src/components/analyzer/token-analysis-list.tsx",
+        "src/components/analyzer/token-details-list.tsx",
+        "src/components/analyzer/token-distribution.tsx",
+        "src/components/analyzer/wallet-input.tsx",
+        "src/components/analyzer/wallet-stats-grid.tsx",
+        "src/components/home/statistics-section.tsx",
+        "src/components/marketplace/configure-plugin-modal.tsx",
+        "src/components/marketplace/plugin-card.tsx",
+        "src/components/shared/loader.tsx",
+        "src/components/ui/count-up.tsx",
+        "src/components/worker/action-list.tsx",
+        "src/components/worker/configure-plugin-modal.tsx",
+        "src/hooks/use-trades-analysis.ts",
+        "src/hooks/use-wallet-analysis.ts",
+        "src/lib/constants.ts",
+        "src/lib/pain-card-generator.ts",
+        "src/services/analysis-client.service.ts",
+        "src/services/trades.service.ts",
+        ".env.example"
+      ]
+    },
+    {
+      "title": "chore: update @sendo-labs/plugin-sendo-analyser to version 1.8.0 in p…",
+      "prNumber": 28,
+      "type": "other",
+      "body": "…ackage.json and bun.lock",
+      "files": [
+        "bun.lock",
+        "package.json"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 256.9144633347815,
-      "prScore": 232.51446333478148,
+      "totalScore": 355.0497679380432,
+      "prScore": 330.6497679380432,
       "issueScore": 0,
       "reviewScore": 24,
       "commentScore": 0.4,
@@ -357,8 +409,8 @@
       "summary": null
     }
   ],
-  "newPRs": 9,
-  "mergedPRs": 7,
+  "newPRs": 10,
+  "mergedPRs": 9,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 4

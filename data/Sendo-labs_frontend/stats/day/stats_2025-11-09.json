@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2025-11-08T00:00:00.000Z",
-    "intervalEnd": "2025-11-09T00:00:00.000Z",
+    "intervalStart": "2025-11-09T00:00:00.000Z",
+    "intervalEnd": "2025-11-10T00:00:00.000Z",
     "intervalType": "day"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-11-08 to 2025-11-09, Sendo-labs/frontend had 1 new PRs (0 merged), 0 new issues, and 2 active contributors.",
+  "overview": "From 2025-11-09 to 2025-11-10, Sendo-labs/frontend had 1 new PRs (2 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -19,21 +19,86 @@
       "mergedAt": "2025-11-09T21:54:23Z",
       "additions": 2804,
       "deletions": 2515
+    },
+    {
+      "id": "PR_kwDOQEvmTc6yZ3CB",
+      "title": "chore: update @sendo-labs/plugin-sendo-analyser to version 1.8.0 in p…",
+      "author": "standujar",
+      "number": 28,
+      "body": "…ackage.json and bun.lock",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-09T22:00:14Z",
+      "mergedAt": "2025-11-09T22:00:19Z",
+      "additions": 3,
+      "deletions": 3
     }
   ],
   "codeChanges": {
-    "additions": 0,
-    "deletions": 0,
-    "files": 0,
-    "commitCount": 15
+    "additions": 3017,
+    "deletions": 2717,
+    "files": 34,
+    "commitCount": 10
   },
-  "completedItems": [],
+  "completedItems": [
+    {
+      "title": "feat: new api usages",
+      "prNumber": 27,
+      "type": "feature",
+      "body": "## 🎯 Overview\r\n\r\nThis PR introduces a complete refactoring of the wallet analysis system, transforming it from a synchronous client-side implementation to an asynchronous server-side architecture with real-time updates and intelligent pagi",
+      "files": [
+        "biome.json",
+        "bun.lock",
+        "package.json",
+        "src/actions/analyzer/get.ts",
+        "src/actions/openrouter/get.ts",
+        "src/app/analyzer/client.tsx",
+        "src/app/globals.css",
+        "src/components/agent-chat.tsx",
+        "src/components/analyzer/best-worst-performers.tsx",
+        "src/components/analyzer/cta-activate-worker.tsx",
+        "src/components/analyzer/mini-chart-ath.tsx",
+        "src/components/analyzer/performance-metrics.tsx",
+        "src/components/analyzer/result-card.tsx",
+        "src/components/analyzer/result-hero-card.tsx",
+        "src/components/analyzer/share-buttons.tsx",
+        "src/components/analyzer/token-analysis-list.tsx",
+        "src/components/analyzer/token-details-list.tsx",
+        "src/components/analyzer/token-distribution.tsx",
+        "src/components/analyzer/wallet-input.tsx",
+        "src/components/analyzer/wallet-stats-grid.tsx",
+        "src/components/home/statistics-section.tsx",
+        "src/components/marketplace/configure-plugin-modal.tsx",
+        "src/components/marketplace/plugin-card.tsx",
+        "src/components/shared/loader.tsx",
+        "src/components/ui/count-up.tsx",
+        "src/components/worker/action-list.tsx",
+        "src/components/worker/configure-plugin-modal.tsx",
+        "src/hooks/use-trades-analysis.ts",
+        "src/hooks/use-wallet-analysis.ts",
+        "src/lib/constants.ts",
+        "src/lib/pain-card-generator.ts",
+        "src/services/analysis-client.service.ts",
+        "src/services/trades.service.ts",
+        ".env.example"
+      ]
+    },
+    {
+      "title": "chore: update @sendo-labs/plugin-sendo-analyser to version 1.8.0 in p…",
+      "prNumber": 28,
+      "type": "other",
+      "body": "…ackage.json and bun.lock",
+      "files": [
+        "bun.lock",
+        "package.json"
+      ]
+    }
+  ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 66.43547519869179,
-      "prScore": 66.43547519869179,
+      "totalScore": 98.13530460326174,
+      "prScore": 98.13530460326174,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -42,8 +107,8 @@
     }
   ],
   "newPRs": 1,
-  "mergedPRs": 0,
+  "mergedPRs": 2,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 2
+  "activeContributors": 1
 }

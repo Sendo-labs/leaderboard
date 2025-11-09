@@ -1,0 +1,163 @@
+{
+  "interval": {
+    "intervalStart": "2025-11-09T00:00:00.000Z",
+    "intervalEnd": "2025-11-16T00:00:00.000Z",
+    "intervalType": "week"
+  },
+  "repository": "Sendo-labs/plugin-sendo-analyser",
+  "overview": "From 2025-11-09 to 2025-11-16, Sendo-labs/plugin-sendo-analyser had 4 new PRs (5 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQJY5T86yZmbj",
+      "title": "feat: implement Queue Manager for concurrent job processing",
+      "author": "standujar",
+      "number": 17,
+      "body": "…ize price fetching",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-09T20:16:26Z",
+      "mergedAt": "2025-11-09T20:16:57Z",
+      "additions": 766,
+      "deletions": 215
+    },
+    {
+      "id": "PR_kwDOQJY5T86yVPqy",
+      "title": "feat: enhance BirdEye API integration with historical price timeframe and batch metadata fetching with helius",
+      "author": "standujar",
+      "number": 15,
+      "body": "## Summary\r\nThis PR enhances the BirdEye API integration and introduces Helius for batch metadata fetching, improving the analysis worker's data retrieval capabilities.\r\n\r\n## Changes\r\n- **BirdEye API**: Added historical price timeframe support\r\n- **Helius Integration**: Implemented batch metadata fetching\r\n- **Configuration**: Updated environment variables and config setup\r\n- **Analysis Worker**: Enhanced with new data fetching capabilities",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-08T22:27:37Z",
+      "mergedAt": "2025-11-09T14:27:16Z",
+      "additions": 109,
+      "deletions": 50
+    },
+    {
+      "id": "PR_kwDOQJY5T86yYX0s",
+      "title": "chore(main): release 1.0.0",
+      "author": "github-actions",
+      "number": 16,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-11-09)\n\n\n### Features\n\n* add release configuration and workflows for automated publishing ([#8](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/8)) ([5d3fe50](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/5d3fe5081f08caa5be8d12e1fb8b6638e7bec16a))\n* async wallet analysis with caching and dynamic rate limiting ([#11](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/11)) ([661a279](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/661a2790d461b4d22213d1c35cc59a6d4c88e185))\n* enhance BirdEye API integration with historical price timeframe and batch metadata fetching with helius ([#15](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/15)) ([7a13cf9](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/7a13cf99a8a16c378beb2f52ed0044cd594ce2e5))\n* use latest sendo-api updates ([#6](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/6)) ([fa40b2b](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/fa40b2b41bda39afcc44332d79b09e20ce3c2d5d))\n\n\n### Bug Fixes\n\n* add bs58 in package.json ([#9](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/9)) ([b23059d](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/b23059d1629a8cb0f55c6f1399766d116e59da8b))\n* install good bs58 OK ([#10](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/10)) ([2098e12](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/2098e128f5e72e2ce110e85626dfa75968bdecff))\n* package ([6bc3267](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/6bc32677699dd94735a132b0f39b8b7894457460))\n* package ([57037e2](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/57037e2d65c262fb2b55174e47e6905306b3c051))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-09T14:27:34Z",
+      "mergedAt": "2025-11-09T14:27:46Z",
+      "additions": 21,
+      "deletions": 2
+    },
+    {
+      "id": "PR_kwDOQJY5T86yUcC2",
+      "title": "chore(main): release 1.0.0",
+      "author": "github-actions",
+      "number": 14,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-11-08)\n\n\n### Features\n\n* add release configuration and workflows for automated publishing ([#8](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/8)) ([5d3fe50](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/5d3fe5081f08caa5be8d12e1fb8b6638e7bec16a))\n* async wallet analysis with caching and dynamic rate limiting ([#11](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/11)) ([661a279](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/661a2790d461b4d22213d1c35cc59a6d4c88e185))\n* use latest sendo-api updates ([#6](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/6)) ([fa40b2b](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/fa40b2b41bda39afcc44332d79b09e20ce3c2d5d))\n\n\n### Bug Fixes\n\n* add bs58 in package.json ([#9](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/9)) ([b23059d](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/b23059d1629a8cb0f55c6f1399766d116e59da8b))\n* install good bs58 OK ([#10](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/10)) ([2098e12](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/2098e128f5e72e2ce110e85626dfa75968bdecff))\n* package ([6bc3267](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/6bc32677699dd94735a132b0f39b8b7894457460))\n* package ([57037e2](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/57037e2d65c262fb2b55174e47e6905306b3c051))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-08T19:19:41Z",
+      "mergedAt": null,
+      "additions": 20,
+      "deletions": 2
+    },
+    {
+      "id": "PR_kwDOQJY5T86yZmi5",
+      "title": "chore(main): release 1.1.0",
+      "author": "github-actions",
+      "number": 18,
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.1.0](https://github.com/Sendo-labs/plugin-sendo-analyser/compare/v1.0.0...v1.1.0) (2025-11-09)\n\n\n### Features\n\n* implement Queue Manager for concurrent job processing ([#17](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/17)) ([833f586](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/833f58659ab195ff193a196b7e784a1541549cbd))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-09T20:17:10Z",
+      "mergedAt": "2025-11-09T20:19:37Z",
+      "additions": 9,
+      "deletions": 2
+    }
+  ],
+  "codeChanges": {
+    "additions": 907,
+    "deletions": 271,
+    "files": 18,
+    "commitCount": 10
+  },
+  "completedItems": [
+    {
+      "title": "feat: enhance BirdEye API integration with historical price timeframe and batch metadata fetching with helius",
+      "prNumber": 15,
+      "type": "feature",
+      "body": "## Summary\r\nThis PR enhances the BirdEye API integration and introduces Helius for batch metadata fetching, improving the analysis worker's data retrieval capabilities.\r\n\r\n## Changes\r\n- **BirdEye API**: Added historical price timeframe supp",
+      "files": [
+        ".env.example",
+        "src/config/index.ts",
+        "src/services/api/birdeyes.ts",
+        "src/services/api/helius.ts",
+        "src/services/workers/analysisWorker.ts",
+        "src/utils/parseTrade.ts"
+      ]
+    },
+    {
+      "title": "chore: bump version to 1.8.0 in package.json",
+      "prNumber": 19,
+      "type": "other",
+      "body": "",
+      "files": [
+        ".gitignore",
+        "package.json"
+      ]
+    },
+    {
+      "title": "chore(main): release 1.1.0",
+      "prNumber": 18,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.1.0](https://github.com/Sendo-labs/plugin-sendo-analyser/compare/v1.0.0...v1.1.0) (2025-11-09)\n\n\n### Features\n\n* implement Queue Manager for concurrent job processing ([#17](https:/",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    },
+    {
+      "title": "feat: implement Queue Manager for concurrent job processing",
+      "prNumber": 17,
+      "type": "feature",
+      "body": "…ize price fetching",
+      "files": [
+        ".env.example",
+        "src/config/index.ts",
+        "src/schemas/wallet-analysis.ts",
+        "src/services/analysis/analysisJobs.ts",
+        "src/services/analysis/tokenResults.ts",
+        "src/services/cache/priceCache.ts",
+        "src/services/queue/queueManager.ts",
+        "src/services/sendoAnalyserService.ts",
+        "src/services/workers/analysisWorker.ts",
+        "src/services/workers/workerHelpers.ts",
+        "src/types/api.ts"
+      ]
+    },
+    {
+      "title": "chore(main): release 1.0.0",
+      "prNumber": 16,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2025-11-09)\n\n\n### Features\n\n* add release configuration and workflows for automated publishing ([#8](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/8)) ([5d3fe50](ht",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 98.13530460326174,
+      "prScore": 98.13530460326174,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 4,
+  "mergedPRs": 5,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}

@@ -28,9 +28,9 @@
       "body": "## Summary\r\nThis PR enhances the BirdEye API integration and introduces Helius for batch metadata fetching, improving the analysis worker's data retrieval capabilities.\r\n\r\n## Changes\r\n- **BirdEye API**: Added historical price timeframe support\r\n- **Helius Integration**: Implemented batch metadata fetching\r\n- **Configuration**: Updated environment variables and config setup\r\n- **Analysis Worker**: Enhanced with new data fetching capabilities",
       "repository": "Sendo-labs/plugin-sendo-analyser",
       "createdAt": "2025-11-08T22:27:37Z",
-      "mergedAt": null,
-      "additions": 110,
-      "deletions": 41
+      "mergedAt": "2025-11-09T14:27:16Z",
+      "additions": 109,
+      "deletions": 50
     },
     {
       "id": "PR_kwDOQJY5T86w0gdc",
