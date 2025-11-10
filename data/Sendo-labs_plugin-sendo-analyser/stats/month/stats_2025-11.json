@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/plugin-sendo-analyser",
-  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/plugin-sendo-analyser had 11 new PRs (9 merged), 0 new issues, and 4 active contributors.",
+  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/plugin-sendo-analyser had 14 new PRs (12 merged), 0 new issues, and 4 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -45,6 +45,18 @@
       "deletions": 20
     },
     {
+      "id": "PR_kwDOQJY5T86ylz6N",
+      "title": "feat: leaderboard",
+      "author": "standujar",
+      "number": 20,
+      "body": "- add leaderboard API\r\n- add some badges\r\n- add some tank titles",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-10T18:03:50Z",
+      "mergedAt": "2025-11-10T18:03:58Z",
+      "additions": 362,
+      "deletions": 2
+    },
+    {
       "id": "PR_kwDOQJY5T86yVPqy",
       "title": "feat: enhance BirdEye API integration with historical price timeframe and batch metadata fetching with helius",
       "author": "standujar",
@@ -55,25 +67,13 @@
       "mergedAt": "2025-11-09T14:27:16Z",
       "additions": 109,
       "deletions": 50
-    },
-    {
-      "id": "PR_kwDOQJY5T86xaYlk",
-      "title": "fix: add bs58 in package.json",
-      "author": "xdrkush",
-      "number": 9,
-      "body": "",
-      "repository": "Sendo-labs/plugin-sendo-analyser",
-      "createdAt": "2025-11-04T12:42:36Z",
-      "mergedAt": "2025-11-04T12:42:58Z",
-      "additions": 70,
-      "deletions": 68
     }
   ],
   "codeChanges": {
-    "additions": 4026,
-    "deletions": 730,
-    "files": 35,
-    "commitCount": 33
+    "additions": 4410,
+    "deletions": 736,
+    "files": 36,
+    "commitCount": 39
   },
   "completedItems": [
     {
@@ -208,30 +208,67 @@
         "CHANGELOG.md",
         "package.json"
       ]
+    },
+    {
+      "title": "chore(main): release 2.0.0",
+      "prNumber": 22,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [2.0.0](https://github.com/Sendo-labs/plugin-sendo-analyser/compare/v1.2.0...v2.0.0) (2025-11-10)\n\n\n### ⚠ BREAKING CHANGES\n\n* Version reset to 1.9.0 to align with new versioning strate",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    },
+    {
+      "title": "chore(main): release 1.2.0",
+      "prNumber": 21,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.2.0](https://github.com/Sendo-labs/plugin-sendo-analyser/compare/v1.1.0...v1.2.0) (2025-11-10)\n\n\n### Features\n\n* leaderboard ([#20](https://github.com/Sendo-labs/plugin-sendo-analys",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    },
+    {
+      "title": "feat: leaderboard",
+      "prNumber": 20,
+      "type": "feature",
+      "body": "- add leaderboard API\r\n- add some badges\r\n- add some tank titles",
+      "files": [
+        "package.json",
+        "src/routes/index.ts",
+        "src/services/analysis/leaderboard.ts",
+        "src/services/queue/queueManager.ts",
+        "src/services/sendoAnalyserService.ts",
+        "src/types/api.ts",
+        "src/types/index.ts"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 355.0497679380432,
-      "prScore": 330.6497679380432,
+      "totalScore": 452.619182572158,
+      "prScore": 428.21918257215805,
       "issueScore": 0,
       "reviewScore": 24,
       "commentScore": 0.4,
       "socialScore": 0,
-      "summary": null
+      "summary": "standujar: Drove significant architectural improvements across both the frontend and the analyser plugin this month, merging seven pull requests. Key contributions include introducing a major storage provider abstraction in `Sendo-labs/frontend#26` (+14230/-590 lines) and implementing an async wallet analysis with caching in `Sendo-labs/plugin-sendo-analyser#11`. They also implemented a queue manager for concurrent job processing (`#17`) and executed a large-scale refactor of API usage in the frontend (`#27`), removing over 16k lines of code. Their work was primarily focused on refactoring and new feature development."
     },
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 181.65144939355517,
-      "prScore": 152.95144939355518,
+      "totalScore": 223.0832635354314,
+      "prScore": 194.3832635354314,
       "issueScore": 0,
       "reviewScore": 28.5,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "Neysixx: Focused on improving the `Sendo-labs/frontend` repository this month through both refactoring and bug fixes. They merged three pull requests, most notably refactoring the color variable management system in PR #25. In addition to shipping fixes for the number font and guidelines (#20, #24), Neysixx also actively reviewed 6 pull requests from teammates. Their contributions were primarily centered on bug fixes and refactoring within the codebase."
     },
     {
       "username": "xdrkush",
@@ -242,7 +279,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "xdrkush: Focused entirely on bug fixes this month, merging four pull requests across the `Sendo-labs/frontend` and `Sendo-labs/plugin-sendo-analyser` repositories. Their work addressed dependency management in the analyzer plugin via PRs #9 and #10, and also resolved UI formatting and wallet analyzer issues in the frontend (PR #19, #21). This activity shows a focus on maintaining stability through targeted fixes in both code and configuration files."
     },
     {
       "username": "0xCanet",
@@ -253,7 +290,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 2,
-      "summary": null
+      "summary": "0xCanet: This month, 0xCanet's efforts were concentrated on a significant contribution to the `Sendo-labs/frontend` repository. They merged a single, large-scale pull request (Sendo-labs/frontend#23) titled \"Fix: 0x canet,\" which introduced a substantial number of changes (+15682/-884 lines). This work primarily involved bug fixes, with additional focus on feature implementation and refactoring across 135 files."
     },
     {
       "username": "Johnleouf21",
@@ -264,11 +301,11 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "Johnleouf21: Focused on deployment and initialization tasks this month, opening a pull request in Sendo-labs/leaderboard-rewards (#2) to fix program deployment on devnet. This work, which remains open, involved 3 commits and modifications across 8 files (+424/-421 lines). Their activity also included making a single comment on a pull request."
     }
   ],
-  "newPRs": 11,
-  "mergedPRs": 9,
+  "newPRs": 14,
+  "mergedPRs": 12,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 4

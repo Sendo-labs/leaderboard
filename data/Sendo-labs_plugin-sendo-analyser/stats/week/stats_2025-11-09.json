@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/plugin-sendo-analyser",
-  "overview": "From 2025-11-09 to 2025-11-16, Sendo-labs/plugin-sendo-analyser had 4 new PRs (5 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-11-09 to 2025-11-16, Sendo-labs/plugin-sendo-analyser had 7 new PRs (8 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -19,6 +19,18 @@
       "mergedAt": "2025-11-09T20:16:57Z",
       "additions": 766,
       "deletions": 215
+    },
+    {
+      "id": "PR_kwDOQJY5T86ylz6N",
+      "title": "feat: leaderboard",
+      "author": "standujar",
+      "number": 20,
+      "body": "- add leaderboard API\r\n- add some badges\r\n- add some tank titles",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-10T18:03:50Z",
+      "mergedAt": "2025-11-10T18:03:58Z",
+      "additions": 362,
+      "deletions": 2
     },
     {
       "id": "PR_kwDOQJY5T86yVPqy",
@@ -55,25 +67,13 @@
       "mergedAt": null,
       "additions": 20,
       "deletions": 2
-    },
-    {
-      "id": "PR_kwDOQJY5T86yZmi5",
-      "title": "chore(main): release 1.1.0",
-      "author": "github-actions",
-      "number": 18,
-      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.1.0](https://github.com/Sendo-labs/plugin-sendo-analyser/compare/v1.0.0...v1.1.0) (2025-11-09)\n\n\n### Features\n\n* implement Queue Manager for concurrent job processing ([#17](https://github.com/Sendo-labs/plugin-sendo-analyser/issues/17)) ([833f586](https://github.com/Sendo-labs/plugin-sendo-analyser/commit/833f58659ab195ff193a196b7e784a1541549cbd))\n\n---\nThis PR was generated with [Release Please](https://github.com/googleapis/release-please). See [documentation](https://github.com/googleapis/release-please#release-please).",
-      "repository": "Sendo-labs/plugin-sendo-analyser",
-      "createdAt": "2025-11-09T20:17:10Z",
-      "mergedAt": "2025-11-09T20:19:37Z",
-      "additions": 9,
-      "deletions": 2
     }
   ],
   "codeChanges": {
-    "additions": 907,
-    "deletions": 271,
-    "files": 18,
-    "commitCount": 10
+    "additions": 1291,
+    "deletions": 277,
+    "files": 21,
+    "commitCount": 16
   },
   "completedItems": [
     {
@@ -140,14 +140,62 @@
         "CHANGELOG.md",
         "package.json"
       ]
+    },
+    {
+      "title": "chore(main): release 2.0.0",
+      "prNumber": 22,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [2.0.0](https://github.com/Sendo-labs/plugin-sendo-analyser/compare/v1.2.0...v2.0.0) (2025-11-10)\n\n\n### ⚠ BREAKING CHANGES\n\n* Version reset to 1.9.0 to align with new versioning strate",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    },
+    {
+      "title": "chore(main): release 1.2.0",
+      "prNumber": 21,
+      "type": "other",
+      "body": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.2.0](https://github.com/Sendo-labs/plugin-sendo-analyser/compare/v1.1.0...v1.2.0) (2025-11-10)\n\n\n### Features\n\n* leaderboard ([#20](https://github.com/Sendo-labs/plugin-sendo-analys",
+      "files": [
+        ".release-please-manifest.json",
+        "CHANGELOG.md",
+        "package.json"
+      ]
+    },
+    {
+      "title": "feat: leaderboard",
+      "prNumber": 20,
+      "type": "feature",
+      "body": "- add leaderboard API\r\n- add some badges\r\n- add some tank titles",
+      "files": [
+        "package.json",
+        "src/routes/index.ts",
+        "src/services/analysis/leaderboard.ts",
+        "src/services/queue/queueManager.ts",
+        "src/services/sendoAnalyserService.ts",
+        "src/types/api.ts",
+        "src/types/index.ts"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 98.13530460326174,
-      "prScore": 98.13530460326174,
+      "totalScore": 195.70471923737657,
+      "prScore": 195.70471923737657,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 41.43181414187623,
+      "prScore": 41.43181414187623,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -155,8 +203,8 @@
       "summary": null
     }
   ],
-  "newPRs": 4,
-  "mergedPRs": 5,
+  "newPRs": 7,
+  "mergedPRs": 8,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 1

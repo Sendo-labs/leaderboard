@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/frontend had 10 new PRs (9 merged), 0 new issues, and 4 active contributors.",
+  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/frontend had 12 new PRs (11 merged), 0 new issues, and 4 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -57,23 +57,23 @@
       "deletions": 38
     },
     {
-      "id": "PR_kwDOQEvmTc6x10UN",
-      "title": "refactor: color vars management",
-      "author": "Neysixx",
-      "number": 25,
-      "body": "This pull request standardizes the usage of brand colors across the app by replacing hardcoded hex color values with CSS variables for Sendo brand colors. It introduces a new `sendo-dark-red` color and updates all relevant gradient backgrounds and UI elements to use these semantic variables, improving maintainability and consistency. Minor improvements to font-family declarations and formatting are also included.\r\n\r\n**Brand color standardization and updates:**\r\n\r\n* Added a new CSS variable `--sendo-dark-red` and updated `--sendo-orange` to match the brand palette in `globals.css`. All gradients now use `from-sendo-orange`, `via-sendo-red`, and `to-sendo-dark-red` instead of hardcoded hex values. [[1]](diffhunk://#diff-4f206759c961f544a48464ad2ee231adc87e72593d03a0004b68c17771f7a412L92-R95) [[2]](diffhunk://#diff-4f206759c961f544a48464ad2ee231adc87e72593d03a0004b68c17771f7a412L133-R137)\r\n* Updated all gradient backgrounds in UI components (`client.tsx` files for Analyzer, Leaderboard, Marketplace, Onboarding, Worker, and various components) to use Sendo brand color variables rather than hardcoded hex codes. [[1]](diffhunk://#diff-5eada83b5857ea3eb390602cfbb8443939c66c9d28f234197efbc52b20d49d62L81-R81) [[2]](diffhunk://#diff-5eada83b5857ea3eb390602cfbb8443939c66c9d28f234197efbc52b20d49d62L171-R171) [[3]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62L191-R193) [[4]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62L210-R212) [[5]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62L348-R352) [[6]](diffhunk://#diff-df6df6b5b4f958b0a2be6270ef904530898f4593dd37d676b334fcf5b900cf7aL451-R451) [[7]](diffhunk://#diff-df6df6b5b4f958b0a2be6270ef904530898f4593dd37d676b334fcf5b900cf7aL587-R587) [[8]](diffhunk://#diff-df6df6b5b4f958b0a2be6270ef904530898f4593dd37d676b334fcf5b900cf7aL596-R596) [[9]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L22-R22) [[10]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L45-R45) [[11]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L59-R59) [[12]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L75-R75) [[13]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L92-R100) [[14]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L123-R123) [[15]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L348-R356) [[16]](diffhunk://#diff-2f2cf00dbe4930b1bbc02139a05dce3b2f4ce7c4955d775f375c26f7d2a5eb89L368-R368) [[17]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L271-R271) [[18]](diffhunk://#diff-1b20369c23821a6e83e53c327eb8f2e04e99a5863152fa0c01147264af15c122L140-R140) [[19]](diffhunk://#diff-1b20369c23821a6e83e53c327eb8f2e04e99a5863152fa0c01147264af15c122L178-R178) [[20]](diffhunk://#diff-eb7759173b03348fe24cf2c207c2cc6307a8ca880d68d8a7c3d0f5793975bac6L21-R21) [[21]](diffhunk://#diff-8c6e330bbda2e00caafcd5e3083491f360862937581d0cdf95ab8a828faad2bdL15-R23)\r\n* Updated glow and overlay effects to use the new brand colors for visual consistency. [[1]](diffhunk://#diff-eb7759173b03348fe24cf2c207c2cc6307a8ca880d68d8a7c3d0f5793975bac6L21-R21) [[2]](diffhunk://#diff-8c6e330bbda2e00caafcd5e3083491f360862937581d0cdf95ab8a828faad2bdL15-R23)\r\n\r\n**Minor style and formatting improvements:**\r\n\r\n* Corrected font-family declaration in `.title-font` for improved cross-browser compatibility.\r\n* Minor formatting changes to improve code readability (e.g., multiline JSX for better clarity). [[1]](diffhunk://#diff-864779a54a15fad503964336872e4073b35db1c668f43f327e7fdca7b2391c62L291-R295) [[2]](diffhunk://#diff-29d0a55f5ca1a9951042587f8b891bb4cd8b204f5bc855dc2468ed44cde2f5b3L53-R55)\r\n\r\nThese changes ensure that the app consistently uses the latest Sendo brand colors and improves maintainability by relying on CSS variables.",
+      "id": "PR_kwDOQEvmTc6ymRA1",
+      "title": "Feat: leaderboard and wallet connect",
+      "author": "standujar",
+      "number": 30,
+      "body": "## Changes\r\n\r\n### Wallet Integration\r\n- Integrated Privy for seamless Solana wallet connection (Phantom, Solflare, etc.)\r\n- Auto-detect and connect to user's installed Solana wallets\r\n- Updated homepage and analyzer to use connected wallet automatically\r\n- Disabled share buttons during analysis to prevent premature sharing\r\n\r\n### Leaderboard\r\n- MVP implementation of leaderboard !\r\n\r\n### UI Improvements\r\n- Moved \"TIRED OF MISSING ATHS?\" CTA card into analyzer hero board\r\n- Fixed CTA card layout to prevent column misalignment\r\n- Made CTA description stay on single line with `whitespace-nowrap`\r\n\r\n### Configuration\r\n- Enabled Tailwind directives in Biome CSS parser\r\n- Upgraded `@sendo-labs/plugin-sendo-analyser` to v2.0.0",
       "repository": "Sendo-labs/frontend",
-      "createdAt": "2025-11-06T08:30:08Z",
-      "mergedAt": "2025-11-06T08:32:48Z",
-      "additions": 119,
-      "deletions": 96
+      "createdAt": "2025-11-10T18:46:23Z",
+      "mergedAt": "2025-11-10T18:46:29Z",
+      "additions": 738,
+      "deletions": 425
     }
   ],
   "codeChanges": {
-    "additions": 33269,
-    "deletions": 3996,
-    "files": 78,
-    "commitCount": 53
+    "additions": 34251,
+    "deletions": 4458,
+    "files": 80,
+    "commitCount": 59
   },
   "completedItems": [
     {
@@ -350,30 +350,61 @@
         "bun.lock",
         "package.json"
       ]
+    },
+    {
+      "title": "Feat: leaderboard and wallet connect",
+      "prNumber": 30,
+      "type": "feature",
+      "body": "## Changes\r\n\r\n### Wallet Integration\r\n- Integrated Privy for seamless Solana wallet connection (Phantom, Solflare, etc.)\r\n- Auto-detect and connect to user's installed Solana wallets\r\n- Updated homepage and analyzer to use connected wallet ",
+      "files": [
+        "biome.json",
+        "bun.lock",
+        "package.json",
+        "src/actions/analyzer/get.ts",
+        "src/app/analyzer/client.tsx",
+        "src/app/leaderboard/client.tsx",
+        "src/components/analyzer/result-hero-card.tsx",
+        "src/components/analyzer/wallet-input.tsx",
+        "src/components/home/hero-section.tsx",
+        "src/lib/providers.tsx",
+        "src/services/analysis-client.service.ts"
+      ]
+    },
+    {
+      "title": "feat: mandatory demo dialog implementation",
+      "prNumber": 29,
+      "type": "feature",
+      "body": "This pull request introduces a new reusable `InfoModal` component for displaying informational and demo modals across the application, and refactors existing demo alerts to use this new modal for improved consistency and user experience. It",
+      "files": [
+        "biome.json",
+        "src/app/marketplace/client.tsx",
+        "src/app/worker/client.tsx",
+        "src/components/shared/info-modal.tsx"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 355.0497679380432,
-      "prScore": 330.6497679380432,
+      "totalScore": 452.619182572158,
+      "prScore": 428.21918257215805,
       "issueScore": 0,
       "reviewScore": 24,
       "commentScore": 0.4,
       "socialScore": 0,
-      "summary": null
+      "summary": "standujar: Drove significant architectural improvements across both the frontend and the analyser plugin this month, merging seven pull requests. Key contributions include introducing a major storage provider abstraction in `Sendo-labs/frontend#26` (+14230/-590 lines) and implementing an async wallet analysis with caching in `Sendo-labs/plugin-sendo-analyser#11`. They also implemented a queue manager for concurrent job processing (`#17`) and executed a large-scale refactor of API usage in the frontend (`#27`), removing over 16k lines of code. Their work was primarily focused on refactoring and new feature development."
     },
     {
       "username": "Neysixx",
       "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 181.65144939355517,
-      "prScore": 152.95144939355518,
+      "totalScore": 223.0832635354314,
+      "prScore": 194.3832635354314,
       "issueScore": 0,
       "reviewScore": 28.5,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "Neysixx: Focused on improving the `Sendo-labs/frontend` repository this month through both refactoring and bug fixes. They merged three pull requests, most notably refactoring the color variable management system in PR #25. In addition to shipping fixes for the number font and guidelines (#20, #24), Neysixx also actively reviewed 6 pull requests from teammates. Their contributions were primarily centered on bug fixes and refactoring within the codebase."
     },
     {
       "username": "xdrkush",
@@ -384,7 +415,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "xdrkush: Focused entirely on bug fixes this month, merging four pull requests across the `Sendo-labs/frontend` and `Sendo-labs/plugin-sendo-analyser` repositories. Their work addressed dependency management in the analyzer plugin via PRs #9 and #10, and also resolved UI formatting and wallet analyzer issues in the frontend (PR #19, #21). This activity shows a focus on maintaining stability through targeted fixes in both code and configuration files."
     },
     {
       "username": "0xCanet",
@@ -395,7 +426,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 2,
-      "summary": null
+      "summary": "0xCanet: This month, 0xCanet's efforts were concentrated on a significant contribution to the `Sendo-labs/frontend` repository. They merged a single, large-scale pull request (Sendo-labs/frontend#23) titled \"Fix: 0x canet,\" which introduced a substantial number of changes (+15682/-884 lines). This work primarily involved bug fixes, with additional focus on feature implementation and refactoring across 135 files."
     },
     {
       "username": "Johnleouf21",
@@ -406,11 +437,11 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "Johnleouf21: Focused on deployment and initialization tasks this month, opening a pull request in Sendo-labs/leaderboard-rewards (#2) to fix program deployment on devnet. This work, which remains open, involved 3 commits and modifications across 8 files (+424/-421 lines). Their activity also included making a single comment on a pull request."
     }
   ],
-  "newPRs": 10,
-  "mergedPRs": 9,
+  "newPRs": 12,
+  "mergedPRs": 11,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 4

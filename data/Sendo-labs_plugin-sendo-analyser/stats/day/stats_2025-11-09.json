@@ -152,7 +152,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "standujar: Primarily focused on feature development and refactoring, notably implementing a Queue Manager for concurrent job processing in Sendo-labs/plugin-sendo-analyser via PR #17 (+766/-215 lines), alongside other work and configuration updates across 82 files."
     }
   ],
   "newPRs": 4,

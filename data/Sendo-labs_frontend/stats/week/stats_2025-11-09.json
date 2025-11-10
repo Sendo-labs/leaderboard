@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-11-09 to 2025-11-16, Sendo-labs/frontend had 1 new PRs (2 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-11-09 to 2025-11-16, Sendo-labs/frontend had 3 new PRs (4 merged), 0 new issues, and 2 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -21,6 +21,30 @@
       "deletions": 2515
     },
     {
+      "id": "PR_kwDOQEvmTc6ymRA1",
+      "title": "Feat: leaderboard and wallet connect",
+      "author": "standujar",
+      "number": 30,
+      "body": "## Changes\r\n\r\n### Wallet Integration\r\n- Integrated Privy for seamless Solana wallet connection (Phantom, Solflare, etc.)\r\n- Auto-detect and connect to user's installed Solana wallets\r\n- Updated homepage and analyzer to use connected wallet automatically\r\n- Disabled share buttons during analysis to prevent premature sharing\r\n\r\n### Leaderboard\r\n- MVP implementation of leaderboard !\r\n\r\n### UI Improvements\r\n- Moved \"TIRED OF MISSING ATHS?\" CTA card into analyzer hero board\r\n- Fixed CTA card layout to prevent column misalignment\r\n- Made CTA description stay on single line with `whitespace-nowrap`\r\n\r\n### Configuration\r\n- Enabled Tailwind directives in Biome CSS parser\r\n- Upgraded `@sendo-labs/plugin-sendo-analyser` to v2.0.0",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-10T18:46:23Z",
+      "mergedAt": "2025-11-10T18:46:29Z",
+      "additions": 738,
+      "deletions": 425
+    },
+    {
+      "id": "PR_kwDOQEvmTc6yhTri",
+      "title": "feat: mandatory demo dialog implementation",
+      "author": "Neysixx",
+      "number": 29,
+      "body": "This pull request introduces a new reusable `InfoModal` component for displaying informational and demo modals across the application, and refactors existing demo alerts to use this new modal for improved consistency and user experience. It also removes unused CSS configuration from `biome.json`.\r\n\r\n**Component Addition & Refactoring**\r\n\r\n* Added new `InfoModal` component in `src/components/shared/info-modal.tsx` to provide a standardized, customizable modal for demo/info/warning/success/alert messages. (`[src/components/shared/info-modal.tsxR1-R196](diffhunk://#diff-2da2b68c67e7f0707962ef0ee6c08fae37fa2648e8b83156dff85bd14708d7ffR1-R196)`)\r\n* Refactored the worker demo alert in `src/app/worker/client.tsx` to use the new `InfoModal` instead of the previous `AlertDialog` component. (`[[1]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L13-R13)`, `[[2]](diffhunk://#diff-20ed7f89df08f1bc63addf331680bcbecded8386364bc8ec824aecdf1cc49c34L378-R383)`)\r\n* Added a marketplace demo modal using `InfoModal` in `src/app/marketplace/client.tsx`, shown on page load to inform users that plugin data is mocked. (`[[1]](diffhunk://#diff-df6df6b5b4f958b0a2be6270ef904530898f4593dd37d676b334fcf5b900cf7aR8-L12)`, `[[2]](diffhunk://#diff-df6df6b5b4f958b0a2be6270ef904530898f4593dd37d676b334fcf5b900cf7aR411-R413)`, `[[3]](diffhunk://#diff-df6df6b5b4f958b0a2be6270ef904530898f4593dd37d676b334fcf5b900cf7aR624-R652)`)\r\n\r\n**Configuration Clean-up**\r\n\r\n* Removed unused CSS parser configuration (including Tailwind directives) from `biome.json` to streamline project settings. (`[biome.jsonL32-L36](diffhunk://#diff-2bc8a1f5e9380d5a187a4e90f11b4dd36c3abad6aea44c84be354a4f44cdec55L32-L36)`)",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-10T12:23:13Z",
+      "mergedAt": "2025-11-10T12:59:11Z",
+      "additions": 244,
+      "deletions": 37
+    },
+    {
       "id": "PR_kwDOQEvmTc6yZ3CB",
       "title": "chore: update @sendo-labs/plugin-sendo-analyser to version 1.8.0 in p…",
       "author": "standujar",
@@ -34,10 +58,10 @@
     }
   ],
   "codeChanges": {
-    "additions": 3017,
-    "deletions": 2717,
-    "files": 34,
-    "commitCount": 10
+    "additions": 3999,
+    "deletions": 3179,
+    "files": 40,
+    "commitCount": 16
   },
   "completedItems": [
     {
@@ -91,14 +115,56 @@
         "bun.lock",
         "package.json"
       ]
+    },
+    {
+      "title": "Feat: leaderboard and wallet connect",
+      "prNumber": 30,
+      "type": "feature",
+      "body": "## Changes\r\n\r\n### Wallet Integration\r\n- Integrated Privy for seamless Solana wallet connection (Phantom, Solflare, etc.)\r\n- Auto-detect and connect to user's installed Solana wallets\r\n- Updated homepage and analyzer to use connected wallet ",
+      "files": [
+        "biome.json",
+        "bun.lock",
+        "package.json",
+        "src/actions/analyzer/get.ts",
+        "src/app/analyzer/client.tsx",
+        "src/app/leaderboard/client.tsx",
+        "src/components/analyzer/result-hero-card.tsx",
+        "src/components/analyzer/wallet-input.tsx",
+        "src/components/home/hero-section.tsx",
+        "src/lib/providers.tsx",
+        "src/services/analysis-client.service.ts"
+      ]
+    },
+    {
+      "title": "feat: mandatory demo dialog implementation",
+      "prNumber": 29,
+      "type": "feature",
+      "body": "This pull request introduces a new reusable `InfoModal` component for displaying informational and demo modals across the application, and refactors existing demo alerts to use this new modal for improved consistency and user experience. It",
+      "files": [
+        "biome.json",
+        "src/app/marketplace/client.tsx",
+        "src/app/worker/client.tsx",
+        "src/components/shared/info-modal.tsx"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 98.13530460326174,
-      "prScore": 98.13530460326174,
+      "totalScore": 195.70471923737657,
+      "prScore": 195.70471923737657,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "Neysixx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
+      "totalScore": 41.43181414187623,
+      "prScore": 41.43181414187623,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
@@ -106,9 +172,9 @@
       "summary": null
     }
   ],
-  "newPRs": 1,
-  "mergedPRs": 2,
+  "newPRs": 3,
+  "mergedPRs": 4,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 1
+  "activeContributors": 2
 }

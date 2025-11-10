@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2025-11-09T00:00:00.000Z",
-    "intervalEnd": "2025-11-16T00:00:00.000Z",
-    "intervalType": "week"
+    "intervalStart": "2025-11-10T00:00:00.000Z",
+    "intervalEnd": "2025-11-11T00:00:00.000Z",
+    "intervalType": "day"
   },
-  "repository": "Sendo-labs/plugin-cryptoscore",
-  "overview": "From 2025-11-09 to 2025-11-16, Sendo-labs/plugin-cryptoscore had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "repository": "Sendo-labs/Reports",
+  "overview": "From 2025-11-10 to 2025-11-11, Sendo-labs/Reports had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
   "topIssues": [],
   "topPRs": [],
   "codeChanges": {
@@ -19,8 +19,8 @@
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 195.70471923737657,
-      "prScore": 195.70471923737657,
+      "totalScore": 97.56941463411482,
+      "prScore": 97.56941463411482,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0,
