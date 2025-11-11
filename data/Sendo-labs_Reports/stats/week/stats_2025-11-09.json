@@ -37,6 +37,17 @@
       "commentScore": 0,
       "socialScore": 0,
       "summary": null
+    },
+    {
+      "username": "Johnleouf21",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
+      "totalScore": 9.478114659230517,
+      "prScore": 9.278114659230518,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
     }
   ],
   "newPRs": 0,

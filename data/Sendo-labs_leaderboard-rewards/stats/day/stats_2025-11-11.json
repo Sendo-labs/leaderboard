@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2025-11-09T00:00:00.000Z",
-    "intervalEnd": "2025-11-16T00:00:00.000Z",
-    "intervalType": "week"
+    "intervalStart": "2025-11-11T00:00:00.000Z",
+    "intervalEnd": "2025-11-12T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/leaderboard-rewards",
-  "overview": "From 2025-11-09 to 2025-11-16, Sendo-labs/leaderboard-rewards had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2025-11-11 to 2025-11-12, Sendo-labs/leaderboard-rewards had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -41,28 +41,6 @@
   },
   "completedItems": [],
   "topContributors": [
-    {
-      "username": "standujar",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 195.70471923737657,
-      "prScore": 195.70471923737657,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
-    {
-      "username": "Neysixx",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/115616810?u=94c403172b4ffda30d6fc765f5997631fb7d1ef1&v=4",
-      "totalScore": 41.43181414187623,
-      "prScore": 41.43181414187623,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
     {
       "username": "Johnleouf21",
       "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",

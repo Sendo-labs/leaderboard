@@ -63,11 +63,11 @@
     {
       "username": "Johnleouf21",
       "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
-      "totalScore": 13.354114659230515,
-      "prScore": 13.154114659230515,
+      "totalScore": 22.83222931846103,
+      "prScore": 22.432229318461033,
       "issueScore": 0,
       "reviewScore": 0,
-      "commentScore": 0.2,
+      "commentScore": 0.4,
       "socialScore": 0,
       "summary": "Johnleouf21: Focused on deployment and initialization tasks this month, opening a pull request in Sendo-labs/leaderboard-rewards (#2) to fix program deployment on devnet. This work, which remains open, involved 3 commits and modifications across 8 files (+424/-421 lines). Their activity also included making a single comment on a pull request."
     }
