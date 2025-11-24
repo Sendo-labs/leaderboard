@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2025-11-23T00:00:00.000Z",
-    "intervalEnd": "2025-11-30T00:00:00.000Z",
-    "intervalType": "week"
+    "intervalStart": "2025-11-24T00:00:00.000Z",
+    "intervalEnd": "2025-11-25T00:00:00.000Z",
+    "intervalType": "day"
   },
-  "repository": "Sendo-labs/plugin-cryptoscore",
-  "overview": "From 2025-11-23 to 2025-11-30, Sendo-labs/plugin-cryptoscore had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "repository": "Sendo-labs/Reports",
+  "overview": "From 2025-11-24 to 2025-11-25, Sendo-labs/Reports had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
   "topIssues": [],
   "topPRs": [],
   "codeChanges": {

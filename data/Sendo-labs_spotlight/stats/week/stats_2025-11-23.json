@@ -15,7 +15,19 @@
     "commitCount": 0
   },
   "completedItems": [],
-  "topContributors": [],
+  "topContributors": [
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?u=059e1e3aba6472d569edd95167ff2e02bf807e7a&v=4",
+      "totalScore": 33.5437738965761,
+      "prScore": 33.5437738965761,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
   "newPRs": 0,
   "mergedPRs": 0,
   "newIssues": 0,
