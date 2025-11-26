@@ -429,6 +429,17 @@
       "summary": "0xCanet: This month, 0xCanet's efforts were concentrated on a significant contribution to the `Sendo-labs/frontend` repository. They merged a single, large-scale pull request (Sendo-labs/frontend#23) titled \"Fix: 0x canet,\" which introduced a substantial number of changes (+15682/-884 lines). This work primarily involved bug fixes, with additional focus on feature implementation and refactoring across 135 files."
     },
     {
+      "username": "keidev-sol",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/52611153?u=9cf2a362882aea3768f7b408a8c599a6c1da1635&v=4",
+      "totalScore": 23.380641727603273,
+      "prScore": 23.180641727603273,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
       "username": "Johnleouf21",
       "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
       "totalScore": 22.83222931846103,

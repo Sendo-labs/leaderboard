@@ -5,9 +5,21 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/plugin-sendo-analyser",
-  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/plugin-sendo-analyser had 14 new PRs (12 merged), 0 new issues, and 4 active contributors.",
+  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/plugin-sendo-analyser had 15 new PRs (12 merged), 0 new issues, and 5 active contributors.",
   "topIssues": [],
   "topPRs": [
+    {
+      "id": "PR_kwDOQJY5T861sI7h",
+      "title": "fix: filter swap tx and calculate info",
+      "author": "keidev-sol",
+      "number": 23,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-11-26T16:42:59Z",
+      "mergedAt": null,
+      "additions": 7453,
+      "deletions": 4
+    },
     {
       "id": "PR_kwDOQJY5T86yK3Nr",
       "title": "feat: async wallet analysis with caching and dynamic rate limiting",
@@ -55,25 +67,13 @@
       "mergedAt": "2025-11-10T18:03:58Z",
       "additions": 362,
       "deletions": 2
-    },
-    {
-      "id": "PR_kwDOQJY5T86yVPqy",
-      "title": "feat: enhance BirdEye API integration with historical price timeframe and batch metadata fetching with helius",
-      "author": "standujar",
-      "number": 15,
-      "body": "## Summary\r\nThis PR enhances the BirdEye API integration and introduces Helius for batch metadata fetching, improving the analysis worker's data retrieval capabilities.\r\n\r\n## Changes\r\n- **BirdEye API**: Added historical price timeframe support\r\n- **Helius Integration**: Implemented batch metadata fetching\r\n- **Configuration**: Updated environment variables and config setup\r\n- **Analysis Worker**: Enhanced with new data fetching capabilities",
-      "repository": "Sendo-labs/plugin-sendo-analyser",
-      "createdAt": "2025-11-08T22:27:37Z",
-      "mergedAt": "2025-11-09T14:27:16Z",
-      "additions": 109,
-      "deletions": 50
     }
   ],
   "codeChanges": {
     "additions": 4410,
     "deletions": 736,
     "files": 36,
-    "commitCount": 39
+    "commitCount": 40
   },
   "completedItems": [
     {
@@ -293,6 +293,17 @@
       "summary": "0xCanet: This month, 0xCanet's efforts were concentrated on a significant contribution to the `Sendo-labs/frontend` repository. They merged a single, large-scale pull request (Sendo-labs/frontend#23) titled \"Fix: 0x canet,\" which introduced a substantial number of changes (+15682/-884 lines). This work primarily involved bug fixes, with additional focus on feature implementation and refactoring across 135 files."
     },
     {
+      "username": "keidev-sol",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/52611153?u=9cf2a362882aea3768f7b408a8c599a6c1da1635&v=4",
+      "totalScore": 23.380641727603273,
+      "prScore": 23.180641727603273,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
       "username": "Johnleouf21",
       "avatarUrl": "https://avatars.githubusercontent.com/u/102991300?u=ce6cc618e38b9b0281d2280690935ff695fc96db&v=4",
       "totalScore": 22.83222931846103,
@@ -304,9 +315,9 @@
       "summary": "Johnleouf21: Focused on deployment and initialization tasks this month, opening a pull request in Sendo-labs/leaderboard-rewards (#2) to fix program deployment on devnet. This work, which remains open, involved 3 commits and modifications across 8 files (+424/-421 lines). Their activity also included making a single comment on a pull request."
     }
   ],
-  "newPRs": 14,
+  "newPRs": 15,
   "mergedPRs": 12,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 4
+  "activeContributors": 5
 }

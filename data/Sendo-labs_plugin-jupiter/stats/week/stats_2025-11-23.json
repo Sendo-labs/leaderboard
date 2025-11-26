@@ -26,6 +26,17 @@
       "commentScore": 0,
       "socialScore": 0,
       "summary": null
+    },
+    {
+      "username": "keidev-sol",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/52611153?u=9cf2a362882aea3768f7b408a8c599a6c1da1635&v=4",
+      "totalScore": 23.380641727603273,
+      "prScore": 23.180641727603273,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
     }
   ],
   "newPRs": 0,

@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2025-11-23T00:00:00.000Z",
-    "intervalEnd": "2025-11-30T00:00:00.000Z",
-    "intervalType": "week"
+    "intervalStart": "2025-11-26T00:00:00.000Z",
+    "intervalEnd": "2025-11-27T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/plugin-solana",
-  "overview": "From 2025-11-23 to 2025-11-30, Sendo-labs/plugin-solana had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "overview": "From 2025-11-26 to 2025-11-27, Sendo-labs/plugin-solana had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
   "topIssues": [],
   "topPRs": [],
   "codeChanges": {
@@ -16,17 +16,6 @@
   },
   "completedItems": [],
   "topContributors": [
-    {
-      "username": "0xCanet",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?u=059e1e3aba6472d569edd95167ff2e02bf807e7a&v=4",
-      "totalScore": 33.5437738965761,
-      "prScore": 33.5437738965761,
-      "issueScore": 0,
-      "reviewScore": 0,
-      "commentScore": 0,
-      "socialScore": 0,
-      "summary": null
-    },
     {
       "username": "keidev-sol",
       "avatarUrl": "https://avatars.githubusercontent.com/u/52611153?u=9cf2a362882aea3768f7b408a8c599a6c1da1635&v=4",
