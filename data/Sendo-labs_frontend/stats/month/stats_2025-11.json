@@ -41,8 +41,8 @@
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-11-24T10:21:51Z",
       "mergedAt": null,
-      "additions": 6377,
-      "deletions": 1566
+      "additions": 6520,
+      "deletions": 1762
     },
     {
       "id": "PR_kwDOQEvmTc6yQMi3",
@@ -73,7 +73,7 @@
     "additions": 34251,
     "deletions": 4458,
     "files": 80,
-    "commitCount": 71
+    "commitCount": 72
   },
   "completedItems": [
     {
