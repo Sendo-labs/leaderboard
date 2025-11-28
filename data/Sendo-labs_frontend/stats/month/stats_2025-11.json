@@ -5,7 +5,7 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/frontend had 13 new PRs (11 merged), 0 new issues, and 4 active contributors.",
+  "overview": "From 2025-11-01 to 2025-12-01, Sendo-labs/frontend had 14 new PRs (13 merged), 0 new issues, and 4 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
@@ -40,7 +40,7 @@
       "body": "",
       "repository": "Sendo-labs/frontend",
       "createdAt": "2025-11-24T10:21:51Z",
-      "mergedAt": null,
+      "mergedAt": "2025-11-28T09:52:32Z",
       "additions": 6520,
       "deletions": 1762
     },
@@ -70,10 +70,10 @@
     }
   ],
   "codeChanges": {
-    "additions": 34251,
-    "deletions": 4458,
-    "files": 80,
-    "commitCount": 72
+    "additions": 35095,
+    "deletions": 5991,
+    "files": 121,
+    "commitCount": 76
   },
   "completedItems": [
     {
@@ -381,14 +381,104 @@
         "src/app/worker/client.tsx",
         "src/components/shared/info-modal.tsx"
       ]
+    },
+    {
+      "title": "feat: global refacto ux UI",
+      "prNumber": 31,
+      "type": "feature",
+      "body": "",
+      "files": [
+        "biome.json",
+        "docs/CLAUDE.md",
+        "docs/GEMINI.md",
+        "docs/worker.md",
+        "public/logos_partners/codigo-logo.png",
+        "public/logos_partners/codigo-logo.svg",
+        "public/logos_partners/elizaos-logo.png",
+        "public/logos_partners/elizaos-logo.svg",
+        "public/logos_partners/ferno_logo.png",
+        "public/logos_partners/foundation_solana.png",
+        "public/logos_partners/foundation_solana.svg",
+        "public/logos_partners/superteam.png",
+        "public/logos_partners/superteam.svg",
+        "public/product_section/Group 1171275556.png",
+        "public/product_section/Pump-Fun-Logo.png",
+        "public/product_section/elizaos-logo.svg",
+        "public/product_section/hero-eliza-mobile.png",
+        "public/product_section/left_character_zoom.png",
+        "public/product_section/section.fig",
+        "public/product_section/starknet-token-strk-logo.png",
+        "src/actions/agents/create.ts",
+        "src/actions/agents/get.ts",
+        "src/actions/analyzer/get.ts",
+        "src/actions/chat/get.ts",
+        "src/actions/openrouter/create.ts",
+        "src/actions/openrouter/get.ts",
+        "src/actions/openrouter/utils.ts",
+        "src/actions/secrets/create.ts",
+        "src/actions/secrets/get.ts",
+        "src/actions/secrets/update.ts",
+        "src/actions/secrets/utils.ts",
+        "src/actions/worker/actions.ts",
+        "src/actions/worker/create.ts",
+        "src/actions/worker/get.ts",
+        "src/adapters/storage/aws-parameter-store.adapter.ts",
+        "src/adapters/storage/aws-secret-store.adapter.ts",
+        "src/adapters/storage/local-parameter-store.adapter.ts",
+        "src/adapters/storage/local-secret-store.adapter.ts",
+        "src/app/analyzer/client.tsx",
+        "src/app/client.tsx",
+        "src/app/globals.css",
+        "src/app/layout.tsx",
+        "src/app/leaderboard/client.tsx",
+        "src/app/marketplace/client.tsx",
+        "src/app/onboarding/client.tsx",
+        "src/app/onboarding/page.tsx",
+        "src/app/worker/client.tsx",
+        "src/app/worker/page.tsx",
+        "src/components/agent-chat.tsx",
+        "src/components/analyzer/badge-card.tsx"
+      ]
+    },
+    {
+      "title": "fix: leaderboard-type-error",
+      "prNumber": 32,
+      "type": "bugfix",
+      "body": "## Summary\n- Fix TypeScript type error in `LeaderboardEntryWithMeta` interface by using `Omit<LeaderboardEntry, 'badge'>` to avoid property type conflicts\n- Fix all lint errors (54+ issues) across 24 files:\n  - Remove unused imports and var",
+      "files": [
+        "src/app/analyzer/client.tsx",
+        "src/app/globals.css",
+        "src/app/leaderboard/client.tsx",
+        "src/app/worker/client.tsx",
+        "src/components/analyzer/result-hero-card.tsx",
+        "src/components/analyzer/wallet-input.tsx",
+        "src/components/auth/login.tsx",
+        "src/components/home/contact-section-v2.tsx",
+        "src/components/home/footer.tsx",
+        "src/components/home/homepage-navbar.tsx",
+        "src/components/home/leaderboard-section.tsx",
+        "src/components/home/missing-ath-chart.tsx",
+        "src/components/home/missing-ath-section.tsx",
+        "src/components/home/product-section.tsx",
+        "src/components/home/scanner-separator.tsx",
+        "src/components/home/team-section-v2.tsx",
+        "src/components/home/team-section.tsx",
+        "src/components/home/wallet-beam-animation.tsx",
+        "src/components/marketplace/plugin-detail-modal.tsx",
+        "src/components/shared/info-modal.tsx",
+        "src/components/shared/loader.tsx",
+        "src/components/shared/query-boundary.tsx",
+        "src/hooks/use-wallet-analysis.ts",
+        "src/lib/providers.tsx"
+      ]
     }
   ],
   "topContributors": [
     {
       "username": "standujar",
       "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
-      "totalScore": 452.619182572158,
-      "prScore": 428.21918257215805,
+      "totalScore": 508.1451305880043,
+      "prScore": 483.7451305880043,
       "issueScore": 0,
       "reviewScore": 24,
       "commentScore": 0.4,
@@ -451,8 +541,8 @@
       "summary": "Johnleouf21: Focused on deployment and initialization tasks this month, opening a pull request in Sendo-labs/leaderboard-rewards (#2) to fix program deployment on devnet. This work, which remains open, involved 3 commits and modifications across 8 files (+424/-421 lines). Their activity also included making a single comment on a pull request."
     }
   ],
-  "newPRs": 13,
-  "mergedPRs": 11,
+  "newPRs": 14,
+  "mergedPRs": 13,
   "newIssues": 0,
   "closedIssues": 0,
   "activeContributors": 4
