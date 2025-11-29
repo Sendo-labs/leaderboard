@@ -1,0 +1,81 @@
+{
+  "interval": {
+    "intervalStart": "2025-11-29T00:00:00.000Z",
+    "intervalEnd": "2025-11-30T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/frontend",
+  "overview": "From 2025-11-29 to 2025-11-30, Sendo-labs/frontend had 2 new PRs (2 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQEvmTc62IOvl",
+      "title": "fix social link perso team",
+      "author": "xdrkush",
+      "number": 33,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-29T12:59:22Z",
+      "mergedAt": "2025-11-29T12:59:31Z",
+      "additions": 7,
+      "deletions": 4
+    },
+    {
+      "id": "PR_kwDOQEvmTc62IP1h",
+      "title": "Fix/link social",
+      "author": "xdrkush",
+      "number": 34,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-11-29T13:06:52Z",
+      "mergedAt": "2025-11-29T13:09:28Z",
+      "additions": 6,
+      "deletions": 7
+    }
+  ],
+  "codeChanges": {
+    "additions": 13,
+    "deletions": 11,
+    "files": 2,
+    "commitCount": 5
+  },
+  "completedItems": [
+    {
+      "title": "Fix/link social",
+      "prNumber": 34,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "biome.json",
+        "src/components/home/team-section-v2.tsx"
+      ]
+    },
+    {
+      "title": "fix social link perso team",
+      "prNumber": 33,
+      "type": "bugfix",
+      "body": "",
+      "files": [
+        "src/components/home/team-section-v2.tsx"
+      ]
+    }
+  ],
+  "topContributors": [
+    {
+      "username": "xdrkush",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/39158443?u=0215602b0dba068ec6ca092c14027e3571241846&v=4",
+      "totalScore": 43.881510654509256,
+      "prScore": 43.881510654509256,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 2,
+  "mergedPRs": 2,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}
