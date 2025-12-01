@@ -15,7 +15,19 @@
     "commitCount": 0
   },
   "completedItems": [],
-  "topContributors": [],
+  "topContributors": [
+    {
+      "username": "2-rust",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/44922812?u=d6f02fbd5c00908460864f1e6878e1b1c986c173&v=4",
+      "totalScore": 27.16244056768155,
+      "prScore": 27.16244056768155,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
   "newPRs": 0,
   "mergedPRs": 0,
   "newIssues": 0,

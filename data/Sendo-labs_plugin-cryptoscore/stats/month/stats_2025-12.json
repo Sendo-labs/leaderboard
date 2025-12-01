@@ -1,0 +1,36 @@
+{
+  "interval": {
+    "intervalStart": "2025-12-01T00:00:00.000Z",
+    "intervalEnd": "2026-01-01T00:00:00.000Z",
+    "intervalType": "month"
+  },
+  "repository": "Sendo-labs/plugin-cryptoscore",
+  "overview": "From 2025-12-01 to 2026-01-01, Sendo-labs/plugin-cryptoscore had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "2-rust",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/44922812?u=d6f02fbd5c00908460864f1e6878e1b1c986c173&v=4",
+      "totalScore": 27.16244056768155,
+      "prScore": 27.16244056768155,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}

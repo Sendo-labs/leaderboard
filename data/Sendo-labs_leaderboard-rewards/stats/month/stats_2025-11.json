@@ -94,7 +94,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "keidev-sol: This month, keidev-sol focused on bugfix work, opening a pull request in Sendo-labs/plugin-sendo-analyser (#23) to fix an issue with filtering swap transactions. This single contribution represented a substantial effort, modifying 7 files with over 7,400 lines of code. The changes spanned across code, configuration, and test files, indicating a comprehensive approach to the fix."
     },
     {
       "username": "Johnleouf21",

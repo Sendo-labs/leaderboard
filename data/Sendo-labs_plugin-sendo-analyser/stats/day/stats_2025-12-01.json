@@ -1,0 +1,49 @@
+{
+  "interval": {
+    "intervalStart": "2025-12-01T00:00:00.000Z",
+    "intervalEnd": "2025-12-02T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/plugin-sendo-analyser",
+  "overview": "From 2025-12-01 to 2025-12-02, Sendo-labs/plugin-sendo-analyser had 1 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "topIssues": [],
+  "topPRs": [
+    {
+      "id": "PR_kwDOQJY5T862dRuk",
+      "title": "fix: ESM import extensions for npm package compatibility",
+      "author": "2-rust",
+      "number": 24,
+      "body": "Added `.js` extensions to all relative imports across the codebase\r\n\r\nUpdated file list:\r\n- `analysisJobs.ts` src\\services\\analysis\r\n- `index.ts` src\\services\\analysis\r\n- `tokenResults.ts` src\\services\\analysis\r\n- `index.ts` src\\services\\cache\r\n- `jobCache.ts` src\\services\\cache\r\n- `priceCache.ts` src\\services\\cache\r\n- `transactionCache.ts` src\\services\\cache\r\n- `sendoAnalyserService.ts` src\\services\r\n- `analysisWorker.ts` src\\services\\workers\r\n- `index.ts` src\\services\\workers\r\n- `workerHelpers.ts` src\\services\\workers",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-12-01T22:15:12Z",
+      "mergedAt": null,
+      "additions": 37,
+      "deletions": 37
+    }
+  ],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 1
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "2-rust",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/44922812?u=d6f02fbd5c00908460864f1e6878e1b1c986c173&v=4",
+      "totalScore": 27.16244056768155,
+      "prScore": 27.16244056768155,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 1,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 1
+}
