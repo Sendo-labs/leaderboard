@@ -23,3 +23,4 @@
 ["IC_kwDOQFph087Rmvo_", "PR_kwDOQFph086xRwI6", "Hi !\n\nWhy did you closed it ?", "2025-11-11T12:12:46Z", "2025-11-11T12:12:46Z", "standujar", "2025-11-11 23:08:34"]
 ["IC_kwDOQFph087Rm16d", "PR_kwDOQFph086xRwI6", "Sorry i think you don't need it. i ll create an other ", "2025-11-11T12:20:20Z", "2025-11-11T12:20:20Z", "Johnleouf21", "2025-11-11 23:08:34"]
 ["IC_kwDOQJY5T87VhChv", "PR_kwDOQJY5T861sI7h", "merged to main", "2025-11-26T16:45:05Z", "2025-11-26T16:45:05Z", "keidev-sol", "2025-11-26 23:08:51"]
+["IC_kwDOQJY5T87Wl81D", "PR_kwDOQJY5T862dRuk", "Thanks for informing. \r\nI think I was confusing `bundler` and `node` in `moduleResolution` on `tsconfig.json`, because I saw .js import style in `src/index.ts` file.\r\nI will keep going to check functionalities.", "2025-12-02T05:39:53Z", "2025-12-02T05:39:53Z", "2-rust", "2025-12-02 23:09:03"]

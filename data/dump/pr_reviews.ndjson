@@ -11,3 +11,4 @@
 ["PRR_kwDOQEvmTc7MQJFe", "PR_kwDOQEvmTc6xrQYO", "COMMENTED", "", "2025-11-06T08:05:54Z", "Neysixx", "2025-11-06 23:09:19"]
 ["PRR_kwDOQEvmTc7MUd7h", "PR_kwDOQEvmTc6xrQYO", "COMMENTED", "", "2025-11-06T12:21:15Z", "standujar", "2025-11-06 23:09:19"]
 ["PRR_kwDOQEvmTc7MU5QP", "PR_kwDOQEvmTc6xrQYO", "COMMENTED", "", "2025-11-06T12:50:43Z", "Neysixx", "2025-11-06 23:09:19"]
+["PRR_kwDOQJY5T87SQ4-G", "PR_kwDOQJY5T862dRuk", "CHANGES_REQUESTED", "Hello thanks for your contribution! But adding .js extensions in TypeScript couples the source code to the compiled output, breaking module-graph consistency and harming maintainability. We will not merge this changes.", "2025-12-02T00:36:17Z", "standujar", "2025-12-02 23:09:03"]

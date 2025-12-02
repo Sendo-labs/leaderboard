@@ -5,7 +5,7 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/plugin-jupiter",
-  "overview": "From 2025-11-30 to 2025-12-07, Sendo-labs/plugin-jupiter had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "overview": "From 2025-11-30 to 2025-12-07, Sendo-labs/plugin-jupiter had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [],
   "codeChanges": {
@@ -19,10 +19,21 @@
     {
       "username": "2-rust",
       "avatarUrl": "https://avatars.githubusercontent.com/u/44922812?u=d6f02fbd5c00908460864f1e6878e1b1c986c173&v=4",
-      "totalScore": 27.16244056768155,
+      "totalScore": 27.36244056768155,
       "prScore": 27.16244056768155,
       "issueScore": 0,
       "reviewScore": 0,
+      "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "standujar",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/16385918?u=718bdcd1585be8447bdfffb8c11ce249baa7532d&v=4",
+      "totalScore": 6,
+      "prScore": 0,
+      "issueScore": 0,
+      "reviewScore": 6,
       "commentScore": 0,
       "socialScore": 0,
       "summary": null
@@ -32,5 +43,5 @@
   "mergedPRs": 0,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 0
+  "activeContributors": 1
 }
