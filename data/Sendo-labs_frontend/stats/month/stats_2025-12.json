@@ -5,9 +5,21 @@
     "intervalType": "month"
   },
   "repository": "Sendo-labs/frontend",
-  "overview": "From 2025-12-01 to 2026-01-01, Sendo-labs/frontend had 0 new PRs (0 merged), 0 new issues, and 2 active contributors.",
+  "overview": "From 2025-12-01 to 2026-01-01, Sendo-labs/frontend had 1 new PRs (1 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
   "topPRs": [
+    {
+      "id": "PR_kwDOQEvmTc63SxtG",
+      "title": "feat: add legal pages and update footer links",
+      "author": "0xCanet",
+      "number": 35,
+      "body": "",
+      "repository": "Sendo-labs/frontend",
+      "createdAt": "2025-12-05T13:02:28Z",
+      "mergedAt": "2025-12-05T13:02:42Z",
+      "additions": 1265,
+      "deletions": 3
+    },
     {
       "id": "PR_kwDOQEvmTc6wPtkx",
       "title": "feat: worker-code",
@@ -22,21 +34,47 @@
     }
   ],
   "codeChanges": {
-    "additions": 0,
-    "deletions": 0,
-    "files": 0,
-    "commitCount": 1
+    "additions": 1265,
+    "deletions": 3,
+    "files": 6,
+    "commitCount": 2
   },
-  "completedItems": [],
+  "completedItems": [
+    {
+      "title": "feat: add legal pages and update footer links",
+      "prNumber": 35,
+      "type": "feature",
+      "body": "",
+      "files": [
+        "src/app/cookie-policy/page.tsx",
+        "src/app/globals.css",
+        "src/app/privacy-policy/page.tsx",
+        "src/app/terms-of-service/page.tsx",
+        "src/components/home/footer.tsx",
+        "src/components/legal/legal-page.tsx"
+      ]
+    }
+  ],
   "topContributors": [
     {
       "username": "2-rust",
       "avatarUrl": "https://avatars.githubusercontent.com/u/44922812?u=d6f02fbd5c00908460864f1e6878e1b1c986c173&v=4",
-      "totalScore": 27.36244056768155,
-      "prScore": 27.16244056768155,
+      "totalScore": 51.433136868258295,
+      "prScore": 51.2331368682583,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?u=059e1e3aba6472d569edd95167ff2e02bf807e7a&v=4",
+      "totalScore": 35.726264337945665,
+      "prScore": 35.726264337945665,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
       "socialScore": 0,
       "summary": null
     },
@@ -52,9 +90,9 @@
       "summary": null
     }
   ],
-  "newPRs": 0,
-  "mergedPRs": 0,
+  "newPRs": 1,
+  "mergedPRs": 1,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 2
+  "activeContributors": 3
 }

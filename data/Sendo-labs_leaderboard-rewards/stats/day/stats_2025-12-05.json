@@ -1,0 +1,47 @@
+{
+  "interval": {
+    "intervalStart": "2025-12-05T00:00:00.000Z",
+    "intervalEnd": "2025-12-06T00:00:00.000Z",
+    "intervalType": "day"
+  },
+  "repository": "Sendo-labs/leaderboard-rewards",
+  "overview": "From 2025-12-05 to 2025-12-06, Sendo-labs/leaderboard-rewards had 0 new PRs (0 merged), 0 new issues, and 0 active contributors.",
+  "topIssues": [],
+  "topPRs": [],
+  "codeChanges": {
+    "additions": 0,
+    "deletions": 0,
+    "files": 0,
+    "commitCount": 0
+  },
+  "completedItems": [],
+  "topContributors": [
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?u=059e1e3aba6472d569edd95167ff2e02bf807e7a&v=4",
+      "totalScore": 35.726264337945665,
+      "prScore": 35.726264337945665,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "2-rust",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/44922812?u=d6f02fbd5c00908460864f1e6878e1b1c986c173&v=4",
+      "totalScore": 24.070696300576746,
+      "prScore": 24.070696300576746,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
+      "socialScore": 0,
+      "summary": null
+    }
+  ],
+  "newPRs": 0,
+  "mergedPRs": 0,
+  "newIssues": 0,
+  "closedIssues": 0,
+  "activeContributors": 0
+}

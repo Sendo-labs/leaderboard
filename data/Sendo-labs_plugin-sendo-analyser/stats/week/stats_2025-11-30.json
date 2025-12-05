@@ -5,9 +5,21 @@
     "intervalType": "week"
   },
   "repository": "Sendo-labs/plugin-sendo-analyser",
-  "overview": "From 2025-11-30 to 2025-12-07, Sendo-labs/plugin-sendo-analyser had 1 new PRs (0 merged), 0 new issues, and 2 active contributors.",
+  "overview": "From 2025-11-30 to 2025-12-07, Sendo-labs/plugin-sendo-analyser had 2 new PRs (0 merged), 0 new issues, and 3 active contributors.",
   "topIssues": [],
   "topPRs": [
+    {
+      "id": "PR_kwDOQJY5T863VGxr",
+      "title": "refactor(parseTrade): improve calculateGlobalSummary and metric parsing logic",
+      "author": "2-rust",
+      "number": 25,
+      "body": "",
+      "repository": "Sendo-labs/plugin-sendo-analyser",
+      "createdAt": "2025-12-05T16:34:20Z",
+      "mergedAt": null,
+      "additions": 299,
+      "deletions": 115
+    },
     {
       "id": "PR_kwDOQJY5T862dRuk",
       "title": "fix: ESM import extensions for npm package compatibility",
@@ -25,18 +37,29 @@
     "additions": 0,
     "deletions": 0,
     "files": 0,
-    "commitCount": 1
+    "commitCount": 2
   },
   "completedItems": [],
   "topContributors": [
     {
       "username": "2-rust",
       "avatarUrl": "https://avatars.githubusercontent.com/u/44922812?u=d6f02fbd5c00908460864f1e6878e1b1c986c173&v=4",
-      "totalScore": 27.36244056768155,
-      "prScore": 27.16244056768155,
+      "totalScore": 51.433136868258295,
+      "prScore": 51.2331368682583,
       "issueScore": 0,
       "reviewScore": 0,
       "commentScore": 0.2,
+      "socialScore": 0,
+      "summary": null
+    },
+    {
+      "username": "0xCanet",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/216953029?u=059e1e3aba6472d569edd95167ff2e02bf807e7a&v=4",
+      "totalScore": 35.726264337945665,
+      "prScore": 35.726264337945665,
+      "issueScore": 0,
+      "reviewScore": 0,
+      "commentScore": 0,
       "socialScore": 0,
       "summary": null
     },
@@ -52,9 +75,9 @@
       "summary": null
     }
   ],
-  "newPRs": 1,
+  "newPRs": 2,
   "mergedPRs": 0,
   "newIssues": 0,
   "closedIssues": 0,
-  "activeContributors": 2
+  "activeContributors": 3
 }
