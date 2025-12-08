@@ -65,7 +65,7 @@
       "reviewScore": 0,
       "commentScore": 0.2,
       "socialScore": 0,
-      "summary": null
+      "summary": "2-rust: This month, 2-rust focused on bug fixes and refactoring within the Sendo-labs/plugin-sendo-analyser repository. They opened two pull requests to address an npm package compatibility issue (#24) and to refactor trade parsing logic (#25). This work, consisting of a single commit, has not yet been merged."
     },
     {
       "username": "0xCanet",
@@ -76,7 +76,7 @@
       "reviewScore": 0,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "0xCanet: Focused on frontend feature development, delivering a significant update to the Sendo-labs/frontend repository. They merged PR #35 to add new legal pages and update footer links, a substantial contribution that involved over 1200 lines of code. This single pull request represented their entire activity, indicating a concentrated effort on this feature."
     },
     {
       "username": "standujar",
@@ -87,7 +87,7 @@
       "reviewScore": 6,
       "commentScore": 0,
       "socialScore": 0,
-      "summary": null
+      "summary": "standujar: This month, standujar contributed to code quality by performing one code review where they requested changes. They also pushed one commit with minor modifications across three files."
     }
   ],
   "newPRs": 1,
