@@ -1,11 +1,11 @@
 {
   "interval": {
-    "intervalStart": "2026-04-01T00:00:00.000Z",
-    "intervalEnd": "2026-05-01T00:00:00.000Z",
-    "intervalType": "month"
+    "intervalStart": "2026-04-03T00:00:00.000Z",
+    "intervalEnd": "2026-04-04T00:00:00.000Z",
+    "intervalType": "day"
   },
   "repository": "Sendo-labs/leaderboard-rewards",
-  "overview": "From 2026-04-01 to 2026-05-01, Sendo-labs/leaderboard-rewards had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
+  "overview": "From 2026-04-03 to 2026-04-04, Sendo-labs/leaderboard-rewards had 0 new PRs (0 merged), 0 new issues, and 1 active contributors.",
   "topIssues": [],
   "topPRs": [
     {
